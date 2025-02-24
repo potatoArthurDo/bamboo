@@ -1,0 +1,9 @@
+/* scene.css */
+.canvas-container {
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
