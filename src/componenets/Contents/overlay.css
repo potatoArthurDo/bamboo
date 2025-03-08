@@ -52,7 +52,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 4rem;
+  padding-top: 10rem;
   padding-left: 3rem;
 }
 
@@ -81,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-top: 2rem;
+    padding-top: 10rem;
     padding-left: 5rem;
 
 }
@@ -188,6 +188,7 @@
     justify-content: center;
     position: relative;
     padding-left: 5rem;
+    padding-top: 5rem;
 }
 
 .product-container {
@@ -253,7 +254,7 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    padding-top: 0.5rem;
+    padding-top: 5rem;
 }
 
 .purpose-content {
@@ -310,7 +311,7 @@
     position: relative;
     gap: 20px;
     padding-left: 5rem;
-    padding-top: 0.15rem;
+    padding-top: 10rem;
     padding-bottom: 0;
   
 }
@@ -432,6 +433,7 @@
     justify-content: center;
     position: relative;
     padding-left: 5rem;
+    padding-top: 10rem;
 }
 
 .flip-card{
