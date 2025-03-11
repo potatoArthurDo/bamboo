@@ -114,7 +114,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: 1,
+        y: 1.5,
         ease: "power2.inOut",
         
       },
@@ -124,7 +124,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: 0.5,
+        y: 1,
         ease: "power2.inOut",
         
       },
@@ -134,7 +134,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: 0,
+        y: 0.8,
         ease: "power2.inOut",
         
       },
@@ -144,7 +144,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -0.4,
+        y: 0.4,
         ease: "power2.inOut",
        
       },
@@ -154,7 +154,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -0.8,
+        y: 0,
         ease: "power2.inOut",
         
       },
@@ -164,7 +164,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -1.2,
+        y: -0.4,
         ease: "power2.inOut",
         
       },
@@ -174,7 +174,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -1.6,
+        y: -0.8,
         ease: "power2.inOut",
         
       },
@@ -184,7 +184,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -1.8,
+        y: -1,
         ease: "power2.inOut",
         
       },
@@ -210,7 +210,7 @@ export function Model(props) {
   return (
     <group {...props} dispose={null} scale={[6.5, 6.5, 6.5]} ref={ref}>
       <group scale={0.01}>
-        <group position={[-35.305, -25, 6.171]} scale={[2.213, 2.126, 2.399]}>
+        <group position={[-35.305, -35, 6.171]} scale={[2.213, 2.126, 2.399]}>
           <group
             position={[-1.15, 0, 1.571]}
             rotation={[-Math.PI / 2, 0, 0]}

@@ -48,9 +48,9 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 30rem;
+  padding-top: 35rem;
   padding-left: 20rem;
-  padding-bottom: 40rem;
+  padding-bottom: 55rem;
   
 }
 
@@ -85,7 +85,7 @@
   justify-content: center;
   position: relative;
   padding-left: 3rem;
-  padding-top: 10rem;
+  padding-top: 3rem;
 }
 
 .video-container {
@@ -108,12 +108,12 @@
     color: #FFD700;
     font-size: 3rem;
     width: 800px;
-    height: auto;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-top: 5rem;
+    padding-top: 10rem;
     padding-left: 5rem;
 
 }
@@ -123,10 +123,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: auto;
+    width: 100%;
     height: auto;
-    padding: 50px 0;
-    gap: 20px;
+    gap: 8px;
+    padding-left: 15rem;
   }
 
   
@@ -135,10 +135,10 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 50%;
-    width: 4px;
+    left: 55%;
+    width: 18px;
     height: 100%;
-    background-color: #FFD700;
+    background: repeating-linear-gradient(0deg, #006400, #006400 50px, #FFD700 70px, #FFD700 100px);
     transform: translateX(-50%);
     z-index: 0;
   }
@@ -150,7 +150,6 @@
     align-items: center;
     text-align: center;
     white-space: normal;
-    z-index: 1;
   }
   
   .timeline-item:nth-child(even) {
@@ -162,23 +161,13 @@
     transform: translateX(60px); /* Moves odd items upward */
   }
   
-  .timeline-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #FFD700;
-    margin-bottom: 10px;
-    background-color: white;
-  }
-  
   .content {
     padding: 8px 8px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: black;
-    max-width: 180px;
-    width: 150px;
+    max-width: 300px;
+    width: 280px;
     min-height: 80px;
     display: flex;
     flex-direction: column;
@@ -211,13 +200,14 @@
     margin: 0;
     font-size: 18px;
     font-weight: bold;
-    color: #d35400; 
+    color: #8B4513; 
 }
 
 .content p {
     margin: 5px 0 0;
     font-size: 14px;
-    color: #333; 
+    color: #006400;
+    font-weight: 500; 
 }
 
 .service {
@@ -230,7 +220,7 @@
     justify-content: center;
     position: relative;
     padding-left: 5rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .product-container {
@@ -254,10 +244,12 @@
    
     border-radius: 10px;
     padding: 15px;
-    width: 300px; 
+    width: 280px; 
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
+    background: linear-gradient(135deg, rgba(0, 109, 50, 0.4), rgba(34, 139, 34, 0.4), rgba(0, 77, 26, 0.4));
+    height: 700px;
     flex-shrink: 0; 
   }
   
@@ -278,12 +270,21 @@
   .product-card h4 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #937324;
+    color: #FFD700;
+  }
+  .product-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700;
   }
   
   .product-card p {
-    font-size: 1.3rem;
-    color: #555;
+    font-size: 1.1rem;
+    color: #F5F5F5;
+  }
+
+  .service-intro {
+    font-weight: 600;
   }
 
   .purpose {
@@ -295,7 +296,7 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    padding-top: 20rem;
+    padding-top: 10rem;
     padding-left: 10rem;
 }
 
@@ -353,7 +354,7 @@
     position: relative;
     gap: 20px;
     padding-left: 5rem;
-    padding-top: 20rem;
+    padding-top: 10rem;
   
 }
 
