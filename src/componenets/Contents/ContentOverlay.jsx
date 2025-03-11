@@ -21,7 +21,6 @@ export const ContentOverlay = () => {
   const [opacity7, setOpacitySection7] = useState(0);
   const [opacity8, setOpacitySection8] = useState(0);
   const [opacity9, setOpacitySection9] = useState(0);
-
   useFrame(() => {
     setOpacitySection1(1 - scroll.range(0, 1 / 9));
     setOpacitySection2(scroll.curve(1 / 9, 1 / 9));
@@ -33,13 +32,19 @@ export const ContentOverlay = () => {
     setOpacitySection8(scroll.curve(7 / 9, 1 / 9));
     setOpacitySection9(scroll.range(8 / 9, 1 / 9)); // Adjusted for 9 sections
   });
-
   
 
   return (
     <Scroll html classNames="scroll-html-wrapper">
       <div className="w-screen">
-        <Section opacity={opacity1} sectionName="feedback">
+        <Section opacity={opacity1} sectionName="intro">
+            <h3 className="company_name">2G Education</h3>
+            <h1 className="main_name">GLOCAL</h1>
+            <h1 className="main_name">TREE</h1>
+            <p className="journey-quote">The journey 2G Education</p>
+            <p className="bounce mt-6">↓</p>
+        </Section>
+        <Section opacity={opacity2} sectionName="feedback">
           <h1>Customer </h1>
           <h1> Feedback</h1>
           <div className="video-container">
@@ -57,7 +62,7 @@ export const ContentOverlay = () => {
           <p className="bounce">↓</p>
         </Section>
 
-        <Section opacity={opacity2} sectionName="achievement">
+        <Section opacity={opacity3} sectionName="achievement">
           <h1>Our </h1>
           <h1> Achievements</h1>
           <div className="timeline">
@@ -108,7 +113,7 @@ export const ContentOverlay = () => {
           <p className="bounce mt-6">↓</p>
         </Section>
 
-        <Section opacity={opacity3} sectionName="service">
+        <Section opacity={opacity4} sectionName="service">
           <h1>Our </h1>
           <h1> Service</h1>
           <div className="product-container">
@@ -163,7 +168,7 @@ export const ContentOverlay = () => {
           <p className="bounce ">↓</p>
         </Section>
 
-        <Section opacity={opacity4} sectionName="purpose">
+        <Section opacity={opacity5} sectionName="purpose">
           <div class="purpose-content">
             <div class="left-text">
               <p>
@@ -197,9 +202,10 @@ export const ContentOverlay = () => {
               <strong>"Đốt"</strong>
             </div>
           </div>
+          <p className="bounce mt-6">↓</p>
         </Section>
 
-        <Section opacity={opacity5} sectionName="founder">
+        <Section opacity={opacity6} sectionName="founder">
           <h1>Founder's Story</h1>
           <div className="video-container">
             <iframe
@@ -216,7 +222,7 @@ export const ContentOverlay = () => {
           <p className="bounce">↓</p>
         </Section>
 
-        <Section opacity={opacity6} sectionName="story">
+        <Section opacity={opacity7} sectionName="story">
           <h1>2G Story</h1>
           <h6>Văn hoá 2G – The 3R Framework: </h6>
           <h6>
@@ -266,29 +272,194 @@ export const ContentOverlay = () => {
               </div>
             </div>
           </h6>
+          <p className="bounce mt-6">↓</p>
         </Section>
 
-        <Section opacity={opacity7} sectionName="human">
+        <Section opacity={opacity8} sectionName="human">
           <h1>2G Humans</h1>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <h2>Front of Card</h2>
+          <div className="human-card-container">
+            <div className="human-card">
+              <div className="human-card-avatar">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64"
+                  alt="Third event"
+                />
               </div>
-              <div className="flip-card-back">
-                <h2>Back of Card</h2>
+              <div className="human-card-info">
+                <h2>Alex Nguyen</h2>
+                <p>
+                  <strong>Age:</strong> 28
+                </p>
+                <p>
+                  <strong>Occupation:</strong> Software Developer
+                </p>
+                <p>
+                  <strong>Location:</strong> Ho Chi Minh City, Vietnam
+                </p>
+                <p>
+                  <strong>Hobbies:</strong> Coding, hiking, playing the guitar,
+                  and photography
+                </p>
+                <p>
+                  <strong>Skills:</strong> Python, Django, React, SQL, Docker
+                </p>
+                <p class="quote">
+                  "Code is like humor. When you have to explain it, it’s bad."
+                </p>
+              </div>
+            </div>
+            <div className="human-card">
+              <div className="human-card-avatar">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64"
+                  alt="Third event"
+                />
+              </div>
+              <div className="human-card-info">
+                <h2>Alex Nguyen</h2>
+                <p>
+                  <strong>Age:</strong> 28
+                </p>
+                <p>
+                  <strong>Occupation:</strong> Software Developer
+                </p>
+                <p>
+                  <strong>Location:</strong> Ho Chi Minh City, Vietnam
+                </p>
+                <p>
+                  <strong>Hobbies:</strong> Coding, hiking, playing the guitar,
+                  and photography
+                </p>
+                <p>
+                  <strong>Skills:</strong> Python, Django, React, SQL, Docker
+                </p>
+                <p class="quote">
+                  "Code is like humor. When you have to explain it, it’s bad."
+                </p>
+              </div>
+            </div>
+            <div className="human-card">
+              <div className="human-card-avatar">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64"
+                  alt="Third event"
+                />
+              </div>
+              <div className="human-card-info">
+                <h2>Alex Nguyen</h2>
+                <p>
+                  <strong>Age:</strong> 28
+                </p>
+                <p>
+                  <strong>Occupation:</strong> Software Developer
+                </p>
+                <p>
+                  <strong>Location:</strong> Ho Chi Minh City, Vietnam
+                </p>
+                <p>
+                  <strong>Hobbies:</strong> Coding, hiking, playing the guitar,
+                  and photography
+                </p>
+                <p>
+                  <strong>Skills:</strong> Python, Django, React, SQL, Docker
+                </p>
+                <p class="quote">
+                  "Code is like humor. When you have to explain it, it’s bad."
+                </p>
+              </div>
+            </div>
+            <div className="human-card">
+              <div className="human-card-avatar">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64"
+                  alt="Third event"
+                />
+              </div>
+              <div className="human-card-info">
+                <h2>Alex Nguyen</h2>
+                <p>
+                  <strong>Age:</strong> 28
+                </p>
+                <p>
+                  <strong>Occupation:</strong> Software Developer
+                </p>
+                <p>
+                  <strong>Location:</strong> Ho Chi Minh City, Vietnam
+                </p>
+                <p>
+                  <strong>Hobbies:</strong> Coding, hiking, playing the guitar,
+                  and photography
+                </p>
+                <p>
+                  <strong>Skills:</strong> Python, Django, React, SQL, Docker
+                </p>
+                <p class="quote">
+                  "Code is like humor. When you have to explain it, it’s bad."
+                </p>
+              </div>
+            </div><div className="human-card">
+              <div className="human-card-avatar">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64"
+                  alt="Third event"
+                />
+              </div>
+              <div className="human-card-info">
+                <h2>Alex Nguyen</h2>
+                <p>
+                  <strong>Age:</strong> 28
+                </p>
+                <p>
+                  <strong>Occupation:</strong> Software Developer
+                </p>
+                <p>
+                  <strong>Location:</strong> Ho Chi Minh City, Vietnam
+                </p>
+                <p>
+                  <strong>Hobbies:</strong> Coding, hiking, playing the guitar,
+                  and photography
+                </p>
+                <p>
+                  <strong>Skills:</strong> Python, Django, React, SQL, Docker
+                </p>
+                <p class="quote">
+                  "Code is like humor. When you have to explain it, it’s bad."
+                </p>
+              </div>
+            </div><div className="human-card">
+              <div className="human-card-avatar">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64"
+                  alt="Third event"
+                />
+              </div>
+              <div className="human-card-info">
+                <h2>Alex Nguyen</h2>
+                <p>
+                  <strong>Age:</strong> 28
+                </p>
+                <p>
+                  <strong>Occupation:</strong> Software Developer
+                </p>
+                <p>
+                  <strong>Location:</strong> Ho Chi Minh City, Vietnam
+                </p>
+                <p>
+                  <strong>Hobbies:</strong> Coding, hiking, playing the guitar,
+                  and photography
+                </p>
+                <p>
+                  <strong>Skills:</strong> Python, Django, React, SQL, Docker
+                </p>
+                <p class="quote">
+                  "Code is like humor. When you have to explain it, it’s bad."
+                </p>
               </div>
             </div>
           </div>
         </Section>
 
-        <Section opacity={opacity8} sectionName="human">
-          <h1>2G Humans</h1>
-        </Section>
-
-        <Section opacity={opacity9} sectionName="human">
-          <h1>2G Humans</h1>
-        </Section>
+        <Section opacity={opacity9} sectionName="blank"></Section>
       </div>
     </Scroll>
   );
