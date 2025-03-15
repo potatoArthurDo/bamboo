@@ -11,7 +11,6 @@ const Section = (props) => {
   );
 };
 
-
 export const ContentOverlay = () => {
   const scroll = useScroll();
   const [opacity1, setOpacitySection1] = useState(1);
@@ -37,7 +36,7 @@ export const ContentOverlay = () => {
   });
 
   return (
-    <Scroll html classNames="scroll-html-wrapper">
+    <Scroll html className="scroll-html-wrapper">
       <div className="w-screen">
         <Section opacity={opacity1} sectionName="intro">
           <h3 className="company_name">2G Education</h3>
@@ -276,24 +275,92 @@ export const ContentOverlay = () => {
               <strong>"Đốt"</strong>
             </div>
           </div> */}
-          <div class="container">
-            <div class="book">
+          <div className="purpose-container">
+            <div className="book">
               <input type="checkbox" name="page1" id="page1" />
               <input type="checkbox" name="page2" id="page2" />
               <input type="checkbox" name="page3" id="page3" />
               <input type="checkbox" name="page4" id="page4" />
-              <div class="pages">
-                <div class="page1">
+              <input type="checkbox" name="page5" id="page5" />
+              <div className="pages">
+                <div className="page1">
                   <label for="page1"></label>
+                  <div className="page1-text">
+                    <h3>Connect</h3>
+                    <h3>the</h3>
+                    <h2>"Đốt"</h2>
+                  </div>
+                  <span class="material-symbols-outlined">left_click</span>
                 </div>
-                <div class="page2">
+                <div className="page2">
                   <label for="page2"></label>
+                  <div className="page2-text">
+                    <p>
+                      Tại 2G Education, chúng tôi không ngừng nỗ lực để thúc đẩy
+                      những hành trình học hỏi của các bạn trẻ Việt.
+                    </p>
+                    <p>Hành trình tuy khó khăn, nhưng sẽ tràn đầy hứng khởi</p>
+                    <p>
+                      Khi bạn luôn được trang bị sẵn sàng để tiến vào mọi “cuộc
+                      chơi”
+                    </p>
+                  </div>
+                  <span class="material-symbols-outlined">left_click</span>
                 </div>
-                <div class="page3">
+                <div className="page3">
                   <label for="page3"></label>
+                  <div className="page3-text">
+                    <p>Đủ tư duy</p>
+                    <p>Giỏi kĩ năng</p>
+                    <p>Vững ngôn ngữ</p>
+                    <p>Như tre không kén chọn đất trồng</p>
+                    <p>Người trẻ không ngại ngần hoàn cảnh.</p>
+                    <p>Luôn kiên trì tiến lên phía trước,</p>
+                    <p>Uyển chuyển khi cần, vững vàng khi khó</p>
+                    <p>Tạo nên một thế hệ “luỹ thành” của đất nước.</p>
+                  </div>
+                  <span class="material-symbols-outlined">left_click</span>
                 </div>
-                <div class="page4">
+                <div className="page4">
                   <label for="page4"></label>
+                  <div className="page4-text">
+                    <p>
+                      Bằng sự tận tâm trong giáo dục và cam kết đồng hành xuyên
+                      suốt
+                    </p>
+                    <p>
+                      2G Education tự hào là đòn bẩy để các bạn trẻ tự tin ra
+                      ngoài thế giới, sống và làm việc như một công dân toàn
+                      cầu.
+                    </p>
+                    <p>
+                      Bởi dù cho xuất phát điểm và mục đích hướng tới khác nhau
+                    </p>
+                    <p>
+                      2G Education tin rằng mọi hành trình hội nhập đều bắt đầu
+                      từ một điểm kết nối (the dots).
+                    </p>
+                  </div>
+                  <span class="material-symbols-outlined">left_click</span>
+                </div>
+                <div className="page5">
+                  <label for="page5"></label>
+                  <div className="page5-text">
+                    <p>
+                      Và chúng tôi sẽ không ngừng tìm kiếm các cơ hội trong và
+                      ngoài nước
+                    </p>
+                    <p>
+                      Không ngừng truyền cảm hứng, truyền nghề, truyền lửa cho
+                      các thế hệ mới
+                    </p>
+                    <p>Tạo ra một vòng tròn giá trị nối kết.</p>
+                    <div className="ending-tag">
+                      <p>2G Education - Hệ thống đào tạo giáo dục toàn diện.</p>
+                      <p>2G Education - Connect the “đốt”.</p>
+                    </div>
+                  </div>
+                  <span class="material-symbols-outlined">left_click</span>
                 </div>
               </div>
             </div>
@@ -303,28 +370,28 @@ export const ContentOverlay = () => {
 
         <Section opacity={opacity6} sectionName="founder">
           <h1>Founder's Story</h1>
-          <div class="container">
-            <div class="book">
-              <input type="checkbox" name="page1" id="page1" />
-              <input type="checkbox" name="page2" id="page2" />
-              <input type="checkbox" name="page3" id="page3" />
-              <input type="checkbox" name="page4" id="page4" />
-              <div class="pages">
-                <div class="page1">
-                  <label for="page1"></label>
+          {/* <div className="container">
+            <div className="book">
+              <input type="checkbox" name="page5" id="page5" />
+              <input type="checkbox" name="page6" id="page6" />
+              <input type="checkbox" name="page7" id="page7" />
+              <input type="checkbox" name="page8" id="page8" />
+              <div className="pages">
+                <div className="page5">
+                  <label for="page5"></label>
                 </div>
-                <div class="page2">
-                  <label for="page2"></label>
+                <div className="page6">
+                  <label for="page6"></label>
                 </div>
-                <div class="page3">
-                  <label for="page3"></label>
+                <div className="page7">
+                  <label for="page7"></label>
                 </div>
-                <div class="page4">
-                  <label for="page4"></label>
+                <div className="page8">
+                  <label for="page8"></label>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <p className="bounce">↓</p>
         </Section>
@@ -441,7 +508,7 @@ export const ContentOverlay = () => {
                 <p>
                   <strong>Skills:</strong> Python, Django, React, SQL, Docker
                 </p>
-                <p class="quote">
+                <p className="quote">
                   "Code is like humor. When you have to explain it, it’s bad."
                 </p>
               </div>
@@ -471,7 +538,7 @@ export const ContentOverlay = () => {
                 <p>
                   <strong>Skills:</strong> Python, Django, React, SQL, Docker
                 </p>
-                <p class="quote">
+                <p className="quote">
                   "Code is like humor. When you have to explain it, it’s bad."
                 </p>
               </div>
@@ -501,7 +568,7 @@ export const ContentOverlay = () => {
                 <p>
                   <strong>Skills:</strong> Python, Django, React, SQL, Docker
                 </p>
-                <p class="quote">
+                <p className="quote">
                   "Code is like humor. When you have to explain it, it’s bad."
                 </p>
               </div>
@@ -531,7 +598,7 @@ export const ContentOverlay = () => {
                 <p>
                   <strong>Skills:</strong> Python, Django, React, SQL, Docker
                 </p>
-                <p class="quote">
+                <p className="quote">
                   "Code is like humor. When you have to explain it, it’s bad."
                 </p>
               </div>
@@ -561,7 +628,7 @@ export const ContentOverlay = () => {
                 <p>
                   <strong>Skills:</strong> Python, Django, React, SQL, Docker
                 </p>
-                <p class="quote">
+                <p className="quote">
                   "Code is like humor. When you have to explain it, it’s bad."
                 </p>
               </div>
@@ -591,7 +658,7 @@ export const ContentOverlay = () => {
                 <p>
                   <strong>Skills:</strong> Python, Django, React, SQL, Docker
                 </p>
-                <p class="quote">
+                <p className="quote">
                   "Code is like humor. When you have to explain it, it’s bad."
                 </p>
               </div>
