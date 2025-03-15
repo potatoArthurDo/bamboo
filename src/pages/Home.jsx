@@ -17,7 +17,7 @@ function Home() {
 
       <div className="canvas-container">
         <Fireflies count={80} />
-        <Canvas>
+        <Canvas className="canvas">
           <Banner />
         </Canvas>
       </div>

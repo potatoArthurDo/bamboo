@@ -1,6 +1,7 @@
 import { Scroll, useScroll } from "@react-three/drei";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
+import { gsap } from "gsap";
 import "./overlay.css";
 const Section = (props) => {
   return (
@@ -9,6 +10,7 @@ const Section = (props) => {
     </section>
   );
 };
+
 
 export const ContentOverlay = () => {
   const scroll = useScroll();
@@ -220,31 +222,52 @@ export const ContentOverlay = () => {
         </Section>
 
         <Section opacity={opacity5} sectionName="purpose">
-          <div class="purpose-content">
+          {/* <div class="purpose-content">
             <div class="left-text">
               <p>
-                <strong>Ngôn ngữ. Tư duy. Kinh nghiệm.</strong>
-              </p>
-              <p>Những nơi ta đến.</p>
-              <p>Những người ta gặp.</p>
-              <p>Những phiên bản ta muốn trở thành.</p>
-              <p>
-                Đó là những mảnh ghép <strong>"the dots"</strong> trên hành
-                trình học hỏi và trưởng thành.
-              </p>
-              <p>
-                Một hành trình dài—không ngừng cắm rễ, không ngừng vươn cao.
-              </p>
-              <p>
                 <strong>
-                  Nhưng, đã bao giờ bạn dừng lại và tự hỏi ý nghĩa của hành
-                  trình này?
+                  Tại 2G Education, chúng tôi không ngừng nỗ lực để thúc đẩy
+                  những hành trình học hỏi của các bạn trẻ Việt.
                 </strong>
               </p>
-              <p>Để kết nối.</p>
-              <p>Kết nối với chính mình.</p>
-              <p>Kết nối với người khác.</p>
-              <p>Kết nối với thế giới.</p>
+              <p>Hành trình tuy khó khăn, nhưng sẽ tràn đầy hứng khởi</p>
+              <p>
+                Khi bạn luôn được trang bị sẵn sàng để tiến vào mọi “cuộc chơi”
+              </p>
+              <p>Những phiên bản ta muốn trở thành.</p>
+              <p>Đủ tư duy</p>
+              <p>Giỏi kĩ năng</p>
+              <p>Vững ngôn ngữ</p>
+              <p>Như tre không kén chọn đất trồng</p>
+              <p>KNgười trẻ không ngại ngần hoàn cảnh.</p>
+              <p>Luôn kiên trì tiến lên phía trước,</p>
+              <p>Uyển chuyển khi cần, vững vàng khi khó</p>
+              <p>Tạo nên một thế hệ “luỹ thành” của đất nước.</p>
+              <br />
+              <p>
+                Bằng sự tận tâm trong giáo dục và cam kết đồng hành xuyên suốt
+                2G
+              </p>
+              <p>
+                Education tự hào là đòn bẩy để các bạn trẻ tự tin ra ngoài thế
+              </p>
+              <p>
+                giới, sống và làm việc như một công dân toàn cầu. Bởi dù cho
+                xuất
+              </p>
+              <p>
+                phát điểm và mục đích hướng tới khác nhau 2G Education tin rằng
+              </p>
+              <p>
+                mọi hành trình hội nhập đều bắt đầu từ một điểm kết nối (the
+              </p>
+              <p>
+                dots). Và chúng tôi sẽ không ngừng tìm kiếm các cơ hội trong và
+              </p>
+              <p>
+                ngoài nước Không ngừng truyền cảm hứng, truyền nghề, truyền lửa
+              </p>
+              <p>cho các thế hệ mới Tạo ra một vòng tròn giá trị nối kết.</p>
             </div>
 
             <div class="right-text">
@@ -252,77 +275,141 @@ export const ContentOverlay = () => {
               <p>the</p>
               <strong>"Đốt"</strong>
             </div>
+          </div> */}
+          <div class="container">
+            <div class="book">
+              <input type="checkbox" name="page1" id="page1" />
+              <input type="checkbox" name="page2" id="page2" />
+              <input type="checkbox" name="page3" id="page3" />
+              <input type="checkbox" name="page4" id="page4" />
+              <div class="pages">
+                <div class="page1">
+                  <label for="page1"></label>
+                </div>
+                <div class="page2">
+                  <label for="page2"></label>
+                </div>
+                <div class="page3">
+                  <label for="page3"></label>
+                </div>
+                <div class="page4">
+                  <label for="page4"></label>
+                </div>
+              </div>
+            </div>
           </div>
           <p className="bounce mt-6">↓</p>
         </Section>
 
         <Section opacity={opacity6} sectionName="founder">
           <h1>Founder's Story</h1>
-          <div className="video-container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/r_igfKnvaks?si=uQL80wOBFS0EE9Ij"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+          <div class="container">
+            <div class="book">
+              <input type="checkbox" name="page1" id="page1" />
+              <input type="checkbox" name="page2" id="page2" />
+              <input type="checkbox" name="page3" id="page3" />
+              <input type="checkbox" name="page4" id="page4" />
+              <div class="pages">
+                <div class="page1">
+                  <label for="page1"></label>
+                </div>
+                <div class="page2">
+                  <label for="page2"></label>
+                </div>
+                <div class="page3">
+                  <label for="page3"></label>
+                </div>
+                <div class="page4">
+                  <label for="page4"></label>
+                </div>
+              </div>
+            </div>
           </div>
+
           <p className="bounce">↓</p>
         </Section>
 
         <Section opacity={opacity7} sectionName="story">
           <h1>2G Story</h1>
-          <h6>Văn hoá 2G – The 3R Framework: </h6>
-          <h6>
-            {/* <strong>Resilience</strong> <strong>Reimagine</strong>{" "}
+          <h6 className="story-headline">Văn hoá 2G – The 3R Framework: </h6>
+          {/* <strong>Resilience</strong> <strong>Reimagine</strong>{" "}
             <strong>Responsibility</strong> */}
-            <div className="story-card-container">
-              <div className="story-card">
-                <div className="story-card-content">
-                  <div className="message">Resilience</div>
-                  <div className="hidden-message">
-                    <p>Resilience: Sức mạnh của sự bền bỉ và nội lực</p> Tập
-                    trung xây dựng nền tảng vững chắc trong đào tạo và vận hành.
-                    Luôn đặt chất lượng trên lợi ích ngắn hạn. Kiên trì theo
-                    đuổi giá trị cốt lõi, tin vào nội lực bên trong của mỗi
-                    người.
-                  </div>
-                </div>
-              </div>
-
-              <div className="story-card">
-                <div className="story-card-content">
-                  <div className="message">Reimagine</div>
-                  <div className="hidden-message">
-                    <p>
-                      Reimagine: Sáng tạo và linh hoạt, dám thay đổi để bứt phá
-                    </p>
-                    Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo
-                    và mô hình kinh doanh. Luôn cập nhật xu hướng giáo dục toàn
-                    cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập.
-                    Khuyến khích tư duy sáng tạo, chủ động, linh hoạt trong mọi
-                    khía cạnh từ giảng dạy đến quản trị.
-                  </div>
-                </div>
-              </div>
-
-              <div className="story-card">
-                <div className="story-card-content">
-                  <div className="message">Responsibility</div>
-                  <div className="hidden-message">
-                    <p>Responsibility: Trách nhiệm và sự gắn kết bền chặt</p>{" "}
-                    Cam kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự.
-                    Xây dựng môi trường làm việc đề cao sự gắn kết và phát triển
-                    cá nhân. Tạo ra tác động tích cực, không chỉ trong giáo dục
-                    mà còn trong cộng đồng.
-                  </div>
+          <div className="story-card-container">
+            <div className="story-card">
+              <div className="story-card-content">
+                <div className="message">Resilience</div>
+                <div className="hidden-message">
+                  <p>Resilience: Sức mạnh của sự bền bỉ và nội lực</p> Tập trung
+                  xây dựng nền tảng vững chắc trong đào tạo và vận hành. Luôn
+                  đặt chất lượng trên lợi ích ngắn hạn. Kiên trì theo đuổi giá
+                  trị cốt lõi, tin vào nội lực bên trong của mỗi người.
                 </div>
               </div>
             </div>
+
+            <div className="story-card">
+              <div className="story-card-content">
+                <div className="message">Reimagine</div>
+                <div className="hidden-message">
+                  <p>
+                    Reimagine: Sáng tạo và linh hoạt, dám thay đổi để bứt phá
+                  </p>
+                  Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo
+                  và mô hình kinh doanh. Luôn cập nhật xu hướng giáo dục toàn
+                  cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập. Khuyến
+                  khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh
+                  từ giảng dạy đến quản trị.
+                </div>
+              </div>
+            </div>
+
+            <div className="story-card">
+              <div className="story-card-content">
+                <div className="message">Responsibility</div>
+                <div className="hidden-message">
+                  <p>Responsibility: Trách nhiệm và sự gắn kết bền chặt</p> Cam
+                  kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự. Xây
+                  dựng môi trường làm việc đề cao sự gắn kết và phát triển cá
+                  nhân. Tạo ra tác động tích cực, không chỉ trong giáo dục mà
+                  còn trong cộng đồng.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h6 className="story-headline">
+            {" "}
+            Development Strategies – Connection & Technology:
           </h6>
+          <div className="story-card-container">
+            <div className="story-card">
+              <div className="story-card-content">
+                <div className="message">
+                  Connection (Network-based Growth Mindset)
+                </div>
+                <div className="hidden-message">
+                  2G Group tin rằng sức mạnh của sự kết nối chính là chìa khóa
+                  để mở rộng tầm ảnh hưởng và tạo ra những giá trị bền vững.
+                  Chúng tôi không chỉ xây dựng một hệ sinh thái giáo dục, mà còn
+                  kiến tạo một mạng lưới những con người cùng chung khát vọng
+                  học tập, phát triển và cống hiến.
+                </div>
+              </div>
+            </div>
+
+            <div className="story-card">
+              <div className="story-card-content">
+                <div className="message">Technology</div>
+                <div className="hidden-message">
+                  Ở 2G Group, chúng tôi tận dụng công nghệ để rút ngắn khoảng
+                  cách tri thức, kết nối con người và lan toả giá trị bằng cách
+                  số hoá trải nghiệm học tập, xây dựng không gian kết nối linh
+                  hoạt, và mở rộng quy mô để tạo ra nhiều cơ hội tiếp cận giáo
+                  dục và phát triển bản thân cho tất cả mọi người.
+                </div>
+              </div>
+            </div>
+          </div>
           <p className="bounce mt-6">↓</p>
         </Section>
 

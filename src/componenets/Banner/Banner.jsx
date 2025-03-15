@@ -11,9 +11,8 @@ export default function Banner({ progress }) {
     <>
       
       <Environment preset="city" />
-      <OrbitControls enableZoom = {false} enableRotate = {false} enablePan = {false} />
       <ambientLight intensity={1} />
-      <ScrollControls pages={10} damping={0.25}>
+      <ScrollControls pages={10} damping={0.25} distance={1} horizontal={false}>
       <ContentOverlay />
       <Model />
       </ScrollControls>

@@ -61,12 +61,12 @@ html {
   padding: 0;
   overflow-x: hidden;
   /* background: linear-gradient(0deg,  #EAD7B8, #F3DFC4, #FCEED9),url("../assets/images/sun_glow_bg_1.png"); */
-  background-blend-mode: overlay;
+  background-blend-mode: soft-light  ;
   /* background: url("../assets/images/gradient-bg.svg"); */
-  background: url("https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/27a8c040-70d0-4403-b9d3-491a0ec477e0/The%20flourish%20bamboo%20forest%20with%20glorious%20morning%20sunshine%20dreamstime.jpeg?auto=compress%2Cformat&w=1440"),
+  background: url("https://images7.alphacoders.com/138/thumb-1920-1381480.png"),
     url("../assets/images/sun_glow_bg_2.png"),
-    url("../assets/images/ground-bg.png");
-  background-color: #014421;
+    url("../assets/images/ground-b.png");
+  /* background-color: #014421; */
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center, center,center calc(100% + 400px);
@@ -74,6 +74,7 @@ html {
   color: black;
   font-family: "Montserrat", serif;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Loading screen */
@@ -116,6 +117,9 @@ html {
   /* background-color: red; */
 }
 
+.canvas {
+    pointer-events: none;
+}
 /* timeline section  */
 .timeline-achievement {
   display: flex;
