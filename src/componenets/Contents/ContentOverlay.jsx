@@ -14,7 +14,19 @@ const Section = (props) => {
 
 export const ContentOverlay = () => {
   const scroll = useScroll();
+  const [hoveredCard, setHoveredCard] = useState(null);
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("tab1");
+  const handleMouseEnter = (tabId) => {
+    setHoveredCard(tabId);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCard(null);
+  };
+  const handleTabClick = (tabId) => {
+    setActiveTab(tabId);
+  };
   const [opacity1, setOpacitySection1] = useState(1);
   const [opacity2, setOpacitySection2] = useState(0);
   const [opacity3, setOpacitySection3] = useState(0);
@@ -386,79 +398,175 @@ export const ContentOverlay = () => {
 
         <Section opacity={opacity7} sectionName="story">
           <h1>2G Story</h1>
-          <h6 className="story-headline">Văn hoá 2G – The 3R Framework: </h6>
-          <div className="story-card-container">
-            <div className="story-card">
-              <div className="story-card-content">
-                <div className="message">Resilience</div>
-                <div className="hidden-message">
-                  <p>Resilience: Sức mạnh của sự bền bỉ và nội lực</p> Tập trung
-                  xây dựng nền tảng vững chắc trong đào tạo và vận hành. Luôn
-                  đặt chất lượng trên lợi ích ngắn hạn. Kiên trì theo đuổi giá
-                  trị cốt lõi, tin vào nội lực bên trong của mỗi người.
-                </div>
-              </div>
+          <div className="tab-container">
+            <div className="tab-buttons">
+              <button
+                className={`tab-button ${activeTab === "tab1" ? "active" : ""}`}
+                onClick={() => handleTabClick("tab1")}
+              >
+                Văn hoá 2G – The 3R Framework
+              </button>
+              <button
+                className={`tab-button ${activeTab === "tab2" ? "active" : ""}`}
+                onClick={() => handleTabClick("tab2")}
+              >
+                Development Strategies
+              </button>
             </div>
 
-            <div className="story-card">
-              <div className="story-card-content">
-                <div className="message">Reimagine</div>
-                <div className="hidden-message">
-                  <p>
-                    Reimagine: Sáng tạo và linh hoạt, dám thay đổi để bứt phá
-                  </p>
-                  Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo
-                  và mô hình kinh doanh. Luôn cập nhật xu hướng giáo dục toàn
-                  cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập. Khuyến
-                  khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh
-                  từ giảng dạy đến quản trị.
+            <div className="tab-content">
+              <div
+                id="tab1"
+                className={`tab-panel ${activeTab === "tab1" ? "active" : ""}`}
+              >
+                <div className="card-tab-container">
+                  <div className="card-tab-buttons">
+                    <div
+                      className={`flip-card ${
+                        hoveredCard === "card1" ? "flipped" : ""
+                      }`}
+                      onMouseEnter={() => handleMouseEnter("card1")}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">Resilience</div>
+                        <div className="flip-card-back">
+                          <p>Resilience: Sức mạnh của sự bền bỉ và nội lực</p>
+                          <ul>
+                            <li>
+                              Tập trung xây dựng nền tảng vững chắc trong đào
+                              tạo và vận hành.
+                            </li>
+                            <li>Luôn đặt chất lượng trên lợi ích ngắn hạn.</li>
+                            <li>
+                              Kiên trì theo đuổi giá trị cốt lõi, tin vào nội
+                              lực bên trong của mỗi người.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className={`flip-card ${
+                        hoveredCard === "card2" ? "flipped" : ""
+                      }`}
+                      onMouseEnter={() => handleMouseEnter("card2")}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">Reimagine</div>
+                        <div className="flip-card-back">
+                          <p>
+                            Reimagine: Sáng tạo và linh hoạt, dám thay đổi để
+                            bứt phá
+                          </p>
+                          <ul>
+                            <li>
+                              Không ngại thử nghiệm, đổi mới trong các phương
+                              pháp đào tạo và mô hình kinh doanh.
+                            </li>
+                            <li>
+                              Luôn cập nhật xu hướng giáo dục toàn cầu, ứng dụng
+                              công nghệ để tối ưu trải nghiệm học tập.
+                            </li>
+                            <li>
+                              Khuyến khích tư duy sáng tạo, chủ động, linh hoạt
+                              trong mọi khía cạnh từ giảng dạy đến quản trị.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className={`flip-card ${
+                        hoveredCard === "card3" ? "flipped" : ""
+                      }`}
+                      onMouseEnter={() => handleMouseEnter("card3")}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">Responsibility</div>
+                        <div className="flip-card-back">
+                          <p>
+                            Responsibility: Trách nhiệm và sự gắn kết bền chặt
+                          </p>
+                          <ul>
+                            <li>
+                              Cam kết đồng hành cùng học viên, đối tác và đội
+                              ngũ nhân sự.
+                            </li>
+                            <li>
+                              Xây dựng môi trường làm việc đề cao sự gắn kết và
+                              phát triển cá nhân.
+                            </li>
+                            <li>
+                              Tạo ra tác động tích cực, không chỉ trong giáo dục
+                              mà còn trong cộng đồng.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div
+                id="tab2"
+                className={`tab-panel ${activeTab === "tab2" ? "active" : ""}`}
+              >
+                <div className="card-tab-container">
+                  <div className="card-tab-buttons">
+                    <div
+                      className={`flip-card ${
+                        hoveredCard === "card4" ? "flipped" : ""
+                      }`}
+                      onMouseEnter={() => handleMouseEnter("card4")}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">Connection </div>
+                        <div className="flip-card-back">
+                          <p>Connection (Network-based Growth Mindset)</p>
+                          <ul>
+                            <li>
+                              2G Group tin rằng sức mạnh của sự kết nối chính là
+                              chìa khóa để mở rộng tầm ảnh hưởng và tạo ra những
+                              giá trị bền vững. 2G Group không chỉ nỗ lực xây
+                              dựng một hệ sinh thái giáo dục, mà còn kiến tạo
+                              một mạng lưới những con người cùng chung khát vọng
+                              học tập, phát triển và cống hiến.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
 
-            <div className="story-card">
-              <div className="story-card-content">
-                <div className="message">Responsibility</div>
-                <div className="hidden-message">
-                  <p>Responsibility: Trách nhiệm và sự gắn kết bền chặt</p> Cam
-                  kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự. Xây
-                  dựng môi trường làm việc đề cao sự gắn kết và phát triển cá
-                  nhân. Tạo ra tác động tích cực, không chỉ trong giáo dục mà
-                  còn trong cộng đồng.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <h6 className="story-headline">
-            {" "}
-            Development Strategies – Connection & Technology:
-          </h6>
-          <div className="story-card-container">
-            <div className="story-card">
-              <div className="story-card-content">
-                <div className="message">
-                  Connection (Network-based Growth Mindset)
-                </div>
-                <div className="hidden-message">
-                  2G Group tin rằng sức mạnh của sự kết nối chính là chìa khóa
-                  để mở rộng tầm ảnh hưởng và tạo ra những giá trị bền vững.
-                  Chúng tôi không chỉ xây dựng một hệ sinh thái giáo dục, mà còn
-                  kiến tạo một mạng lưới những con người cùng chung khát vọng
-                  học tập, phát triển và cống hiến.
-                </div>
-              </div>
-            </div>
-
-            <div className="story-card">
-              <div className="story-card-content">
-                <div className="message">Technology</div>
-                <div className="hidden-message">
-                  Ở 2G Group, chúng tôi tận dụng công nghệ để rút ngắn khoảng
-                  cách tri thức, kết nối con người và lan toả giá trị bằng cách
-                  số hoá trải nghiệm học tập, xây dựng không gian kết nối linh
-                  hoạt, và mở rộng quy mô để tạo ra nhiều cơ hội tiếp cận giáo
-                  dục và phát triển bản thân cho tất cả mọi người.
+                    <div
+                      className={`flip-card ${
+                        hoveredCard === "card5" ? "flipped" : ""
+                      }`}
+                      onMouseEnter={() => handleMouseEnter("card5")}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="flip-card-inner">
+                        <div className="flip-card-front">Technology</div>
+                        <div className="flip-card-back">
+                          <p>Technology</p>
+                          <ul>
+                            <li>
+                              {" "}
+                              Ở 2G Group, chúng tôi tận dụng công nghệ để rút
+                              ngắn khoảng cách tri thức, kết nối con người và
+                              lan toả giá trị bằng cách số hoá trải nghiệm học
+                              tập, xây dựng không gian kết nối linh hoạt, và mở
+                              rộng quy mô để tạo ra nhiều cơ hội tiếp cận giáo
+                              dục và phát triển bản thân cho tất cả mọi người.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

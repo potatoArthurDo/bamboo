@@ -461,10 +461,10 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.founder_card:hover {
+/* .founder_card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-}
+} */
 
 .founder_card img {
   width: 20rem;
@@ -714,102 +714,132 @@ h1 {
   padding-left: 5rem;
 }
 
-.story strong {
-  color: black;
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-  cursor: pointer;
-  margin-left: 90px;
-}
+.tab-container {
+    width: 1000px;
+    margin: 30px ;
+    position: relative;
+  }
+  
+  .tab-buttons {
+    display: flex;
+  }
+  
+  .tab-button {
+    flex: 1;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #46980333;
+    border: 1px solid var(--primary-golden);
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--primary-golden);
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  
+  .tab-button.active {
+    background-color: var(--primary-golden);
+    color: var(--primary-green);
+  }
+  
+  .tab-content {
+    padding: 20px;
+    border-top: none;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  
+  .tab-panel {
+    display: none;
+  }
+  
+  .tab-panel.active {
+    display: block;
+  }
 
-.story strong:hover {
-  color: #6b8e23;
-  transform: translateY(20px) scale(1.05);
-}
+  .card-tab-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .card-tab-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    position: relative;
+    
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+   
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-background);
+    border-radius: 10px;
+  }
+  
+  .flip-card-front {
+    font-weight: 600;
+    color: var(--secondary-golden);
 
-.story-card-container {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 20px;
-  flex-direction: column;
-  align-items: flex-start;
-}
+  }
+  .flip-card-back {
+    background-color: var(--text-background);
+    transform: rotateY(180deg);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    margin: 10px;
 
-.story-card {
-  width: 470px;
-  height: 150px;
-  background: var(--primary-golden);
-  border-radius: 12px;
-  display: flex;
+  }
 
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+  .flip-card-back ul {
+    list-style: none;
+    line-height: 1.4;
+    color: var(--secondary-golden);
+    margin: 5px;
+  }
 
-.story-card:nth-child(even) {
-  margin-left: auto;
-}
-
-.story-card:hover {
-  transform: scale(1.05);
-}
-
-.story-card-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.message {
-  font-weight: 700;
-  font-size: 1.7rem;
-  color: var(--primary-green);
-}
-
-.story-headline {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.hidden-message {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(20px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  font-size: 0.9rem;
-  font-weight: 500;
-  position: absolute;
-  border-radius: 5px;
-  background-color: beige;
-  color: #5f4b19;
-  text-align: start;
-  padding: 15px;
-}
-
-.hidden-message p {
-  font-weight: 700;
-  color: #6b8e23;
-}
-
-.story-card:hover .hidden-message {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.story-card:hover .message {
-  opacity: 0;
-}
-
+  .flip-card-back p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin: 10px;
+  }
 .human {
   color: var(--primary-golden);
   font-size: 3rem;
