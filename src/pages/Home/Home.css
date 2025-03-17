@@ -1,0 +1,43 @@
+
+
+.hero-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .hero-text {
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .top-text {
+    top: 5%;
+  }
+  
+  .bottom-text {
+    bottom: 5%;
+  }
+  
+  .canvas-container {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+  }
+  
+  .canvas {
+      pointer-events: none;
+  }
+  
+  
+  .bamboo {
+    display: fixed;
+    inset: 0;
+    width: 150vw;
+    height: 150vh;
+    pointer-events: none;
+  }
+  

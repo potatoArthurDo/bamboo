@@ -9,6 +9,27 @@
   user-select: none;
   /* overflow-y: hidden; */
 }
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* background: linear-gradient(0deg,  #EAD7B8, #F3DFC4, #FCEED9),url("../assets/images/sun_glow_bg_1.png"); */
+  background-blend-mode: soft-light  ;
+  /* background: url("../assets/images/gradient-bg.svg"); */
+  background: url("https://images7.alphacoders.com/138/thumb-1920-1381480.png"),
+    url("../assets/images/sun_glow_bg_3.png");
+  /* background-color: #014421; */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center, center,center calc(100% + 400px);
+  background-size: cover, 150% auto;
+  color: black;
+  font-family: "Montserrat", serif;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -27,7 +48,7 @@
   background-color: var(--primary-green);
 }
 
-/* Ensure the content overflows */
+
 .scrollable-content {
   height: 300px;
   overflow-y: auto;
@@ -38,12 +59,12 @@
 
 :root {
     --primary-golden: #D4AF37;
-    --primary-green: #6B8E23;
+    --primary-green: #526d1b;
     --primary-red:#cf7535;
 
     --secondary-green: #3B5323;
-
-    --text-background: #fbe983;
+    --secondary-golden: #4f3d02;
+    --text-background: #fff9d5;
 }
 
 /* Arrow Animation */
@@ -62,31 +83,6 @@
     transform: translateY(-10px);
   }
 }
-
-/* Global styles */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  /* background: linear-gradient(0deg,  #EAD7B8, #F3DFC4, #FCEED9),url("../assets/images/sun_glow_bg_1.png"); */
-  background-blend-mode: soft-light  ;
-  /* background: url("../assets/images/gradient-bg.svg"); */
-  background: url("https://images7.alphacoders.com/138/thumb-1920-1381480.png"),
-    url("../assets/images/sun_glow_bg_2.png"),
-    url("../assets/images/ground-b.png");
-  /* background-color: #014421; */
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center, center,center calc(100% + 400px);
-  background-size: 150% auto, 150% auto, cover;
-  color: black;
-  font-family: "Montserrat", serif;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Loading screen */
 .loading {
   position: fixed;
   inset: 0;
@@ -95,46 +91,6 @@ html {
   background-color: var(--primary-green);
   color: var(--primary-golden);
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
-/* Hero section */
-.hero-section {
-  position: relative;
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-
-.hero-text {
-  position: absolute;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: bold;
-}
-
-.top-text {
-  top: 5%;
-}
-
-.bottom-text {
-  bottom: 5%;
-}
-
-.canvas-container {
-  height: 100vh;
-  width: 100vw;
-  /* background-color: red; */
-}
-
-.canvas {
-    pointer-events: none;
-}
-
-
-.bamboo {
-  display: fixed;
-  inset: 0;
-  width: 150vw;
-  height: 150vh;
-  pointer-events: none;
-}

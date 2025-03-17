@@ -24,7 +24,7 @@
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: yellow;
+    background-color: rgb(249, 249, 152);
     border-radius: 50%;
     opacity: 0;
     animation: glow ease-in-out infinite;

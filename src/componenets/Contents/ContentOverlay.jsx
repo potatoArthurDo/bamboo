@@ -1,6 +1,7 @@
 import { Scroll, useScroll } from "@react-three/drei";
 import { useState, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
+import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import "./overlay.css";
 const Section = (props) => {
@@ -13,6 +14,7 @@ const Section = (props) => {
 
 export const ContentOverlay = () => {
   const scroll = useScroll();
+  const navigate = useNavigate();
   const [opacity1, setOpacitySection1] = useState(1);
   const [opacity2, setOpacitySection2] = useState(0);
   const [opacity3, setOpacitySection3] = useState(0);
@@ -221,60 +223,6 @@ export const ContentOverlay = () => {
         </Section>
 
         <Section opacity={opacity5} sectionName="purpose">
-          {/* <div class="purpose-content">
-            <div class="left-text">
-              <p>
-                <strong>
-                  Tại 2G Education, chúng tôi không ngừng nỗ lực để thúc đẩy
-                  những hành trình học hỏi của các bạn trẻ Việt.
-                </strong>
-              </p>
-              <p>Hành trình tuy khó khăn, nhưng sẽ tràn đầy hứng khởi</p>
-              <p>
-                Khi bạn luôn được trang bị sẵn sàng để tiến vào mọi “cuộc chơi”
-              </p>
-              <p>Những phiên bản ta muốn trở thành.</p>
-              <p>Đủ tư duy</p>
-              <p>Giỏi kĩ năng</p>
-              <p>Vững ngôn ngữ</p>
-              <p>Như tre không kén chọn đất trồng</p>
-              <p>KNgười trẻ không ngại ngần hoàn cảnh.</p>
-              <p>Luôn kiên trì tiến lên phía trước,</p>
-              <p>Uyển chuyển khi cần, vững vàng khi khó</p>
-              <p>Tạo nên một thế hệ “luỹ thành” của đất nước.</p>
-              <br />
-              <p>
-                Bằng sự tận tâm trong giáo dục và cam kết đồng hành xuyên suốt
-                2G
-              </p>
-              <p>
-                Education tự hào là đòn bẩy để các bạn trẻ tự tin ra ngoài thế
-              </p>
-              <p>
-                giới, sống và làm việc như một công dân toàn cầu. Bởi dù cho
-                xuất
-              </p>
-              <p>
-                phát điểm và mục đích hướng tới khác nhau 2G Education tin rằng
-              </p>
-              <p>
-                mọi hành trình hội nhập đều bắt đầu từ một điểm kết nối (the
-              </p>
-              <p>
-                dots). Và chúng tôi sẽ không ngừng tìm kiếm các cơ hội trong và
-              </p>
-              <p>
-                ngoài nước Không ngừng truyền cảm hứng, truyền nghề, truyền lửa
-              </p>
-              <p>cho các thế hệ mới Tạo ra một vòng tròn giá trị nối kết.</p>
-            </div>
-
-            <div class="right-text">
-              <p>Connect</p>
-              <p>the</p>
-              <strong>"Đốt"</strong>
-            </div>
-          </div> */}
           <div className="purpose-container">
             <div className="book">
               <input type="checkbox" name="page1" id="page1" />
@@ -360,7 +308,7 @@ export const ContentOverlay = () => {
                       <p>2G Education - Connect the “đốt”.</p>
                     </div>
                   </div>
-                  <span class="material-symbols-outlined">left_click</span>
+                  <span className="material-symbols-outlined">left_click</span>
                 </div>
               </div>
             </div>
@@ -370,28 +318,68 @@ export const ContentOverlay = () => {
 
         <Section opacity={opacity6} sectionName="founder">
           <h1>Founder's Story</h1>
-          {/* <div className="container">
-            <div className="book">
-              <input type="checkbox" name="page5" id="page5" />
-              <input type="checkbox" name="page6" id="page6" />
-              <input type="checkbox" name="page7" id="page7" />
-              <input type="checkbox" name="page8" id="page8" />
-              <div className="pages">
-                <div className="page5">
-                  <label for="page5"></label>
-                </div>
-                <div className="page6">
-                  <label for="page6"></label>
-                </div>
-                <div className="page7">
-                  <label for="page7"></label>
-                </div>
-                <div className="page8">
-                  <label for="page8"></label>
-                </div>
+          <div className="founder_card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png"
+              alt=""
+            />
+            <div className="founder_info">
+              <div className="founder_name">
+                <h2>Lê Văn Hải</h2>
+              </div>
+              <div className="founder_history">
+                <p>
+                  - Là doanh nhân trẻ tuổi nhất trong lĩnh vực giáo dục tại Việt
+                  Nam, sở hữu song tịch thông qua chương trình đầu tư định cư.
+                </p>
+                <p>
+                  - Tốt nghiệp chương trình đào tạo quản lý trường Anh ngữ tại
+                  Mỹ do Hiệp hội TESOL cấp bằng.
+                </p>
+                <p>
+                  - Tốt nghiệp chương trình Khởi nghiệp Lean Startup tại Hà Lan.
+                </p>
+                <p>
+                  - Đại diện Việt Nam tham dự hội nghị toàn cầu “World Young
+                  Congress” tại Mỹ.
+                </p>
+                <p>
+                  - Là người sáng lập các chương trình trại hè quốc tế tại
+                  Singapore, New Zealand và Australia.
+                </p>
+                <p>
+                  - Đã từng tham gia các chương trình Famtrip, gặp gỡ và hợp tác
+                  với các trường cũng như đối tác giáo dục tại Mỹ, Châu Âu, Úc,
+                  New Zealand, Singapore và Philippines.
+                </p>
+                <p>
+                  - Có hơn 10 năm kinh nghiệm làm việc trong lĩnh vực giáo dục,
+                  trong đó hơn 8 năm giữ vai trò Chairman & CEO.
+                </p>
+                <p>
+                  - Cố vấn chuyên môn các cuộc thi: Phó BTC cuộc thi English
+                  Challenge do Đài truyền hình NTV và Sở Giáo Dục Nghệ An tổ
+                  chức; Trưởng BTC cuộc thi hùng biện tiếng Anh Let Your Voice
+                  Be Heard.
+                </p>
+                <p>
+                  - Cử nhân Luật, đạt IELTS 7.5, sở hữu chứng chỉ giảng dạy quốc
+                  tế TESOL (Úc).
+                </p>
+                <p>
+                  Cựu HS Chuyên Anh, trường THPT Chuyên Phan Bội Châu, tỉnh Nghệ
+                  An.
+                </p>
+              </div>
+              <div
+                className="founder_button"
+                onClick={() => navigate("/founder_story")}
+              >
+                <img src="../../assets/images/bamboo_frame.png" alt="" />
+                <p>Thư ngỏ</p>
               </div>
             </div>
-          </div> */}
+          </div>
 
           <p className="bounce">↓</p>
         </Section>
@@ -399,8 +387,6 @@ export const ContentOverlay = () => {
         <Section opacity={opacity7} sectionName="story">
           <h1>2G Story</h1>
           <h6 className="story-headline">Văn hoá 2G – The 3R Framework: </h6>
-          {/* <strong>Resilience</strong> <strong>Reimagine</strong>{" "}
-            <strong>Responsibility</strong> */}
           <div className="story-card-container">
             <div className="story-card">
               <div className="story-card-content">

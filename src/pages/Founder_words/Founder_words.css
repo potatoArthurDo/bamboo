@@ -1,0 +1,82 @@
+
+.letter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter_card {
+    display: flex;
+    background-color: var(--text-background);
+    height: 100%;
+    margin: 50px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.letter_card img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    margin-top: 60px;
+}
+
+.letter_founder_history {
+    max-width: 100%;
+    margin: 20px;
+}
+
+.letter_founder_name {
+    color: var(--primary-red);
+}
+.letter_founder_details {
+    line-height: 1.3;
+    font-size: 0.8rem;
+    color: var(--secondary-golden);
+    max-width: 400px;
+}
+
+.letter_info {
+    position: relative;
+    height: 100%;
+    width: 800px;
+}
+
+.letter_name {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: var(--secondary-green);
+}
+
+.letter_detail {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.letter_detail p {
+    color: var(--secondary-golden);
+}
+
+.letter_detail ul {
+    list-style: number;
+    margin-left: 30px;
+    color: var(--secondary-green);
+    
+}
+
+.letter_detail li {
+    font-weight: 700;
+}
+
+.signature {
+    display: flex;
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    align-items: end;
+    margin: 20px;
+    font-weight: 700;
+}

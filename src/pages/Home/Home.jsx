@@ -3,10 +3,10 @@ import { useState, Suspense, useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Canvas } from "@react-three/fiber";
-import Banner from "../componenets/Banner/Banner";
-import Fireflies from "../componenets/Fireflies/Fireflies";
-import Navbar from "../componenets/Navbar/Navbar"
-
+import Banner from "../../componenets/Banner/Banner";
+import Fireflies from "../../componenets/Fireflies/Fireflies";
+import Navbar from "../../componenets/Navbar/Navbar"
+import "./Home.css";
 function Home() {
   const mainRef = useRef(null);
   const sceneRef = useRef(null);
@@ -16,7 +16,7 @@ function Home() {
       <Navbar />
 
       <div className="canvas-container">
-        <Fireflies count={80} />
+        <Fireflies count={100} />
         <Canvas className="canvas">
           <Banner />
         </Canvas>

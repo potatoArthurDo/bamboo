@@ -376,19 +376,19 @@
 }
 
 .ending-tag {
-    padding-top: 40px;
-    font-size: 0.9rem;
-    text-align: end;
-    color: var(--primary-red);
+  padding-top: 40px;
+  font-size: 0.9rem;
+  text-align: end;
+  color: var(--primary-red);
 }
 
 .material-symbols-outlined {
-    color: var(--secondary-green);
-    font-size: 2.5rem;
-    position: absolute;
-    bottom: 1.5%;
-    right: 3%;
-    z-index: -1;
+  color: var(--secondary-green);
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 1.5%;
+  right: 3%;
+  z-index: -1;
 }
 
 .purpose-content {
@@ -446,6 +446,77 @@
   gap: 20px;
   padding-left: 5rem;
   padding-top: 5rem;
+}
+
+.founder_card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--text-background);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 20px ;
+  max-width: 1200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.founder_card img {
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 10px;
+  padding-right: 10px;
+}
+
+.founder_info {
+  flex: 1;
+  width: 800px;
+}
+
+.founder_name h2 {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--secondary-green);
+}
+
+.founder_history p {
+  margin: 8px 0;
+  color: var(--primary-green);
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.founder_button {
+    position: relative;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.founder_button img {
+  width: 180px;
+  height: 80px;
+  object-fit: fill;
+}
+
+.founder_button p {
+    position: absolute;
+    font-size: 1.1rem;
+    color: var(--secondary-green);
+    top: 38%;
+    right: 7%;
+    font-weight: 600;
+}
+
+.founder_button p:hover {
+  color: var(--primary-golden);
 }
 
 .container {
