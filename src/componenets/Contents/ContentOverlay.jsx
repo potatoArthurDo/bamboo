@@ -760,7 +760,12 @@ export const ContentOverlay = () => {
           </div>
         </Section>
 
-        <Section opacity={opacity9} sectionName="blank"></Section>
+        <Section opacity={opacity9} sectionName="footer">
+        <h3 className="company_name">2G Education</h3>
+          <h1 className="main_name">GLOCAL</h1>
+          <h1 className="main_name">TREE</h1>
+          <p>&copy; {new Date().getFullYear()} 2G Education. All rights reserved.</p>
+        </Section>
       </div>
     </Scroll>
   );

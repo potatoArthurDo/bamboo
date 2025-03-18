@@ -12,7 +12,11 @@ function Home() {
   const sceneRef = useRef(null);
   const [progress, setProgress] = useState(0);
   return (
-    <Suspense fallback={<div className="loading">Loading...</div>}>
+    <Suspense fallback={<div className="loading">
+        <div className="simple-spinner">
+            <span></span>
+        </div>
+    </div>}>
       <Navbar />
 
       <div className="canvas-container">

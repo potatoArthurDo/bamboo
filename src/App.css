@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dancing+Script&family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dancing+Script&family=Montserrat:ital,wght@0,700;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,14 +16,14 @@ html {
   padding: 0;
   overflow-x: hidden;
   /* background: linear-gradient(0deg,  #EAD7B8, #F3DFC4, #FCEED9),url("../assets/images/sun_glow_bg_1.png"); */
-  background-blend-mode: soft-light  ;
+  background-blend-mode: soft-light;
   /* background: url("../assets/images/gradient-bg.svg"); */
   background: url("https://images7.alphacoders.com/138/thumb-1920-1381480.png"),
     url("../assets/images/sun_glow_bg_3.png");
   /* background-color: #014421; */
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: center, center,center calc(100% + 400px);
+  background-position: center, center, center calc(100% + 400px);
   background-size: cover, 150% auto;
   color: black;
   font-family: "Montserrat", serif;
@@ -48,7 +48,6 @@ html {
   background-color: var(--primary-green);
 }
 
-
 .scrollable-content {
   height: 300px;
   overflow-y: auto;
@@ -58,13 +57,13 @@ html {
 }
 
 :root {
-    --primary-golden: #D4AF37;
-    --primary-green: #526d1b;
-    --primary-red:#cf7535;
+  --primary-golden: #d4af37;
+  --primary-green: #526d1b;
+  --primary-red: #cf7535;
 
-    --secondary-green: #3B5323;
-    --secondary-golden: #4f3d02;
-    --text-background: #fff9d5;
+  --secondary-green: #3b5323;
+  --secondary-golden: #4f3d02;
+  --text-background: #fff9d5;
 }
 
 /* Arrow Animation */
@@ -84,13 +83,35 @@ html {
   }
 }
 .loading {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--primary-green);
-  color: var(--primary-golden);
-  font-size: 1.5rem;
-  font-weight: 500;
 }
 
+.simple-spinner {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.simple-spinner span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-right-color: rgba(255, 255, 255, 0.7);
+  animation: spinner-anime 0.8s linear infinite;
+}
+
+@keyframes spinner-anime {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
