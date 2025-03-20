@@ -7,10 +7,21 @@ import Banner from "../../componenets/Banner/Banner";
 import Fireflies from "../../componenets/Fireflies/Fireflies";
 import Navbar from "../../componenets/Navbar/Navbar"
 import "./Home.css";
+import MobileOverlay from "../../componenets/Contents/MobileOverlay";
 function Home() {
-  const mainRef = useRef(null);
-  const sceneRef = useRef(null);
-  const [progress, setProgress] = useState(0);
+   const [IsMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial check
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
   return (
     <Suspense fallback={<div className="loading">
         <div className="simple-spinner">
@@ -24,6 +35,11 @@ function Home() {
         <Canvas className="canvas">
           <Banner />
         </Canvas>
+      </div>
+
+      <div className="mobile-view-container">
+        <Fireflies count={100} />
+        <MobileOverlay />
       </div>
     </Suspense>
   );
