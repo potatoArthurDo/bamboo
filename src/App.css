@@ -57,12 +57,15 @@ html {
 }
 
 :root {
-  --primary-golden: #d4af37;
+  --primary-golden: #fed653;
   --primary-green: #526d1b;
   --primary-red: #cf7535;
 
   --secondary-green: #3b5323;
   --secondary-golden: #4f3d02;
+
+  --golden-intro: #faf2c4;
+  --green-intro: #deff04;
   --text-background: #fff9d5;
 }
 

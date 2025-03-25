@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
 import "./overlay.css";
 import ChatBubble from "../ChatBubbles/ChatBubble";
+import ProductCarousel from "../ProductCarousel/ProductCarousel";
+import { color } from "three/tsl";
 const Section = (props) => {
   return (
     <section style={{ opacity: props.opacity }}>
@@ -63,6 +65,7 @@ export const ContentOverlay = () => {
     { id: "bubble1", content: "Cool" },
     { id: "bubble2", content: "Good" },
     { id: "bubble3", content: "Meh!" },
+    { id: "bubble4", content: "Yeah!" },
   ];
 
   const timelineData = [
@@ -96,6 +99,11 @@ export const ContentOverlay = () => {
       year: "2023 – 2024",
       description: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+",
     },
+    {
+      year: "2025",
+      description:
+        "Điểm thi IELTS, APTIS chính thức của Hội Đồng Anh do Bộ Giáo Dục Việt Nam cấp phép hoạt động tại Vincom Plaza - Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+    },
   ];
 
   const products = [
@@ -114,15 +122,16 @@ export const ContentOverlay = () => {
     },
     {
       title: "2G Pathways",
-      subtitle: "Hành trình du học trọn gói từ A-Z",
+      subtitle:
+        "Giải pháp du học toàn diện - Du học Anh, Mỹ, Úc, Canada, New Zealand",
       image:
         "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
       intro:
-        "Dịch vụ tư vấn du học toàn diện, đồng hành từ khâu định hướng đến khi đặt chân tới nước ngoài.",
+        "Một lộ trình du học toàn diện, giúp các em THỰC SỰ SẴN SÀNG về tư duy, kĩ năng, ngôn ngữ khi bước ra thế giới.",
       details: [
-        "- Tư vấn du học tại Anh, Mỹ, Úc, Canada, New Zealand.",
-        "- Xây dựng lộ trình cá nhân hoá, tối ưu hồ sơ và học bổng.",
-        "- Hỗ trợ toàn diện từ chuẩn bị giấy tờ đến phỏng vấn visa.",
+        "- Đào tạo tiếng Anh toàn diện (IELTS, SAT, giao tiếp, trẻ em)",
+        "- Trại hè quốc tế Eureka Camp tại Singapore, Úc, New Zealand, Mỹ, Canada làm bước đệm cho hành trình du học",
+        "-Xây dựng lộ trình cá nhân hoá, hỗ trợ toàn bộ các thủ tục giấy tờ và định hướng ngành học, hướng nghiệp",
       ],
     },
     {
@@ -130,11 +139,10 @@ export const ContentOverlay = () => {
       subtitle: "Cung cấp các giải pháp về mô hình trại hè",
       image:
         "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
-      intro:
-        "Trại hè đầu tiên tại Nghệ An mang đến hành trình khám phá văn hoá và phát triển kỹ năng tại các quốc gia hàng đầu.",
+      intro: "TThấu hiểu bản thân từ những bước chân trải nghiệm.",
       details: [
         "- Trại hè trao đổi tại Úc, New Zealand, Singapore dành cho trẻ 5-12 tuổi.",
-        "Chương trình kết hợp học tập, kỹ năng mềm & tư duy sáng tạo và phản biện.",
+        "- Chương trình kết hợp học tập, kỹ năng mềm & tư duy sáng tạo và phản biện.",
         "- Môi trường quốc tế giúp trẻ tự tin và phát triển toàn diện.",
       ],
     },
@@ -146,9 +154,22 @@ export const ContentOverlay = () => {
       intro:
         "Chương trình du học nghề uy tín, giúp bạn xây dựng sự nghiệp ổn định tại Đức với chi phí cực tối ưu.",
       details: [
-        "- Tư vấn du học nghề tại Đức theo đúng ngành nghề tiềm năng.",
-        "Đào tạo tiếng Đức bài bản, đạt chuẩn đầu vào.",
-        "Hỗ trợ toàn diện từ chuẩn bị hồ sơ đến khi sống tại Đức.",
+        "- Đào tạo tiếng Đức bài bản, chuẩn đầu ra A1 - B2",
+        "- Kết nối doanh nghiệp, đảm bảo cơ hội việc làm tại Đức.",
+        "- Tối ưu chi phí, lộ trình hợp pháp, an toàn.",
+      ],
+    },
+    {
+      title: "Du học Hồng Khôi",
+      subtitle: "Cung cấp dịch vụ tư vấn du học nghề tại Đài Loan",
+      image:
+        "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
+      intro: "Hành trình du học vươn lên dẫn đầu, đạt thành công rực rỡ",
+      details: [
+        "- Luyện thi TOCFL, đạt chuẩn đầu vào.",
+        "- Tư vấn du học tại Đài Loan với các ngành dẫn đầu: Bán dẫn, AI, Điều dưỡng…",
+        "- Đa dạng các gói tư vấn: Hệ Cử nhân tự túc, Hệ 1+4, Hệ Vừa học vừa làm, Hệ Ngôn ngữ, Hệ Thạc sĩ, Hệ Tiến sĩ",
+        "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
     },
   ];
@@ -233,7 +254,8 @@ export const ContentOverlay = () => {
       hobbies: "Drawing, designing logos, and traveling",
       skills: "Adobe Photoshop, Illustrator, Figma, Sketch",
       quote: "Design is intelligence made visible.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",    },
+      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
+    },
     {
       name: "Minh Le",
       age: 32,
@@ -242,7 +264,8 @@ export const ContentOverlay = () => {
       hobbies: "Analyzing data, reading sci-fi novels, and chess",
       skills: "Python, R, TensorFlow, Machine Learning",
       quote: "Data is the new oil.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",    },
+      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
+    },
     {
       name: "Quang Bui",
       age: 29,
@@ -252,7 +275,8 @@ export const ContentOverlay = () => {
       skills: "SEO, SEM, Google Ads, Content Strategy",
       quote:
         "Marketing is no longer about the stuff you make, but the stories you tell.",
-        image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",    },
+      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
+    },
     {
       name: "An Vo",
       age: 30,
@@ -261,21 +285,299 @@ export const ContentOverlay = () => {
       hobbies: "Product planning, cycling, and gardening",
       skills: "Product Roadmapping, User Research, Agile, Jira",
       quote: "A good product manager is a mini-CEO.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",    },
+      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
+    },
   ];
+
+  const pages = [
+    {
+      id: "page1",
+      frontText: ["Connect", "the", '"Đốt"'],
+    },
+    {
+      id: "page2",
+      text: [
+        [
+          {
+            text: "Ở 2G Group, chúng tôi tin rằng giáo dục là câu chuyện về sự kiên trì, sáng tạo và trách nhiệm – những giá trị cốt lõi để tạo nên một hệ sinh thái bền vững, nơi mỗi cá nhân đều có cơ hội vươn tới phiên bản tốt nhất của chính mình, bước ra thế giới, trở thành một công dân toàn cầu có bản sắc.",
+            highlight: true,
+          },
+        ],
+      ],
+    },
+    {
+      id: "page3",
+      frontText: ["Mô", "hình", "3R3C"],
+      backText: ["Mô", "hình", "3R3C"],
+    },
+    {
+      id: "page4",
+      text: [
+        [
+          { text: "3 tinh thần hướng tới: ", highlight: "true" },
+          {
+            text: "Resilience, Reimagine, Responsibility",
+            highlight: true,
+            color: "var(--secondary-golden)",
+          },
+        ],
+        [
+          {
+            text: "Resilience:",
+            highlight: true,
+            color: "var(--secondary-golden)",
+          },
+          { text: " Sức mạnh của sự bền bỉ và nội lực.", highlight: "true" },
+        ],
+        [
+          {
+            text: "- Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo và mô hình kinh doanh.",
+          },
+        ],
+        [
+          {
+            text: "- Luôn cập nhật xu hướng giáo dục toàn cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập.",
+          },
+        ],
+        [
+          {
+            text: "- Khuyến khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh từ giảng dạy đến quản trị.",
+          },
+        ],
+      ],
+    },
+    {
+      id: "page5",
+      text: [
+        [
+          {
+            text: "Reimagine:",
+            highlight: true,
+            color: "var(--secondary-golden)",
+          },
+          {
+            text: "Sáng tạo và linh hoạt, dám thay đổi để bứt phá.",
+            highlight: "true",
+          },
+        ],
+        [
+          {
+            text: "- Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo và mô hình kinh doanh.",
+          },
+        ],
+        [
+          {
+            text: "- Luôn cập nhật xu hướng giáo dục toàn cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập.",
+          },
+        ],
+        [
+          {
+            text: "- Khuyến khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh từ giảng dạy đến quản trị.",
+          },
+        ],
+      ],
+    },
+    {
+      id: "page6",
+      text: [
+        [
+          {
+            text: "Responsibility:",
+            highlight: true,
+            color: "var(--secondary-golden)",
+          },
+          {
+            text: "Trách nhiệm và sự gắn kết bền chặt.",
+            highlight: "true",
+          },
+        ],
+        [
+          {
+            text: "- Cam kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự.",
+          },
+        ],
+        [
+          {
+            text: "- Xây dựng môi trường làm việc đề cao sự gắn kết và phát triển cá nhân.",
+          },
+        ],
+        [
+          {
+            text: "- Tạo ra tác động tích cực, không chỉ trong giáo dục mà còn trong cộng đồng.",
+          },
+        ],
+      ],
+    },
+    {
+      id: "page7",
+      text: [
+        [
+          { text: "3 giá trị cốt lõi: ", highlight: "true" },
+          {
+            text: " Care, Credibility, Contribution",
+            highlight: true,
+            color: "var(--primary-red)",
+          },
+        ],
+        [
+          {
+            text: "Sống tử tế (Care): ",
+            highlight: true,
+            color: "var(--primary-red)",
+          },
+          {
+            text: "Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
+          },
+        ],
+      ],
+    },
+    {
+        id: "page8",
+        text: [
+          [
+            {
+              text: "Sống liêm chính (Credibility): ",
+              highlight: true,
+              color: "var(--primary-red)",
+            },
+            {
+              text: " Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
+            },
+          ],
+        ],
+      },
+      {
+        id: "page9",
+        text: [
+          [
+            {
+              text: "Sống cống hiến (Contribution):",
+              highlight: true,
+              color: "var(--primary-red)",
+            },
+            {
+              text: "Chúng tôi tin rằng giáo dục có sức mạnh thay đổi cuộc sống và tạo ra những tác động tích cực lâu dài. Mỗi bước đi của 2G đều có sự tính toán đến ảnh hưởng đối với cộng đồng, hướng tới việc hỗ trợ học tập cho đa dạng các đối tượng, đặc biệt là các bạn trẻ có hoàn cảnh khó khăn. Vì vậy, 2G Group đã lập ra quỹ giáo dục Glocal Villagers, liên tục tổ chức các hoạt động xã hội hàng năm, và không ngừng xây dựng những chương trình mang lại giá trị thực cho cộng đồng.",
+            },
+          ],
+        ],
+      },
+      {
+        id: "page10",
+        text: [
+          [
+            { text: "3 câu chuyện biểu tượng:", highlight: "true" },
+          ],
+          [
+            {
+              text: "Câu chuyện cây tre: ",
+              highlight: true,
+              color: "var(--primary-green)",
+              weight : "800"
+            },
+            {
+              text: "Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
+            },
+          ],
+        ],
+      },
+      {
+        id: "page11",
+        text: [
+            [
+                {
+                  text: "Câu chuyện the dots: ",
+                  highlight: true,
+                  color: "var(--primary-green)",
+                  weight : "800"
+                },
+                {
+                  text: "Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng. Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ. Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công ",
+                },
+              ],
+        ],
+      },
+      {
+        id: "page12",
+        text: [
+          [
+            { text: "trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ. " },
+            
+          ],
+          [
+            {
+              text: "Câu chuyện connect the “đốt”:  ",
+              highlight: true,
+              color: "var(--primary-green)",
+              weight : "800"
+            },
+            {
+              text: "Tre cắm rễ, vươn từng đốt. Dấu “dots” nhỏ, ý tưởng lớn. 2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
+            },
+          ],
+          
+        ],
+      },
+  ];
+
+  const founder = {
+    name: "Lê Văn Hải",
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
+    history: [
+      "Là doanh nhân trẻ tuổi nhất trong lĩnh vực giáo dục tại Việt Nam, sở hữu song tịch thông qua chương trình đầu tư định cư.",
+      "Tốt nghiệp chương trình đào tạo quản lý trường Anh ngữ tại Mỹ do Hiệp hội TESOL cấp bằng.",
+      "Tốt nghiệp chương trình Khởi nghiệp Lean Startup tại Hà Lan.",
+      "Đại diện Việt Nam tham dự hội nghị toàn cầu “World Young Congress” tại Mỹ.",
+      "Là người sáng lập các chương trình trại hè quốc tế tại Singapore, New Zealand và Australia.",
+      "Đã từng tham gia các chương trình Famtrip, gặp gỡ và hợp tác với các trường cũng như đối tác giáo dục tại Mỹ, Châu Âu, Úc, New Zealand, Singapore và Philippines.",
+      "Có hơn 10 năm kinh nghiệm làm việc trong lĩnh vực giáo dục, trong đó hơn 8 năm giữ vai trò Chairman & CEO.",
+      "Cố vấn chuyên môn các cuộc thi: Phó BTC cuộc thi English Challenge do Đài truyền hình NTV và Sở Giáo Dục Nghệ An tổ chức; Trưởng BTC cuộc thi hùng biện tiếng Anh Let Your Voice Be Heard.",
+      "Cử nhân Luật, đạt IELTS 7.5, sở hữu chứng chỉ giảng dạy quốc tế TESOL (Úc).",
+      "Cựu HS Chuyên Anh, trường THPT Chuyên Phan Bội Châu, tỉnh Nghệ An.",
+    ],
+    button: {
+      text: "Thư ngỏ",
+      image: "../../assets/images/bamboo_frame.png",
+      link: "/founder_story",
+    },
+  };
 
   return (
     <Scroll html className="scroll-html-wrapper">
       <Section opacity={opacity1} sectionName="intro">
-        <h3 className="company_name">2G Education</h3>
-        <h1 className="main_name">GLOCAL</h1>
-        <h1 className="main_name">TREE</h1>
-        <p className="journey-quote">The journey 2G Education</p>
-        <p className="bounce">↓</p>
+        <div className="left-intro">
+          <div className="company-mean">
+            <h3 className="company_name">2G Group</h3>
+            <p className="company_hidden">
+              2G Group là một hệ thống giáo dục toàn diện, giúp thế hệ trẻ Việt
+              hội nhập toàn cầu thông qua việc đào tạo và du học.
+            </p>
+          </div>
+          <div className="quote-container">
+            <p className="journey-quote connect">Connect</p>
+            <p className="journey-quote the ">the</p>
+            <div className="dot-info">
+              <p className="journey-quote dot">"Đốt"</p>
+              <p className="journey-quote dot-hidden">
+                Với thông điệp Connect the “Đốt”, 2G Group mong muốn mở rộng sự
+                kết nối, góp phần phát triển một thế hệ giới trẻ mới, dám học,
+                dám làm, dám đi ra thế giới để thay đổi và cống hiến.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="right-intro">
+          <h1 className="main_name english1">ANH NGỮ</h1>
+          <h1 className="main_name english2">TOÀN DIỆN</h1>
+          <h1 className="main_name camping">TRẠI HÈ </h1>
+          <h1 className="main_name study">DU HỌC</h1>
+          <p className="bounce">↓</p>
+        </div>
       </Section>
       <Section opacity={opacity2} sectionName="feedback">
-        <h1>Customer </h1>
-        <h1> Feedback</h1>
+        <h1>Họ đang nói gì  </h1>
+        <h1> về 2G Education ? </h1>
         {/* <div className="video-container">
             <iframe
               width="560"
@@ -290,6 +592,7 @@ export const ContentOverlay = () => {
           </div> */}
         <div className="bubble-feedback-container">
           <div className="bubble-content">
+            <p>Touch bubbles to read</p>
             {bubbleData.map((bubble) => (
               <div
                 key={bubble.id}
@@ -329,7 +632,7 @@ export const ContentOverlay = () => {
                 onMouseEnter={() => handleBubbleHover(bubble.id)}
                 onMouseLeave={() => handleBubbleHover(bubble.id)}
               >
-                {`Bubble ${bubble.id.replace("bubble", "")}`}
+                {/* {`Bubble ${bubble.id.replace("bubble", "")}`} */}?
               </div>
             ))}
           </div>
@@ -338,8 +641,8 @@ export const ContentOverlay = () => {
       </Section>
 
       <Section opacity={opacity3} sectionName="achievement">
-        <h1>Our </h1>
-        <h1> Achievements</h1>
+        <h1>Thành tựu </h1>
+        <h1> 2G Education</h1>
         <div className="timeline">
           {timelineData.map((item, index) => (
             <div className="timeline-item" key={index}>
@@ -354,9 +657,9 @@ export const ContentOverlay = () => {
       </Section>
 
       <Section opacity={opacity4} sectionName="service">
-        <h1>Our </h1>
-        <h1> Service</h1>
-        <div className="product-container">
+        <h1>Hệ sinh thái </h1>
+        <h1> Giáo dục của 2G</h1>
+        {/* <div className="product-container">
           {products.map((product, index) => (
             <div className="product-card" key={index}>
               <img src={product.image} alt={product.title} />
@@ -368,174 +671,124 @@ export const ContentOverlay = () => {
               ))}
             </div>
           ))}
-        </div>
+        </div> */}
+        <ProductCarousel products={products} />
         <p className="bounce ">↓</p>
       </Section>
 
       <Section opacity={opacity5} sectionName="purpose">
+        <h1>Mục đích của 2G</h1>
         <div className="purpose-container">
           <div className="book">
-            <input type="checkbox" name="page1" id="page1" />
-            <input type="checkbox" name="page2" id="page2" />
-            <input type="checkbox" name="page3" id="page3" />
-            <input type="checkbox" name="page4" id="page4" />
-            <input type="checkbox" name="page5" id="page5" />
+            {pages.map((page) => (
+              <input
+                key={page.id}
+                type="checkbox"
+                name={page.id}
+                id={page.id}
+              />
+            ))}
             <div className="pages">
-              <div className="page1">
-                <label for="page1"></label>
-                <div className="page1-text">
-                  <h3>Connect</h3>
-                  <h3>the</h3>
-                  <h2>"Đốt"</h2>
-                </div>
-                <span class="material-symbols-outlined">left_click</span>
-              </div>
-              <div className="page2">
-                <label for="page2"></label>
-                <div className="page2-text">
-                  <p>
-                    Tại 2G Education, chúng tôi không ngừng nỗ lực để thúc đẩy
-                    những hành trình học hỏi của các bạn trẻ Việt.
-                  </p>
-                  <p>Hành trình tuy khó khăn, nhưng sẽ tràn đầy hứng khởi</p>
-                  <p>
-                    Khi bạn luôn được trang bị sẵn sàng để tiến vào mọi “cuộc
-                    chơi”
-                  </p>
-                </div>
-                <span class="material-symbols-outlined">left_click</span>
-              </div>
-              <div className="page3">
-                <label for="page3"></label>
-                <div className="page3-text">
-                  <p>Đủ tư duy</p>
-                  <p>Giỏi kĩ năng</p>
-                  <p>Vững ngôn ngữ</p>
-                  <p>Như tre không kén chọn đất trồng</p>
-                  <p>Người trẻ không ngại ngần hoàn cảnh.</p>
-                  <p>Luôn kiên trì tiến lên phía trước,</p>
-                  <p>Uyển chuyển khi cần, vững vàng khi khó</p>
-                  <p>Tạo nên một thế hệ “luỹ thành” của đất nước.</p>
-                </div>
-                <span class="material-symbols-outlined">left_click</span>
-              </div>
-              <div className="page4">
-                <label for="page4"></label>
-                <div className="page4-text">
-                  <p>
-                    Bằng sự tận tâm trong giáo dục và cam kết đồng hành xuyên
-                    suốt
-                  </p>
-                  <p>
-                    2G Education tự hào là đòn bẩy để các bạn trẻ tự tin ra
-                    ngoài thế giới, sống và làm việc như một công dân toàn cầu.
-                  </p>
-                  <p>
-                    Bởi dù cho xuất phát điểm và mục đích hướng tới khác nhau
-                  </p>
-                  <p>
-                    2G Education tin rằng mọi hành trình hội nhập đều bắt đầu từ
-                    một điểm kết nối (the dots).
-                  </p>
-                </div>
-                <span class="material-symbols-outlined">left_click</span>
-              </div>
-              <div className="page5">
-                <label for="page5"></label>
-                <div className="page5-text">
-                  <p>
-                    Và chúng tôi sẽ không ngừng tìm kiếm các cơ hội trong và
-                    ngoài nước
-                  </p>
-                  <p>
-                    Không ngừng truyền cảm hứng, truyền nghề, truyền lửa cho các
-                    thế hệ mới
-                  </p>
-                  <p>Tạo ra một vòng tròn giá trị nối kết.</p>
-                  <div className="ending-tag">
-                    <p>2G Education - Hệ thống đào tạo giáo dục toàn diện.</p>
-                    <p>2G Education - Connect the “đốt”.</p>
+              {pages.map((page) => (
+                <div key={page.id} className={page.id}>
+                  <label htmlFor={page.id}></label>
+                  <div className={`${page.id}-text`}>
+                    {page.frontText && (
+                      <div className="front-page">
+                        {page.frontText.map((text, index) => (
+                          <h3 key={index}>{text}</h3>
+                        ))}
+                      </div>
+                    )}
+                    {page.backText && (
+                      <div className="back-page">
+                        {page.backText.map((text, index) => (
+                          <h3 key={index}>{text}</h3>
+                        ))}
+                      </div>
+                    )}
+                    {page.text &&
+                      page.text.map(
+                        (
+                          sentence,
+                          sentenceIndex // First map for sentences
+                        ) => (
+                          <p key={sentenceIndex}>
+                            {sentence.map(
+                              (
+                                word,
+                                wordIndex // Second map for words
+                              ) => (
+                                <span
+                                  key={wordIndex}
+                                  style={{
+                                    color: word.highlight
+                                      ? word.color
+                                      : "inherit",
+                                    fontWeight: word.highlight
+                                      ? word.weight
+                                      : "normal",
+                                  }}
+                                >
+                                  {word.text}
+                                </span>
+                              )
+                            )}
+                          </p>
+                        )
+                      )}
+                    {page.endingTag && (
+                      <div className="ending-tag">
+                        {page.endingTag.map((text, index) => (
+                          <p key={index}>{text}</p>
+                        ))}
+                      </div>
+                    )}
                   </div>
+                  <span className="material-symbols-outlined">left_click</span>
                 </div>
-                <span className="material-symbols-outlined">left_click</span>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-        <p className="bounce mt-6">↓</p>
+        );
+        <p className="bounce ">↓</p>
       </Section>
 
       <Section opacity={opacity6} sectionName="founder">
-        <h1>Founder's Story</h1>
+        <h1>2G Founder Profile</h1>
         <div className="founder_card">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png"
-            alt=""
-          />
-          <div className="founder_info">
-            <div className="founder_name">
-              <h2>Lê Văn Hải</h2>
-            </div>
-            <div className="founder_history">
-              <p>
-                - Là doanh nhân trẻ tuổi nhất trong lĩnh vực giáo dục tại Việt
-                Nam, sở hữu song tịch thông qua chương trình đầu tư định cư.
-              </p>
-              <p>
-                - Tốt nghiệp chương trình đào tạo quản lý trường Anh ngữ tại Mỹ
-                do Hiệp hội TESOL cấp bằng.
-              </p>
-              <p>
-                - Tốt nghiệp chương trình Khởi nghiệp Lean Startup tại Hà Lan.
-              </p>
-              <p>
-                - Đại diện Việt Nam tham dự hội nghị toàn cầu “World Young
-                Congress” tại Mỹ.
-              </p>
-              <p>
-                - Là người sáng lập các chương trình trại hè quốc tế tại
-                Singapore, New Zealand và Australia.
-              </p>
-              <p>
-                - Đã từng tham gia các chương trình Famtrip, gặp gỡ và hợp tác
-                với các trường cũng như đối tác giáo dục tại Mỹ, Châu Âu, Úc,
-                New Zealand, Singapore và Philippines.
-              </p>
-              <p>
-                - Có hơn 10 năm kinh nghiệm làm việc trong lĩnh vực giáo dục,
-                trong đó hơn 8 năm giữ vai trò Chairman & CEO.
-              </p>
-              <p>
-                - Cố vấn chuyên môn các cuộc thi: Phó BTC cuộc thi English
-                Challenge do Đài truyền hình NTV và Sở Giáo Dục Nghệ An tổ chức;
-                Trưởng BTC cuộc thi hùng biện tiếng Anh Let Your Voice Be Heard.
-              </p>
-              <p>
-                - Cử nhân Luật, đạt IELTS 7.5, sở hữu chứng chỉ giảng dạy quốc
-                tế TESOL (Úc).
-              </p>
-              <p>
-                Cựu HS Chuyên Anh, trường THPT Chuyên Phan Bội Châu, tỉnh Nghệ
-                An.
-              </p>
-            </div>
-            <div
-              className="founder_button"
-              onClick={() => navigate("/founder_story")}
-            >
-              <img src="../../assets/images/bamboo_frame.png" alt="" />
-              <p>Thư ngỏ</p>
-            </div>
-          </div>
+      <img src={founder.image} alt={founder.name} />
+
+      <div className="founder_info">
+        <div className="founder_name">
+          <h2>{founder.name}</h2>
         </div>
+
+        <div className="founder_history">
+          {founder.history.map((item, index) => (
+            <p key={index}>- {item}</p>
+          ))}
+        </div>
+
+        <div
+          className="founder_button"
+          onClick={() => navigate(founder.button.link)}
+        >
+          <img src={founder.button.image} alt={founder.button.text} />
+          <p>{founder.button.text}</p>
+        </div>
+      </div>
+    </div>
 
         <p className="bounce">↓</p>
       </Section>
 
       <Section opacity={opacity7} sectionName="story">
-        <h1>2G Story</h1>
+        <h1>Định hướng </h1>
+        <h1>phát triển</h1>
         <div className="tab-container">
-          <div className="tab-buttons">
+          {/* <div className="tab-buttons">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -545,7 +798,7 @@ export const ContentOverlay = () => {
                 {tab.label}
               </button>
             ))}
-          </div>
+          </div> */}
 
           <div className="tab-content">
             {tabs.map((tab) => (
