@@ -1,0 +1,79 @@
+
+.instructors-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 100vh; */
+  position: relative;
+  flex-direction: row;
+}
+
+.instructors-intro {
+    color: var(--primary-golden);
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: rgba(14, 23, 1, 0.865) 2px 2px 2px;
+}
+
+.peter-wright {
+    color: var(--text-background);
+    font-size: 2.5rem;
+    text-shadow: rgba(213, 227, 24, 0.632) 2px 2px 2px;
+    
+}
+
+.instructors-showdown {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding-top: 10rem;
+    padding-left: 2.5rem;
+    width: 50vw;
+
+}
+
+.instructor-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem;
+    /* width: calc(25% - 2rem); */
+    
+}
+.instructor-card img {
+    width: 200px;
+    height: 266.67px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.instructor-card img:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(163, 184, 24, 0.427) 2px 5px ;
+}
+
+.instructor-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
+    background: rgba(37, 59, 2, 0.164);
+}
+
+.instructor-image img {
+    width: auto;
+    height: 60vh;
+}
+
+.instructor-info {
+    color: var(--primary-golden);
+}
+
+

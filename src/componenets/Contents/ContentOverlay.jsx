@@ -1,5 +1,5 @@
 import { Scroll, useScroll } from "@react-three/drei";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { useFrame } from "@react-three/fiber";
 import { useNavigate } from "react-router-dom";
 import { gsap } from "gsap";
@@ -7,6 +7,8 @@ import "./overlay.css";
 import ChatBubble from "../ChatBubbles/ChatBubble";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { color } from "three/tsl";
+import Slider from "../Slider/Slider";
+import { Link } from "react-router-dom";
 const Section = (props) => {
   return (
     <section style={{ opacity: props.opacity }}>
@@ -57,10 +59,9 @@ export const ContentOverlay = () => {
     setOpacitySection5(scroll.curve(4 / 9, 1 / 9));
     setOpacitySection6(scroll.curve(5 / 9, 1 / 9));
     setOpacitySection7(scroll.curve(6 / 9, 1 / 9));
-    setOpacitySection8(scroll.curve(7 / 9, 1 / 9));
-    setOpacitySection9(scroll.range(8 / 9, 1 / 9)); // Adjusted for 9 sections
+    setOpacitySection8(scroll.curve(7 / 9, 2 / 9)); // Increase duration
+setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// Adjusted for 9 sections
   });
-
   const bubbleData = [
     { id: "bubble1", content: "Cool" },
     { id: "bubble2", content: "Good" },
@@ -235,59 +236,32 @@ export const ContentOverlay = () => {
       ],
     },
   ];
-  const people = [
-    {
-      name: "Alex Nguyen",
-      age: 28,
-      occupation: "Software Developer",
-      location: "Ho Chi Minh City, Vietnam",
-      hobbies: "Coding, hiking, playing the guitar, and photography",
-      skills: "Python, Django, React, SQL, Docker",
-      quote: "Code is like humor. When you have to explain it, it’s bad.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
-    },
-    {
-      name: "Lisa Tran",
-      age: 25,
-      occupation: "Graphic Designer",
-      location: "Da Nang, Vietnam",
-      hobbies: "Drawing, designing logos, and traveling",
-      skills: "Adobe Photoshop, Illustrator, Figma, Sketch",
-      quote: "Design is intelligence made visible.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
-    },
-    {
-      name: "Minh Le",
-      age: 32,
-      occupation: "Data Scientist",
-      location: "Hanoi, Vietnam",
-      hobbies: "Analyzing data, reading sci-fi novels, and chess",
-      skills: "Python, R, TensorFlow, Machine Learning",
-      quote: "Data is the new oil.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
-    },
-    {
-      name: "Quang Bui",
-      age: 29,
-      occupation: "Digital Marketer",
-      location: "Hue, Vietnam",
-      hobbies: "Social media strategy, blogging, and cooking",
-      skills: "SEO, SEM, Google Ads, Content Strategy",
-      quote:
-        "Marketing is no longer about the stuff you make, but the stories you tell.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
-    },
-    {
-      name: "An Vo",
-      age: 30,
-      occupation: "Product Manager",
-      location: "Can Tho, Vietnam",
-      hobbies: "Product planning, cycling, and gardening",
-      skills: "Product Roadmapping, User Research, Agile, Jira",
-      quote: "A good product manager is a mini-CEO.",
-      image: "https://i.scdn.co/image/ab67616d0000b273ade87e5f9c3764f0a1e5df64",
-    },
-  ];
+  
+  const human_first_images = [
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+  ]
+
+  const human_second_images = [
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
+    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+  ]
 
   const pages = [
     {
@@ -755,36 +729,7 @@ export const ContentOverlay = () => {
         <p className="bounce ">↓</p>
       </Section>
 
-      <Section opacity={opacity6} sectionName="founder">
-        <h1>2G Founder Profile</h1>
-        <div className="founder_card">
-      <img src={founder.image} alt={founder.name} />
-
-      <div className="founder_info">
-        <div className="founder_name">
-          <h2>{founder.name}</h2>
-        </div>
-
-        <div className="founder_history">
-          {founder.history.map((item, index) => (
-            <p key={index}>- {item}</p>
-          ))}
-        </div>
-
-        <div
-          className="founder_button"
-          onClick={() => navigate(founder.button.link)}
-        >
-          <img src={founder.button.image} alt={founder.button.text} />
-          <p>{founder.button.text}</p>
-        </div>
-      </div>
-    </div>
-
-        <p className="bounce">↓</p>
-      </Section>
-
-      <Section opacity={opacity7} sectionName="story">
+      <Section opacity={opacity6} sectionName="story">
         <h1>Định hướng </h1>
         <h1>phát triển</h1>
         <div className="tab-container">
@@ -840,35 +785,52 @@ export const ContentOverlay = () => {
         <p className="bounce ">↓</p>
       </Section>
 
-      <Section opacity={opacity8} sectionName="human">
-        <h1>2G Humans</h1>
-        <div className="human-card-container">
-          {people.map((person, index) => (
-            <div className="human-card" key={index}>
-              <div className="human-card-avatar">
-                <img src={person.image} alt={`${person.name} avatar`} />
-              </div>
-              <div className="human-card-info">
-                <h2>{person.name}</h2>
-                <p>
-                  <strong>Age:</strong> {person.age}
-                </p>
-                <p>
-                  <strong>Occupation:</strong> {person.occupation}
-                </p>
-                <p>
-                  <strong>Location:</strong> {person.location}
-                </p>
-                <p>
-                  <strong>Hobbies:</strong> {person.hobbies}
-                </p>
-                <p>
-                  <strong>Skills:</strong> {person.skills}
-                </p>
-                <p className="quote">{person.quote}</p>
-              </div>
-            </div>
+      <Section opacity={opacity7} sectionName="founder">
+        <h1>2G Founder Profile</h1>
+        <div className="founder_card">
+      <img src={founder.image} alt={founder.name} />
+
+      <div className="founder_info">
+        <div className="founder_name">
+          <h2>{founder.name}</h2>
+        </div>
+
+        <div className="founder_history">
+          {founder.history.map((item, index) => (
+            <p key={index}>- {item}</p>
           ))}
+        </div>
+
+        <div
+          className="founder_button"
+          onClick={() => navigate(founder.button.link)}
+        >
+          <img src={founder.button.image} alt={founder.button.text} />
+          <p>{founder.button.text}</p>
+        </div>
+      </div>
+    </div>
+
+        <p className="bounce">↓</p>
+      </Section>
+
+      <Section opacity={opacity8} sectionName="human">
+      <h1>2G Humans</h1>
+        <div className="human-intro">
+        <h5>ĐỘI NGŨ CỐ VẤN CHUYÊN MÔN ĐẦU NGÀNH TRONG NƯỚC & QUỐC TẾ</h5>
+        <p>2G Education tự hào có sự đồng hành của các chuyên gia hàng đầu trong lĩnh vực giáo dục</p>
+        <h5>ĐỘI NGŨ GIẢNG VIÊN 2G TÂM HUYẾT VÀ CHUYÊN MÔN HÀNG ĐẦU</h5>
+        <p>2G Education sở hữu đội ngũ giảng viên chuyên môn cao, với tiêu chuẩn hạng A++, đạt IELTS 8.0+ / C1+, bao gồm:</p>
+        <ul>
+            <li>- Giảng viên Việt Nam tốt nghiệp từ các trường Đại học hàng đầu: ĐH Sư Phạm, ĐH Ngoại Ngữ</li>
+            <li>- Cựu du học sinh, giảng viên giàu kinh nghiệm giảng dạy</li>
+            <li>- Giáo viên bản ngữ, có chứng chỉ giảng dạy quốc tế, tận tâm và chuyên môn cao</li>
+        </ul>
+        </div>
+        <div className="human-slider">
+            <Slider images={human_first_images} width="200px" height="266.67px" quantity={4}/>
+            <Slider images={human_second_images} width="200px" height="266.67px" quantity={16} reverse = "true"/>
+            <p onClick={() => navigate("/instructors")}>Xem chi tiết</p>
         </div>
       </Section>
 

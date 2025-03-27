@@ -633,54 +633,54 @@
 }
 
 .page8-text {
-    color: var(--secondary-green);
-    font-weight: 700;
-    font-size: 1.3rem;
-    padding: 20px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  }
+  color: var(--secondary-green);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
 
-  .page9-text {
-    color: var(--secondary-green);
-    font-weight: 700;
-    font-size: 1.3rem;
-    padding: 20px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  }
+.page9-text {
+  color: var(--secondary-green);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
 
-  .page10-text {
-    color: var(--secondary-green);
-    font-weight: 700;
-    font-size: 1.3rem;
-    padding: 20px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  }
+.page10-text {
+  color: var(--secondary-green);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
 
-  .page11-text {
-    color: var(--secondary-green);
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding: 20px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  }
+.page11-text {
+  color: var(--secondary-green);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
 
-  .page12-text {
-    color: var(--secondary-green);
-    font-weight: 700;
-    font-size: 1.2rem;
-    padding: 20px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-  }
+.page12-text {
+  color: var(--secondary-green);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 20px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
 input[type="checkbox"] {
   display: none;
 }
@@ -772,65 +772,65 @@ h1 {
   transform: rotateY(-140deg);
 }
 
-  #page8 ~ .pages div.page8 {
-    -webkit-transform: rotateY(-20deg);
-    -moz-transform: rotateY(-20deg);
-    transform: rotateY(-20deg);
-  }
-  
-  #page8:checked ~ .pages div.page8 {
-    -webkit-transform: rotateY(-140deg);
-    -moz-transform: rotateY(-140deg);
-    transform: rotateY(-140deg);
-  } 
+#page8 ~ .pages div.page8 {
+  -webkit-transform: rotateY(-20deg);
+  -moz-transform: rotateY(-20deg);
+  transform: rotateY(-20deg);
+}
 
-  #page9 ~ .pages div.page9 {
-    -webkit-transform: rotateY(-18deg);
-    -moz-transform: rotateY(-18deg);
-    transform: rotateY(-18deg);
-  }
-  
-  #page9:checked ~ .pages div.page9 {
-    -webkit-transform: rotateY(-140deg);
-    -moz-transform: rotateY(-140deg);
-    transform: rotateY(-140deg);
-  } 
+#page8:checked ~ .pages div.page8 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
 
-  #page10 ~ .pages div.page10 {
-    -webkit-transform: rotateY(-16deg);
-    -moz-transform: rotateY(-16deg);
-    transform: rotateY(-16deg);
-  }
-  
-  #page10:checked ~ .pages div.page10 {
-    -webkit-transform: rotateY(-140deg);
-    -moz-transform: rotateY(-140deg);
-    transform: rotateY(-140deg);
-  } 
+#page9 ~ .pages div.page9 {
+  -webkit-transform: rotateY(-18deg);
+  -moz-transform: rotateY(-18deg);
+  transform: rotateY(-18deg);
+}
 
-  #page11 ~ .pages div.page11 {
-    -webkit-transform: rotateY(-14deg);
-    -moz-transform: rotateY(-14deg);
-    transform: rotateY(-14deg);
-  }
-  
-  #page11:checked ~ .pages div.page11 {
-    -webkit-transform: rotateY(-140deg);
-    -moz-transform: rotateY(-140deg);
-    transform: rotateY(-140deg);
-  } 
+#page9:checked ~ .pages div.page9 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
 
-  #page12 ~ .pages div.page12 {
-    -webkit-transform: rotateY(-12deg);
-    -moz-transform: rotateY(-12deg);
-    transform: rotateY(-12deg);
-  }
-  
-  #page12:checked ~ .pages div.page12 {
-    -webkit-transform: rotateY(-140deg);
-    -moz-transform: rotateY(-140deg);
-    transform: rotateY(-140deg);
-  } 
+#page10 ~ .pages div.page10 {
+  -webkit-transform: rotateY(-16deg);
+  -moz-transform: rotateY(-16deg);
+  transform: rotateY(-16deg);
+}
+
+#page10:checked ~ .pages div.page10 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
+
+#page11 ~ .pages div.page11 {
+  -webkit-transform: rotateY(-14deg);
+  -moz-transform: rotateY(-14deg);
+  transform: rotateY(-14deg);
+}
+
+#page11:checked ~ .pages div.page11 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
+
+#page12 ~ .pages div.page12 {
+  -webkit-transform: rotateY(-12deg);
+  -moz-transform: rotateY(-12deg);
+  transform: rotateY(-12deg);
+}
+
+#page12:checked ~ .pages div.page12 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
 
 .book {
   position: relative;
@@ -1005,8 +1005,8 @@ h1 {
 .story {
   color: var(--primary-golden);
   font-size: 3rem;
-  max-width: 900px;
-  max-height: 850px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1147,32 +1147,39 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-left: 5rem;
+  padding-left: 7rem;
   padding-top: 3rem;
+  background: rgba(54, 78, 1, 0.18);
+    width: 90rem;
+    height: 100%;
 }
 
 .human-card-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 70px;
   padding: 10px;
   width: 1000px;
   flex-wrap: wrap;
 }
 
 .human-card {
-  flex: 1 1 calc(33.33% - 20px); /* Take 1/3 of the row minus gap */
-  max-width: 300px;
+  /* flex: 1 1 calc(33.33% - 20px);  */
+  /* max-width: 130px; */
+
   width: 300px;
-  height: 300px;
+  height: 400px;
   background: var(--primary-golden);
   border-radius: 12px;
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
   position: relative;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .human-card:hover {
@@ -1181,18 +1188,23 @@ h1 {
 
 .human-card-avatar {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.human-card-avatar img {
+  width: 300px;
+  height:400px;
+}
+
 .human-card-info {
   opacity: 0;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 400px;
   transform: translateY(-20px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   font-size: 0.9rem;
@@ -1203,17 +1215,71 @@ h1 {
   color: var(--primary-green);
   text-align: start;
   padding: 15px;
+  z-index: 1;
+ 
+  
 }
 
 .human-card:hover .human-card-info {
   opacity: 1;
   transform: translateY(0);
+  
 }
 
 .human-card:hover .human-card-avatar {
   opacity: 0;
 }
 
+.human-intro {
+    width: 80rem;
+    height: 100%;
+}
+.human h5 {
+    font-size: 2rem;
+    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    color: var(--text-background);
+    margin-top: 1rem;
+}
+
+.human p {
+    font-size: 2rem;
+    padding-left: 3rem;
+    width: 50rem;
+    text-shadow: rgba(19, 20, 0, 0.779) 2px 2px 2px;
+    font-weight: 500;
+
+}
+
+.human ul {
+    list-style: none;
+    font-size: 1.6rem;
+    width: 50rem;
+    font-weight: 600;
+    color: var(--golden-intro);
+}
+
+.human li {
+    padding-left: 6rem;
+}
+
+.human-slider {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.human-slider p {
+    text-decoration: underline;
+    font-size: 1.7rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+}
+
+.human-slider p:hover {
+   
+    transform: scaleY(1.05);
+    text-shadow: rgba(213, 227, 24, 0.632) 2px 2px 2px;
+}
 .footer {
   color: var(--primary-golden);
   font-size: 2rem;
@@ -1223,7 +1289,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 70rem;
+  padding-top: 20rem;
   padding-left: 20rem;
 }
 
@@ -1245,7 +1311,7 @@ h1 {
   padding-top: 12rem;
   color: var(--text-background);
 }
-
+ 
 @media screen and (max-width: 600px) {
   .bounce {
     font-size: 4rem;
