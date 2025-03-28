@@ -8,6 +8,7 @@ import Fireflies from "../../componenets/Fireflies/Fireflies";
 import Navbar from "../../componenets/Navbar/Navbar"
 import "./Home.css";
 import MobileOverlay from "../../componenets/Contents/MobileOverlay";
+import Footer from "../../componenets/Footer/Footer";
 function Home() {
    const [IsMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial check
   
@@ -29,14 +30,14 @@ function Home() {
         </div>
     </div>}>
       <Navbar />
-
+        <div className="main-container">
       <div className="canvas-container">
         <Fireflies count={100} />
         <Canvas className="canvas">
           <Banner />
         </Canvas>
       </div>
-
+      </div>
       <div className="mobile-view-container">
         <Fireflies count={100} />
         <MobileOverlay />

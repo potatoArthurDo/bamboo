@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import Navbar from "../../componenets/Navbar/Navbar";
 import Fireflies from "../../componenets/Fireflies/Fireflies";
 import "./Founder_words.css";
+import Footer from "../../componenets/Footer/Footer";
 function Founder_words() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
@@ -177,6 +178,7 @@ function Founder_words() {
           </div>
         </div>
       </div>
+      <Footer />
     </Suspense>
   );
 }

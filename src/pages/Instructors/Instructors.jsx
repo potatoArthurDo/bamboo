@@ -1,17 +1,37 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useRef } from "react";
 import "./Instructors.css";
 import Navbar from "../../componenets/Navbar/Navbar";
 import Fireflies from "../../componenets/Fireflies/Fireflies";
+import Footer from "../../componenets/Footer/Footer";
 
 export default function Instructors() {
   const [activeHuman, setActiveHuman] = useState(1);
 
+  const [isHidden, setIsHidden] = useState(false);
+  const footerRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (footerRef.current) {
+        const footerRect = footerRef.current.getBoundingClientRect();
+
+        // Check if the footer is entering the viewport
+        if (footerRect.top < window.innerHeight) {
+          setIsHidden(true); // Hide the fixed div
+        } else {
+          setIsHidden(false); // Show the fixed div
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const handleHumanHover = (HumanId) => {
     // console.log("Active Human:", activeHuman);
     setActiveHuman(HumanId);
   };
 
-  console.log("Active Human:", activeHuman);
 
   const instructors = [
     {
@@ -291,8 +311,8 @@ export default function Instructors() {
     <>
       <Suspense fallback={<div>Loading...</div>}>
         <Navbar />
-        <Fireflies count={50} />
-        <div className="instructors-container">
+        {/* <Fireflies count={50} /> */}
+        <div className="instructors-container" style={{ opacity: isHidden ? 0.4 : 1, pointerEvents: isHidden ? "none" : "auto" }}>
           <div className="instructors-showdown">
             <h3 className="instructors-intro">
               Đồng hành cùng chuyên gia Quốc tế{" "}
@@ -379,6 +399,7 @@ export default function Instructors() {
             </div>
           </div>
         </div>
+        <Footer ref={footerRef} />
       </Suspense>
     </>
   );

@@ -1280,7 +1280,38 @@ h1 {
     transform: scaleY(1.05);
     text-shadow: rgba(213, 227, 24, 0.632) 2px 2px 2px;
 }
-.footer {
+
+.banner-footer {
+    color: var(--primary-golden);
+    font-size: 2rem;
+    width: 100%;
+    max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 3rem;
+  }
+
+.footer-first-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10rem;
+    padding-left: 10rem;
+}
+
+.footer-first-content .company-mean:hover  .company_name {
+   opacity: 1;
+}
+
+.footer-first-content .dot-info:hover .dot {
+    opacity: 1;
+  }
+/* .footer {
   color: var(--primary-golden);
   font-size: 2rem;
   width: 100%;
@@ -1310,7 +1341,7 @@ h1 {
 .footer p {
   padding-top: 12rem;
   color: var(--text-background);
-}
+} */
  
 @media screen and (max-width: 600px) {
   .bounce {

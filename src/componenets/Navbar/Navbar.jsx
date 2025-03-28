@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="navbar">
     <div className="navbar-container">
       <Link to="/" className="logo">
-        Logo
+        <img src="assets/images/logo.png" alt="" />
       </Link>
       <div
         className={`hamburger ${isNavOpen ? 'active' : ''}`}
@@ -31,22 +31,22 @@ const Navbar = () => {
       <ul className={`nav-links ${isNavOpen ? 'active' : ''}`}>
         <li>
           <Link to="/" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            Home
+            Trang chủ
           </Link>
         </li>
         <li>
           <Link to="/about" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            About
+            Về chúng tôi
           </Link>
         </li>
         <li>
-          <Link to="/services" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            Services
+          <Link to="/founder_story" className="nav-link" onClick={() => setIsNavOpen(false)}>
+            Thư ngỏ
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="nav-link" onClick={() => setIsNavOpen(false)}>
-            Contact
+          <Link to="/instructors" className="nav-link" onClick={() => setIsNavOpen(false)}>
+            2G Humans
           </Link>
         </li>
       </ul>

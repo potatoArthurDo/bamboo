@@ -112,7 +112,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       title: "2G Education",
       subtitle: "Học ngoại ngữ, mở tương lai",
       image:
-        "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
+        "/assets/images/education.jpg",
       intro:
         "Giúp bạn chinh phục ngoại ngữ với chương trình đào tạo bài bản, mở ra cơ hội học tập và sự nghiệp toàn cầu.",
       details: [
@@ -126,7 +126,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       subtitle:
         "Giải pháp du học toàn diện - Du học Anh, Mỹ, Úc, Canada, New Zealand",
       image:
-        "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
+        "/assets/images/abroad.jpg",
       intro:
         "Một lộ trình du học toàn diện, giúp các em THỰC SỰ SẴN SÀNG về tư duy, kĩ năng, ngôn ngữ khi bước ra thế giới.",
       details: [
@@ -139,7 +139,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       title: "2G Eureka Camps",
       subtitle: "Cung cấp các giải pháp về mô hình trại hè",
       image:
-        "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
+        "/assets/images/camp.png",
       intro: "TThấu hiểu bản thân từ những bước chân trải nghiệm.",
       details: [
         "- Trại hè trao đổi tại Úc, New Zealand, Singapore dành cho trẻ 5-12 tuổi.",
@@ -151,7 +151,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       title: "GV Manpower",
       subtitle: "Cung cấp dịch vụ tư vấn du học nghề tại Đức",
       image:
-        "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
+        "/assets/images/german.jpg",
       intro:
         "Chương trình du học nghề uy tín, giúp bạn xây dựng sự nghiệp ổn định tại Đức với chi phí cực tối ưu.",
       details: [
@@ -164,7 +164,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       title: "Du học Hồng Khôi",
       subtitle: "Cung cấp dịch vụ tư vấn du học nghề tại Đài Loan",
       image:
-        "https://i.guim.co.uk/img/media/8c7f4fe66d305fb86fc3246dd47a9c06d216f7ec/0_139_1268_761/master/1268.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=f27fa05d2f7629655beafeb9248c7647",
+        "/assets/images/taiwan.jpg",
       intro: "Hành trình du học vươn lên dẫn đầu, đạt thành công rực rỡ",
       details: [
         "- Luyện thi TOCFL, đạt chuẩn đầu vào.",
@@ -579,7 +579,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
                 <div className="chat-app">
                   <div className="chat-header">
                     <img
-                      src="https://i.pravatar.cc/100?img=1"
+                      src="assets/images/favicon.png"
                       alt="Profile"
                       className="chat-avatar-large"
                     />
@@ -835,13 +835,67 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
         </div>
       </Section>
 
-      <Section opacity={opacity9} sectionName="footer">
-        <h3 className="company_name">2G Education</h3>
+      <Section opacity={opacity9} sectionName="banner-footer">
+        <div className="footer-first-content">
+      <div className="left-intro">
+          <div className="company-mean">
+            <h3 className="company_name">2G Group</h3>
+          </div>
+          <div className="quote-container">
+            <p className="journey-quote connect">Connect</p>
+            <p className="journey-quote the ">the</p>
+            <div className="dot-info">
+              <p className="journey-quote dot">"Đốt"</p>
+            </div>
+          </div>
+          
+        </div>
+
+        <div className="right-intro">
+          <h1 className="main_name english1">ANH NGỮ</h1>
+          <h1 className="main_name english2">TOÀN DIỆN</h1>
+          <h1 className="main_name camping">TRẠI HÈ </h1>
+          <h1 className="main_name study">DU HỌC</h1>
+        </div>
+        </div>
+
+        <footer className="footer" >
+        <div className="footer-container">
+          <div className="footer-logo">
+            <img s src="assets/images/logo.png" alt="Company Logo" className="logo" />
+          </div>
+          <div className="footer-info">
+            <p>Branches:</p>
+            <ul>
+              <li>New York, USA</li>
+              <li>London, UK</li>
+              <li>Tokyo, Japan</li>
+            </ul>
+            <p>Phone: +1 234 567 890</p>
+          </div>
+          <div className="footer-links">
+            <p>Quick Links:</p>
+            <ul>
+            <li><a href="/">Home</a></li>
+              <li><a href="/about">Về Chúng Tôi</a></li>
+              <li><a href="/founder_story">Thư ngỏ</a></li>
+              <li><a href="/instructors">2G Humans</a></li>
+            </ul>
+          </div>
+          <div className="footer-social">
+            <p>Follow Us:</p>
+            <a href="#"><img src="/facebook-icon.png" alt="Facebook" /></a>
+            <a href="#"><img src="/twitter-icon.png" alt="Twitter" /></a>
+            <a href="#"><img src="/instagram-icon.png" alt="Instagram" /></a>
+          </div>
+        </div>
+        <p className="footer-bottom">&copy; {new Date().getFullYear()} 2G Education. All rights reserved.</p>
+      </footer>
+        {/* <h3 className="company_name">2G Education</h3>
         <h1 className="main_name">GLOCAL</h1>
         <h1 className="main_name">TREE</h1>
-        <p>
-          &copy; {new Date().getFullYear()} 2G Education. All rights reserved.
-        </p>
+        */}
+       
       </Section>
     </Scroll>
   );
