@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 700px;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     align-items: flex-start;
     padding-left: 30rem;
@@ -96,3 +96,45 @@
   .service-intro {
     font-weight: bold;
   }
+
+  @media (max-width: 575.98px) {
+    .product-carousel {
+        padding-left: 0;
+        min-height: 100dvh;
+        height: 100%;
+
+    }
+    .product-carousel-inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100dvh;
+    }
+
+    .product-card {
+      width: 20rem;
+      height: 100%;
+      position: relative;
+      left: unset;
+      top: unset;
+      margin-top: 20px;
+    }
+
+    .product-card h4 {
+        font-size: 1.5rem;
+      }
+      .product-card h5 {
+        font-size: 1.1rem;
+        color: var(--primary-golden);
+      }
+      
+      .product-card p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+      }
+
+      .service-intro {
+        margin-top: 20px;
+      }
+    }
+  

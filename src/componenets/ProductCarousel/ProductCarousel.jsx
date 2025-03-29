@@ -1,13 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ProductCarousel.css';
 
-const ProductCarousel = ({ products }) => {
+const ProductCarousel = ({ products, intervalTime = 3000 }) => {
   const [active, setActive] = useState(0); // Start with the first product
   const itemsRef = useRef([]);
 
   useEffect(() => {
     loadShow();
   }, [active, products]);
+
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setActive((prevActive) => (prevActive + 1) % products.length);
+//     }, intervalTime);
+
+//     return () => clearInterval(interval); // Cleanup interval on unmount
+//   }, [products, intervalTime]);
 
   const loadShow = () => {
     if (!itemsRef.current || itemsRef.current.length === 0) return;
