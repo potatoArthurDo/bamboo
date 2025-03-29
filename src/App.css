@@ -12,26 +12,23 @@
 
 body,
 html {
-  margin: 0;
+    margin: 0;
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   /* background: linear-gradient(0deg,  #EAD7B8, #F3DFC4, #FCEED9),url("../assets/images/sun_glow_bg_1.png"); */
   background-blend-mode: soft-light;
   /* background: url("../assets/images/gradient-bg.svg"); */
   background: url("https://images7.alphacoders.com/138/thumb-1920-1381480.png"),
     url("../assets/images/sun_glow_bg_3.png");
   /* background-color: #014421; */
-  min-height: 100vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center, center, center calc(100% + 400px);
   background-size: cover, 150% auto;
-  background-attachment: fixed, fixed;
   color: black;
   font-family: "Montserrat", serif;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  display: flex;
-  flex-direction: column;
 }
 
 body {

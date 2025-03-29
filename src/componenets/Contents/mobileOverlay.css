@@ -26,8 +26,15 @@
 
   @media (max-width: 575.98px) {
     /* CSS for small phones */
+
+    .mobile-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
     .mobile_intro {
-        color: var(--primary-golden);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -41,47 +48,100 @@
       .mobile_intro .company_name {
         font-weight: 500;
         font-size: 2rem;
-      }
-      
-      .mobile_intro .main_name {
-        font-size: 4.5rem;
-        font-weight: 600;
-        margin-top: -10px;
-      }
-      
-      .mobile_intro .journey-quote {
-        font-weight: 300;
-        font-size: 1.8rem;
-        color: var(--text-background);
-      }
-
-      .mobile_feedback {
         color: var(--primary-golden);
-        width: 100%;
+        text-shadow: rgba(15, 18, 1, 0.76) 2px 2px 2px;
+        font-weight: 600;
+      }
+      
+      .main_name {
         display: flex;
         flex-direction: column;
         justify-content: center;
         position: relative;
+        height: 100dvh;
       }
 
-      .mobile_feedback h1 {
-        font-size: 2rem;
+      .connect, .the {
+        font-size: 4rem;
+        color: var(--text-background);
+        text-shadow: rgba(98, 118, 11, 0.76) 2px 2px 2px;
       }
-      
-      .mobile_video_container {
-        width: 100vw;
-        max-width: 350px;
-        aspect-ratio: 16 / 9;
-        overflow: hidden;
-        border-radius: 12px;
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+
+      .dots {
+        font-size: 4.5rem;
+        color: var(--green-intro);
+        text-shadow: rgba(125, 141, 8, 0.347) 2px 2px 2px;
+      }
+      .mobile-intro-second-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: relative;
+        height: 100dvh;
       }
-      
-      .mobile_video_container iframe {
-        width: 100%;
+ .mobile-intro-second-group div:nth-child(odd) {
+        margin-right: 4.9rem;
+      }
+
+      .mobile-intro-second-group div:nth-child(even) {
+        margin-left: 2.3rem;
+      }
+
+      .english, .english-second, .camping, .aboard {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      .english, .english-second {
+        color: var(--primary-golden);
+        text-shadow: rgba(84, 101, 8, 0.76) 2px 2px 2px;
+      }
+      .camping {
+        color: var(--text-background);
+        text-shadow: rgba(98, 118, 11, 0.76) 2px 2px 2px;
+      }
+
+      .aboard {
+        color: var(--green-intro);
+        text-shadow: rgba(125, 141, 8, 0.347) 2px 2px 2px;
+      }
+
+      .explaination {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
         height: 100%;
-        border: none;
+        background-color: rgba(36, 46, 5, 0.2);
+        border-radius: 10px;
+      }
+
+      .company-explain p{
+        color: var(--primary-golden);
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-shadow: rgba(84, 101, 8, 0.76) 2px 2px 2px;
+        margin: 0.5rem;
+      }
+
+      .theme-explain p {
+        color: var(--text-background);
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-shadow: rgba(98, 118, 11, 0.76) 2px 2px 2px;
+        margin: 0.5rem;
+      }
+
+      .mobile_feedback {
+        min-height: 100dvh;
+      }
+      .mobile_feedback h1 {
+        color: var(--primary-golden);
+        font-size: 2rem;
+        margin: 0.5rem;
+        text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
       }
 
       .mobile_achievement {
@@ -91,7 +151,7 @@
         justify-content: center;
         position: relative;
         width: 100%;
-        height: 100%;
+        min-height: 100dvh;
       }
 
       .mobile_achievement h1 {
@@ -107,6 +167,7 @@
         width: 100%;
         height: auto;
         gap: 8px;
+        margin-top: 2rem;
       }
       
       .mobile_timeline::before {
