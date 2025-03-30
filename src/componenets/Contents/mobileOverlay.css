@@ -381,4 +381,203 @@
   .tab-bar.active:nth-child(2) {
     transform: translateX(10px) rotate(45deg);
   }
+
+  .mobile-development {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .mobile-development h1 {
+    color: var(--primary-golden);
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+  }
+
+  .mobile-development-intro h2 {
+    color: var(--green-intro);
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .mobile-development-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .mobile-development-content h3 {
+    color: var(--green-intro);
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-size: 1.2rem;
+  }
+
+  .mobile-development-content p {
+    color: var(--text-background);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-weight: 500;
+  }
+
+  .mobile-founder-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+    margin: 0.5rem;
+    background-color: rgba(225, 225, 65, 0.2);
+    border-radius: 10px;
+  }
+
+  .mobile-founder-container h1 {
+    color: var(--primary-golden);
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+  }
+
+  .mobile-founder-image img {
+    width: 18rem;
+    height: auto;
+  }
+  .mobile-founder-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-founder-image h2{
+    color: var(--golden-intro);
+    margin-top: 1.2rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-size: 1.8rem;
+  }
+
+  .mobile-founder-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .mobile-founder-info p {
+    color: var(--text-background);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-weight: 500;
+  }
+
+  .mobile-humans {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .mobile-humans h1 {
+    color: var(--primary-golden);
+    font-size: 2rem;
+    margin: 0.5rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+  }
+
+  .mobile-humans-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    
+  }
+
+  .mobile-human-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background-color: rgba(40, 40, 4, 0.395);
+    border-radius: 10px;
+    
+  }
+
+  .mobile-humans-content h3 {
+    color: var(--green-intro);
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-human-img img {
+    width: 18rem;
+    height: auto;
+  }
+
+  .mobile-human-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-human-img h2 {
+    color: var(--golden-intro);
+    margin-top: 1.2rem;
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-size: 1.8rem;
+  }
+
+  .mobile-human-achievement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  .mobile-human-intro h3 {
+    color: var(--golden-intro);
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+  }
+
+  .mobile-human-achievement-content ul {
+    list-style: none;
+    color: var(--text-background);
+    text-shadow: rgba(92, 110, 9, 0.884) 2px 2px 2px;
+    margin: 20px;
+    line-height: 1.4;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
 }
