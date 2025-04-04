@@ -77,6 +77,7 @@
     border-radius: 5%;
     padding: 1rem;
     margin-bottom: 10rem;
+    
 }
 .instructor-image {
     padding:0.2rem;
@@ -111,4 +112,8 @@
     color: var(--secondary-golden);
 }
 
-
+@media (max-width: 1536px) {
+    .details-container {
+        margin-top: 7rem;
+    }
+}

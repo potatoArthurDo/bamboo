@@ -96,7 +96,32 @@
   .service-intro {
     font-weight: bold;
   }
+@media (max-width: 1536px) {
+  .product-carousel-control.next {
+    left: unset;
+    right: 500px;
+  }
 
+  .product-carousel-control.prev {
+    left: 150px;
+    right: unset;
+  }
+  .product-card {
+    height: 34rem;
+  }
+  .product-card h4{
+    font-size: 1.5rem;
+  }
+  .product-card h5 {
+    font-size: 1.1rem;
+  }
+  
+  .product-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+}
   @media (max-width: 575.98px) {
     .product-carousel {
         padding-left: 0;

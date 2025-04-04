@@ -317,7 +317,7 @@
   border-radius: 10%;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
-  width: 550px;
+  width: 500px;
 }
 
 .bubble-inner:hover {
@@ -334,7 +334,7 @@
   color: var(--primary-golden);
   font-size: 3rem;
   width: 800px;
-  height: 900px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1311,36 +1311,266 @@ h1 {
 .footer-first-content .dot-info:hover .dot {
     opacity: 1;
   }
-/* .footer {
-  color: var(--primary-golden);
-  font-size: 2rem;
-  width: 100%;
-  max-height: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  padding-top: 20rem;
-  padding-left: 20rem;
-}
 
-.footer h3 + h1 {
-  margin-top: -25px;
-}
-.footer .company_name {
-  font-weight: 300;
-  font-size: 3rem;
-}
+  @media (max-width: 1536px) {
+    .bounce {
+      font-size: 4rem;
+    }
+    .intro {
+      padding-left: 2rem;
+      padding-top: 12rem;
+      padding-bottom: 25rem;
+    }
+    .left-intro {
+      padding-left: 4rem;
+    }
+    .main_name {
+      /* right: 70px; */
+    }
+    .main_name.english2 {
+      right: 80px;
+    }
+    .main_name.camping {
+      right: 130px;
+    }
+    .main_name.study {
+      right: 180px;
+    }
+    .feedback {
+      /* padding-top:8rem ; */
+      font-size: 2rem;
+      padding-bottom: 0rem;
+      height: 100%;
+    }
+    .bubble-content {
+      width: auto;
+    }
+    .bubbles {
+      height: 400px;
+    }
+    .bubbles :nth-child(3) {
+      left: 60%;
+    }
 
-.footer .main_name {
-  font-size: 6rem;
-  font-weight: 600;
-  width: 500px;
-  margin-top: -25px;
-}
-.footer p {
-  padding-top: 12rem;
-  color: var(--text-background);
-} */
- 
+    .achievement {
+      height: 100%;
+      font-size: 2rem;
+      padding-top: 0rem;
+      padding-bottom: 0;
+    }
+    .timeline {
+      gap: 0px;
 
+    }
+
+    .content {
+      max-width: 280px;
+      max-height: 80px;
+    }
+    
+    .content h3 {
+      margin: 0;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: #8b4513;
+    }
+    
+    .content p {
+      margin: 5px 0 0;
+      font-size: 0.7rem;
+      color: #006400;
+      font-weight: 500;
+    }
+    .service {
+      font-size: 2rem;
+      padding-top: 0;
+      padding-bottom: 0rem;
+    }
+    .purpose {
+      font-size: 2rem;
+    }
+    .purpose-container {
+      padding-top: 2rem;
+      padding-left: 15rem;
+    }
+    .page1-text h3 {
+      font-size: 4rem;
+    }
+    .page2-text {
+      color: var(--secondary-green);
+      font-weight: 700;
+      font-size: 1.4rem;
+      padding: 50px 30px;
+    }
+    
+    .page3-text {
+      left: 30%;
+    }
+    
+    .page3-text h3 {
+      font-size: 4rem;
+    }
+    
+    .page4-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    .page5-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    
+    .page6-text {
+      font-size: 1.4rem;
+      padding: 10px;
+    }
+    
+    .page7-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    
+    .page8-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    
+    .page9-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    
+    .page10-text {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    
+    .page11-text {
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+    
+    .page12-text {
+      font-size: 1.1rem;
+      padding: 10px;
+    }
+    
+    .book {
+      position: relative;
+      width: 360px;
+      height: 400px;
+      margin-left: 180px;
+    }
+    
+    .material-symbols-outlined {
+      color: var(--secondary-green);
+      font-size: 1.5rem;
+      position: absolute;
+      bottom: 1.5%;
+      right: 3%;
+      z-index: -1;
+    }
+
+    .story {
+      font-size: 2rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 15rem;
+      height: 18rem;
+      margin: 1rem;
+    }
+    
+    .flip-card-front {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .flip-card-back {
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin: 10px;
+    }
+    
+    .flip-card-back ul {
+      line-height: 1.5;
+    }
+
+    .founder {
+      font-size: 2rem;
+      padding-top: 0;
+      gap: 10px;
+    }
+    .founder_card {
+      gap: 10px;
+      padding: 10px;
+      margin: 10px;
+      width: 50rem;
+    }
+    
+    .founder_card img {
+      width: 15rem;
+      height: 29rem;
+    }
+    
+    .founder_info {
+      flex: 1;
+      width: 600px;
+    }
+    
+    .founder_history p {
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+    .founder_button {
+      position: relative;
+      right: 10px;
+      bottom: 10px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .founder_button img {
+      width: 180px;
+      height: 80px;
+      object-fit: fill;
+    }
+    
+    .founder_button p {
+      right: 11%;
+    }
+
+    .human {
+      font-size: 2rem;
+      padding-top: 0;
+      /* padding-bottom: 20rem; */
+    }
+    
+    .human-intro {
+        width: 60rem;
+    }
+    .human h5 {
+        font-size: 1.6rem;
+    }
+    
+    .human p {
+        font-size: 1.7rem;
+    }
+    
+    .human ul {
+        font-size: 1.4rem;
+    }
+    
+    .human li {
+        padding-left: 4rem;
+    }
+    .banner-footer {
+      height: 100%;
+      padding-top: 5rem;
+    }
+
+    .footer-first-content {
+      display: none;
+  }
+  }

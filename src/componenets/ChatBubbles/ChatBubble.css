@@ -53,3 +53,19 @@
     align-self: flex-start;
     color: var(--text-background);
 }
+
+@media (max-width: 1536px) {
+    .chat-bubble {
+        font-size: 1.5rem;
+    }
+    .chat-container {
+        gap: 4px;
+    }
+    .chat-avatar-large {
+        width: 60px;
+        height: 60px;
+    }
+    .chat-header p{
+        font-size: 1rem;
+    }
+}
