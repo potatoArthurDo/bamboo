@@ -1311,36 +1311,8 @@ h1 {
 .footer-first-content .dot-info:hover .dot {
     opacity: 1;
   }
-/* .footer {
-  color: var(--primary-golden);
-  font-size: 2rem;
-  width: 100%;
-  max-height: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  padding-top: 20rem;
-  padding-left: 20rem;
-}
 
-.footer h3 + h1 {
-  margin-top: -25px;
-}
-.footer .company_name {
-  font-weight: 300;
-  font-size: 3rem;
-}
+/* 16:10 ratio */
 
-.footer .main_name {
-  font-size: 6rem;
-  font-weight: 600;
-  width: 500px;
-  margin-top: -25px;
-}
-.footer p {
-  padding-top: 12rem;
-  color: var(--text-background);
-} */
  
 
