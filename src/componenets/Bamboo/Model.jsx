@@ -114,7 +114,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -6,
+        y: -20,
         ease: "power2.inOut",
         
       },
@@ -124,7 +124,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -10,
+        y: -24,
         ease: "power2.inOut",
         
       },
@@ -134,7 +134,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -16,
+        y: -26,
         ease: "power2.inOut",
         
       },
@@ -144,7 +144,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -22,
+        y: -28,
         ease: "power2.inOut",
        
       },
@@ -154,7 +154,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -24,
+        y: -30,
         ease: "power2.inOut",
         
       },
@@ -164,7 +164,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -30,
+        y: -32,
         ease: "power2.inOut",
         
       },
@@ -174,7 +174,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -36,
+        y: -34,
         ease: "power2.inOut",
         
       },
@@ -184,7 +184,7 @@ export function Model(props) {
       ref.current.position,
       {
         duration: 1,
-        y: -40,
+        y: -36,
         ease: "power2.inOut",
         
       },
