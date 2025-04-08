@@ -83,129 +83,68 @@ export function Model(props) {
   });
 
   useLayoutEffect(() => {
-    tl.current = gsap.timeline();
-
+    const timeline = gsap.timeline();
+    tl.current = timeline;
+  
     console.log("timeline started");
-
-    //rotation
-    tl.current.to(
+  
+    // 🔄 Rotation Animations
+    timeline.to(
       ref.current.rotation,
       { duration: 2, x: 0, y: -Math.PI / 32, z: 0 },
       0
     );
-    tl.current.to(ref.current.rotation, { duration: 1, x: 0, y: -Math.PI / 2, z: 0 }, 9);
-
-    //movement
-    tl.current.to(
+    timeline.to(
+      ref.current.rotation,
+      { duration: 1, x: 0, y: -Math.PI / 2, z: 0 },
+      9
+    );
+  
+    // 📦 Position X and Z movement
+    timeline.to(
       ref.current.position,
       {
         duration: 1,
-        // x: -1,
-        // y:30,
         x: -15,
-        // y: 1,
         z: 3,
         ease: "power2.inOut",
-        
       },
       0
     );
-    tl.current.to(
+  
+    // ⬇️ Y-axis animation using keyframes
+    timeline.to(
       ref.current.position,
       {
-        duration: 1,
-        y: -20,
+        keyframes: [
+          { y: -20, duration: 1 },
+          { y: -24, duration: 1 },
+          { y: -26, duration: 1 },
+          { y: -28, duration: 1 },
+          { y: -30, duration: 1 },
+          { y: -32, duration: 1 },
+          { y: -34, duration: 1 },
+          { y: -36, duration: 1 },
+        ],
         ease: "power2.inOut",
-        
       },
-      1
+      1 // start after the initial x/z move
     );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -24,
-        ease: "power2.inOut",
-        
-      },
-      2
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -26,
-        ease: "power2.inOut",
-        
-      },
-      3
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -28,
-        ease: "power2.inOut",
-       
-      },
-      4
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -30,
-        ease: "power2.inOut",
-        
-      },
-      5
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -32,
-        ease: "power2.inOut",
-        
-      },
-      6
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -34,
-        ease: "power2.inOut",
-        
-      },
-      7
-    );
-    tl.current.to(
-      ref.current.position,
-      {
-        duration: 1,
-        y: -36,
-        ease: "power2.inOut",
-        
-      },
-      8
-    );
-    tl.current.to(
+  
+    // 🎯 Final move
+    timeline.to(
       ref.current.position,
       {
         duration: 1,
         x: -20,
         y: -20,
         z: -50,
-        ease: "power2.Out",
-        // onUpdate: () => {
-        //   console.log("step 9");
-        //   shoot8Ref.current.material = bambooMaterial;
-        // },
+        ease: "power2.out",
       },
       9
     );
-  });
+  }, []);
+  
 
   return (
     <group {...props} dispose={null} ref={ref} position={[-18, -22, -50]} rotation={[0, -Math.PI / 2, 0]} >

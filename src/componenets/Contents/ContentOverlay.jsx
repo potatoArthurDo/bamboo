@@ -52,15 +52,15 @@ export const ContentOverlay = () => {
   const [opacity9, setOpacitySection9] = useState(0);
 
   useFrame(() => {
-    setOpacitySection1(1 - scroll.range(0, 1 / 9));
-    setOpacitySection2(scroll.curve(1 / 9, 1 / 9));
-    setOpacitySection3(scroll.curve(2 / 9, 1 / 9));
-    setOpacitySection4(scroll.curve(3 / 9, 1 / 9));
-    setOpacitySection5(scroll.curve(4 / 9, 1 / 9));
-    setOpacitySection6(scroll.curve(5 / 9, 1 / 9));
-    setOpacitySection7(scroll.curve(6 / 9, 1 / 9));
-    setOpacitySection8(scroll.curve(7 / 9, 2 / 9)); // Increase duration
-setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// Adjusted for 9 sections
+    setOpacitySection1(1 - scroll.range(0, 1 / 6)); // ~17% for fade out
+    setOpacitySection2(scroll.curve(1 / 9, 2 / 9)); // fade in slower
+    setOpacitySection3(scroll.curve(2 / 9, 2 / 9));
+    setOpacitySection4(scroll.curve(3 / 9, 2 / 9));
+    setOpacitySection5(scroll.curve(4 / 9, 2 / 9));
+    setOpacitySection6(scroll.curve(5 / 9, 2 / 9));
+    setOpacitySection7(scroll.curve(6 / 9, 2 / 9));
+    setOpacitySection8(scroll.curve(7 / 9, 2 / 9));
+    setOpacitySection9(scroll.range(8 / 9, 1 / 9)); // fade in slower
   });
   const bubbleData = [
     { id: "bubble1", content: "Cool" },
@@ -111,8 +111,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
     {
       title: "2G Education",
       subtitle: "Học ngoại ngữ, mở tương lai",
-      image:
-        "/assets/images/education.jpg",
+      image: "/assets/images/education.jpg",
       intro:
         "Giúp bạn chinh phục ngoại ngữ với chương trình đào tạo bài bản, mở ra cơ hội học tập và sự nghiệp toàn cầu.",
       details: [
@@ -125,8 +124,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       title: "2G Pathways",
       subtitle:
         "Giải pháp du học toàn diện - Du học Anh, Mỹ, Úc, Canada, New Zealand",
-      image:
-        "/assets/images/abroad.jpg",
+      image: "/assets/images/abroad.jpg",
       intro:
         "Một lộ trình du học toàn diện, giúp các em THỰC SỰ SẴN SÀNG về tư duy, kĩ năng, ngôn ngữ khi bước ra thế giới.",
       details: [
@@ -138,8 +136,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
     {
       title: "2G Eureka Camps",
       subtitle: "Cung cấp các giải pháp về mô hình trại hè",
-      image:
-        "/assets/images/camp.png",
+      image: "/assets/images/camp.png",
       intro: "TThấu hiểu bản thân từ những bước chân trải nghiệm.",
       details: [
         "- Trại hè trao đổi tại Úc, New Zealand, Singapore dành cho trẻ 5-12 tuổi.",
@@ -150,8 +147,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
     {
       title: "GV Manpower",
       subtitle: "Cung cấp dịch vụ tư vấn du học nghề tại Đức",
-      image:
-        "/assets/images/german.jpg",
+      image: "/assets/images/german.jpg",
       intro:
         "Chương trình du học nghề uy tín, giúp bạn xây dựng sự nghiệp ổn định tại Đức với chi phí cực tối ưu.",
       details: [
@@ -163,8 +159,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
     {
       title: "Du học Hồng Khôi",
       subtitle: "Cung cấp dịch vụ tư vấn du học nghề tại Đài Loan",
-      image:
-        "/assets/images/taiwan.jpg",
+      image: "/assets/images/taiwan.jpg",
       intro: "Hành trình du học vươn lên dẫn đầu, đạt thành công rực rỡ",
       details: [
         "- Luyện thi TOCFL, đạt chuẩn đầu vào.",
@@ -236,7 +231,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       ],
     },
   ];
-  
+
   const human_first_images = [
     "assets/humans-images/wright.jpg",
     "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
@@ -247,7 +242,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
     "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
     "assets/humans-images/human_11.jpg",
     "assets/humans-images/human_12.jpg",
-  ]
+  ];
 
   const human_second_images = [
     "assets/humans-images/human_1.jpg",
@@ -260,7 +255,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
     "assets/humans-images/human_8.jpg",
     "assets/humans-images/human_9.jpg",
     "assets/humans-images/human_10.jpg",
-  ]
+  ];
 
   const pages = [
     {
@@ -405,91 +400,89 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       ],
     },
     {
-        id: "page8",
-        text: [
-          [
-            {
-              text: "Sống liêm chính (Credibility): ",
-              highlight: true,
-              color: "var(--primary-red)",
-            },
-            {
-              text: " Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
-            },
-          ],
+      id: "page8",
+      text: [
+        [
+          {
+            text: "Sống liêm chính (Credibility): ",
+            highlight: true,
+            color: "var(--primary-red)",
+          },
+          {
+            text: " Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
+          },
         ],
-      },
-      {
-        id: "page9",
-        text: [
-          [
-            {
-              text: "Sống cống hiến (Contribution):",
-              highlight: true,
-              color: "var(--primary-red)",
-            },
-            {
-              text: "Chúng tôi tin rằng giáo dục có sức mạnh thay đổi cuộc sống và tạo ra những tác động tích cực lâu dài. Mỗi bước đi của 2G đều có sự tính toán đến ảnh hưởng đối với cộng đồng, hướng tới việc hỗ trợ học tập cho đa dạng các đối tượng, đặc biệt là các bạn trẻ có hoàn cảnh khó khăn. Vì vậy, 2G Group đã lập ra quỹ giáo dục Glocal Villagers, liên tục tổ chức các hoạt động xã hội hàng năm, và không ngừng xây dựng những chương trình mang lại giá trị thực cho cộng đồng.",
-            },
-          ],
+      ],
+    },
+    {
+      id: "page9",
+      text: [
+        [
+          {
+            text: "Sống cống hiến (Contribution):",
+            highlight: true,
+            color: "var(--primary-red)",
+          },
+          {
+            text: "Chúng tôi tin rằng giáo dục có sức mạnh thay đổi cuộc sống và tạo ra những tác động tích cực lâu dài. Mỗi bước đi của 2G đều có sự tính toán đến ảnh hưởng đối với cộng đồng, hướng tới việc hỗ trợ học tập cho đa dạng các đối tượng, đặc biệt là các bạn trẻ có hoàn cảnh khó khăn. Vì vậy, 2G Group đã lập ra quỹ giáo dục Glocal Villagers, liên tục tổ chức các hoạt động xã hội hàng năm, và không ngừng xây dựng những chương trình mang lại giá trị thực cho cộng đồng.",
+          },
         ],
-      },
-      {
-        id: "page10",
-        text: [
-          [
-            { text: "3 câu chuyện biểu tượng:", highlight: "true" },
-          ],
-          [
-            {
-              text: "Câu chuyện cây tre: ",
-              highlight: true,
-              color: "var(--primary-green)",
-              weight : "800"
-            },
-            {
-              text: "Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
-            },
-          ],
+      ],
+    },
+    {
+      id: "page10",
+      text: [
+        [{ text: "3 câu chuyện biểu tượng:", highlight: "true" }],
+        [
+          {
+            text: "Câu chuyện cây tre: ",
+            highlight: true,
+            color: "var(--primary-green)",
+            weight: "800",
+          },
+          {
+            text: "Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
+          },
         ],
-      },
-      {
-        id: "page11",
-        text: [
-            [
-                {
-                  text: "Câu chuyện the dots: ",
-                  highlight: true,
-                  color: "var(--primary-green)",
-                  weight : "800"
-                },
-                {
-                  text: "Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng. Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ. Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công ",
-                },
-              ],
+      ],
+    },
+    {
+      id: "page11",
+      text: [
+        [
+          {
+            text: "Câu chuyện the dots: ",
+            highlight: true,
+            color: "var(--primary-green)",
+            weight: "800",
+          },
+          {
+            text: "Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng. Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ. Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công ",
+          },
         ],
-      },
-      {
-        id: "page12",
-        text: [
-          [
-            { text: "trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ. " },
-            
-          ],
-          [
-            {
-              text: "Câu chuyện connect the “đốt”:  ",
-              highlight: true,
-              color: "var(--primary-green)",
-              weight : "800"
-            },
-            {
-              text: "Tre cắm rễ, vươn từng đốt. Dấu “dots” nhỏ, ý tưởng lớn. 2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
-            },
-          ],
-          
+      ],
+    },
+    {
+      id: "page12",
+      text: [
+        [
+          {
+            text: "trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ. ",
+          },
         ],
-      },
+        [
+          {
+            text: "Câu chuyện connect the “đốt”:  ",
+            highlight: true,
+            color: "var(--primary-green)",
+            weight: "800",
+          },
+          {
+            text: "Tre cắm rễ, vươn từng đốt. Dấu “dots” nhỏ, ý tưởng lớn. 2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
+          },
+        ],
+      ],
+    },
   ];
 
   const founder = {
@@ -549,7 +542,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
         </div>
       </Section>
       <Section opacity={opacity2} sectionName="feedback">
-        <h1>Họ đang nói gì  </h1>
+        <h1>Họ đang nói gì </h1>
         <h1> về 2G Education ? </h1>
         {/* <div className="video-container">
             <iframe
@@ -610,7 +603,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
             ))}
           </div>
         </div>
-        <p className="bounce">↓</p>
+      
       </Section>
 
       <Section opacity={opacity3} sectionName="achievement">
@@ -626,7 +619,6 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
             </div>
           ))}
         </div>
-        <p className="bounce">↓</p>
       </Section>
 
       <Section opacity={opacity4} sectionName="service">
@@ -724,7 +716,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
             </div>
           </div>
         </div>
-        );
+
         <p className="bounce ">↓</p>
       </Section>
 
@@ -787,113 +779,155 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
       <Section opacity={opacity7} sectionName="founder">
         <h1>2G Founder Profile</h1>
         <div className="founder_card">
-      <img src={founder.image} alt={founder.name} />
+          <img src={founder.image} alt={founder.name} />
 
-      <div className="founder_info">
-        <div className="founder_name">
-          <h2>{founder.name}</h2>
-        </div>
+          <div className="founder_info">
+            <div className="founder_name">
+              <h2>{founder.name}</h2>
+            </div>
 
-        <div className="founder_history">
-          {founder.history.map((item, index) => (
-            <p key={index}>- {item}</p>
-          ))}
-        </div>
+            <div className="founder_history">
+              {founder.history.map((item, index) => (
+                <p key={index}>- {item}</p>
+              ))}
+            </div>
 
-        <div
-          className="founder_button"
-          onClick={() => navigate(founder.button.link)}
-        >
-          <img src={founder.button.image} alt={founder.button.text} />
-          <p>{founder.button.text}</p>
+            <div
+              className="founder_button"
+              onClick={() => navigate(founder.button.link)}
+            >
+              <img src={founder.button.image} alt={founder.button.text} />
+              <p>{founder.button.text}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
         <p className="bounce">↓</p>
       </Section>
 
       <Section opacity={opacity8} sectionName="human">
-      <h1>2G Humans</h1>
+        <h1>2G Humans</h1>
         <div className="human-intro">
-        <h5>ĐỘI NGŨ CỐ VẤN CHUYÊN MÔN ĐẦU NGÀNH TRONG NƯỚC & QUỐC TẾ</h5>
-        <p>2G Education tự hào có sự đồng hành của các chuyên gia hàng đầu trong lĩnh vực giáo dục</p>
-        <h5>ĐỘI NGŨ GIẢNG VIÊN 2G TÂM HUYẾT VÀ CHUYÊN MÔN HÀNG ĐẦU</h5>
-        <p>2G Education sở hữu đội ngũ giảng viên chuyên môn cao, với tiêu chuẩn hạng A++, đạt IELTS 8.0+ / C1+, bao gồm:</p>
-        <ul>
-            <li>- Giảng viên Việt Nam tốt nghiệp từ các trường Đại học hàng đầu: ĐH Sư Phạm, ĐH Ngoại Ngữ</li>
+          <h5>ĐỘI NGŨ CỐ VẤN CHUYÊN MÔN ĐẦU NGÀNH TRONG NƯỚC & QUỐC TẾ</h5>
+          <p>
+            2G Education tự hào có sự đồng hành của các chuyên gia hàng đầu
+            trong lĩnh vực giáo dục
+          </p>
+          <h5>ĐỘI NGŨ GIẢNG VIÊN 2G TÂM HUYẾT VÀ CHUYÊN MÔN HÀNG ĐẦU</h5>
+          <p>
+            2G Education sở hữu đội ngũ giảng viên chuyên môn cao, với tiêu
+            chuẩn hạng A++, đạt IELTS 8.0+ / C1+, bao gồm:
+          </p>
+          <ul>
+            <li>
+              - Giảng viên Việt Nam tốt nghiệp từ các trường Đại học hàng đầu:
+              ĐH Sư Phạm, ĐH Ngoại Ngữ
+            </li>
             <li>- Cựu du học sinh, giảng viên giàu kinh nghiệm giảng dạy</li>
-            <li>- Giáo viên bản ngữ, có chứng chỉ giảng dạy quốc tế, tận tâm và chuyên môn cao</li>
-        </ul>
+            <li>
+              - Giáo viên bản ngữ, có chứng chỉ giảng dạy quốc tế, tận tâm và
+              chuyên môn cao
+            </li>
+          </ul>
         </div>
         <div className="human-slider">
-            <Slider images={human_first_images} width="200px" height="266.67px" quantity={9}/>
-            <Slider images={human_second_images} width="200px" height="266.67px" quantity={10} reverse = {true} />
-            <p onClick={() => navigate("/instructors")}>Xem chi tiết</p>
+          <Slider
+            images={human_first_images}
+            width="200px"
+            height="266.67px"
+            quantity={9}
+          />
+          <Slider
+            images={human_second_images}
+            width="200px"
+            height="266.67px"
+            quantity={10}
+            reverse={true}
+          />
+          <p onClick={() => navigate("/instructors")}>Xem chi tiết</p>
         </div>
       </Section>
 
       <Section opacity={opacity9} sectionName="banner-footer">
         <div className="footer-first-content">
-      <div className="left-intro">
-          <div className="company-mean">
-            <h3 className="company_name">2G Group</h3>
-          </div>
-          <div className="quote-container">
-            <p className="journey-quote connect">Connect</p>
-            <p className="journey-quote the ">the</p>
-            <div className="dot-info">
-              <p className="journey-quote dot">"Đốt"</p>
+          <div className="left-intro">
+            <div className="company-mean">
+              <h3 className="company_name">2G Group</h3>
+            </div>
+            <div className="quote-container">
+              <p className="journey-quote connect">Connect</p>
+              <p className="journey-quote the ">the</p>
+              <div className="dot-info">
+                <p className="journey-quote dot">"Đốt"</p>
+              </div>
             </div>
           </div>
-          
+
+          <div className="right-intro">
+            <h1 className="main_name english1">ANH NGỮ</h1>
+            <h1 className="main_name english2">TOÀN DIỆN</h1>
+            <h1 className="main_name camping">TRẠI HÈ </h1>
+            <h1 className="main_name study">DU HỌC</h1>
+          </div>
         </div>
 
-        <div className="right-intro">
-          <h1 className="main_name english1">ANH NGỮ</h1>
-          <h1 className="main_name english2">TOÀN DIỆN</h1>
-          <h1 className="main_name camping">TRẠI HÈ </h1>
-          <h1 className="main_name study">DU HỌC</h1>
-        </div>
-        </div>
-
-        <footer className="footer" >
-        <div className="footer-container">
-          <div className="footer-logo">
-            <img s src="assets/images/logo.png" alt="Company Logo" className="logo" />
+        <footer className="footer">
+          <div className="footer-container">
+            <div className="footer-logo">
+              <img
+                s
+                src="assets/images/logo.png"
+                alt="Company Logo"
+                className="logo"
+              />
+            </div>
+            <div className="footer-info">
+              <p>Branches:</p>
+              <ul>
+                <li>New York, USA</li>
+                <li>London, UK</li>
+                <li>Tokyo, Japan</li>
+              </ul>
+              <p>Phone: +1 234 567 890</p>
+            </div>
+            <div className="footer-links">
+              <p>Quick Links:</p>
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="/about">Về Chúng Tôi</a>
+                </li>
+                <li>
+                  <a href="/founder_story">Thư ngỏ</a>
+                </li>
+                <li>
+                  <a href="/instructors">2G Humans</a>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-social">
+              <p>Follow Us:</p>
+              <a href="#">
+                <img src="/facebook-icon.png" alt="Facebook" />
+              </a>
+              <a href="#">
+                <img src="/twitter-icon.png" alt="Twitter" />
+              </a>
+              <a href="#">
+                <img src="/instagram-icon.png" alt="Instagram" />
+              </a>
+            </div>
           </div>
-          <div className="footer-info">
-            <p>Branches:</p>
-            <ul>
-              <li>New York, USA</li>
-              <li>London, UK</li>
-              <li>Tokyo, Japan</li>
-            </ul>
-            <p>Phone: +1 234 567 890</p>
-          </div>
-          <div className="footer-links">
-            <p>Quick Links:</p>
-            <ul>
-            <li><a href="/">Home</a></li>
-              <li><a href="/about">Về Chúng Tôi</a></li>
-              <li><a href="/founder_story">Thư ngỏ</a></li>
-              <li><a href="/instructors">2G Humans</a></li>
-            </ul>
-          </div>
-          <div className="footer-social">
-            <p>Follow Us:</p>
-            <a href="#"><img src="/facebook-icon.png" alt="Facebook" /></a>
-            <a href="#"><img src="/twitter-icon.png" alt="Twitter" /></a>
-            <a href="#"><img src="/instagram-icon.png" alt="Instagram" /></a>
-          </div>
-        </div>
-        <p className="footer-bottom">&copy; {new Date().getFullYear()} 2G Education. All rights reserved.</p>
-      </footer>
+          <p className="footer-bottom">
+            &copy; {new Date().getFullYear()} 2G Education. All rights reserved.
+          </p>
+        </footer>
         {/* <h3 className="company_name">2G Education</h3>
         <h1 className="main_name">GLOCAL</h1>
         <h1 className="main_name">TREE</h1>
         */}
-       
       </Section>
     </Scroll>
   );

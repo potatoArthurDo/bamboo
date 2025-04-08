@@ -1,7 +1,7 @@
 @import "../../App.css";
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,8 +339,9 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-top: 10rem;
+  margin-top: 10rem;
   padding-left: 5rem;
+  margin-bottom: 10rem;
 }
 
 .timeline {
@@ -445,7 +446,7 @@
   justify-content: center;
   position: relative;
   padding-left: 5rem;
-  padding-top: 2rem;
+  padding-top: 0rem;
 }
 
 /* .product-container {
@@ -929,6 +930,7 @@ h1 {
   gap: 20px;
   padding-left: 5rem;
   padding-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .founder_card {
@@ -1150,8 +1152,9 @@ h1 {
   padding-left: 7rem;
   padding-top: 3rem;
   background: rgba(54, 78, 1, 0.18);
-    width: 90rem;
-    height: 100%;
+  width: 90rem;
+  height: 100%;
+  margin-bottom: 10rem;
 }
 
 .human-card-container {
@@ -1198,7 +1201,7 @@ h1 {
 
 .human-card-avatar img {
   width: 300px;
-  height:400px;
+  height: 400px;
 }
 
 .human-card-info {
@@ -1216,14 +1219,11 @@ h1 {
   text-align: start;
   padding: 15px;
   z-index: 1;
- 
-  
 }
 
 .human-card:hover .human-card-info {
   opacity: 1;
   transform: translateY(0);
-  
 }
 
 .human-card:hover .human-card-avatar {
@@ -1231,88 +1231,83 @@ h1 {
 }
 
 .human-intro {
-    width: 80rem;
-    height: 100%;
+  width: 80rem;
+  height: 100%;
 }
 .human h5 {
-    font-size: 2rem;
-    text-shadow: rgb(0, 0, 0) 2px 2px 2px;
-    color: var(--text-background);
-    margin-top: 1rem;
+  font-size: 2rem;
+  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+  color: var(--text-background);
+  margin-top: 1rem;
 }
 
 .human p {
-    font-size: 2rem;
-    padding-left: 3rem;
-    width: 50rem;
-    text-shadow: rgba(19, 20, 0, 0.779) 2px 2px 2px;
-    font-weight: 500;
-
+  font-size: 2rem;
+  padding-left: 3rem;
+  width: 50rem;
+  text-shadow: rgba(19, 20, 0, 0.779) 2px 2px 2px;
+  font-weight: 500;
 }
 
 .human ul {
-    list-style: none;
-    font-size: 1.6rem;
-    width: 50rem;
-    font-weight: 600;
-    color: var(--golden-intro);
+  list-style: none;
+  font-size: 1.6rem;
+  width: 50rem;
+  font-weight: 600;
+  color: var(--golden-intro);
 }
 
 .human li {
-    padding-left: 6rem;
+  padding-left: 6rem;
 }
 
 .human-slider {
-    width: 100%;
-    margin-top: 1.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
 }
 
 .human-slider p {
-    text-decoration: underline;
-    font-size: 1.7rem;
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-
+  text-decoration: underline;
+  font-size: 1.7rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .human-slider p:hover {
-   
-    transform: scaleY(1.05);
-    text-shadow: rgba(213, 227, 24, 0.632) 2px 2px 2px;
+  transform: scaleY(1.05);
+  text-shadow: rgba(213, 227, 24, 0.632) 2px 2px 2px;
 }
 
 .banner-footer {
-    color: var(--primary-golden);
-    font-size: 2rem;
-    width: 100%;
-    max-height: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    padding-top: 3rem;
-  }
-
-.footer-first-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 10rem;
-    padding-left: 10rem;
+  color: var(--primary-golden);
+  font-size: 2rem;
+  width: 100%;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-top: 3rem;
 }
 
-.footer-first-content .company-mean:hover  .company_name {
-   opacity: 1;
+.footer-first-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 7rem;
+  padding-left: 10rem;
+}
+
+.footer-first-content .company-mean:hover .company_name {
+  opacity: 1;
 }
 
 .footer-first-content .dot-info:hover .dot {
-    opacity: 1;
-  }
+  opacity: 1;
+}
 
-/* 16:10 ratio */
-
- 
-
+@media (min-width: 992px) and (max-width: 1199px) {
+}

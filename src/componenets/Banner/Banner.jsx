@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useLayoutEffect } from "react";
 import { OrbitControls, ScrollControls } from "@react-three/drei";
 import { Model } from "../Bamboo/Model";
 import "./Banner.css";
@@ -9,14 +9,27 @@ import { ContentOverlay } from "../Contents/ContentOverlay";
 
 export default function Banner({ progress }) {
   const [IsMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial check
+  const [page_number, setPages] = useState(10.5);
+
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
+      const width = window.innerWidth;
+      if (width < 1840) {
+        setPages(12.6); // Smaller screens
+      } else if (width <= 1280) {
+        setPages(10.5); // 1840px to 1920px
+      }
+       else {
+        setPages(10.5); // 1920px and above
+      }
     };
-
+  
+    handleResize(); // 👈 Run it immediately on mount
+  
     window.addEventListener("resize", handleResize);
-
+  
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -25,7 +38,7 @@ export default function Banner({ progress }) {
     <>
       <Environment preset="city" />
       <ambientLight intensity={1} />
-      <ScrollControls pages={10} damping={0.25} distance={1} horizontal={false}>
+      <ScrollControls pages={page_number} damping={0.25} distance={1} horizontal={false}>
         <ContentOverlay />
         {!IsMobile && <Model />} {/* Render Model only on desktop */}
       </ScrollControls>

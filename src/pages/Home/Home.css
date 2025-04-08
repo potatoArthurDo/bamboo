@@ -16,7 +16,8 @@
   }
   
   .canvas-container {
-    height: 100vh;
+    /* height: calc(100vw * 9 / 16); */
+    height: 100dvh;
     width: 100vw;
     display: flex;
     justify-content: center;

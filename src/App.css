@@ -12,7 +12,7 @@
 
 body,
 html {
-    margin: 0;
+  margin: 0;
   padding: 0;
   overflow-x: hidden;
   /* background: linear-gradient(0deg,  #EAD7B8, #F3DFC4, #FCEED9),url("../assets/images/sun_glow_bg_1.png"); */
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
