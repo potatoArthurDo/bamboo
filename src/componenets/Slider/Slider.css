@@ -47,9 +47,10 @@
   transform: scale(1.1);
 }
 
-.slider[reverse="true"] .item {
-  animation: reversePlay 10s linear infinite;
-}
+.slider[data-reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+  }
+  
 
 @keyframes reversePlay {
   from {

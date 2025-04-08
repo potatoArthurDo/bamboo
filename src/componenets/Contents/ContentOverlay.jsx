@@ -238,30 +238,28 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
   ];
   
   const human_first_images = [
-    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
+    "assets/humans-images/wright.jpg",
     "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
     "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
     "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
     "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
     "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
     "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
-    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
-    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "assets/humans-images/human_11.jpg",
+    "assets/humans-images/human_12.jpg",
   ]
 
   const human_second_images = [
-    
-    
-    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
-    "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
-    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
-    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
-    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
-    "https://i.seadn.io/gae/6McrRtw5AB_JTY4qq2kDvkeSS_JRwrvN8hL0SWwzt0KqUf-6d1ojroL76NhBX0_-eIZEpxeiH9LV_LuEyNSdDL18OHFvW7R1QGU55Q?auto=format&dpr=1&w=1000",
-    "https://i.redd.it/have-you-ever-wanted-to-own-an-ugly-ape-jpeg-fomo-no-more-v0-nzdicbgv1bpa1.png?width=512&format=png&auto=webp&s=c410042865ab6476a5b6ab031582d2a0b6af2098",
-    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
-    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
-    "https://nftcalendar.io/storage/uploads/events/2022/3/eqMsubpo7et1OvOYDk1o6NEyM5o2fvY530lXuSrU.gif",
+    "assets/humans-images/human_1.jpg",
+    "assets/humans-images/human_2.jpg",
+    "assets/humans-images/human_3.jpg",
+    "assets/humans-images/human_4.jpg",
+    "assets/humans-images/human_5.jpg",
+    "assets/humans-images/human_6.jpg",
+    "assets/humans-images/human_7.jpg",
+    "assets/humans-images/human_8.jpg",
+    "assets/humans-images/human_9.jpg",
+    "assets/humans-images/human_10.jpg",
   ]
 
   const pages = [
@@ -830,7 +828,7 @@ setOpacitySection9(scroll.range(8.5 / 9, 0.5 / 9)); // Adjust last transition// 
         </div>
         <div className="human-slider">
             <Slider images={human_first_images} width="200px" height="266.67px" quantity={9}/>
-            <Slider images={human_second_images} width="200px" height="266.67px" quantity={10} reverse = "true"/>
+            <Slider images={human_second_images} width="200px" height="266.67px" quantity={10} reverse = {true} />
             <p onClick={() => navigate("/instructors")}>Xem chi tiết</p>
         </div>
       </Section>

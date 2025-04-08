@@ -39,7 +39,7 @@ export default function Instructors() {
       role: "peter",
       name: "PETER WRIGHT",
       image:
-        "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
+        "assets/humans-images/wright.jpg",
       intro:
         "Chuyên gia với 25 năm kinh nghiệm, giảng dạy full-time tại 2G Education hơn 4 năm. ",
       achivements: [
@@ -94,7 +94,7 @@ export default function Instructors() {
       role: "teacher",
       name: "CHU MINH THÙY",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_11.jpg",
       intro: "QUẢN LÝ HỌC VỤ",
       achivements: [
         "- Tốt nghiệp cử nhân ngành Kinh tế quốc tế, Học viện Ngoại giao Việt Nam",
@@ -108,7 +108,7 @@ export default function Instructors() {
       role: "teacher",
       name: "NGUYỄN CÔNG THÀNH",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_1.jpg",
       intro: "GIÁO VIÊN TRƯỞNG IELTS",
       achivements: [
         "- Tốt nghiệp loại giỏi chuyên ngành quản trị kinh doanh tại trường Wisconsin International University in Ukraine",
@@ -137,7 +137,7 @@ export default function Instructors() {
       role: "teacher",
       name: "EMILY",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Đạt IELTS 8.0 overall, trong đó Speaking 8.0",
@@ -151,7 +151,7 @@ export default function Instructors() {
       role: "teacher",
       name: "THANH LONG",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+       "assets/humans-images/human_2.jpg",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Tốt nghiệp Đại học Giao Thông Vận Tải",

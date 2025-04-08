@@ -284,7 +284,7 @@ const MobileOverlay = () => {
     {
       name: "NGUYỄN CÔNG THÀNH",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_1.jpg",
       intro: "GIÁO VIÊN TRƯỞNG IELTS",
       achivements: [
         "- Tốt nghiệp loại giỏi chuyên ngành quản trị kinh doanh tại trường Wisconsin International University in Ukraine",
@@ -321,7 +321,7 @@ const MobileOverlay = () => {
     {
       name: "THANH LONG",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_2.jpg",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Tốt nghiệp Đại học Giao Thông Vận Tải",
@@ -675,7 +675,7 @@ const MobileOverlay = () => {
               <h3>Peter Wright</h3>
               <div className="mobile-human-img">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png"
+                  src="assets/humans-images/wright.jpg"
                   alt=""
                 />
                 <h2>Peter Wright</h2>
