@@ -296,6 +296,24 @@
   top: 70%;
   left: -15%;
 }
+.bubbles :nth-child(6) {
+  background-size: auto 80%;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+.bubbles :nth-child(7) {
+  background-size: auto 60%;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
+.bubbles :nth-child(8) {
+  background-size: auto 50%;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+}
 
 .bubble.active {
   transform: scale(1.1);
@@ -1158,11 +1176,11 @@ h1 {
   justify-content: center;
   position: relative;
   padding-left: 7rem;
-  padding-top: 3rem;
+  margin-top: 15rem;
   background: rgba(54, 78, 1, 0.18);
   width: 90rem;
   height: 100%;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
 }
 
 .human-card-container {

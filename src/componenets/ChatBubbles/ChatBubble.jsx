@@ -5,7 +5,7 @@ const ChatBubble = ({ message, isSender, sender }) => {
     return (
         <div className={`chat-bubble ${isSender ? "sender" : "receiver"}`}>
             {message}
-            {isSender && ( <p className="sender-name">-{sender}</p>)}
+            {isSender && ( <p className="sender-name">- {sender}</p>)}
         </div>
     );
 };
