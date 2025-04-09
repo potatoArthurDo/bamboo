@@ -2,7 +2,7 @@ import ChatBubble from "../ChatBubbles/ChatBubble";
 import Footer from "../Footer/Footer";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import "./mobileOverlay.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 
@@ -10,6 +10,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const MobileOverlay = () => {
   const [openTab, setOpenTab] = useState(null);
+  const carouselRef = useRef(null);
+
+  const scroll = (direction) => {
+    const container = carouselRef.current;
+    const itemWidth = container.offsetWidth;
+
+    if (direction === "left") {
+      container.scrollBy({ left: -itemWidth, behavior: "smooth" });
+    } else {
+      container.scrollBy({ left: itemWidth, behavior: "smooth" });
+    }
+  };
 
   const toggleTab = (index) => {
     setOpenTab(openTab === index ? null : index);
@@ -115,12 +127,12 @@ const MobileOverlay = () => {
         "Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
     },
     {
-        title: "Credibility",
-        title_intro: "Sống liêm chính",
-        content:
-          "Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
+      title: "Credibility",
+      title_intro: "Sống liêm chính",
+      content:
+        "Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
     },
-    
+
     {
       title: "Contribution",
       title_intro: "Sống cống hiến",
@@ -129,92 +141,32 @@ const MobileOverlay = () => {
     },
   ];
 
-  const tabs = [
+  const purpose_story = [
     {
-      title: "3 tinh thần hướng tới: Resilience, Reimagine, Responsibility",
-      sectionTitle: "3 Tinh thần hướng tới",
-      content: [
-        {
-          title: "Resilience",
-          description: [
-            "Sức mạnh của sự bền bỉ và nội lực.",
-            "Luôn đặt chất lượng trên lợi ích ngắn hạn.",
-            "Kiên trì theo đuổi giá trị cốt lõi, tin vào nội lực bên trong của mỗi người.",
-          ],
-        },
-        {
-          title: "Reimagine",
-          description: [
-            "Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo và mô hình kinh doanh.",
-            "Luôn cập nhật xu hướng giáo dục toàn cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập.",
-            "Khuyến khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh từ giảng dạy đến quản trị.",
-          ],
-        },
-        {
-          title: "Responsibility",
-          description: [
-            "Cam kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự.",
-            "Xây dựng môi trường làm việc đề cao sự gắn kết và phát triển cá nhân.",
-            "Tạo ra tác động tích cực, không chỉ trong giáo dục mà còn trong cộng đồng.",
-          ],
-        },
-      ],
-    },
-    {
-      title: "3 giá trị cốt lõi: Care, Credibility, Contribution",
-      sectionTitle: "3 Giá trị cốt lõi",
-      content: [
-        {
-          title: "Sống tử tế (Care)",
-          description: [
-            " - Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
-          ],
-        },
-        {
-          title: "Sống liêm chính (Credibility)",
-          description: [
-            " - Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
-          ],
-        },
-        {
-          title: "Sống cống hiến (Contribution)",
-          description: [
-            " - Chúng tôi tin rằng giáo dục có sức mạnh thay đổi cuộc sống và tạo ra những tác động tích cực lâu dài. Mỗi bước đi của 2G đều có sự tính toán đến ảnh hưởng đối với cộng đồng, hướng tới việc hỗ trợ học tập cho đa dạng các đối tượng, đặc biệt là các bạn trẻ có hoàn cảnh khó khăn. Vì vậy, 2G Group đã lập ra quỹ giáo dục Glocal Villagers, liên tục tổ chức các hoạt động xã hội hàng năm, và không ngừng xây dựng những chương trình mang lại giá trị thực cho cộng đồng.",
-          ],
-        },
-      ],
-    },
-    {
-      title: "3 câu chuyện biểu tượng",
-      sectionTitle: "3 Câu chuyện biểu tượng",
-      content: [
-        {
-          title: "Câu chuyện cây tre",
-          description: [
+        title: "Câu chuyện cây tre",
+        content: [
             "- Tre không vội vã. Tre cắm rễ sâu, tích tụ sức mạnh, rồi vươn thẳng lên trời – mạnh mẽ nhưng vô cùng linh hoạt. Đó cũng là lí do 2G Group lấy hình ảnh cây tre làm hình ảnh biểu tượng chủ đạo.",
             "- Founder của 2G Group - anh Lê Văn Hải đã từng chia sẻ, càng trưởng thành, anh càng cảm nhận sâu sắc gốc rễ – gia đình, cộng đồng, và di sản Việt Nam đã định hình anh. Với anh, cây tre không chỉ là một loại cây, mà là biểu tượng của bản sắc.",
             "- Sẽ mất hàng năm để rễ tre đan xen cắm chặt dưới lòng sâu trước khi vươn thẳng lên trời, mạnh mẽ và nhanh chóng. Anh học từ đó: muốn vươn cao, phải xây nền móng vững – trong công việc, trong đời sống. Tre phát triển theo từng cụm và lớn lên theo từng đốt, luôn hướng tới mây xanh. Đó cũng là hình ảnh mà anh muốn mọi người liên tưởng tới khi biết đến 2G Group.",
             "- 2G Group kiên nhẫn xây dựng nền tảng – từ chất lượng đào tạo, chất lượng con người đến sự minh bạch trong vận hành – để tạo nên một hệ thống giáo dục bền vững, nơi mọi cá nhân cùng vươn lên từ gốc rễ mạnh mẽ của chính mình.",
-          ],
-        },
-        {
-          title: "Câu chuyện The Dots",
-          description: [
+        ]
+    },
+    {
+        title: "Câu chuyện The Dots",
+        content: [
             "- Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng.",
             "- Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ.",
             "- Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ.",
-          ],
-        },
-        {
-          title: "Câu chuyện Connect the 'Đốt'",
-          description: [
-            "Tre cắm rễ, vươn từng đốt.",
-            "- Dấu “dots” nhỏ, ý tưởng lớn.",
-            "2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
-          ],
-        },
-      ],
+        ]
     },
+    {
+        title: "Câu chuyện Connect the 'Đốt'",
+        content: [
+            "Tre cắm rễ, vươn từng đốt.",
+            "Dấu “dots” nhỏ, ý tưởng lớn.",
+            "2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
+        ]
+    }
   ];
 
   const achievements = [
@@ -657,28 +609,56 @@ const MobileOverlay = () => {
             </div>
             <hr style={{ backgroundColor: "var(--recommended-light-green)" }} />
             <div className="three-c">
-                {threeC.map((item) => (
-                    <>
-                        <div
-                        className={`three-c-title ${
-                            openTab === item.title ? "active" : ""
-                        }`}
-                        key={item.title}
-                        onClick={() => toggleTab(item.title)}
-                        >
-                        <h1>{item.title}</h1>
-                        </div>
-                        <div
-                        className={`three-c-content ${
-                            openTab === item.title ? "active" : ""
-                        }`}
-                        onClick={() => toggleTab(item.title)}
-                        >
-                        <h3>{item.title_intro}</h3>
-                        <p>{item.content}</p>
-                        </div>
-                    </>
-                    ))}
+              {threeC.map((item) => (
+                <>
+                  <div
+                    className={`three-c-title ${
+                      openTab === item.title ? "active" : ""
+                    }`}
+                    key={item.title}
+                    onClick={() => toggleTab(item.title)}
+                  >
+                    <h1>{item.title}</h1>
+                  </div>
+                  <div
+                    className={`three-c-content ${
+                      openTab === item.title ? "active" : ""
+                    }`}
+                    onClick={() => toggleTab(item.title)}
+                  >
+                    <h3>{item.title_intro}</h3>
+                    <p>{item.content}</p>
+                  </div>
+                </>
+              ))}
+            </div>
+            <hr style={{ backgroundColor: "var(--recommended-light-green)" }} />
+            <div className="mobile-purpose-story">
+              <h1>3 câu chuyện biểu tượng</h1>
+              <div className="mobile-carousel-wrapper">
+                <button
+                  className="mobile-nav-btn mobile-left"
+                  onClick={() => scroll("left")}
+                >
+                  ‹
+                </button>
+                <div className="mobile-carousel" ref={carouselRef}>
+                  {purpose_story.map((item) => (
+                    <div className="mobile-carousel-item" key={item}>
+                      <h2>{item.title}</h2>
+                      {item.content.map((content, index) => (
+                        <p key={index}>{content}</p>
+                        ))}
+                    </div>
+                  ))}
+                </div>
+                <button
+                  className="mobile-nav-btn mobile-right"
+                  onClick={() => scroll("right")}
+                >
+                  ›
+                </button>
+              </div>
             </div>
           </div>
         </div>
