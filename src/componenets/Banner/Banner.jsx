@@ -22,7 +22,7 @@ export default function Banner({ progress }) {
         setPages(10.5); // 1840px to 1920px
       }
        else {
-        setPages(10.5); // 1920px and above
+        setPages(10); // 1920px and above
       }
     };
   

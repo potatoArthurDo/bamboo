@@ -63,10 +63,16 @@ export const ContentOverlay = () => {
     setOpacitySection9(scroll.range(8 / 9, 1 / 9)); // fade in slower
   });
   const bubbleData = [
-    { id: "bubble1", content: "Cool" },
-    { id: "bubble2", content: "Good" },
-    { id: "bubble3", content: "Meh!" },
-    { id: "bubble4", content: "Yeah!" },
+    {
+      id: "bubble1",
+      content:
+        "Với vai trò là người tham mưu cho lãnh đạo sở GD&ĐT Nghệ An quản lí các trung tâm ngoại ngữ và cũng là phụ huynh đầu tiên của 2G, tôi hoàn toàn tin tưởng vào chất lượng đào tạo cũng như sự tiên phong của 2G trong ứng dụng công nghệ vào giáo dục. Tôi luôn ủng hộ những gì 2G đang làm cho thế hệ trẻ. Chúc 2G tiếp tục phát triển, tiên phong đổi mới để thật nhiều học sinh vươn xa!",
+        sender: "Thầy Nguyễn Mạnh Hà, Trưởng phòng GDCN-GDTX Sở Giáo dục và Đào tạo Nghệ An"
+    },
+    { id: "bubble2", content: "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV" },
+    { id: "bubble3", content: "Sự cống hiến của các bạn trong việc đổi mới phương pháp giảng dạy tiếng Anh thực sự truyền cảm hứng. Chúng tôi đặc biệt trân trọng cách 2G Education tích hợp công nghệ vào trải nghiệm học tập, đặc biệt thông qua Cambridge One khi giảng dạy Kid's Box và Think. Cam kết của các bạn trong việc mang đến nền giáo dục  chất lượng cao, hấp dẫn không chỉ giúp học viên học tiếng Anh hiệu quả mà còn khiến hành trình học tập trở nên thú vị hơn.",sender: "Mrs Lê Thị Lệ Huyền, Country Head, Cambridge University Press & Assessment" },
+    { id: "bubble4", content: "Hội đồng Anh Việt Nam xin gửi lời chúc mừng nồng nhiệt nhất đến 2G Education – một trong những đối tác Vàng của chúng tôi tại Vinh. Trong suốt 7 năm qua, chúng tôi rất trân trọng sự hợp tác chặt chẽ giữa hai bên trong việc hỗ trợ thí sinh thi IELTS. Chúng tôi đánh giá cao những nỗ lực và đóng góp của 2G Education trong việc mang lại cơ hội giáo dục và phát triển cho học viên.",sender: "Samantha Smith – Giám đốc Khảo thí Quốc gia" },
+    { id: "bubble5", content: "Thật vui khi thấy nhiều thế hệ cựu học sinh chuyên Phan quy tụ tại 2G – có thể nói đây là doanh nghiệp tại Vinh có số lượng cựu học sinh chuyên Phan đông nhất, từ em Hải (khóa 42) – nhà sáng lập 2G, đến các bạn nhân sự, và cả các em học sinh đang theo học.",sender: "Cô Lan Thanh - Hiệu trưởng trường THPT Chuyên Phan Bội Châu" },
   ];
 
   const timelineData = [
@@ -578,10 +584,10 @@ export const ContentOverlay = () => {
                   </div>
                   <div className="chat-container">
                     <ChatBubble
-                      message="Hello, What are they saying?"
+                      message="Xin chào, Họ đang nói gì về 2G?"
                       isSender={false}
                     />
-                    <ChatBubble message={bubble.content} isSender={true} />
+                    <ChatBubble message={bubble.content} isSender={true} sender={bubble.sender} />
                   </div>
                 </div>
               </div>
@@ -603,7 +609,6 @@ export const ContentOverlay = () => {
             ))}
           </div>
         </div>
-      
       </Section>
 
       <Section opacity={opacity3} sectionName="achievement">
@@ -638,7 +643,6 @@ export const ContentOverlay = () => {
           ))}
         </div> */}
         <ProductCarousel products={products} />
-        <p className="bounce ">↓</p>
       </Section>
 
       <Section opacity={opacity5} sectionName="purpose">
@@ -717,7 +721,6 @@ export const ContentOverlay = () => {
           </div>
         </div>
 
-        <p className="bounce ">↓</p>
       </Section>
 
       <Section opacity={opacity6} sectionName="story">
@@ -773,7 +776,6 @@ export const ContentOverlay = () => {
             ))}
           </div>
         </div>
-        <p className="bounce ">↓</p>
       </Section>
 
       <Section opacity={opacity7} sectionName="founder">
@@ -802,7 +804,6 @@ export const ContentOverlay = () => {
           </div>
         </div>
 
-        <p className="bounce">↓</p>
       </Section>
 
       <Section opacity={opacity8} sectionName="human">
