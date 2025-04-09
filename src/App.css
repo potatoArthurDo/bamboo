@@ -71,6 +71,11 @@ body {
   --golden-intro: #faf2c4;
   --green-intro: #deff04;
   --text-background: #fff9d5;
+/* recomended pallete */
+    --recommended-dark-green: #0d3b17;
+    --recommended-light-green: #c8ff01;
+    --recommended-light-golden: #ffc400;
+    --recommended-dark-golden: #905a01;
 }
 
 /* Arrow Animation */

@@ -44,7 +44,7 @@ const MobileOverlay = () => {
       title: "2G Eureka Camps",
       subtitle: "Cung cấp các giải pháp về mô hình trại hè",
       image: "/assets/images/camp.png",
-      intro: "TThấu hiểu bản thân từ những bước chân trải nghiệm.",
+      intro: "Thấu hiểu bản thân từ những bước chân trải nghiệm.",
       details: [
         "- Trại hè trao đổi tại Úc, New Zealand, Singapore dành cho trẻ 5-12 tuổi.",
         "- Chương trình kết hợp học tập, kỹ năng mềm & tư duy sáng tạo và phản biện.",
@@ -74,6 +74,58 @@ const MobileOverlay = () => {
         "- Đa dạng các gói tư vấn: Hệ Cử nhân tự túc, Hệ 1+4, Hệ Vừa học vừa làm, Hệ Ngôn ngữ, Hệ Thạc sĩ, Hệ Tiến sĩ",
         "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
+    },
+  ];
+
+  const threeR = [
+    {
+      title: "Resilience",
+      title_intro: "Sức mạnh của sự bền bỉ và nội lực",
+      content: [
+        "Tập trung xây dựng nền tảng vững chắc trong đào tạo và vận hành.",
+        "Luôn đặt chất lượng trên lợi ích ngắn hạn.",
+        "Kiên trì theo đuổi giá trị cốt lõi, tin vào nội lực bên trong của mỗi người.",
+      ],
+    },
+    {
+      title: "Reimagine",
+      title_intro: "Sáng tạo và linh hoạt, dám thay đổi để bứt phá",
+      content: [
+        "Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo và mô hình kinh doanh.",
+        "Luôn cập nhật xu hướng giáo dục toàn cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập.",
+        "Khuyến khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh từ giảng dạy đến quản trị.",
+      ],
+    },
+    {
+      title: "Responsibility",
+      title_intro: "Trách nhiệm và sự gắn kết bền chặt",
+      content: [
+        "Cam kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự.",
+        "Xây dựng môi trường làm việc đề cao sự gắn kết và phát triển cá nhân.",
+        "Tạo ra tác động tích cực, không chỉ trong giáo dục mà còn trong cộng đồng.",
+      ],
+    },
+  ];
+
+  const threeC = [
+    {
+      title: "Care",
+      title_intro: "Sống tử tế",
+      content:
+        "Sự tử tế không chỉ là một phẩm chất cá nhân mà còn là cách 2G vận hành mọi hoạt động. Tử tế trong cách giáo dục – luôn lắng nghe, thấu hiểu và hỗ trợ học viên, phụ huynh. Tử tế trong cách làm việc – tôn trọng, hợp tác chân thành với đồng đội và đối tác. Và tử tế với cộng đồng – lan tỏa những giá trị tốt đẹp, tạo nên môi trường học tập và làm việc đầy cảm hứng, nhân văn.",
+    },
+    {
+        title: "Credibility",
+        title_intro: "Sống liêm chính",
+        content:
+          "Chúng tôi tin rằng thành công bền vững phải dựa trên sự tin tưởng và cam kết lâu dài với học viên, đối tác và cộng đồng. Từ việc chú tâm xây dựng chương trình học, phương pháp đào tạo và giá trị thực sự để đảm bảo học viên nhận được đúng những gì họ cần, đến việc công khai mọi thông tin với đối tác và đội ngũ và luôn ưu tiên giữ vững đạo đức nghề nghiệp, chúng tôi luôn cố gắng hướng tới sự minh bạch và tạo ra môi trường học tập công bằng, hiệu quả.",
+    },
+    
+    {
+      title: "Contribution",
+      title_intro: "Sống cống hiến",
+      content:
+        "Chúng tôi tin rằng giáo dục có sức mạnh thay đổi cuộc sống và tạo ra những tác động tích cực lâu dài. Mỗi bước đi của 2G đều có sự tính toán đến ảnh hưởng đối với cộng đồng, hướng tới việc hỗ trợ học tập cho đa dạng các đối tượng, đặc biệt là các bạn trẻ có hoàn cảnh khó khăn. Vì vậy, 2G Group đã lập ra quỹ giáo dục Glocal Villagers, liên tục tổ chức các hoạt động xã hội hàng năm, và không ngừng xây dựng những chương trình mang lại giá trị thực cho cộng đồng.",
     },
   ];
 
@@ -283,8 +335,7 @@ const MobileOverlay = () => {
     },
     {
       name: "NGUYỄN CÔNG THÀNH",
-      image:
-        "assets/humans-images/human_1.jpg",
+      image: "assets/humans-images/human_1.jpg",
       intro: "GIÁO VIÊN TRƯỞNG IELTS",
       achivements: [
         "- Tốt nghiệp loại giỏi chuyên ngành quản trị kinh doanh tại trường Wisconsin International University in Ukraine",
@@ -320,8 +371,7 @@ const MobileOverlay = () => {
     },
     {
       name: "THANH LONG",
-      image:
-        "assets/humans-images/human_2.jpg",
+      image: "assets/humans-images/human_2.jpg",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Tốt nghiệp Đại học Giao Thông Vận Tải",
@@ -476,8 +526,9 @@ const MobileOverlay = () => {
           <div className="company-explain">
             <p>
               {" "}
-              2G Group là một hệ thống giáo dục toàn diện, giúp thế hệ trẻ Việt
-              hội nhập toàn cầu thông qua việc đào tạo và du học.
+              2G Group là một hệ thống <b>giáo dục toàn diện</b>, giúp thế hệ
+              trẻ Việt hội nhập <b>toàn cầu</b> thông qua việc <b>đào tạo</b> và{" "}
+              <b>du học</b>.
             </p>
           </div>
           <div className="theme-explain">
@@ -554,7 +605,6 @@ const MobileOverlay = () => {
             </div>
           </div>
         </div>
-        <p className="mobile_bounce ">↓</p>
       </section>
 
       <section className="mobile_section">
@@ -567,50 +617,70 @@ const MobileOverlay = () => {
               một hệ sinh thái bền vững, nơi mỗi cá nhân đều có cơ hội vươn tới
               phiên bản tốt nhất của chính mình, bước ra thế giới, trở thành một
               công dân toàn cầu có bản sắc.{" "}
-              <b style={{ color: "var(--green-intro)" }}>MÔ HÌNH 3R3C</b>
+              <b
+                style={{
+                  color: "var(--recommended-light-green)",
+                  textShadow: "rgba(0, 0, 0, 0.5) 1px 1px 1px",
+                }}
+              >
+                MÔ HÌNH 3R3C
+              </b>
             </p>
           </div>
           <div className="mobile-purpose-content">
-            {tabs.map((tab, index) => (
-              <div key={index} className="purpose-content-name">
-                {/* Tab Header */}
-                <div
-                  className={`tab ${openTab === index ? "active" : ""}`}
-                  onClick={() => toggleTab(index)}
-                >
-                  <div className="tab-opener-text">{tab.title}</div>
-                  <div className="tab-opener">
-                    <span
-                      className={`tab-bar ${openTab === index ? "active" : ""}`}
-                    ></span>
-                    <span
-                      className={`tab-bar ${openTab === index ? "active" : ""}`}
-                    ></span>
+            <div className="three-r">
+              {threeR.map((item, index) => (
+                <>
+                  <div
+                    className={`three-r-title ${
+                      openTab === index ? "active" : ""
+                    }`}
+                    key={index}
+                    onClick={() => toggleTab(index)}
+                  >
+                    <h1>{item.title}</h1>
                   </div>
-                </div>
-
-                {/* Tab Content */}
-                <div
-                  className={`purpose-inner-content ${
-                    openTab === index ? "active" : ""
-                  }`}
-                >
-                  <h2>{tab.sectionTitle}</h2>
-                  <div>
-                    {tab.content.map((item, idx) => (
-                      <div key={idx} className={`purpose-item ${item.color}`}>
-                        <h3>{item.title}</h3>
-                        <ul>
-                          {item.description.map((desc, i) => (
-                            <li key={i}>{desc}</li>
-                          ))}
-                        </ul>
-                      </div>
+                  <div
+                    className={`three-r-content ${
+                      openTab === index ? "active" : ""
+                    }`}
+                    onClick={() => toggleTab(index)}
+                  >
+                    <h3>{item.title_intro}</h3>
+                    <ul>
+                      {item.content.map((content, index) => (
+                        <li key={index}>{content}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </>
+              ))}
+            </div>
+            <hr style={{ backgroundColor: "var(--recommended-light-green)" }} />
+            <div className="three-c">
+                {threeC.map((item) => (
+                    <>
+                        <div
+                        className={`three-c-title ${
+                            openTab === item.title ? "active" : ""
+                        }`}
+                        key={item.title}
+                        onClick={() => toggleTab(item.title)}
+                        >
+                        <h1>{item.title}</h1>
+                        </div>
+                        <div
+                        className={`three-c-content ${
+                            openTab === item.title ? "active" : ""
+                        }`}
+                        onClick={() => toggleTab(item.title)}
+                        >
+                        <h3>{item.title_intro}</h3>
+                        <p>{item.content}</p>
+                        </div>
+                    </>
                     ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -670,14 +740,10 @@ const MobileOverlay = () => {
         <div className="mobile-humans">
           <h1>2G Humans</h1>
           <div className="mobile-humans-content">
-            <h3>Đồng hành cùng chuyên gia Quốc tế</h3>
+            <h3>Đồng hành cùng chuyên gia Quốc tế - Peter Wright</h3>
             <div className="mobile-human-info">
-              <h3>Peter Wright</h3>
               <div className="mobile-human-img">
-                <img
-                  src="assets/humans-images/wright.jpg"
-                  alt=""
-                />
+                <img src="assets/humans-images/wright.jpg" alt="" />
                 <h2>Peter Wright</h2>
               </div>
               <div className="mobile-human-achievement">
