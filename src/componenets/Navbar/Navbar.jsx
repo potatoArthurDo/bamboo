@@ -34,17 +34,17 @@ const Navbar = () => {
             Trang chủ
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/about" className="nav-link" onClick={() => setIsNavOpen(false)}>
             Về chúng tôi
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/founder_story" className="nav-link" onClick={() => setIsNavOpen(false)}>
             Thư ngỏ
           </Link>
         </li>
-        <li>
+        <li className="hide-on-mobile">
           <Link to="/instructors" className="nav-link" onClick={() => setIsNavOpen(false)}>
             2G Humans
           </Link>

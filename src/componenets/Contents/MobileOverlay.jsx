@@ -582,7 +582,6 @@ const MobileOverlay = () => {
               </div>
             ))}
           </div>
-          <p className="mobile_bounce">↓</p>
         </div>
       </section>
 

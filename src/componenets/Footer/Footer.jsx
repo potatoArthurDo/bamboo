@@ -20,7 +20,6 @@ const Footer = forwardRef((props, ref) => {
             <p>Quick Links:</p>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/about">Về Chúng Tôi</a></li>
               <li><a href="/founder_story">Thư ngỏ</a></li>
               <li><a href="/instructors">2G Humans</a></li>
             </ul>
