@@ -77,5 +77,8 @@
     .chat-bubble {
         width: 18rem;
     }
+    .receiver {
+        margin-left: 1rem;
+    }
 
 }
