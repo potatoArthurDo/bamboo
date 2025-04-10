@@ -17,7 +17,7 @@ export default function Banner({ progress }) {
       setIsMobile(window.innerWidth <= 768);
       const width = window.innerWidth;
       if (width < 1840) {
-        setPages(12.6); // Smaller screens
+        setPages(13); // Smaller screens
       } else if (width <= 1280) {
         setPages(10.5); // 1840px to 1920px
       }

@@ -67,17 +67,54 @@ export const ContentOverlay = () => {
       id: "bubble1",
       content:
         "Với vai trò là người tham mưu cho lãnh đạo sở GD&ĐT Nghệ An quản lí các trung tâm ngoại ngữ và cũng là phụ huynh đầu tiên của 2G, tôi hoàn toàn tin tưởng vào chất lượng đào tạo cũng như sự tiên phong của 2G trong ứng dụng công nghệ vào giáo dục. Tôi luôn ủng hộ những gì 2G đang làm cho thế hệ trẻ. Chúc 2G tiếp tục phát triển, tiên phong đổi mới để thật nhiều học sinh vươn xa!",
-        sender: "Thầy Nguyễn Mạnh Hà, Trưởng phòng GDCN-GDTX Sở Giáo dục và Đào tạo Nghệ An"
+      sender:
+        "Thầy Nguyễn Mạnh Hà, Trưởng phòng GDCN-GDTX Sở Giáo dục và Đào tạo Nghệ An",
     },
-    { id: "bubble2", content: "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV" },
-    { id: "bubble3", content: "Sự cống hiến của các bạn trong việc đổi mới phương pháp giảng dạy tiếng Anh thực sự truyền cảm hứng. Chúng tôi đặc biệt trân trọng cách 2G Education tích hợp công nghệ vào trải nghiệm học tập, đặc biệt thông qua Cambridge One khi giảng dạy Kid's Box và Think. Cam kết của các bạn trong việc mang đến nền giáo dục  chất lượng cao, hấp dẫn không chỉ giúp học viên học tiếng Anh hiệu quả mà còn khiến hành trình học tập trở nên thú vị hơn.",sender: "Mrs Lê Thị Lệ Huyền, Country Head, Cambridge University Press & Assessment" },
-    { id: "bubble4", content: "Hội đồng Anh Việt Nam xin gửi lời chúc mừng nồng nhiệt nhất đến 2G Education – một trong những đối tác Vàng của chúng tôi tại Vinh. Trong suốt 7 năm qua, chúng tôi rất trân trọng sự hợp tác chặt chẽ giữa hai bên trong việc hỗ trợ thí sinh thi IELTS. Chúng tôi đánh giá cao những nỗ lực và đóng góp của 2G Education trong việc mang lại cơ hội giáo dục và phát triển cho học viên.",sender: "Samantha Smith – Giám đốc Khảo thí Quốc gia" },
-    { id: "bubble5", content: "Thật vui khi thấy nhiều thế hệ cựu học sinh chuyên Phan quy tụ tại 2G – có thể nói đây là doanh nghiệp tại Vinh có số lượng cựu học sinh chuyên Phan đông nhất, từ em Hải (khóa 42) – nhà sáng lập 2G, đến các bạn nhân sự, và cả các em học sinh đang theo học.",sender: "Cô Lan Thanh - Hiệu trưởng trường THPT Chuyên Phan Bội Châu" },
-    
-    { id: "bubble6", content: "chúc 2G luôn giữ vững phong độ, mãi đỉnh, mãi tràn đầy năng lượng của tuổi trẻ, của tinh thần dám nghĩ, dám làm. Chúc đội ngũ 2G luôn cháy hết mình với sứ mệnh lan tỏa tri thức, mang đến những giá trị tuyệt vời cho các em học sinh và phụ huynh.",sender: "Mrs Dung - Trường Đại học Anh Quốc Việt Nam BUV" },
-    { id: "bubble7", content: "Từ khi 2G Hà Tĩnh đi vào hoạt động cách đây 3 năm, tôi đã dõi theo và đánh giá cao những đóng góp của 2G trong việc kết nối các cuộc thi quốc tế như World Scholar’s Cup, cũng như tạo ra những sân chơi học thuật ý nghĩa như hùng biện Let Your Voice Be Heard, Biên tập viên nhí. Những chương trình này đã giúp học sinh trường THCS Lê Văn Thiêm có cơ hội tranh tài, thể hiện bản lĩnh và đạt nhiều giải thưởng.", sender: "Cô Huyền - Phó hiệu trưởng trường THCS Lê Văn Thiêm" },
-    { id: "bubble8", content: "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.", sender: "Mrs Ngọc - Đại diện Vietnam Airlines" },
-]
+    {
+      id: "bubble2",
+      content:
+        "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",
+      sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV",
+    },
+    {
+      id: "bubble3",
+      content:
+        "Sự cống hiến của các bạn trong việc đổi mới phương pháp giảng dạy tiếng Anh thực sự truyền cảm hứng. Chúng tôi đặc biệt trân trọng cách 2G Education tích hợp công nghệ vào trải nghiệm học tập, đặc biệt thông qua Cambridge One khi giảng dạy Kid's Box và Think. Cam kết của các bạn trong việc mang đến nền giáo dục  chất lượng cao, hấp dẫn không chỉ giúp học viên học tiếng Anh hiệu quả mà còn khiến hành trình học tập trở nên thú vị hơn.",
+      sender:
+        "Mrs Lê Thị Lệ Huyền, Country Head, Cambridge University Press & Assessment",
+    },
+    {
+      id: "bubble4",
+      content:
+        "Hội đồng Anh Việt Nam xin gửi lời chúc mừng nồng nhiệt nhất đến 2G Education – một trong những đối tác Vàng của chúng tôi tại Vinh. Trong suốt 7 năm qua, chúng tôi rất trân trọng sự hợp tác chặt chẽ giữa hai bên trong việc hỗ trợ thí sinh thi IELTS. Chúng tôi đánh giá cao những nỗ lực và đóng góp của 2G Education trong việc mang lại cơ hội giáo dục và phát triển cho học viên.",
+      sender: "Samantha Smith – Giám đốc Khảo thí Quốc gia",
+    },
+    {
+      id: "bubble5",
+      content:
+        "Thật vui khi thấy nhiều thế hệ cựu học sinh chuyên Phan quy tụ tại 2G – có thể nói đây là doanh nghiệp tại Vinh có số lượng cựu học sinh chuyên Phan đông nhất, từ em Hải (khóa 42) – nhà sáng lập 2G, đến các bạn nhân sự, và cả các em học sinh đang theo học.",
+      sender: "Cô Lan Thanh - Hiệu trưởng trường THPT Chuyên Phan Bội Châu",
+    },
+
+    {
+      id: "bubble6",
+      content:
+        "chúc 2G luôn giữ vững phong độ, mãi đỉnh, mãi tràn đầy năng lượng của tuổi trẻ, của tinh thần dám nghĩ, dám làm. Chúc đội ngũ 2G luôn cháy hết mình với sứ mệnh lan tỏa tri thức, mang đến những giá trị tuyệt vời cho các em học sinh và phụ huynh.",
+      sender: "Mrs Dung - Trường Đại học Anh Quốc Việt Nam BUV",
+    },
+    {
+      id: "bubble7",
+      content:
+        "Từ khi 2G Hà Tĩnh đi vào hoạt động cách đây 3 năm, tôi đã dõi theo và đánh giá cao những đóng góp của 2G trong việc kết nối các cuộc thi quốc tế như World Scholar’s Cup, cũng như tạo ra những sân chơi học thuật ý nghĩa như hùng biện Let Your Voice Be Heard, Biên tập viên nhí. Những chương trình này đã giúp học sinh trường THCS Lê Văn Thiêm có cơ hội tranh tài, thể hiện bản lĩnh và đạt nhiều giải thưởng.",
+      sender: "Cô Huyền - Phó hiệu trưởng trường THCS Lê Văn Thiêm",
+    },
+    {
+      id: "bubble8",
+      content:
+        "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.",
+      sender: "Mrs Ngọc - Đại diện Vietnam Airlines",
+    },
+  ];
 
   const timelineData = [
     { year: "2018", description: "Tiên Phong Tổ Chức Trại Hè Quốc Tế" },
@@ -590,8 +627,13 @@ export const ContentOverlay = () => {
                     <ChatBubble
                       message="Xin chào, Họ đang nói gì về 2G?"
                       isSender={false}
+                      sender={"2G Education"}
                     />
-                    <ChatBubble message={bubble.content} isSender={true} sender={bubble.sender} />
+                    <ChatBubble
+                      message={bubble.content}
+                      isSender={true}
+                      sender={bubble.sender}
+                    />
                   </div>
                 </div>
               </div>
@@ -724,7 +766,6 @@ export const ContentOverlay = () => {
             </div>
           </div>
         </div>
-
       </Section>
 
       <Section opacity={opacity6} sectionName="story">
@@ -807,7 +848,6 @@ export const ContentOverlay = () => {
             </div>
           </div>
         </div>
-
       </Section>
 
       <Section opacity={opacity8} sectionName="human">
@@ -885,6 +925,32 @@ export const ContentOverlay = () => {
                 alt="Company Logo"
                 className="logo"
               />
+              <p
+                className="footer-bottom"
+                style={{
+                  fontSize: "0.8rem",
+                  display: "flex",
+                  flex: "wrap",
+                  marginLeft: "2.5rem",
+                }}
+              >
+                &copy; {new Date().getFullYear()} 2G Education. All rights
+                reserved.
+              </p>
+              <p
+                className="footer-bottom"
+                style={{
+                  fontSize: "0.6rem",
+                  display: "flex",
+                  flexDirection:"column",
+                  alignItems:"flex-start",
+                  flex: "wrap",
+                  marginLeft: "2.5rem",
+                }}
+              >
+                "Free Bamboo Set" <a href="https://skfb.ly/oxyyY">(bamboo model</a>) by JonhGillessen is
+                licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution.</a>  Modified by repositioning and removing some elements.
+              </p>
             </div>
             <div className="footer-info">
               <p>Branches:</p>
@@ -902,9 +968,6 @@ export const ContentOverlay = () => {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/about">Về Chúng Tôi</a>
-                </li>
-                <li>
                   <a href="/founder_story">Thư ngỏ</a>
                 </li>
                 <li>
@@ -914,20 +977,57 @@ export const ContentOverlay = () => {
             </div>
             <div className="footer-social">
               <p>Follow Us:</p>
-              <a href="#">
-                <img src="/facebook-icon.png" alt="Facebook" />
-              </a>
-              <a href="#">
-                <img src="/twitter-icon.png" alt="Twitter" />
-              </a>
-              <a href="#">
-                <img src="/instagram-icon.png" alt="Instagram" />
-              </a>
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34v6.99C18.34 21.2 22 17.06 22 12.07z" />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.7 1.03 4.27 4.27 0 00-7.3 3.89A12.1 12.1 0 013 5.16a4.27 4.27 0 001.32 5.7 4.2 4.2 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96 8.56 8.56 0 01-6.3 1.76A12.07 12.07 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.35-.02-.53A8.34 8.34 0 0022.46 6z" />
+                  </svg>
+                </a>
+
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.88-.38a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-          <p className="footer-bottom">
-            &copy; {new Date().getFullYear()} 2G Education. All rights reserved.
-          </p>
         </footer>
         {/* <h3 className="company_name">2G Education</h3>
         <h1 className="main_name">GLOCAL</h1>
