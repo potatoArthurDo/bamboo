@@ -55,7 +55,7 @@
     margin-top: 10px;
   }
   
-  @media (max-width: 575.98px) {
+  @media (max-width: 1024px) {
     .footer {
       height: auto; /* Adjust height to fit content */
       padding: 20px 15px; /* Add padding for spacing */

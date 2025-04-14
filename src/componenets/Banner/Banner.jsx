@@ -19,7 +19,7 @@ export default function Banner({ progress }) {
       if (width < 1840) {
         setPages(13); // Smaller screens
       } else if (width <= 1280) {
-        setPages(10.5); // 1840px to 1920px
+        setPages(10.5); 
       }
        else {
         setPages(10); // 1920px and above
