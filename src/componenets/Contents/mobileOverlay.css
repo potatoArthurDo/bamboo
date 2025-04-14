@@ -91,7 +91,7 @@
     font-weight: 500;
   }
 
-  .emobile_nglish,
+  .mobile_english,
   .mobile_english-second {
     color: var(--recommended-light-golden);
     text-shadow: rgba(6, 7, 0, 0.89) 2px 2px 2px;
@@ -871,6 +871,36 @@
     font-weight: 600;
   }
 
-  @media (max-width: 1024px) {
-    
+  @media (min-width: 768px) { 
+    .mobile_intro {
+      align-items: center;
+    }
+    .mobile_intro .mobile_company_name {
+      font-size: 4rem;
+    }
+  
+    .mobile_connect,
+    .mobile_the {
+      font-size: 5rem;
+    }
+    .mobile_dots {
+      font-size: 5.2rem;
+    }
+    .mobile-intro-second-group {
+      max-height: 100dvh;
+    }
+  
+    .mobile_english,
+    .mobile_english-second,
+    .mobile_camping,
+    .mobile_aboard {
+      font-size: 4rem;
+    }
+
+    .mobile-carousel-wrapper {
+      max-width: 49rem;
+    }
+
+
+  
   }
