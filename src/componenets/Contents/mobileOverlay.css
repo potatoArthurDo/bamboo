@@ -89,13 +89,15 @@
   .mobile_aboard {
     font-size: 3rem;
     font-weight: 500;
+    opacity: 0;
   }
 
-  .emobile_nglish,
+  .mobile_english,
   .mobile_english-second {
     color: var(--recommended-light-golden);
     text-shadow: rgba(6, 7, 0, 0.89) 2px 2px 2px;
     font-weight: 600;
+    
   }
   .mobile_camping {
     color: var(--text-background);
@@ -145,7 +147,13 @@
     color: var(--text-background);
     font-weight: 700;
   }
+  .company-explain {
+    opacity: 0;
+  }
 
+  .theme-explain {
+    opacity: 0;
+  }
   .theme-explain p {
     color: var(--text-background);
     font-weight: 500;
@@ -361,6 +369,9 @@
     margin-left: 1rem;
     text-shadow: rgba(25, 30, 2, 0.884) 2px 2px 2px;
     font-weight: 500;
+  }
+  .mobile-purpose-intro {
+    opacity: 0;
   }
 
   .mobile-purpose-content {

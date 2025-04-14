@@ -2,15 +2,39 @@ import ChatBubble from "../ChatBubbles/ChatBubble";
 import Footer from "../Footer/Footer";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import "./mobileOverlay.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const MobileOverlay = () => {
   const [openTab, setOpenTab] = useState(null);
   const carouselRef = useRef(null);
+  // Step 1: Initialize the array of refs
+  const itemsRef = useRef([]);
+
+  // Register the plugin
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    // Step 2: Animate each item in the array of refs
+    itemsRef.current.forEach((item, index) => {
+      gsap.to(item, {
+        opacity: 1,
+        y: 0,
+        duration: 0.2,
+        delay: index * 0.1, 
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 90%", // Start animation when the element hits 80% of the viewport
+          toggleActions: "play none none none",
+        },
+      });
+    });
+  }, []);
 
   const scroll = (direction) => {
     const container = carouselRef.current;
@@ -143,30 +167,30 @@ const MobileOverlay = () => {
 
   const purpose_story = [
     {
-        title: "Câu chuyện cây tre",
-        content: [
-            "- Tre không vội vã. Tre cắm rễ sâu, tích tụ sức mạnh, rồi vươn thẳng lên trời – mạnh mẽ nhưng vô cùng linh hoạt. Đó cũng là lí do 2G Group lấy hình ảnh cây tre làm hình ảnh biểu tượng chủ đạo.",
-            "- Founder của 2G Group - anh Lê Văn Hải đã từng chia sẻ, càng trưởng thành, anh càng cảm nhận sâu sắc gốc rễ – gia đình, cộng đồng, và di sản Việt Nam đã định hình anh. Với anh, cây tre không chỉ là một loại cây, mà là biểu tượng của bản sắc.",
-            "- Sẽ mất hàng năm để rễ tre đan xen cắm chặt dưới lòng sâu trước khi vươn thẳng lên trời, mạnh mẽ và nhanh chóng. Anh học từ đó: muốn vươn cao, phải xây nền móng vững – trong công việc, trong đời sống. Tre phát triển theo từng cụm và lớn lên theo từng đốt, luôn hướng tới mây xanh. Đó cũng là hình ảnh mà anh muốn mọi người liên tưởng tới khi biết đến 2G Group.",
-            "- 2G Group kiên nhẫn xây dựng nền tảng – từ chất lượng đào tạo, chất lượng con người đến sự minh bạch trong vận hành – để tạo nên một hệ thống giáo dục bền vững, nơi mọi cá nhân cùng vươn lên từ gốc rễ mạnh mẽ của chính mình.",
-        ]
+      title: "Câu chuyện cây tre",
+      content: [
+        "- Tre không vội vã. Tre cắm rễ sâu, tích tụ sức mạnh, rồi vươn thẳng lên trời – mạnh mẽ nhưng vô cùng linh hoạt. Đó cũng là lí do 2G Group lấy hình ảnh cây tre làm hình ảnh biểu tượng chủ đạo.",
+        "- Founder của 2G Group - anh Lê Văn Hải đã từng chia sẻ, càng trưởng thành, anh càng cảm nhận sâu sắc gốc rễ – gia đình, cộng đồng, và di sản Việt Nam đã định hình anh. Với anh, cây tre không chỉ là một loại cây, mà là biểu tượng của bản sắc.",
+        "- Sẽ mất hàng năm để rễ tre đan xen cắm chặt dưới lòng sâu trước khi vươn thẳng lên trời, mạnh mẽ và nhanh chóng. Anh học từ đó: muốn vươn cao, phải xây nền móng vững – trong công việc, trong đời sống. Tre phát triển theo từng cụm và lớn lên theo từng đốt, luôn hướng tới mây xanh. Đó cũng là hình ảnh mà anh muốn mọi người liên tưởng tới khi biết đến 2G Group.",
+        "- 2G Group kiên nhẫn xây dựng nền tảng – từ chất lượng đào tạo, chất lượng con người đến sự minh bạch trong vận hành – để tạo nên một hệ thống giáo dục bền vững, nơi mọi cá nhân cùng vươn lên từ gốc rễ mạnh mẽ của chính mình.",
+      ],
     },
     {
-        title: "Câu chuyện The Dots",
-        content: [
-            "- Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng.",
-            "- Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ.",
-            "- Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ.",
-        ]
+      title: "Câu chuyện The Dots",
+      content: [
+        "- Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng.",
+        "- Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ.",
+        "- Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ.",
+      ],
     },
     {
-        title: "Câu chuyện Connect the 'Đốt'",
-        content: [
-            "Tre cắm rễ, vươn từng đốt.",
-            "Dấu “dots” nhỏ, ý tưởng lớn.",
-            "2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
-        ]
-    }
+      title: "Câu chuyện Connect the 'Đốt'",
+      content: [
+        "Tre cắm rễ, vươn từng đốt.",
+        "Dấu “dots” nhỏ, ý tưởng lớn.",
+        "2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
+      ],
+    },
   ];
 
   const achievements = [
@@ -522,15 +546,15 @@ const MobileOverlay = () => {
           </div>
         </div>
 
-        <div className="mobile-intro-second-group">
-          <div className="mobile_english">ANH NGỮ</div>
-          <div className="mobile_english-second">TOÀN DIỆN</div>
-          <div className="mobile_camping">TRẠI HÈ</div>
-          <div className="mobile_aboard">DU HỌC </div>
+        <div className="mobile-intro-second-group" >
+          <div className="mobile_english"   ref={(el) => (itemsRef.current[0] = el)} >ANH NGỮ</div>
+          <div className="mobile_english-second" ref={(el) => (itemsRef.current[1] = el)}>TOÀN DIỆN</div>
+          <div className="mobile_camping" ref={(el) => (itemsRef.current[2] = el)}>TRẠI HÈ</div>
+          <div className="mobile_aboard" ref={(el) => (itemsRef.current[3] = el)} >DU HỌC </div>
         </div>
 
         <div className="explaination">
-          <div className="company-explain">
+          <div className="company-explain" ref={(el) => (itemsRef.current[4] = el)}>
             <p>
               {" "}
               2G Group là một hệ thống <b>giáo dục toàn diện</b>, giúp thế hệ
@@ -538,7 +562,7 @@ const MobileOverlay = () => {
               <b>du học</b>.
             </p>
           </div>
-          <div className="theme-explain">
+          <div className="theme-explain" ref={(el) => (itemsRef.current[5] = el)}>
             <p>
               Với thông điệp Connect the “Đốt”, 2G Group mong muốn mở rộng sự
               kết nối, góp phần phát triển một thế hệ giới trẻ mới, dám học, dám
@@ -565,7 +589,7 @@ const MobileOverlay = () => {
                 isSender={false}
                 sender={"2G Education"}
               />
-               <div className="mobile-carousel-wrapper">
+              <div className="mobile-carousel-wrapper">
                 <button
                   className="mobile-nav-btn mobile-left"
                   onClick={() => scroll("left")}
@@ -574,8 +598,16 @@ const MobileOverlay = () => {
                 </button>
                 <div className="mobile-carousel" ref={carouselRef}>
                   {bubbleData.map((item) => (
-                    <div className="mobile-carousel-item" key={item} style={{background:"none", padding:"0"}}>
-                      <ChatBubble message={item.content} isSender={true} sender={item.sender}/>
+                    <div
+                      className="mobile-carousel-item"
+                      key={item}
+                      style={{ background: "none", padding: "0" }}
+                    >
+                      <ChatBubble
+                        message={item.content}
+                        isSender={true}
+                        sender={item.sender}
+                      />
                     </div>
                   ))}
                 </div>
@@ -632,7 +664,7 @@ const MobileOverlay = () => {
       <section className="mobile_section">
         <div className="mobile-purpose">
           <h1>Mục đích của 2G</h1>
-          <div className="mobile-purpose-intro">
+          <div className="mobile-purpose-intro" ref={(el) => (itemsRef.current[6] = el)}>
             <p>
               Ở 2G Group, chúng tôi tin rằng giáo dục là câu chuyện về sự kiên
               trì, sáng tạo và trách nhiệm – những giá trị cốt lõi để tạo nên
@@ -719,7 +751,7 @@ const MobileOverlay = () => {
                       <h2>{item.title}</h2>
                       {item.content.map((content, index) => (
                         <p key={index}>{content}</p>
-                        ))}
+                      ))}
                     </div>
                   ))}
                 </div>
