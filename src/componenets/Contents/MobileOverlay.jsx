@@ -514,19 +514,19 @@ const MobileOverlay = () => {
     <>
       <section className="mobile_section">
         <div className="mobile_intro">
-          <div className="main_name">
-            <h3 className="company_name">2G Group</h3>
-            <h1 className="connect">Connect</h1>
-            <h1 className="the">the</h1>
-            <h1 className="dots">"Đốt"</h1>
+          <div className="mobile_main_name">
+            <h3 className="mobile_company_name">2G Group</h3>
+            <h1 className="mobile_connect">Connect</h1>
+            <h1 className="mobile_the">the</h1>
+            <h1 className="mobile_dots">"Đốt"</h1>
           </div>
         </div>
 
         <div className="mobile-intro-second-group">
-          <div className="english">ANH NGỮ</div>
-          <div className="english-second">TOÀN DIỆN</div>
-          <div className="camping">TRẠI HÈ</div>
-          <div className="aboard">DU HỌC </div>
+          <div className="mobile_english">ANH NGỮ</div>
+          <div className="mobile_english-second">TOÀN DIỆN</div>
+          <div className="mobile_camping">TRẠI HÈ</div>
+          <div className="mobile_aboard">DU HỌC </div>
         </div>
 
         <div className="explaination">

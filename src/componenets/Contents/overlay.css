@@ -110,7 +110,8 @@
   position: relative;
   transition: all 0.5s ease-in-out;
   color: var(--primary-golden);
-  /* margin-top: -5px; */
+  /* margin-top: -5px
+  ; */
 }
 .main_name.english2 {
   position: absolute;

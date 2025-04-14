@@ -24,16 +24,10 @@
   }
 }
 
-@media (max-width: 768px) {
+
   /* CSS for small phones */
 
-  .mobile-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+  
   .mobile_intro {
     width: 100%;
     display: flex;
@@ -45,7 +39,7 @@
   .mobile_intro h3 + h1 {
     margin-top: none;
   }
-  .mobile_intro .company_name {
+  .mobile_intro .mobile_company_name {
     font-weight: 500;
     font-size: 2rem;
     color: var(--primary-golden);
@@ -53,7 +47,7 @@
     font-weight: 600;
   }
 
-  .main_name {
+  .mobile_main_name {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,14 +55,14 @@
     height: 100dvh;
   }
 
-  .connect,
-  .the {
+  .mobile_connect,
+  .mobile_the {
     font-size: 4rem;
     color: var(--text-background);
     text-shadow: rgba(98, 118, 11, 0.76) 2px 2px 2px;
   }
 
-  .dots {
+  .mobile_dots {
     font-size: 4.5rem;
     color: var(--green-intro);
     text-shadow: rgba(125, 141, 8, 0.347) 2px 2px 2px;
@@ -89,27 +83,27 @@
     margin-left: 2.3rem;
   }
 
-  .english,
-  .english-second,
-  .camping,
-  .aboard {
+  .mobile_english,
+  .mobile_english-second,
+  .mobile_camping,
+  .mobile_aboard {
     font-size: 3rem;
     font-weight: 500;
   }
 
-  .english,
-  .english-second {
+  .emobile_nglish,
+  .mobile_english-second {
     color: var(--recommended-light-golden);
     text-shadow: rgba(6, 7, 0, 0.89) 2px 2px 2px;
     font-weight: 600;
   }
-  .camping {
+  .mobile_camping {
     color: var(--text-background);
     text-shadow: rgba(98, 118, 11, 0.76) 2px 2px 2px;
     font-weight: 600;
   }
 
-  .aboard {
+  .mobile_aboard {
     color: var(--green-intro);
     text-shadow: rgba(125, 141, 8, 0.347) 2px 2px 2px;
     font-weight: 600;
@@ -788,6 +782,7 @@
     width: 100%;
     background: rgba(27, 48, 3, 0.5);
     border-radius: 10px;
+    margin: 0.5rem;
   }
 
   .mobile-humans h1 {
@@ -875,4 +870,7 @@
     font-size: 1.2rem;
     font-weight: 600;
   }
-}
+
+  @media (max-width: 1024px) {
+    
+  }

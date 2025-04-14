@@ -33,7 +33,7 @@
 .mobile-view-container {
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 1024px) {
     .canvas-container {
         display: none;
     }
