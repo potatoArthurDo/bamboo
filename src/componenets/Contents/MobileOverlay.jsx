@@ -34,6 +34,7 @@ const MobileOverlay = () => {
         },
       });
     });
+    ScrollTrigger.refresh();
   }, []);
 
   const scroll = (direction) => {
