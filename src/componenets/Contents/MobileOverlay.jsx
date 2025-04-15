@@ -30,7 +30,8 @@ const MobileOverlay = () => {
         scrollTrigger: {
           trigger: item,
           start: "top 90%", // Start animation when the element hits 80% of the viewport
-          toggleActions: "play none none none",
+          toggleActions: "play reverse play reverse",
+          markers: true,
         },
       });
     });
