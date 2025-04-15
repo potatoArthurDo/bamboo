@@ -30,10 +30,6 @@ html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
-
-body {
-  overflow-x: hidden;
-}
 /* Customize the scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

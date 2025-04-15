@@ -89,7 +89,7 @@
   .mobile_aboard {
     font-size: 3rem;
     font-weight: 500;
-    opacity: 0;
+    /* opacity: 0; */
   }
 
   .mobile_english,
@@ -147,13 +147,13 @@
     color: var(--text-background);
     font-weight: 700;
   }
-  .company-explain {
+  /* .company-explain {
     opacity: 0;
-  }
+  } */
 
-  .theme-explain {
+  /* .theme-explain {
     opacity: 0;
-  }
+  } */
   .theme-explain p {
     color: var(--text-background);
     font-weight: 500;
@@ -370,9 +370,9 @@
     text-shadow: rgba(25, 30, 2, 0.884) 2px 2px 2px;
     font-weight: 500;
   }
-  .mobile-purpose-intro {
+  /* .mobile-purpose-intro {
     opacity: 0;
-  }
+  } */
 
   .mobile-purpose-content {
     display: flex;
