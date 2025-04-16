@@ -163,7 +163,7 @@
   }
 
   .mobile_feedback {
-    min-height: 100dvh;
+    height: 100%;
     /* background: linear-gradient(
       to bottom,
       rgba(253, 254, 37, 0.2),
@@ -652,7 +652,7 @@
   }
 
   .mobile-development {
-    min-height: 100dvh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -722,7 +722,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    min-height: 100dvh;
+    height: 100%;
     margin: 0.5rem;
     /* background: linear-gradient(
       to bottom,

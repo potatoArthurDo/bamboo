@@ -1,130 +1,125 @@
 .chat-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    /* padding: 20px; */
-    width: 30rem;
-    max-width: 40rem;
-    /* margin: auto; */
-    height: 47rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* padding: 20px; */
+  width: 30rem;
+  max-width: 40rem;
+  /* margin: auto; */
+  height: 47rem;
 }
 
 .chat-header {
-    margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .chat-avatar-large {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .chat-container {
-    padding: 20px;
-    max-width: 400px;
-    /* margin: auto; */
-    display: flex;
-    flex-direction: column;
-    
-    gap: 8px;
+  padding: 20px;
+  max-width: 400px;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
 }
 
 .chat-bubble {
+  width: 25rem;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 5px 0;
+  word-wrap: break-word;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sender {
+  background-color: var(--text-background);
+  align-self: flex-end;
+  color: var(--secondary-green);
+}
+
+.sender-name {
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400 !important;
+  font-size: 1.2rem !important;
+}
+
+.receiver {
+  background-color: var(--primary-green);
+  align-self: flex-start;
+  color: var(--text-background);
+}
+@media (max-width: 1535px) {
+  .chat-app {
+    width: 100%;
+    max-width: 30rem;
+    padding: 10px;
+    height: 40rem;
+  }
+
+  .chat-bubble {
+    width: 20rem;
+  }
+  .receiver {
+    margin-left: 1rem;
+  }
+
+  .chat-bubble {
     width: 25rem;
     padding: 10px 15px;
     border-radius: 20px;
     margin: 5px 0;
     word-wrap: break-word;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
+  }
+  .sender-name {
+    font-size: 0.9rem !important;
+  }
 }
 
-
-.sender {
-    background-color: var(--text-background);
-    align-self: flex-end;
-    color: var(--secondary-green);
-}
-
-.sender-name {
-    font-style: italic;
-    font-size: 1rem;
-    font-weight: 400 !important;
-    font-size: 1.2rem !important;
-}
-
-.receiver {
-    background-color: var(--primary-green);
-    align-self: flex-start;
-    color: var(--text-background);
-}
-
-@media (max-width: 768px) {
-    .chat-app {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-        height: 100%;
-    }
-
-    .chat-bubble {
-        width: 18rem;
-    }
-    .receiver {
-        margin-left: 1rem;
-    }
-
-}
 @media (min-width: 769px) and (max-width: 1024px) {
-    .chat-app {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-        height: 100%;
-    }
+  .chat-app {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    height: 100%;
+  }
 
-    .chat-bubble {
-        width: 20rem;
-    }
-    .receiver {
-        margin-left: 1rem;
-    }
-
+  .chat-bubble {
+    width: 20rem;
+  }
+  .receiver {
+    margin-left: 1rem;
+  }
 }
+@media (max-width: 768px) {
+  .chat-app {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    height: 100%;
+  }
 
-@media (max-width: 1535px) {
-    .chat-app {
-        width: 100%;
-        max-width: 30rem;
-        padding: 10px;
-        height: 40rem;
-    }
-
-    .chat-bubble {
-        width: 20rem;
-    }
-    .receiver {
-        margin-left: 1rem;
-    }
-
-    .chat-bubble {
-        width: 25rem;
-        padding: 10px 15px;
-        border-radius: 20px;
-        margin: 5px 0;
-        word-wrap: break-word;
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-    .sender-name {
-        font-size: 0.9rem !important;
-    }
-
+  .chat-bubble {
+    width: 18rem;
+  }
+  .receiver {
+    margin-left: 1rem;
+  }
 }
