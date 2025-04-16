@@ -98,3 +98,33 @@
     }
 
 }
+
+@media (max-width: 1535px) {
+    .chat-app {
+        width: 100%;
+        max-width: 30rem;
+        padding: 10px;
+        height: 40rem;
+    }
+
+    .chat-bubble {
+        width: 20rem;
+    }
+    .receiver {
+        margin-left: 1rem;
+    }
+
+    .chat-bubble {
+        width: 25rem;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin: 5px 0;
+        word-wrap: break-word;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .sender-name {
+        font-size: 0.9rem !important;
+    }
+
+}

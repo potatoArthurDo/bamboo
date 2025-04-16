@@ -127,7 +127,7 @@
   .product-card h5 {
     font-size: 1.5rem;
     color: var(--recommended-light-golden);
-    text-shadow: 0 0 2px #2b4802,  1px 1px 4px #000000;
+    text-shadow: 0 0 2px #2b4802, 1px 1px 4px #000000;
   }
 
   .product-card p {
@@ -138,12 +138,11 @@
 
   .service-intro {
     margin-top: 20px;
-    color: var(--golden-intro) !important; 
+    color: var(--golden-intro) !important;
     font-size: 1.2rem !important;
   }
-
 }
-@media(min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .product-carousel {
     padding-left: 0;
     min-height: 100dvh;
@@ -180,5 +179,40 @@
     line-height: 1.5;
     font-weight: 600;
   }
+}
+@media (max-width: 1535px) {
+  .product-carousel-control.next {
+    left: unset;
+    right: 820px;
+  }
+  .product-carousel {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 25rem;
+    padding-top: 2rem;
+  }
 
+  .product-card {
+    width: 400px;
+    height: 580px;
+  }
+
+  .product-card h4 {
+    font-size: 1.8rem;
+  }
+  .product-card h5 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-carousel-indicators {
+    bottom: 40px;
+    left: 30%;
+  }
 }

@@ -39,7 +39,7 @@
   
   .nav-link {
     text-decoration: none;
-    color: var(--primary-green);
+    color: var(--text-background);
     font-size: 1.3rem;
     transition: 0.3s;
     font-weight: 600;
@@ -67,7 +67,7 @@
   }
   
   /* Media Query for Mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .nav-links {
       display: none;
       flex-direction: column;
@@ -108,4 +108,14 @@
     .hide-on-mobile {
       display: none !important
     }
+  }
+  @media (max-width: 1535px) {
+    .nav-link {
+        text-decoration: none;
+
+        font-size: 1.1rem;
+        transition: 0.3s;
+        font-weight: 600;
+        text-shadow: rgba(0, 0, 0, 0.9) 1.5px 1px 1px;
+      }
   }
