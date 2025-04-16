@@ -113,4 +113,48 @@
     color: var(--secondary-golden);
 }
 
+@media (max-width: 1536px) {
+
+    .details-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--text-background);
+        width: 45vw;
+        border-radius: 5%;
+        padding: 1rem;
+        margin-bottom: 10rem;
+        margin-top: 10rem;
+    }
+    .instructor-image img {
+        width: auto;
+        height: 30rem;
+        border-radius: 10px;
+    }
+    
+    .instructor-active-image.active {
+        display: block;
+    
+    }
+    
+    .instructor-info {
+        color: var(--primary-green);
+    
+        width: 600px;
+        font-size: 1.3rem;
+        text-align: start;
+        text-shadow: rgba(193, 249, 63, 0.409) 2px 2px 2px;
+    }
+    
+    .instructor-name {
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    
+    .instructor-intro {
+        font-weight: 500;
+        font-size: 1.6rem;
+        color: var(--secondary-golden);
+    }
+}
 

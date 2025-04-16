@@ -221,7 +221,7 @@ export default function Instructors() {
       role: "teacher",
       name: "RYAN",
       image:
-        "assets/humans-images/Ryan.png",
+        "assets/humans-images/Ryan.jpg",
       intro: "",
       achivements: [
         "- Tốt nghiệp cử nhân sư phạm trung học cơ sở, chuyên ngành giảng dạy tiếng Anh",
@@ -262,7 +262,7 @@ export default function Instructors() {
       role: "teacher",
       name: "THANH NHÀN",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Thanh_Nhan.jpg",
       intro: "",
       achivements: [
         "- Đạt học bổng thạc sĩ TESOL tại đại học Northampton, Vương quốc Anh & Học bổng thạc sĩ Education tại đại học Huddersfield và đại học Leeds Beckett, Vương quốc Anh",
@@ -278,7 +278,7 @@ export default function Instructors() {
       role: "teacher",
       name: "BẢO HÀ",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Bao_Ha.jpg",
       intro: "",
       achivements: [
         "- Tốt nghiệp loại xuất sắc chuyên ngành sư phạm Anh, trường Đại học Ngoại ngữ Huế.",
