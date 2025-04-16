@@ -39,11 +39,11 @@
   
   .nav-link {
     text-decoration: none;
-    color: var(--text-background);
+    color: var(--green-intro);
     font-size: 1.3rem;
     transition: 0.3s;
     font-weight: 600;
-    text-shadow: rgba(243, 247, 179, 0.9) 2px 2px 2px;
+    text-shadow: rgba(0, 0, 0, 0.9) 2px 2px 2px;
   }
   
   .nav-link:hover {
