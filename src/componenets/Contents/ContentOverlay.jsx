@@ -535,7 +535,7 @@ export const ContentOverlay = () => {
   const founder = {
     name: "Lê Văn Hải",
     image:
-      "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
+      "assets/humans-images/founder.jpg",
     history: [
       "Là doanh nhân trẻ tuổi nhất trong lĩnh vực giáo dục tại Việt Nam, sở hữu song tịch thông qua chương trình đầu tư định cư.",
       "Tốt nghiệp chương trình đào tạo quản lý trường Anh ngữ tại Mỹ do Hiệp hội TESOL cấp bằng.",

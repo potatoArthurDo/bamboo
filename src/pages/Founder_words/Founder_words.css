@@ -17,7 +17,7 @@
 
 .letter_card img {
     width: 400px;
-    height: 400px;
+    height: auto;
     margin: 20px;
     margin-top: 60px;
 }

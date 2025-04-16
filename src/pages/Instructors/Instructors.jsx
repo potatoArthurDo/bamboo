@@ -54,7 +54,7 @@ export default function Instructors() {
       role: "adviser",
       name: "THẦY WARREN ENG",
       image:
-        "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
+        "assets/humans-images/Warren.jpg",
       intro: "",
       achivements: [
         "- Chuyên gia giáo dục người Singapore",
@@ -80,7 +80,7 @@ export default function Instructors() {
       role: "adviser",
       name: "THẦY DUY HIỆP",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Duy_Hiep.jpg",
       intro: "",
       achivements: [
         "- Giảng viên Đại học tại TP.HCM",
@@ -123,7 +123,7 @@ export default function Instructors() {
       role: "teacher",
       name: "KENZIE DUONG",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Kenzie.jpg",
       intro: "GIÁO VIÊN IELTS/SAT",
       achivements: [
         "- 5 năm kinh nghiệm tư vấn hỗ trợ học sinh xin học bổng các trường ĐH Hoa Kỳ",
@@ -137,7 +137,7 @@ export default function Instructors() {
       role: "teacher",
       name: "EMILY",
       image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+      "assets/humans-images/Emily.jpg",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Đạt IELTS 8.0 overall, trong đó Speaking 8.0",
@@ -165,7 +165,7 @@ export default function Instructors() {
       role: "teacher",
       name: "ALEX BOUVIER",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Alex.jpg",
       intro: "GIÁO VIÊN IELTS",
       achivements: [
         "- Một trong số ít Giảng viên Tiếng Anh đạt trình độ CPE Level C2 (IELTS 8.5) Quốc tế tại Việt Nam",
@@ -206,8 +206,7 @@ export default function Instructors() {
       id: 13,
       role: "teacher",
       name: "ZSANDRA",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+      image:"assets/humans-images/human_9.jpg",
       intro: "GIÁO VIÊN TIẾNG ANH - MẦM NON/ TIỂU HỌC",
       achivements: [
         "- Cử nhân Nghệ thuật truyền thông +hoàn thành tín chỉ cử nhân ngôn ngữ Anh",
@@ -222,7 +221,7 @@ export default function Instructors() {
       role: "teacher",
       name: "RYAN",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Ryan.png",
       intro: "",
       achivements: [
         "- Tốt nghiệp cử nhân sư phạm trung học cơ sở, chuyên ngành giảng dạy tiếng Anh",
@@ -249,7 +248,7 @@ export default function Instructors() {
       role: "teacher",
       name: "TUẤN ANH",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_3.jpg",
       intro: "",
       achivements: [
         "- IELTS 8.5 Listening",
