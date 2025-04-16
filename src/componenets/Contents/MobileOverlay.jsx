@@ -267,7 +267,7 @@ const MobileOverlay = () => {
   const adviser = [
     {
       image:
-        "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
+        "assets/humans-images/Warren.jpg",
       name: "THẦY WARREN ENG",
       achievements: [
         "- Chuyên gia giáo dục người Singapore",
@@ -289,7 +289,7 @@ const MobileOverlay = () => {
 
     {
       image:
-        "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
+        "assets/humans-images/Duy_Hiep.jpg",
       name: "THẦY DUY HIỆP",
       achievements: [
         "- Giảng viên Đại học tại TP.HCM",
@@ -302,7 +302,7 @@ const MobileOverlay = () => {
     {
       name: "CHU MINH THÙY",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_11.jpg",
       intro: "QUẢN LÝ HỌC VỤ",
       achivements: [
         "- Tốt nghiệp cử nhân ngành Kinh tế quốc tế, Học viện Ngoại giao Việt Nam",
@@ -326,7 +326,7 @@ const MobileOverlay = () => {
     {
       name: "KENZIE DUONG",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Kenzie.jpg",
       intro: "GIÁO VIÊN IELTS/SAT",
       achivements: [
         "- 5 năm kinh nghiệm tư vấn hỗ trợ học sinh xin học bổng các trường ĐH Hoa Kỳ",
@@ -338,7 +338,7 @@ const MobileOverlay = () => {
     {
       name: "EMILY",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Emily.jpg",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Đạt IELTS 8.0 overall, trong đó Speaking 8.0",
@@ -361,7 +361,7 @@ const MobileOverlay = () => {
     {
       name: "ALEX BOUVIER",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Alex.jpg",
       intro: "GIÁO VIÊN IELTS",
       achivements: [
         "- Một trong số ít Giảng viên Tiếng Anh đạt trình độ CPE Level C2 (IELTS 8.5) Quốc tế tại Việt Nam",
@@ -397,7 +397,7 @@ const MobileOverlay = () => {
     {
       name: "ZSANDRA",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_9.jpg",
       intro: "GIÁO VIÊN TIẾNG ANH - MẦM NON/ TIỂU HỌC",
       achivements: [
         "- Cử nhân Nghệ thuật truyền thông +hoàn thành tín chỉ cử nhân ngôn ngữ Anh",
@@ -410,7 +410,7 @@ const MobileOverlay = () => {
     {
       name: "RYAN",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Ryan.jpg",
       intro: "",
       achivements: [
         "- Tốt nghiệp cử nhân sư phạm trung học cơ sở, chuyên ngành giảng dạy tiếng Anh",
@@ -433,7 +433,7 @@ const MobileOverlay = () => {
     {
       name: "TUẤN ANH",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/human_3.jpg",
       intro: "",
       achivements: [
         "- IELTS 8.5 Listening",
@@ -445,7 +445,7 @@ const MobileOverlay = () => {
     {
       name: "THANH NHÀN",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Thanh_Nhan.jpg",
       intro: "",
       achivements: [
         "- Đạt học bổng thạc sĩ TESOL tại đại học Northampton, Vương quốc Anh & Học bổng thạc sĩ Education tại đại học Huddersfield và đại học Leeds Beckett, Vương quốc Anh",
@@ -459,7 +459,7 @@ const MobileOverlay = () => {
     {
       name: "BẢO HÀ",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
+        "assets/humans-images/Bao_Ha.jpg",
       intro: "",
       achivements: [
         "- Tốt nghiệp loại xuất sắc chuyên ngành sư phạm Anh, trường Đại học Ngoại ngữ Huế.",
@@ -807,7 +807,7 @@ const MobileOverlay = () => {
           <h1>2G Founder Profile</h1>
           <div className="mobile-founder-image">
             <img
-              src="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png"
+              src="assets/humans-images/founder.jpg"
               alt=""
             />
             <h2>Lê Văn Hải</h2>
