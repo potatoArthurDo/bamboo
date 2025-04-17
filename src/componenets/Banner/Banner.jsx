@@ -18,8 +18,8 @@ export default function Banner({ progress }) {
       const width = window.innerWidth;
       if (width < 1536) {
         setPages(13.1); // Smaller screens
-      } else if (width <= 1280) {
-        setPages(10.5); 
+      } if (width <= 1441) {
+        setPages(10.4); // 1440px to 1535px
       }
        else {
         setPages(10); // 1920px and above

@@ -476,7 +476,6 @@
   /* padding-top: 5rem; */
   padding-left: 5rem;
   font-size: 3rem;
-
 }
 
 .purpose-container {
@@ -490,8 +489,6 @@
   /* font-family: "Charm", cursive; */
   padding-top: 5rem;
 }
-
-
 
 .founder {
   color: var(--primary-golden);
@@ -585,7 +582,6 @@
   position: relative;
   padding-top: 3rem;
   padding-left: 5rem;
-
 }
 
 .tab-container {
@@ -811,6 +807,17 @@
 }
 
 @media (max-width: 1535px) {
+    .left-intro {
+        margin-left: 0rem;
+      }
+      
+      .right-intro {
+        margin-right: 3rem;
+      }
+  .left-intro .company_name {
+    font-size: 5rem;
+  }
+
   .feedback {
     font-size: 2rem;
   }
@@ -880,19 +887,19 @@
     margin: 20px;
     max-width: 1000px;
   }
-  
+
   .founder_card img {
     width: auto;
   }
-  
+
   .founder_info {
     width: 100%;
   }
-  
+
   .founder_name h2 {
     font-size: 0.7em;
   }
-  
+
   .founder_history p {
     font-size: 0.9rem;
     font-weight: 600;
@@ -901,22 +908,22 @@
     width: 180px;
     height: 70px;
   }
-  
+
   .founder_button p {
     right: 9%;
   }
   .human {
     font-size: 2rem;
   }
-  
+
   .human h5 {
     font-size: 1.6rem;
   }
-  
+
   .human p {
     font-size: 1.8rem;
   }
-  
+
   .human ul {
     list-style: none;
     font-size: 1.4rem;
