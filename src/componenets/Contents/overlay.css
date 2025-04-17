@@ -240,8 +240,20 @@
   transition: transform 0.2s ease-in-out;
   height: 180px;
   width: 180px;
+  filter: grayscale(0.4);
+  /* overflow: hidden; */
 }
 
+.bubble img {
+  position: absolute;
+  padding: 1.2rem;
+  margin-left: 10.6rem;
+  margin-top: 4.5rem;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  border-radius: 50%;
+  opacity: 0.8;
+}
 .bubbles :nth-child(1) {
   background-size: auto 70%;
   position: absolute;
@@ -294,7 +306,7 @@
 
 .bubble.active {
   transform: scale(1.1);
-  filter: hue-rotate(180deg);
+  filter: saturate(1.5);
 }
 
 .bubble-content {

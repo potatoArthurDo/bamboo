@@ -66,6 +66,8 @@ export const ContentOverlay = () => {
   const bubbleData = [
     {
       id: "bubble1",
+      image: "assets/images/Nguyen_Manh_Ha.jpg",
+      size: "60%",
       content:
         "Với vai trò là người tham mưu cho lãnh đạo sở GD&ĐT Nghệ An quản lí các trung tâm ngoại ngữ và cũng là phụ huynh đầu tiên của 2G, tôi hoàn toàn tin tưởng vào chất lượng đào tạo cũng như sự tiên phong của 2G trong ứng dụng công nghệ vào giáo dục. Tôi luôn ủng hộ những gì 2G đang làm cho thế hệ trẻ. Chúc 2G tiếp tục phát triển, tiên phong đổi mới để thật nhiều học sinh vươn xa!",
       sender:
@@ -73,12 +75,16 @@ export const ContentOverlay = () => {
     },
     {
       id: "bubble2",
+      image: "assets/images/Huyen.png",
+      size: "40%",
       content:
         "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",
       sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV",
     },
     {
       id: "bubble3",
+      image: "assets/images/Huyen_2.png",
+      size: "90%",
       content:
         "Sự cống hiến của các bạn trong việc đổi mới phương pháp giảng dạy tiếng Anh thực sự truyền cảm hứng. Chúng tôi đặc biệt trân trọng cách 2G Education tích hợp công nghệ vào trải nghiệm học tập, đặc biệt thông qua Cambridge One khi giảng dạy Kid's Box và Think. Cam kết của các bạn trong việc mang đến nền giáo dục  chất lượng cao, hấp dẫn không chỉ giúp học viên học tiếng Anh hiệu quả mà còn khiến hành trình học tập trở nên thú vị hơn.",
       sender:
@@ -86,12 +92,16 @@ export const ContentOverlay = () => {
     },
     {
       id: "bubble4",
+      image: "assets/images/Samantha.png",
+      size: "110%",
       content:
         "Hội đồng Anh Việt Nam xin gửi lời chúc mừng nồng nhiệt nhất đến 2G Education – một trong những đối tác Vàng của chúng tôi tại Vinh. Trong suốt 7 năm qua, chúng tôi rất trân trọng sự hợp tác chặt chẽ giữa hai bên trong việc hỗ trợ thí sinh thi IELTS. Chúng tôi đánh giá cao những nỗ lực và đóng góp của 2G Education trong việc mang lại cơ hội giáo dục và phát triển cho học viên.",
       sender: "Samantha Smith – Giám đốc Khảo thí Quốc gia",
     },
     {
       id: "bubble5",
+      image: "assets/images/Lan_Thanh.png",
+      size: "80%",
       content:
         "Thật vui khi thấy nhiều thế hệ cựu học sinh chuyên Phan quy tụ tại 2G – có thể nói đây là doanh nghiệp tại Vinh có số lượng cựu học sinh chuyên Phan đông nhất, từ em Hải (khóa 42) – nhà sáng lập 2G, đến các bạn nhân sự, và cả các em học sinh đang theo học.",
       sender: "Cô Lan Thanh - Hiệu trưởng trường THPT Chuyên Phan Bội Châu",
@@ -99,18 +109,24 @@ export const ContentOverlay = () => {
 
     {
       id: "bubble6",
+      image: "assets/images/Dung.png",
+      size: "70%",
       content:
         "chúc 2G luôn giữ vững phong độ, mãi đỉnh, mãi tràn đầy năng lượng của tuổi trẻ, của tinh thần dám nghĩ, dám làm. Chúc đội ngũ 2G luôn cháy hết mình với sứ mệnh lan tỏa tri thức, mang đến những giá trị tuyệt vời cho các em học sinh và phụ huynh.",
       sender: "Mrs Dung - Trường Đại học Anh Quốc Việt Nam BUV",
     },
     {
       id: "bubble7",
+      image: "assets/images/Huyen_3.png",
+      size: "50%",
       content:
         "Từ khi 2G Hà Tĩnh đi vào hoạt động cách đây 3 năm, tôi đã dõi theo và đánh giá cao những đóng góp của 2G trong việc kết nối các cuộc thi quốc tế như World Scholar’s Cup, cũng như tạo ra những sân chơi học thuật ý nghĩa như hùng biện Let Your Voice Be Heard, Biên tập viên nhí. Những chương trình này đã giúp học sinh trường THCS Lê Văn Thiêm có cơ hội tranh tài, thể hiện bản lĩnh và đạt nhiều giải thưởng.",
       sender: "Cô Huyền - Phó hiệu trưởng trường THCS Lê Văn Thiêm",
     },
     {
       id: "bubble8",
+      image: "assets/images/Ngoc.png",
+      size: "40%",
       content:
         "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.",
       sender: "Mrs Ngọc - Đại diện Vietnam Airlines",
@@ -422,10 +438,12 @@ export const ContentOverlay = () => {
                 className={`bubble ${
                   activeBubble === bubble.id ? "active" : ""
                 }`}
+                
                 onMouseEnter={() => handleBubbleHover(bubble.id)}
                 onMouseLeave={() => handleBubbleHover(bubble.id)}
               >
-                {/* {`Bubble ${bubble.id.replace("bubble", "")}`} */}?
+                {/* {`Bubble ${bubble.id.replace("bubble", "")}`} */}
+                <img src={bubble.image} alt="" style={{width: bubble.size, height: "auto", display: "block", objectFit: "contain"}}/>
               </div>
             ))}
           </div>

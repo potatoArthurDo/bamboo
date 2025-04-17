@@ -16,8 +16,8 @@ export default function Banner({ progress }) {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
       const width = window.innerWidth;
-      if (width < 1840) {
-        setPages(13); // Smaller screens
+      if (width < 1536) {
+        setPages(13.1); // Smaller screens
       } else if (width <= 1280) {
         setPages(10.5); 
       }
