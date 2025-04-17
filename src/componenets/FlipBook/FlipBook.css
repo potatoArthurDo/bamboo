@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     margin: auto;
-    width: 40cqmin;
+    width: 45cqmin;
     /*1* let pointer event go trough pages of lower Z than .book */
     pointer-events: none;
     transform-style: preserve-3d;
@@ -20,13 +20,14 @@
     flex: none;
     display: flex;
     width: 100%;
-    font-size: 2cqmin;
+    font-size: 2.2cqmin;
     font-weight: 600;
     /*1* allow pointer events on pages */
     pointer-events: all;
     user-select: none;
     transform-style: preserve-3d;
     transform-origin: left center;
+    line-height: 1.5;
     transition:
       transform 1s,
       rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);

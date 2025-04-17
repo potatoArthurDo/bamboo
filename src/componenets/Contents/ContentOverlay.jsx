@@ -67,7 +67,7 @@ export const ContentOverlay = () => {
     {
       id: "bubble1",
       image: "assets/images/Nguyen_Manh_Ha.jpg",
-      size: "60%",
+      size: "65%",
       content:
         "Với vai trò là người tham mưu cho lãnh đạo sở GD&ĐT Nghệ An quản lí các trung tâm ngoại ngữ và cũng là phụ huynh đầu tiên của 2G, tôi hoàn toàn tin tưởng vào chất lượng đào tạo cũng như sự tiên phong của 2G trong ứng dụng công nghệ vào giáo dục. Tôi luôn ủng hộ những gì 2G đang làm cho thế hệ trẻ. Chúc 2G tiếp tục phát triển, tiên phong đổi mới để thật nhiều học sinh vươn xa!",
       sender:
@@ -76,7 +76,7 @@ export const ContentOverlay = () => {
     {
       id: "bubble2",
       image: "assets/images/Huyen.png",
-      size: "40%",
+      size: "50%",
       content:
         "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",
       sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV",
@@ -118,7 +118,7 @@ export const ContentOverlay = () => {
     {
       id: "bubble7",
       image: "assets/images/Huyen_3.png",
-      size: "50%",
+      size: "60%",
       content:
         "Từ khi 2G Hà Tĩnh đi vào hoạt động cách đây 3 năm, tôi đã dõi theo và đánh giá cao những đóng góp của 2G trong việc kết nối các cuộc thi quốc tế như World Scholar’s Cup, cũng như tạo ra những sân chơi học thuật ý nghĩa như hùng biện Let Your Voice Be Heard, Biên tập viên nhí. Những chương trình này đã giúp học sinh trường THCS Lê Văn Thiêm có cơ hội tranh tài, thể hiện bản lĩnh và đạt nhiều giải thưởng.",
       sender: "Cô Huyền - Phó hiệu trưởng trường THCS Lê Văn Thiêm",
@@ -126,7 +126,7 @@ export const ContentOverlay = () => {
     {
       id: "bubble8",
       image: "assets/images/Ngoc.png",
-      size: "40%",
+      size: "60%",
       content:
         "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.",
       sender: "Mrs Ngọc - Đại diện Vietnam Airlines",
