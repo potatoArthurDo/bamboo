@@ -279,7 +279,7 @@ export const ContentOverlay = () => {
         {
           id: "card4",
           title: "Connection",
-          description: "Connection (Network-based Growth Mindset)",
+          description: "Connection (Phát triển theo hướng Công Nghệ Giáo Dục)",
           details: [
             "2G Group tin rằng sức mạnh của sự kết nối chính là chìa khóa để mở rộng tầm ảnh hưởng và tạo ra những giá trị bền vững. 2G Group không chỉ nỗ lực xây dựng một hệ sinh thái giáo dục, mà còn kiến tạo một mạng lưới những con người cùng chung khát vọng học tập, phát triển và cống hiến.",
           ],
@@ -287,7 +287,7 @@ export const ContentOverlay = () => {
         {
           id: "card5",
           title: "Technology",
-          description: "Technology",
+          description: "Technology (Phát triển theo hướng Tăng Cường Kết Nối)",
           details: [
             "Ở 2G Group, chúng tôi tận dụng công nghệ để rút ngắn khoảng cách tri thức, kết nối con người và lan toả giá trị bằng cách số hoá trải nghiệm học tập, xây dựng không gian kết nối linh hoạt, và mở rộng quy mô để tạo ra nhiều cơ hội tiếp cận giáo dục và phát triển bản thân cho tất cả mọi người.",
           ],

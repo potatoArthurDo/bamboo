@@ -288,8 +288,17 @@ const FlipBook = () => {
           <br />
           <p>3 câu chuyện biểu tượng</p>
         </div>
-        <div className="back">
-          <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "15rem" }}>R</h1>
+          <h5 style={{ fontSize: "3rem" }}>Resilience</h5>
         </div>
       </div>
 
@@ -308,8 +317,17 @@ const FlipBook = () => {
             </li>
           </ul>
         </div>
-        <div className="back">
-          <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "15rem" }}>R</h1>
+          <h5 style={{ fontSize: "3rem" }}>Reimagine</h5>
         </div>
       </div>
 
@@ -331,8 +349,17 @@ const FlipBook = () => {
             </li>
           </ul>
         </div>
-        <div className="back">
-          <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "15rem" }}>R</h1>
+          <h5 style={{ fontSize: "3rem" }}>Responsibility</h5>
         </div>
       </div>
 
@@ -353,8 +380,17 @@ const FlipBook = () => {
             </li>
           </ul>
         </div>
-        <div className="back">
-          <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "15rem" }}>C</h1>
+          <h5 style={{ fontSize: "3rem" }}>Care</h5>
         </div>
       </div>
 
@@ -372,8 +408,17 @@ const FlipBook = () => {
             làm việc đầy cảm hứng, nhân văn.
           </p>
         </div>
-        <div className="back">
-          <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "15rem" }}>C</h1>
+          <h5 style={{ fontSize: "3rem" }}>Credibility</h5>
         </div>
       </div>
       <div className="page">
@@ -390,8 +435,17 @@ const FlipBook = () => {
             tạo ra môi trường học tập công bằng, hiệu quả.
           </p>
         </div>
-        <div className="back">
-          <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "15rem" }}>C</h1>
+          <h5 style={{ fontSize: "3rem" }}>Contribution</h5>
         </div>
       </div>
       <div className="page">
@@ -479,11 +533,9 @@ const FlipBook = () => {
       </div>
       <div className="page">
         <div className="front">
-        <img src="https://picsum.photos/id/24/600/600" alt="Img 1" />
+          <img src="https://img.freepik.com/free-vector/wooden-bridge-bamboo-forest_1308-33142.jpg?semt=ais_hybrid&w=740" alt="Img 1" />
         </div>
-        <div className="back cover">
-         
-        </div>
+        <div className="back cover"></div>
       </div>
     </div>
   );
