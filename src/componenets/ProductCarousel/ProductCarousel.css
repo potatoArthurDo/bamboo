@@ -100,7 +100,7 @@
 @media (max-width: 1535px) {
     .product-carousel-control.next {
       left: unset;
-      right: 820px;
+      right: 720px;
     }
     .product-carousel {
       position: relative;
