@@ -22,12 +22,7 @@
   50% {
     transform: translateY(-10px);
   }
-}
-
-
-  /* CSS for small phones */
-
-  
+} 
   .mobile_intro {
     width: 100%;
     display: flex;
@@ -74,13 +69,14 @@
     align-items: center;
     position: relative;
     height: 100dvh;
+    margin-left: 3rem;
   }
   .mobile-intro-second-group div:nth-child(odd) {
-    margin-right: 4.9rem;
+    margin-left: 3.5rem;
   }
 
   .mobile-intro-second-group div:nth-child(even) {
-    margin-left: 2.3rem;
+    margin-right: 5.3rem;
   }
 
   .mobile_english,
@@ -89,6 +85,7 @@
   .mobile_aboard {
     font-size: 3rem;
     font-weight: 500;
+    width: 100%;
     /* opacity: 0; */
   }
 
@@ -101,7 +98,7 @@
   }
   .mobile_camping {
     color: var(--text-background);
-    text-shadow: rgba(98, 118, 11, 0.76) 2px 2px 2px;
+    text-shadow: rgba(6, 7, 0, 0.826) 2px 2px 2px;
     font-weight: 600;
   }
 

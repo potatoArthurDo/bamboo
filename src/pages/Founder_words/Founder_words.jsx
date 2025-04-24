@@ -9,13 +9,10 @@ function Founder_words() {
       <Navbar />
       <div className="letter_container">
         <div className="letter_card">
-            <div className="letter_founder_info">
-          <img
-            src="assets/humans-images/founder.jpg"
-            alt=""
-          />
-          <div className="letter_founder_history">
-          <div className="letter_founder_name">
+          <div className="letter_founder_info">
+            <img src="assets/humans-images/founder.jpg" alt="" />
+            <div className="letter_founder_history">
+              <div className="letter_founder_name">
                 <h2>Lê Văn Hải</h2>
               </div>
               <div className="letter_founder_details">
@@ -62,7 +59,7 @@ function Founder_words() {
                   An.
                 </p>
               </div>
-          </div>
+            </div>
           </div>
           <div className="letter_info">
             <div className="letter_name">
@@ -167,9 +164,8 @@ function Founder_words() {
               </p>
               <br />
 
-              
               <div className="signature">
-              <p>Trân trọng,</p>
+                <p>Trân trọng,</p>
                 <p>Lê Văn Hải</p>
 
                 <p>Nhà sáng lập 2G Education</p>
