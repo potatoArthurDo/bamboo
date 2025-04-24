@@ -97,7 +97,7 @@
   font-weight: bold;
   margin-bottom: 1.1rem;
 }
-@media (max-width: 1535px) {
+@media (max-width: 1536px) {
     .product-carousel-control.next {
       left: unset;
       right: 720px;

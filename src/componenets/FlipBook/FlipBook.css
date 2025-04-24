@@ -140,3 +140,8 @@
         font-size: 2.2cqmin;
     }
   }
+  @media(max-width: 1440px) {
+    .page {
+        font-size: 2cqmin;
+    }
+  }

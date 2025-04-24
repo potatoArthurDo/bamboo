@@ -114,4 +114,7 @@
       font-size: 1rem;
       opacity: 0.8;
     }
+    .hidden_on_mobile {
+        display: none; /* Hide on mobile */
+    }
   }

@@ -278,17 +278,6 @@ const MobileOverlay = () => {
 
     {
       image:
-        "https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png",
-      name: "CÔ TRANG PHAN",
-      achievements: [
-        "- CThạc sĩ TESOL",
-        "- Giám đốc điều hành Hội Đồng Giáo Dục Văn Hoá Canada – Việt Nam",
-        "- Chuyên gia đào tạo phương pháp giảng dạy cho giáo viên",
-      ],
-    },
-
-    {
-      image:
         "assets/humans-images/Duy_Hiep.jpg",
       name: "THẦY DUY HIỆP",
       achievements: [
@@ -370,31 +359,6 @@ const MobileOverlay = () => {
       ],
     },
     {
-      name: "TIFFANY",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
-      intro: "GIÁO VIÊN TIẾNG ANH - MẦM NON/ TIỂU HỌC",
-      achivements: [
-        "- Tốt nghiệp cử nhân khoa học tại Cebu, Philippines",
-        "- Sở hữu chứng chỉ giảng dạy tiếng Anh TEFL",
-        "- Sở hữu chứng chỉ C1 châu Âu",
-        "- Hoàn thành chứng chỉ giảng dạy IELTS",
-        "- 11 năm kinh nghiệm giảng dạy tiếng Anh",
-      ],
-    },
-    {
-      name: "GAB",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
-      intro: "GIÁO VIÊN TIẾNG ANH - MẦM NON/ TIỂU HỌC",
-      achivements: [
-        "- Tốt nghiệp đại học St. La Salle-bacolod",
-        "- Thạc sỹ giáo dục chuyên ngành ngôn ngữ Anh",
-        "- Sở hữu chứng chỉ C2 EF SET",
-        "- Có hơn 15 năm kinh nghiệm giảng dạy tại các trường và hệ thống giáo dục lớn ở Philipine và Việt Nam, đặc biệt có nhiều kinh nghiệm giảng dạy Phonics cho lứa tuổi nhỏ",
-      ],
-    },
-    {
       name: "ZSANDRA",
       image:
         "assets/humans-images/human_9.jpg",
@@ -416,18 +380,6 @@ const MobileOverlay = () => {
         "- Tốt nghiệp cử nhân sư phạm trung học cơ sở, chuyên ngành giảng dạy tiếng Anh",
         "- Có 7 năm kinh nghiệm giảng dạy, từng là giảng viên của đại học CEBU và trưởng nhóm học vụ tại học viện Anh ngữ SMEAG Philippines",
         "- Sở hữu chứng chỉ giảng dạy quốc tế TESOL",
-      ],
-    },
-    {
-      name: "MR. TOÀN",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
-      intro: "",
-      achivements: [
-        "- Tốt nghiệp cử nhân Đại học kinh tế Quốc Dân",
-        "- IELTS 8.0, sở hữu chứng chỉ giảng dạy quốc tế CELTA (Pass A)",
-        "- 5 năm kinh nghiệm trong lĩnh vực tổ chức trại hè quốc tế & giảng dạy IELTS",
-        "- Sở hữu chứng chỉ đào tạo giáo viên IELTS do IDP Education cấp",
       ],
     },
     {
@@ -466,18 +418,6 @@ const MobileOverlay = () => {
         "- Học bổng thạc sĩ TESOL tại Đại học Huddersfield, Anh",
         "- IELTS Overall 8.0 trong đó Listening và Reading 8.5, Speaking 8.0",
         "- 5 năm kinh nghiệm giảng dạy IELTS & tiếng Anh du học, định cư",
-      ],
-    },
-    {
-      name: "LINH NGUYEN",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFkYHn6tWG4KYBXLMANz77kX_LcwojTEXJjA&s",
-      intro: "",
-      achivements: [
-        "- Tốt nghiệp Thạc sỹ chuyên ngành Quản lý Tài nguyên Nước, trường Đại học KU Leuven, Vương quốc Bỉ",
-        "- IELTS Overall 8.5 (Listening 8.5, Reading 9.0, Writing 7.5, Speaking 8.0)",
-        "- Đỗ học bổng VLIR-UOS của Chính phủ Bỉ, học bổng ERASMUS MUNDUS của Liên minh Châu Âu, học bổng MEXT của Chính phủ Nhật Bản",
-        "- Hơn 3 năm kinh nghiệm giảng dạy tiếng Anh thiếu nhi và luyện thi IELTS",
       ],
     },
   ];
@@ -549,8 +489,8 @@ const MobileOverlay = () => {
         </div>
 
         <div className="mobile-intro-second-group" >
-          <div className="mobile_english"   ref={(el) => (itemsRef.current[0] = el)} >ANH NGỮ</div>
-          <div className="mobile_english-second" ref={(el) => (itemsRef.current[1] = el)}>TOÀN DIỆN</div>
+          <div className="mobile_english"   ref={(el) => (itemsRef.current[0] = el)} >NGÔN NGỮ</div>
+          {/* <div className="mobile_english-second" ref={(el) => (itemsRef.current[1] = el)}>TOÀN DIỆN</div> */}
           <div className="mobile_camping" ref={(el) => (itemsRef.current[2] = el)}>TRẠI HÈ</div>
           <div className="mobile_aboard" ref={(el) => (itemsRef.current[3] = el)} >DU HỌC </div>
         </div>

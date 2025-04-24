@@ -373,8 +373,8 @@ export const ContentOverlay = () => {
         </div>
 
         <div className="right-intro">
-          <h1 className="main_name english1">ANH NGỮ</h1>
-          <h1 className="main_name english2">TOÀN DIỆN</h1>
+          {/* <h1 className="main_name english1">ANH NGỮ</h1> */}
+          <h1 className="main_name english2">NGÔN NGỮ</h1>
           <h1 className="main_name camping">TRẠI HÈ </h1>
           <h1 className="main_name study">DU HỌC</h1>
           <p className="bounce">↓</p>
@@ -383,18 +383,6 @@ export const ContentOverlay = () => {
       <Section opacity={opacity2} sectionName="feedback">
         <h1>Họ đang nói gì </h1>
         <h1> về 2G Education ? </h1>
-        {/* <div className="video-container">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/cLNyF1Zw5tg?si=jJi9zINBoqG6QSHI"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-          </div> */}
         <div className="bubble-feedback-container">
           <div className="bubble-content">
             {bubbleData.map((bubble) => (
@@ -488,77 +476,6 @@ export const ContentOverlay = () => {
         <h1>Mục đích của 2G</h1>
         <div className="purpose-container">
             <FlipBook />
-          {/* <div className="book">
-            {pages.map((page) => (
-              <input
-                key={page.id}
-                type="checkbox"
-                name={page.id}
-                id={page.id}
-              />
-            ))}
-            <div className="pages">
-              {pages.map((page) => (
-                <div key={page.id} className={page.id}>
-                  <label htmlFor={page.id}></label>
-                  <div className={`${page.id}-text`}>
-                    {page.frontText && (
-                      <div className="front-page">
-                        {page.frontText.map((text, index) => (
-                          <h3 key={index}>{text}</h3>
-                        ))}
-                      </div>
-                    )}
-                    {page.backText && (
-                      <div className="back-page">
-                        {page.backText.map((text, index) => (
-                          <h3 key={index}>{text}</h3>
-                        ))}
-                      </div>
-                    )}
-                    {page.text &&
-                      page.text.map(
-                        (
-                          sentence,
-                          sentenceIndex // First map for sentences
-                        ) => (
-                          <p key={sentenceIndex}>
-                            {sentence.map(
-                              (
-                                word,
-                                wordIndex // Second map for words
-                              ) => (
-                                <span
-                                  key={wordIndex}
-                                  style={{
-                                    color: word.highlight
-                                      ? word.color
-                                      : "inherit",
-                                    fontWeight: word.highlight
-                                      ? word.weight
-                                      : "normal",
-                                  }}
-                                >
-                                  {word.text}
-                                </span>
-                              )
-                            )}
-                          </p>
-                        )
-                      )}
-                    {page.endingTag && (
-                      <div className="ending-tag">
-                        {page.endingTag.map((text, index) => (
-                          <p key={index}>{text}</p>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <span className="material-symbols-outlined">left_click</span>
-                </div>
-              ))}
-            </div>
-          </div> */}
         </div>
       </Section>
 
@@ -566,17 +483,6 @@ export const ContentOverlay = () => {
         <h1>Định hướng </h1>
         <h1>phát triển</h1>
         <div className="tab-container">
-          {/* <div className="tab-buttons">
-            {tabs.map((tab) => (
-              <button
-                key={tab.id}
-                className={`tab-button ${activeTab === tab.id ? "active" : ""}`}
-                onClick={() => handleTabClick(tab.id)}
-              >
-                {tab.label}
-              </button>
-            ))}
-          </div> */}
 
           <div className="tab-content">
             {tabs.map((tab) => (
@@ -703,8 +609,8 @@ export const ContentOverlay = () => {
           </div>
 
           <div className="right-intro">
-            <h1 className="main_name english1">ANH NGỮ</h1>
-            <h1 className="main_name english2">TOÀN DIỆN</h1>
+            {/* <h1 className="main_name english1">ANH NGỮ</h1> */}
+            <h1 className="main_name english2">NGÔN NGỮ</h1>
             <h1 className="main_name camping">TRẠI HÈ </h1>
             <h1 className="main_name study">DU HỌC</h1>
           </div>
@@ -823,10 +729,6 @@ export const ContentOverlay = () => {
             </div>
           </div>
         </footer>
-        {/* <h3 className="company_name">2G Education</h3>
-        <h1 className="main_name">GLOCAL</h1>
-        <h1 className="main_name">TREE</h1>
-        */}
       </Section>
     </Scroll>
   );

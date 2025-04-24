@@ -49,6 +49,8 @@
     height: 266.67px;
     margin-top: 1rem;
     transition: all 0.3s ease-in-out;
+    border-radius: 5%;
+    border: solid 2px var(--text-background);
 
 }
 
@@ -78,6 +80,7 @@
     padding: 1rem;
     margin-bottom: 10rem;
     margin-top: 10rem;
+    border: solid 2px var(--primary-green);
 }
 .instructor-image {
     padding:0.2rem;
@@ -94,12 +97,12 @@
 }
 
 .instructor-info {
-    color: var(--primary-green);
+    color: var(--recommended-dark-green);
 
     width: 600px;
     font-size: 1.5rem;
     text-align: start;
-    text-shadow: rgba(193, 249, 63, 0.409) 2px 2px 2px;
+    text-shadow: rgba(206, 250, 139, 0.409) 2px 2px 2px;
 }
 
 .instructor-name {
