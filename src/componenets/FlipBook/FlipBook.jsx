@@ -462,56 +462,82 @@ const FlipBook = () => {
             những chương trình mang lại giá trị thực cho cộng đồng.
           </p>
         </div>
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "4rem" }}>3 câu chuyện biểu tượng</h1>
+        </div>
+      </div>
+      <div className="page">
+        <div
+          className="front"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "3rem" }}>Câu chuyện cây tre</h1>
+        </div>
         <div className="back">
-          <h3>3 câu chuyện biểu tượng:</h3>
-          <h4>Câu chuyện cây tre:</h4>
-          <p>
-            Tre không vội vã. Tre cắm rễ sâu, tích tụ sức mạnh, rồi vươn thẳng
-            lên trời – mạnh mẽ nhưng vô cùng linh hoạt. Đó cũng là lí do 2G
-            Group lấy hình ảnh cây tre làm hình ảnh biểu tượng chủ đạo.
-          </p>
-          <p>
+          <img src="/assets/images/book_1_1.jpg" alt="" />
+        </div>
+      </div>
+      <div className="page">
+        <div className="front">
+          <img src="/assets/images/book_1_2.jpg" alt="" />
+        </div>
+        <div className="back">
+          <img src="/assets/images/book_2_1.jpg" alt="" />
+        </div>
+      </div>
+      <div className="page">
+        <div className="front">
+          <img src="/assets/images/book_2_2.jpg" alt="" />
+        </div>
+        <div className="back">
+          <img src="/assets/images/book_3_1.jpg" alt="" />
+        </div>
+      </div>
+      <div className="page">
+        <div className="front">
+          <img src="/assets/images/book_3_2.jpg" alt="" />
+        </div>
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "2.5rem" }}>Câu chuyện the dots</h1>
+          <p style={{ fontSize: "1rem" }}>
             {" "}
-            Founder của 2G Group - anh Lê Văn Hải đã từng chia sẻ, càng trưởng
-            thành, anh càng cảm nhận sâu sắc gốc rễ – gia đình, cộng đồng, và di
-            sản Việt Nam đã định hình anh. Với anh, cây tre không chỉ là một
-            loại cây, mà là biểu tượng của bản sắc.
+            Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những
+            “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không
+            mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs
+            làm đều chưa có ý nghĩa rõ ràng.{" "}
           </p>
         </div>
       </div>
       <div className="page">
         <div className="front">
-          <p>
-            Sẽ mất hàng năm để rễ tre đan xen cắm chặt dưới lòng sâu trước khi
-            vươn thẳng lên trời, mạnh mẽ và nhanh chóng. Anh học từ đó: muốn
-            vươn cao, phải xây nền móng vững – trong công việc, trong đời sống.
-            Tre phát triển theo từng cụm và lớn lên theo từng đốt, luôn hướng
-            tới mây xanh. Đó cũng là hình ảnh mà anh muốn mọi người liên tưởng
-            tới khi biết đến 2G Group. 2G Group kiên nhẫn xây dựng nền tảng – từ
-            chất lượng đào tạo, chất lượng con người đến sự minh bạch trong vận
-            hành – để tạo nên một hệ thống giáo dục bền vững, nơi mọi cá nhân
-            cùng vươn lên từ gốc rễ mạnh mẽ của chính mình.
-          </p>
-        </div>
-        <div className="back">
-          <h4>Câu chuyện the dots:</h4>
-          <p>
-            Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những
-            “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không
-            mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs
-            làm đều chưa có ý nghĩa rõ ràng.
-          </p>
-          <p>
+          <p style={{ fontSize: "1rem" }}>
             Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò,
             những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch
             vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công
             nghệ.
           </p>
-        </div>
-      </div>
-      <div className="page">
-        <div className="front">
-          <p>
+          <p style={{ fontSize: "1rem" }}>
             Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi
             ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân
             thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng
@@ -520,20 +546,32 @@ const FlipBook = () => {
             tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ.
           </p>
         </div>
-        <div className="back">
-          <h4>Câu chuyện connect the “đốt”</h4>
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+         
+          }}
+        >
+          <h1 style={{ fontSize: "2.5rem" }}>Câu chuyện connect the “đốt”</h1>
+          <p>Tre cắm rễ, vươn từng đốt.</p>
+          <p>Dấu “dots” nhỏ, ý tưởng lớn.</p>
           <p>
-            Tre cắm rễ, vươn từng đốt. Dấu “dots” nhỏ, ý tưởng lớn. 2G Group
-            biến Connect the dots thành Connect the “đốt” với với ý nghĩa mong
-            muốn phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái
-            giáo dục toàn diện, gắn thế hệ trẻ với tri thức, vững gốc mà vươn
-            xa.
+            2G Group biến Connect the dots thành Connect the “đốt” với với ý
+            nghĩa mong muốn phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ
+            sinh thái giáo dục toàn diện, gắn thế hệ trẻ với tri thức, vững gốc
+            mà vươn xa.
           </p>
         </div>
       </div>
       <div className="page">
-        <div className="front">
-          <img src="https://img.freepik.com/free-vector/wooden-bridge-bamboo-forest_1308-33142.jpg?semt=ais_hybrid&w=740" alt="Img 1" />
+        <div className="front"  style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
+            <img src="assets/images/favicon.png" alt=""  style={{height: "auto", width: "17rem"}}/>
         </div>
         <div className="back cover"></div>
       </div>

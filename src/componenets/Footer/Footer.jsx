@@ -1,5 +1,7 @@
 import "./Footer.css";
 import { forwardRef } from "react";
+import { Link } from "react-router-dom";
+
 const Footer = forwardRef((props, ref) => {
     return (
       <footer className="footer" ref={ref}>
@@ -19,9 +21,10 @@ const Footer = forwardRef((props, ref) => {
           <div className="footer-links">
             <p>Quick Links:</p>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/founder_story">Thư ngỏ</a></li>
-              <li className="hidden_on_mobile"><a href="/instructors">2G Humans</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li>
+              <Link to= '/founder_story'>Thư ngỏ</Link></li>
+              <li className="hidden_on_mobile"><Link to="/instructors">2G Humans</Link></li>
             </ul>
           </div>
           <div className="footer-social">
