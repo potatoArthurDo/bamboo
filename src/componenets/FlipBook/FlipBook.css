@@ -19,7 +19,8 @@
     --thickness: 4;
     flex: none;
     display: flex;
-    width: 100%;
+    /* hard coded the size */
+    width: 25rem; 
     font-size: 2cqmin;
     font-weight: 600;
     /*1* allow pointer events on pages */
