@@ -50,18 +50,18 @@ export const ContentOverlay = () => {
   const [opacity6, setOpacitySection6] = useState(0);
   const [opacity7, setOpacitySection7] = useState(0);
   const [opacity8, setOpacitySection8] = useState(0);
-  const [opacity9, setOpacitySection9] = useState(0);
+  //   const [opacity9, setOpacitySection9] = useState(0);
 
   useFrame(() => {
     setOpacitySection1(1 - scroll.range(0, 1 / 6)); // ~17% for fade out
-    setOpacitySection2(scroll.curve(1 / 9, 2 / 9)); // fade in slower
-    setOpacitySection3(scroll.curve(2 / 9, 2 / 9));
-    setOpacitySection4(scroll.curve(3 / 9, 2 / 9));
-    setOpacitySection5(scroll.curve(4 / 9, 2 / 9));
-    setOpacitySection6(scroll.curve(5 / 9, 2 / 9));
-    setOpacitySection7(scroll.curve(6 / 9, 2 / 9));
-    setOpacitySection8(scroll.curve(7 / 9, 2 / 9));
-    setOpacitySection9(scroll.range(8 / 9, 1 / 9)); // fade in slower
+    setOpacitySection2(scroll.curve(1 / 8, 2 / 8)); // fade in slower
+    setOpacitySection3(scroll.curve(2 / 8, 2 / 8));
+    setOpacitySection4(scroll.curve(3 / 8, 2 / 8));
+    setOpacitySection5(scroll.curve(4 / 8, 2 / 8));
+    setOpacitySection6(scroll.curve(5 / 8, 2 / 8));
+    setOpacitySection7(scroll.curve(6 / 8, 2 / 8));
+    setOpacitySection8(scroll.curve(7 / 8, 2 / 8));
+    // setOpacitySection9(scroll.range(8 / 9, 1 / 9));
   });
   const bubbleData = [
     {
@@ -183,6 +183,7 @@ export const ContentOverlay = () => {
         "- Luyện thi IELTS, THPT Chuyên với lộ trình cá nhân hoá.",
         "- Tiếng Anh giao tiếp & tiếng Anh trẻ em theo phương pháp tư duy phản xạ.",
       ],
+      logo: "assets/images/favicon.png",
     },
     {
       title: "2G Pathways",
@@ -196,6 +197,7 @@ export const ContentOverlay = () => {
         "- Trại hè quốc tế Eureka Camp tại Singapore, Úc, New Zealand, Mỹ, Canada làm bước đệm cho hành trình du học",
         "-Xây dựng lộ trình cá nhân hoá, hỗ trợ toàn bộ các thủ tục giấy tờ và định hướng ngành học, hướng nghiệp",
       ],
+      logo: "assets/images/favicon.png",
     },
     {
       title: "2G Eureka Camps",
@@ -207,6 +209,7 @@ export const ContentOverlay = () => {
         "- Chương trình kết hợp học tập, kỹ năng mềm & tư duy sáng tạo và phản biện.",
         "- Môi trường quốc tế giúp trẻ tự tin và phát triển toàn diện.",
       ],
+      logo: "assets/images/eureka_logo.png",
     },
     {
       title: "GV Manpower",
@@ -219,6 +222,7 @@ export const ContentOverlay = () => {
         "- Kết nối doanh nghiệp, đảm bảo cơ hội việc làm tại Đức.",
         "- Tối ưu chi phí, lộ trình hợp pháp, an toàn.",
       ],
+      logo: "assets/images/manpower_logo.png",
     },
     {
       title: "Du học Hồng Khôi",
@@ -231,6 +235,7 @@ export const ContentOverlay = () => {
         "- Đa dạng các gói tư vấn: Hệ Cử nhân tự túc, Hệ 1+4, Hệ Vừa học vừa làm, Hệ Ngôn ngữ, Hệ Thạc sĩ, Hệ Tiến sĩ",
         "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
+      logo: "assets/images/hongkhoi_logo.png",
     },
   ];
 
@@ -322,12 +327,9 @@ export const ContentOverlay = () => {
     "assets/humans-images/human_10.jpg",
   ];
 
-  
-
   const founder = {
     name: "Lê Văn Hải",
-    image:
-      "assets/humans-images/founder.jpg",
+    image: "assets/humans-images/founder.jpg",
     history: [
       "Là doanh nhân trẻ tuổi nhất trong lĩnh vực giáo dục tại Việt Nam, sở hữu song tịch thông qua chương trình đầu tư định cư.",
       "Tốt nghiệp chương trình đào tạo quản lý trường Anh ngữ tại Mỹ do Hiệp hội TESOL cấp bằng.",
@@ -349,7 +351,6 @@ export const ContentOverlay = () => {
 
   return (
     <Scroll html className="scroll-html-wrapper">
-       
       <Section opacity={opacity1} sectionName="intro">
         <div className="left-intro">
           <div className="company-mean">
@@ -384,7 +385,7 @@ export const ContentOverlay = () => {
       <Section opacity={opacity2} sectionName="purpose">
         <h1>Mục đích của 2G</h1>
         <div className="purpose-container">
-            <FlipBook />
+          <FlipBook />
         </div>
       </Section>
       <Section opacity={opacity3} sectionName="feedback">
@@ -433,12 +434,20 @@ export const ContentOverlay = () => {
                 className={`bubble ${
                   activeBubble === bubble.id ? "active" : ""
                 }`}
-                
                 onMouseEnter={() => handleBubbleHover(bubble.id)}
                 onMouseLeave={() => handleBubbleHover(bubble.id)}
               >
                 {/* {`Bubble ${bubble.id.replace("bubble", "")}`} */}
-                <img src={bubble.image} alt="" style={{width: bubble.size, height: "auto", display: "block", objectFit: "contain"}}/>
+                <img
+                  src={bubble.image}
+                  alt=""
+                  style={{
+                    width: bubble.size,
+                    height: "auto",
+                    display: "block",
+                    objectFit: "contain",
+                  }}
+                />
               </div>
             ))}
           </div>
@@ -466,13 +475,10 @@ export const ContentOverlay = () => {
         <ProductCarousel products={products} />
       </Section>
 
-      
-
       <Section opacity={opacity6} sectionName="story">
         <h1>Định hướng </h1>
         <h1>phát triển</h1>
         <div className="tab-container">
-
           <div className="tab-content">
             {tabs.map((tab) => (
               <div
@@ -512,7 +518,7 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section opacity={opacity7} sectionName="founder">
+      {/* <Section opacity={opacity7} sectionName="founder">
         <h1>2G Founder Profile</h1>
         <div className="founder_card">
           <img src={founder.image} alt={founder.name} />
@@ -537,9 +543,9 @@ export const ContentOverlay = () => {
             </div>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
-      <Section opacity={opacity8} sectionName="human">
+      <Section opacity={opacity7} sectionName="human">
         <h1>2G Humans</h1>
         <div className="human-intro">
           <h5>ĐỘI NGŨ CỐ VẤN CHUYÊN MÔN ĐẦU NGÀNH TRONG NƯỚC & QUỐC TẾ</h5>
@@ -582,7 +588,7 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section opacity={opacity9} sectionName="banner-footer">
+      <Section opacity={opacity8} sectionName="banner-footer">
         <div className="footer-first-content">
           <div className="left-intro">
             <div className="company-mean">
@@ -631,24 +637,34 @@ export const ContentOverlay = () => {
                 style={{
                   fontSize: "0.6rem",
                   display: "flex",
-                  flexDirection:"column",
-                  alignItems:"flex-start",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
                   flex: "wrap",
                   marginLeft: "2.5rem",
                 }}
               >
-                "Free Bamboo Set" <a href="https://skfb.ly/oxyyY">(bamboo model</a>) by JonhGillessen is
-                licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution.</a>  Modified by repositioning and removing some elements.
+                "Free Bamboo Set"{" "}
+                <a href="https://skfb.ly/oxyyY">(bamboo model</a>) by
+                JonhGillessen is licensed under{" "}
+                <a href="http://creativecommons.org/licenses/by/4.0/">
+                  Creative Commons Attribution.
+                </a>{" "}
+                Modified by repositioning and removing some elements.
               </p>
             </div>
             <div className="footer-info">
-              <p>Branches:</p>
+              <p>Locate Us:</p>
               <ul>
-                <li>New York, USA</li>
-                <li>London, UK</li>
-                <li>Tokyo, Japan</li>
+                <li>65 Lê Hồng Phong, thành phố Vinh, tỉnh Nghệ An</li>
               </ul>
-              <p>Phone: +1 234 567 890</p>
+              <p>Phone:</p>
+              <ul>
+                <li>0889 666 900</li>
+              </ul>
+              <p>Email:</p>
+              <ul>
+                <li>lenguyen@2g.edu.vn</li>
+              </ul>
             </div>
             <div className="footer-links">
               <p>Quick Links:</p>
@@ -668,7 +684,7 @@ export const ContentOverlay = () => {
               <p>Follow Us:</p>
               <div class="social-icons">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/2GEducation"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -684,10 +700,10 @@ export const ContentOverlay = () => {
                 </a>
 
                 <a
-                  href="https://www.twitter.com"
+                  href="https://www.youtube.com/@2GEducation"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Twitter"
+                  aria-label="YouTube"
                 >
                   <svg
                     width="24"
@@ -695,15 +711,15 @@ export const ContentOverlay = () => {
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.7 1.03 4.27 4.27 0 00-7.3 3.89A12.1 12.1 0 013 5.16a4.27 4.27 0 001.32 5.7 4.2 4.2 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96 8.56 8.56 0 01-6.3 1.76A12.07 12.07 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.35-.02-.53A8.34 8.34 0 0022.46 6z" />
+                    <path d="M19.615 3.184H4.385C3.06 3.184 2 4.244 2 5.57v12.86c0 1.327 1.06 2.387 2.385 2.387h15.23c1.326 0 2.385-1.06 2.385-2.387V5.57c0-1.326-1.06-2.386-2.385-2.386zM10 15.5V8.5l6 3.5-6 3.5z" />
                   </svg>
                 </a>
 
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Instagram"
+                  aria-label="LinkedIn"
                 >
                   <svg
                     width="24"
@@ -711,7 +727,7 @@ export const ContentOverlay = () => {
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.88-.38a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z" />
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.037-1.85-3.037-1.851 0-2.134 1.445-2.134 2.94v5.666H9.355V9h3.414v1.561h.049c.476-.899 1.637-1.85 3.368-1.85 3.598 0 4.263 2.368 4.263 5.451v6.29zM5.337 7.433a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.665 20.452h3.554V9H3.665v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
                   </svg>
                 </a>
               </div>

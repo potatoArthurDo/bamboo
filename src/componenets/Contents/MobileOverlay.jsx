@@ -742,7 +742,7 @@ const MobileOverlay = () => {
         </div>
       </section>
 
-      <section className="mobile_section">
+      {/* <section className="mobile_section">
         <div className="mobile-founder-container">
           <h1>2G Founder Profile</h1>
           <div className="mobile-founder-image">
@@ -758,7 +758,7 @@ const MobileOverlay = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="mobile_section">
         <div className="mobile-humans">

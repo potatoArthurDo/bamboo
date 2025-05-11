@@ -3,87 +3,111 @@ import { forwardRef } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = forwardRef((props, ref) => {
-    return (
-      <footer className="footer" ref={ref}>
-        <div className="footer-container">
-          <div className="footer-logo">
-            <img src="assets/images/logo.png" alt="Company Logo" className="logo" />
-          </div>
-          <div className="footer-info">
-            <p>Branches:</p>
-            <ul>
-              <li>New York, USA</li>
-              <li>London, UK</li>
-              <li>Tokyo, Japan</li>
-            </ul>
-            <p>Phone: +1 234 567 890</p>
-          </div>
-          <div className="footer-links">
-            <p>Quick Links:</p>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li>
-              <Link to= '/founder_story'>Thư ngỏ</Link></li>
-              <li className="hidden_on_mobile"><Link to="/instructors">2G Humans</Link></li>
-            </ul>
-          </div>
-          <div className="footer-social">
-            <p>Follow Us:</p>
-            <div class="social-icons">
-                <a
-                  href="https://www.facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34v6.99C18.34 21.2 22 17.06 22 12.07z" />
-                  </svg>
-                </a>
+  return (
+    <footer className="footer" ref={ref}>
+      <div className="footer-container">
+        <div className="footer-logo">
+          <img
+            src="assets/images/logo.png"
+            alt="Company Logo"
+            className="logo"
+          />
+          <p
+            className="footer-bottom"
+            style={{
+              fontSize: "0.8rem",
+              display: "flex",
+              flex: "wrap",
+              marginLeft: "2.5rem",
+            }}
+          >
+            &copy; {new Date().getFullYear()} 2G Education. All rights reserved.
+          </p>
+        </div>
+        <div className="footer-info">
+          <p>Locate Us:</p>
+          <ul>
+            <li>65 Lê Hồng Phong, thành phố Vinh, tỉnh Nghệ An</li>
+          </ul>
+          <p>Phone:</p>
+          <ul>
+            <li>0889 666 900</li>
+          </ul>
+          <p>Email:</p>
+          <ul>
+            <li>lenguyen@2g.edu.vn</li>
+          </ul>
+        </div>
+        <div className="footer-links">
+          <p>Quick Links:</p>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/founder_story">Thư ngỏ</Link>
+            </li>
+            <li className="hidden_on_mobile">
+              <Link to="/instructors">2G Humans</Link>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-social">
+          <p>Follow Us:</p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/2GEducation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.88v-6.99h-2.54v-2.89h2.54V9.41c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34v6.99C18.34 21.2 22 17.06 22 12.07z" />
+              </svg>
+            </a>
 
-                <a
-                  href="https://www.twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.28 4.28 0 001.88-2.37 8.6 8.6 0 01-2.7 1.03 4.27 4.27 0 00-7.3 3.89A12.1 12.1 0 013 5.16a4.27 4.27 0 001.32 5.7 4.2 4.2 0 01-1.93-.53v.05a4.27 4.27 0 003.42 4.18 4.26 4.26 0 01-1.92.07 4.27 4.27 0 003.98 2.96 8.56 8.56 0 01-6.3 1.76A12.07 12.07 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.35-.02-.53A8.34 8.34 0 0022.46 6z" />
-                  </svg>
-                </a>
+            <a
+              href="https://www.youtube.com/@2GEducation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M19.615 3.184H4.385C3.06 3.184 2 4.244 2 5.57v12.86c0 1.327 1.06 2.387 2.385 2.387h15.23c1.326 0 2.385-1.06 2.385-2.387V5.57c0-1.326-1.06-2.386-2.385-2.386zM10 15.5V8.5l6 3.5-6 3.5z" />
+              </svg>
+            </a>
 
-                <a
-                  href="https://www.instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
-                  <svg
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.88-.38a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z" />
-                  </svg>
-                </a>
-              </div>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.037-1.85-3.037-1.851 0-2.134 1.445-2.134 2.94v5.666H9.355V9h3.414v1.561h.049c.476-.899 1.637-1.85 3.368-1.85 3.598 0 4.263 2.368 4.263 5.451v6.29zM5.337 7.433a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.665 20.452h3.554V9H3.665v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
+              </svg>
+            </a>
           </div>
         </div>
-        <p className="footer-bottom">&copy; {new Date().getFullYear()} 2G Education. All rights reserved.</p>
-      </footer>
-    );
-  });
-  
-  export default Footer;
-  
+      </div>
+      {/* <p className="footer-bottom">&copy; {new Date().getFullYear()} 2G Education. All rights reserved.</p> */}
+    </footer>
+  );
+});
+
+export default Footer;

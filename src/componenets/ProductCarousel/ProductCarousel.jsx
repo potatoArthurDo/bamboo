@@ -69,8 +69,12 @@ const ProductCarousel = ({ products, intervalTime = 3000 }) => {
             key={index}
             ref={(el) => (itemsRef.current[index] = el)}
           >
-            <img src={product.image} alt={product.title} />
+            
+            <div className='add_logo'>
+            <img src={product.logo} alt="product_logo" />
             <h4>{product.title}</h4>
+            </div>
+            <img src={product.image} alt={product.title} />
             <h5>{product.subtitle}</h5>
             <p className="service-intro">{product.intro}</p>
             {product.details.map((detail, i) => (
