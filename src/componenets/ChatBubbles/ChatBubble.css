@@ -100,9 +100,14 @@
     padding: 10px;
     height: 100%;
   }
+  .chat-container {
+    width : 40rem;
+    max-width: 70rem;
 
+}
   .chat-bubble {
-    width: 20rem;
+    width: 25rem;
+    font-size: 1.8rem;
   }
   .receiver {
     margin-left: 1rem;

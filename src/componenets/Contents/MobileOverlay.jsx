@@ -64,6 +64,7 @@ const MobileOverlay = () => {
         "- Luyện thi IELTS, THPT Chuyên với lộ trình cá nhân hoá.",
         "- Tiếng Anh giao tiếp & tiếng Anh trẻ em theo phương pháp tư duy phản xạ.",
       ],
+      logo: "assets/images/favicon.png",
     },
     {
       title: "2G Pathways",
@@ -77,6 +78,7 @@ const MobileOverlay = () => {
         "- Trại hè quốc tế Eureka Camp tại Singapore, Úc, New Zealand, Mỹ, Canada làm bước đệm cho hành trình du học",
         "-Xây dựng lộ trình cá nhân hoá, hỗ trợ toàn bộ các thủ tục giấy tờ và định hướng ngành học, hướng nghiệp",
       ],
+      logo: "assets/images/favicon.png",
     },
     {
       title: "2G Eureka Camps",
@@ -88,6 +90,7 @@ const MobileOverlay = () => {
         "- Chương trình kết hợp học tập, kỹ năng mềm & tư duy sáng tạo và phản biện.",
         "- Môi trường quốc tế giúp trẻ tự tin và phát triển toàn diện.",
       ],
+      logo: "assets/images/eureka_logo.png",
     },
     {
       title: "GV Manpower",
@@ -100,6 +103,7 @@ const MobileOverlay = () => {
         "- Kết nối doanh nghiệp, đảm bảo cơ hội việc làm tại Đức.",
         "- Tối ưu chi phí, lộ trình hợp pháp, an toàn.",
       ],
+      logo: "assets/images/manpower_logo.png",
     },
     {
       title: "Du học Hồng Khôi",
@@ -112,6 +116,7 @@ const MobileOverlay = () => {
         "- Đa dạng các gói tư vấn: Hệ Cử nhân tự túc, Hệ 1+4, Hệ Vừa học vừa làm, Hệ Ngôn ngữ, Hệ Thạc sĩ, Hệ Tiến sĩ",
         "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
+      logo: "assets/images/hongkhoi_logo.png",
     },
   ];
 
@@ -589,6 +594,7 @@ const MobileOverlay = () => {
             <div className="product-carousel-inner">
               {products.map((product, index) => (
                 <div className="product-card" key={index}>
+                    <img  src={product.logo} alt="product logo" style={{width: "100%", height: "120px"}} />
                   <img src={product.image} alt={product.title} />
                   <h4>{product.title}</h4>
                   <h5>{product.subtitle}</h5>
