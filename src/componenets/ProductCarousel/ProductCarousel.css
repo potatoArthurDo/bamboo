@@ -20,7 +20,8 @@
   width: 450px;
   height: 700px;
   text-align: center;
-  background: rgba(27, 48, 3, 0.5);
+  /* background: rgba(205, 213, 114, 0.493); */
+   background: rgba(60, 63, 30, 0.34);
   border-radius: 20px;
   /* padding: 20px; */
   transition: 0.5s;
@@ -38,15 +39,21 @@
 .product-card h4 {
   font-size: 2rem;
   color: var(--text-background);
+  text-shadow: rgb(16, 18, 1) 2px 2px 2px;
 }
 .product-card h5 {
   font-size: 1.5rem;
+  text-shadow: rgba(6, 9, 0, 0.847) 2px 2px 2px;
 }
 
 .product-card p {
   font-size: 1rem;
-  color: var(--text-background);
+  color: var(--golden-intro);
   text-align: start;
+  /* text-shadow: rgb(16, 26, 7) 3px 3px 3px; */
+  font-weight: 700;
+  background: rgba(60, 63, 30, 0.34);
+  /* padding: 0.2rem; */
 }
 
 .product-carousel-control {
@@ -104,7 +111,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(236, 244, 148, 0.078);
+    /* background: #f4f5f04e; */
     padding-bottom: 2rem;
 }
 .add_logo img {
@@ -113,6 +120,7 @@
     object-fit: contain;
     margin-bottom: 10px;
     /* background: rgba(236, 244, 148, 0.621); */
+     background: rgba(160, 181, 56, 0.662);
     border-radius: 10%;
 }
 @media (max-width: 1536px) {

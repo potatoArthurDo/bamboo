@@ -34,7 +34,7 @@ const NewInstructors = () => {
   {
     id: 3,
     image: "assets/humans-images/KhanhVan.jpg",
-    name: "Cô Khánh Vân",
+    name: "Nguyễn Ngọc Khánh Vân",
     position: "Đồng sáng lập, trưởng BTC trại hè quốc tế EUREKA CAMPS",
     profile: ["Học bổng chính phủ Úc AAS khóa 2025, Master of Business Analytics, Monash University",
          "Tốt nghiệp loại giỏi Trường Đại học Ngoại thương khóa 2021, Bachelor of International Business",
@@ -233,7 +233,7 @@ const NewInstructors = () => {
   {
     id: 18,
     image: "assets/humans-images/.jpg",
-    name: "Hoàng Hằng",
+    name: "Hoàng Thị Thúy Hằng",
     position: "Marketing & PR Leader",
     profile: ["Cử nhân chuyên ngành Quan hệ Quốc tế trường Đại học Khoa học Xã hội và Nhân văn - Đại học Quốc gia Hà Nội",
          "Đạt học bổng 70% trường Đại học KyungDong (Hàn Quốc)",
@@ -289,7 +289,7 @@ const NewInstructors = () => {
   {
     id: 22,
     image: "assets/humans-images/ChiNhan.jpg",
-    name: "Chị Nhàn",
+    name: "Nguyễn Thị Nhàn",
     position: "Research and Development",
     profile: ["4 năm liền đạt Học bổng Merali - Học bổng dành cho Nữ sinh Châu Á và Học bổng tại trường Khoa học Tự Nhiên.",
          "Tốt nghiệp Cử nhân loại Giỏi trường Đại học Khoa học Tự Nhiên - ĐHQGHN",
@@ -318,7 +318,7 @@ const NewInstructors = () => {
   {
     id: 24,
     image: "assets/humans-images/HaDuHocDuc.jpg",
-    name: "Chị Hà Du Học Đức",
+    name: "Nguyễn Thị Ngọc Hà",
     position: "Trưởng nhóm tuyển sinh Du học Đức",
     profile: [ "Kinh nghiệm 3 năm làm việc trong ngành FCMG và 2 năm trong ngành Logistics",
          "Hơn 6 năm kinh nghiệm công tác trong ngành Giáo dục",

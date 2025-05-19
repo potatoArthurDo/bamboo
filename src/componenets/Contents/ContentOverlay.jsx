@@ -676,7 +676,7 @@ export const ContentOverlay = () => {
                   <a href="/founder_story">Thư ngỏ</a>
                 </li>
                 <li>
-                  <a href="/instructors">2G Humans</a>
+                  <a href="/humans">2G Humans</a>
                 </li>
               </ul>
             </div>
