@@ -8,7 +8,6 @@ import ChatBubble from "../ChatBubbles/ChatBubble";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import { color } from "three/tsl";
 import Slider from "../Slider/Slider";
-import { Link } from "react-router-dom";
 import FlipBook from "../FlipBook/FlipBook";
 const Section = (props) => {
   return (
@@ -21,6 +20,12 @@ const Section = (props) => {
 export const ContentOverlay = () => {
   const scroll = useScroll();
   const navigate = useNavigate();
+
+  // Handler for link clicks
+  const handleNavigate = (e, path) => {
+    e.preventDefault();
+    navigate(path);
+  };
 
   const [hoveredCard, setHoveredCard] = useState(null);
   const [activeTab, setActiveTab] = useState("tab2");
@@ -670,16 +675,29 @@ export const ContentOverlay = () => {
               <p>Quick Links:</p>
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <a href="/" onClick={(e) => handleNavigate(e, "/")}>
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="/founder_story">Thư ngỏ</a>
+                  <a
+                    href="/founder_story"
+                    onClick={(e) => handleNavigate(e, "/founder_story")}
+                  >
+                    Thư ngỏ
+                  </a>
                 </li>
                 <li>
-                  <a href="/humans">2G Humans</a>
+                  <a
+                    href="/humans"
+                    onClick={(e) => handleNavigate(e, "/humans")}
+                  >
+                    2G Humans
+                  </a>
                 </li>
               </ul>
             </div>
+
             <div className="footer-social">
               <p>Follow Us:</p>
               <div class="social-icons">

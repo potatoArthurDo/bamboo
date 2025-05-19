@@ -8,7 +8,6 @@ import Fireflies from "../../componenets/Fireflies/Fireflies";
 import Navbar from "../../componenets/Navbar/Navbar";
 import "./Home.css";
 import MobileOverlay from "../../componenets/Contents/MobileOverlay";
-import Footer from "../../componenets/Footer/Footer";
 function Home() {
   const [IsMobile, setIsMobile] = useState(window.innerWidth <= 768); // Initial check
 
