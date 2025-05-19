@@ -14,26 +14,26 @@ const FlipCard = ({ cards }) => {
   
 
   return (
-    <div className="flipcard">
+    <div className="flipcard-human">
       {cards.map((card) => (
         <div
           key={card.id}
-          className={`flip-card ${isFlipped[card.id] ? "flipped" : ""}`}
+          className={`flip-card-human ${isFlipped[card.id] ? "flipped" : ""}`}
           onClick={() => handleCardClick(card.id)}
         >
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
+          <div className="flip-card-inner-human">
+            <div className="flip-card-front-human">
                 <img src={card.image} alt="" />
             </div>
-            <div className="flip-card-back">
-              <p>{card.name}</p>
-              <p>{card.position}</p>
-              <ul>
+            <div className="flip-card-back-human">
+              <h3>{card.name}</h3>
+              <h4>{card.position}</h4>
+              <ul style={{listStyle:"square"}}>
                 {card.profile.map((item, index) => (
                     <li key={index}>{item}</li>
                 ))}
               </ul>
-              <ul>
+              <ul style={{background: "linear-gradient(to right, #faf2c4, #fdf6d7, #f5eac3)", borderRadius:"10px"}}>
                 {card.pov.map((detail, index) => (
                   <li key={index}>{detail}</li>
                 ))}
