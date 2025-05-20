@@ -136,9 +136,41 @@
     height: auto;
     width: 12rem;
   }
+  .page p {
+        font-size: 1.1rem;
+    }
+    .page ul {
+        font-size: 1.2rem;
+    }
+    .page h4 {
+        font-size: 1.8rem;
+    }
+
+  @media(max-width: 1728px) {
+    .page {
+        font-size: 2.5cqmin;
+    }
+    .page p {
+        font-size: 1rem;
+    }
+    .page ul {
+        font-size: 1.2rem;
+    }
+    .page h4 {
+        font-size: 1.3rem;
+    }
+  }
   @media(max-width: 1535px) {
     .page {
         font-size: 2.2cqmin;
+    }
+    .page p {
+        font-size: 1.2rem;
+    }
+  }
+  @media(max-width: 1472px) {
+     .page p {
+        font-size: 1.1rem;
     }
   }
   @media(max-width: 1440px) {

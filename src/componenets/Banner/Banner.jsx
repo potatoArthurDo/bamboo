@@ -17,11 +17,16 @@ export default function Banner({ progress }) {
       setIsMobile(window.innerWidth <= 768);
       const width = window.innerWidth;
       if (width <= 1441) {
-        setPages(9.7);
+        setPages(9.75);
+      }
+      else if (width <= 1472 ) {
+        setPages(9.2);
       } else if (width <= 1536) {
-        setPages(10.1);
-      } else if (width <= 1920) {
-        setPages(9.6);
+        setPages(10.15);
+      } else if (width <= 1728) {
+        setPages(8.1);
+      }else if (width <= 1920) {
+        setPages(9.65);
       } else {
         setPages(9.6);
       }

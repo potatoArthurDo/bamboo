@@ -129,13 +129,13 @@ const FlipBook = () => {
       </div>
       <div className="page">
         <div className="front">
-          <p style={{ fontSize: "1rem" }}>
+          <p style={{ fontSize: "0.9rem" }}>
             Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò,
             những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch
             vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công
             nghệ.
           </p>
-          <p style={{ fontSize: "1rem" }}>
+          <p style={{ fontSize: "0.9rem" }}>
             Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi
             ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân
             thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng
@@ -197,13 +197,12 @@ const FlipBook = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            fontSize: "2.5rem",
             gap: "1rem",
           }}
         >
-          <h4>Resilience</h4>
-          <h4>Reimagine</h4>
-          <h4>Responsibility</h4>
+          <h4 style={{ fontSize: "2.5rem" }}>Resilience</h4>
+          <h4 style={{ fontSize: "2.5rem" }}>Reimagine</h4>
+          <h4 style={{ fontSize: "2.5rem" }}>Responsibility</h4>
         </div>
         <div
           className="back"
@@ -214,9 +213,9 @@ const FlipBook = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "15rem" }}>R</h1>
-          <h5 style={{ fontSize: "3rem" }}>Resilience</h5>
-          <h6 style={{ fontSize: "2rem" }}>Bền Bỉ</h6>
+          <h1 style={{ fontSize: "13rem" }}>R</h1>
+          <h5 style={{ fontSize: "2.8rem" }}>Resilience</h5>
+          <h6 style={{ fontSize: "1.4rem" }}>Bền Bỉ</h6>
         </div>
       </div>
 
@@ -243,9 +242,9 @@ const FlipBook = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "15rem" }}>R</h1>
-          <h5 style={{ fontSize: "3rem" }}>Reimagine</h5>
-          <h6 style={{ fontSize: "2rem" }}>Tái tạo</h6>
+          <h1 style={{ fontSize: "13rem" }}>R</h1>
+          <h5 style={{ fontSize: "2.8rem" }}>Reimagine</h5>
+          <h6 style={{ fontSize: "1.4rem" }}>Tái tạo</h6>
         </div>
       </div>
 
@@ -276,9 +275,9 @@ const FlipBook = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "15rem" }}>R</h1>
-          <h5 style={{ fontSize: "3rem" }}>Responsibility</h5>
-          <h6 style={{ fontSize: "2rem" }}>Trách Nhiệm</h6>
+          <h1 style={{ fontSize: "13rem" }}>R</h1>
+          <h5 style={{ fontSize: "2.8rem" }}>Responsibility</h5>
+          <h6 style={{ fontSize: "1.4rem" }}>Trách Nhiệm</h6>
         </div>
       </div>
 
@@ -308,15 +307,41 @@ const FlipBook = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "15rem" }}>C</h1>
-          <h5 style={{ fontSize: "3rem" }}>Care</h5>
-          <h6 style={{ fontSize: "2rem" }}>Sống Tử Tế</h6>
+          <h3 style={{ fontSize: "4rem" }}>3 giá trị cốt lõi</h3>
         </div>
       </div>
 
       <div className="page">
+       <div
+          className="front"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            gap: "1rem",
+          }}
+        >
+          <h4 style={{ fontSize: "2.5rem" }}>Care</h4>
+          <h4 style={{ fontSize: "2.5rem" }}>Credibility</h4>
+          <h4 style={{ fontSize: "2.5rem" }}>Contribution</h4>
+        </div>
+
+        <div
+          className="back"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <h1 style={{ fontSize: "13rem" }}>C</h1>
+          <h5 style={{ fontSize: "2.8rem" }}>Care</h5>
+          <h6 style={{ fontSize: "1.4rem" }}>Sống Tử Tế</h6>
+        </div>
+      </div>
+      <div className="page">
         <div className="front">
-          <h3>3 giá trị cốt lõi: Care, Credibility, Contribution</h3>
           <h4>Sống tử tế (Care)</h4>
           <p>
             {" "}
@@ -337,9 +362,9 @@ const FlipBook = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "15rem" }}>C</h1>
-          <h5 style={{ fontSize: "3rem" }}>Credibility</h5>
-          <h6 style={{ fontSize: "2rem" }}>Sống Liêm Chính</h6>
+          <h1 style={{ fontSize: "13rem" }}>C</h1>
+          <h5 style={{ fontSize: "2.8rem" }}>Credibility</h5>
+          <h6 style={{ fontSize: "1.4rem" }}>Sống Liêm Chính</h6>
         </div>
       </div>
       <div className="page">
@@ -365,13 +390,14 @@ const FlipBook = () => {
             alignItems: "center",
           }}
         >
-          <h1 style={{ fontSize: "15rem" }}>C</h1>
-          <h5 style={{ fontSize: "3rem" }}>Contribution</h5>
-          <h6 style={{ fontSize: "2rem" }}>Sống Cống Hiến</h6>
+          <h1 style={{ fontSize: "13rem" }}>C</h1>
+          <h5 style={{ fontSize: "2.8rem" }}>Contribution</h5>
+          <h6 style={{ fontSize: "1.4rem"}}>Sống Cống Hiến</h6>
         </div>
       </div>
+      
       <div className="page">
-        <div className="front">
+          <div className="front">
           <h4>Sống cống hiến (Contribution)</h4>
           <p>
             {" "}
