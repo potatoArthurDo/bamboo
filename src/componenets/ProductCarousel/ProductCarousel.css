@@ -120,11 +120,17 @@
      background: rgba(160, 181, 56, 0.662);
     border-radius: 10%;
 }
-@media (max-width: 1536px) {
+@media(max-width: 1728px) {
     .product-carousel-control.next {
-      left: unset;
       right: 820px;
     }
+     .product-carousel-indicators  {
+        bottom: 0px;
+        left: 32%;
+      }
+}
+@media (max-width: 1536px) {
+
     .product-carousel {
       position: relative;
       width: 100%;
@@ -157,9 +163,9 @@
     }
   }
 @media( max-width: 1441px) {
-    .product-carousel-control.next {
-        left: unset;
-        right: 720px;
+      .product-carousel-indicators  {
+        bottom: 0px;
+        left: 32%;
       }
 }
   

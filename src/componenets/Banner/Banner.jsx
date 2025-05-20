@@ -33,7 +33,7 @@ export default function Banner({ progress }) {
       
     };
   
-    handleResize(); // 
+    handleResize(); 
   
     window.addEventListener("resize", handleResize);
   
