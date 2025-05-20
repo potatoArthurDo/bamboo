@@ -7,12 +7,17 @@ import { useSpring, animated } from "@react-spring/web";
 import { useDrag } from "@use-gesture/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useMediaQuery } from 'react-responsive';
+
 const MobileOverlay = () => {
   const [openTab, setOpenTab] = useState(null);
   const carouselRef = useRef(null);
+
+   const isDesktop = useMediaQuery({ minWidth: 768 });
+
   // Step 1: Initialize the array of refs
   const itemsRef = useRef([]);
 
@@ -25,13 +30,13 @@ const MobileOverlay = () => {
         opacity: 1,
         y: 0,
         duration: 0.2,
-        delay: index * 0.1, 
+        delay: index * 0.1,
         ease: "power2.out",
         scrollTrigger: {
           trigger: item,
           start: "top bottom", // Start animation when the element hits 80% of the viewport
           toggleActions: "play reverse play reverse",
-        //   markers: true,
+          //   markers: true,
         },
       });
     });
@@ -271,8 +276,7 @@ const MobileOverlay = () => {
 
   const adviser = [
     {
-      image:
-        "assets/humans-images/Warren.jpg",
+      image: "assets/humans-images/Warren.jpg",
       name: "THẦY WARREN ENG",
       achievements: [
         "- Chuyên gia giáo dục người Singapore",
@@ -282,8 +286,7 @@ const MobileOverlay = () => {
     },
 
     {
-      image:
-        "assets/humans-images/Duy_Hiep.jpg",
+      image: "assets/humans-images/Duy_Hiep.jpg",
       name: "THẦY DUY HIỆP",
       achievements: [
         "- Giảng viên Đại học tại TP.HCM",
@@ -295,8 +298,7 @@ const MobileOverlay = () => {
   const teacher = [
     {
       name: "CHU MINH THÙY",
-      image:
-        "assets/humans-images/human_11.jpg",
+      image: "assets/humans-images/human_11.jpg",
       intro: "QUẢN LÝ HỌC VỤ",
       achivements: [
         "- Tốt nghiệp cử nhân ngành Kinh tế quốc tế, Học viện Ngoại giao Việt Nam",
@@ -319,8 +321,7 @@ const MobileOverlay = () => {
 
     {
       name: "KENZIE DUONG",
-      image:
-        "assets/humans-images/Kenzie.jpg",
+      image: "assets/humans-images/Kenzie.jpg",
       intro: "GIÁO VIÊN IELTS/SAT",
       achivements: [
         "- 5 năm kinh nghiệm tư vấn hỗ trợ học sinh xin học bổng các trường ĐH Hoa Kỳ",
@@ -331,8 +332,7 @@ const MobileOverlay = () => {
     },
     {
       name: "EMILY",
-      image:
-        "assets/humans-images/Emily.jpg",
+      image: "assets/humans-images/Emily.jpg",
       intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
       achivements: [
         "- Đạt IELTS 8.0 overall, trong đó Speaking 8.0",
@@ -354,8 +354,7 @@ const MobileOverlay = () => {
     },
     {
       name: "ALEX BOUVIER",
-      image:
-        "assets/humans-images/Alex.jpg",
+      image: "assets/humans-images/Alex.jpg",
       intro: "GIÁO VIÊN IELTS",
       achivements: [
         "- Một trong số ít Giảng viên Tiếng Anh đạt trình độ CPE Level C2 (IELTS 8.5) Quốc tế tại Việt Nam",
@@ -365,8 +364,7 @@ const MobileOverlay = () => {
     },
     {
       name: "ZSANDRA",
-      image:
-        "assets/humans-images/human_9.jpg",
+      image: "assets/humans-images/human_9.jpg",
       intro: "GIÁO VIÊN TIẾNG ANH - MẦM NON/ TIỂU HỌC",
       achivements: [
         "- Cử nhân Nghệ thuật truyền thông +hoàn thành tín chỉ cử nhân ngôn ngữ Anh",
@@ -378,8 +376,7 @@ const MobileOverlay = () => {
     },
     {
       name: "RYAN",
-      image:
-        "assets/humans-images/Ryan.jpg",
+      image: "assets/humans-images/Ryan.jpg",
       intro: "",
       achivements: [
         "- Tốt nghiệp cử nhân sư phạm trung học cơ sở, chuyên ngành giảng dạy tiếng Anh",
@@ -389,8 +386,7 @@ const MobileOverlay = () => {
     },
     {
       name: "TUẤN ANH",
-      image:
-        "assets/humans-images/human_3.jpg",
+      image: "assets/humans-images/human_3.jpg",
       intro: "",
       achivements: [
         "- IELTS 8.5 Listening",
@@ -401,8 +397,7 @@ const MobileOverlay = () => {
     },
     {
       name: "THANH NHÀN",
-      image:
-        "assets/humans-images/Thanh_Nhan.jpg",
+      image: "assets/humans-images/Thanh_Nhan.jpg",
       intro: "",
       achivements: [
         "- Đạt học bổng thạc sĩ TESOL tại đại học Northampton, Vương quốc Anh & Học bổng thạc sĩ Education tại đại học Huddersfield và đại học Leeds Beckett, Vương quốc Anh",
@@ -415,8 +410,7 @@ const MobileOverlay = () => {
 
     {
       name: "BẢO HÀ",
-      image:
-        "assets/humans-images/Bao_Ha.jpg",
+      image: "assets/humans-images/Bao_Ha.jpg",
       intro: "",
       achivements: [
         "- Tốt nghiệp loại xuất sắc chuyên ngành sư phạm Anh, trường Đại học Ngoại ngữ Huế.",
@@ -493,15 +487,33 @@ const MobileOverlay = () => {
           </div>
         </div>
 
-        <div className="mobile-intro-second-group" >
-          <div className="mobile_english"   ref={(el) => (itemsRef.current[0] = el)} >NGÔN NGỮ</div>
+        <div className="mobile-intro-second-group">
+          <div
+            className="mobile_english"
+            ref={(el) => (itemsRef.current[0] = el)}
+          >
+            NGÔN NGỮ
+          </div>
           {/* <div className="mobile_english-second" ref={(el) => (itemsRef.current[1] = el)}>TOÀN DIỆN</div> */}
-          <div className="mobile_camping" ref={(el) => (itemsRef.current[2] = el)}>TRẠI HÈ</div>
-          <div className="mobile_aboard" ref={(el) => (itemsRef.current[3] = el)} >DU HỌC </div>
+          <div
+            className="mobile_camping"
+            ref={(el) => (itemsRef.current[2] = el)}
+          >
+            TRẠI HÈ
+          </div>
+          <div
+            className="mobile_aboard"
+            ref={(el) => (itemsRef.current[3] = el)}
+          >
+            DU HỌC{" "}
+          </div>
         </div>
 
         <div className="explaination">
-          <div className="company-explain" ref={(el) => (itemsRef.current[4] = el)}>
+          <div
+            className="company-explain"
+            ref={(el) => (itemsRef.current[4] = el)}
+          >
             <p>
               {" "}
               2G Group là một hệ thống <b>giáo dục toàn diện</b>, giúp thế hệ
@@ -509,7 +521,10 @@ const MobileOverlay = () => {
               <b>du học</b>.
             </p>
           </div>
-          <div className="theme-explain" ref={(el) => (itemsRef.current[5] = el)}>
+          <div
+            className="theme-explain"
+            ref={(el) => (itemsRef.current[5] = el)}
+          >
             <p>
               Với thông điệp Connect the “Đốt”, 2G Group mong muốn mở rộng sự
               kết nối, góp phần phát triển một thế hệ giới trẻ mới, dám học, dám
@@ -594,7 +609,16 @@ const MobileOverlay = () => {
             <div className="product-carousel-inner">
               {products.map((product, index) => (
                 <div className="product-card" key={index}>
-                    <img  src={product.logo} alt="product logo" style={{width: "100%", height: "120px"}} />
+                  <img
+                    src={product.logo}
+                    alt="product logo"
+                    style={{
+                      width: "auto",
+                        height: isDesktop ? "200px" : "120px",
+                      background: "rgba(160, 181, 56, 0.662)",
+                      marginBottom: "50px",
+                    }}
+                  />
                   <img src={product.image} alt={product.title} />
                   <h4>{product.title}</h4>
                   <h5>{product.subtitle}</h5>
@@ -612,7 +636,10 @@ const MobileOverlay = () => {
       <section className="mobile_section">
         <div className="mobile-purpose">
           <h1>Mục đích của 2G</h1>
-          <div className="mobile-purpose-intro" ref={(el) => (itemsRef.current[6] = el)}>
+          <div
+            className="mobile-purpose-intro"
+            ref={(el) => (itemsRef.current[6] = el)}
+          >
             <p>
               Ở 2G Group, chúng tôi tin rằng giáo dục là câu chuyện về sự kiên
               trì, sáng tạo và trách nhiệm – những giá trị cốt lõi để tạo nên
@@ -748,25 +775,16 @@ const MobileOverlay = () => {
         </div>
       </section>
 
-      {/* <section className="mobile_section">
-        <div className="mobile-founder-container">
-          <h1>2G Founder Profile</h1>
-          <div className="mobile-founder-image">
-            <img
-              src="assets/humans-images/founder.jpg"
-              alt=""
-            />
-            <h2>Lê Văn Hải</h2>
-          </div>
-          <div className="mobile-founder-info">
-            {founder_profile.map((item, idx) => (
-              <p key={idx}>{item.info}</p>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       <section className="mobile_section">
+        <div className="redirect_section">
+            <h3>Lời nhắn từ Founder 2G Education:</h3>
+            <Link to="/founder_story"><h1>Thư ngỏ {'>'}</h1></Link>
+            <h3>Đội ngũ 2G</h3>
+            <Link to="/humans"><h1>2G Humans {'>'}</h1></Link>
+        </div>
+      </section>
+
+      {/* <section className="mobile_section">
         <div className="mobile-humans">
           <h1>2G Humans</h1>
           <div className="mobile-humans-content">
@@ -876,7 +894,7 @@ const MobileOverlay = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

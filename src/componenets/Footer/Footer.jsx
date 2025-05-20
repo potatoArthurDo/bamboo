@@ -47,7 +47,7 @@ const Footer = forwardRef((props, ref) => {
             <li>
               <Link to="/founder_story">Thư ngỏ</Link>
             </li>
-            <li className="hidden_on_mobile">
+            <li>
               <Link to="/humans">2G Humans</Link>
             </li>
           </ul>

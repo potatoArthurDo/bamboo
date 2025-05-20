@@ -1,8 +1,8 @@
 .flipcard-human {
   display: flex;
-  flex-wrap: wrap;         /* Allow multiple rows if needed */
-  gap: 20px;               /* Space between cards */
-  justify-content: center; /* Center the whole group */
+  flex-wrap: wrap;        
+  gap: 20px;               
+  justify-content: center; 
   padding: 20px;
 }
 
@@ -70,4 +70,31 @@
     font-weight: 600;
     margin-left: 0.5rem;
     line-height: 1.4;
+}
+@media (max-width:1025px) {
+    .flip-card-human {
+        width: 300px;
+        height: 400px;
+    }
+    .flip-card-front-human img {
+        width: 300px;
+        height: 400px;
+    }
+}
+ @media (max-width: 768px) {
+    .flip-card-human {
+        width: 280px;
+        height: 373.33px;
+    }
+    .flip-card-front-human img {
+        width: 280px;
+        height: 373.33px;
+    }
+    .flip-card-back-human h3,
+    .flip-card-back-human h4 {
+        font-size: 1rem;
+    }
+    .flip-card-back-human ul {
+        font-size: 0.7rem;
+    }
 }

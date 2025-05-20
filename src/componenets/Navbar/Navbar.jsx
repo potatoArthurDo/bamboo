@@ -44,7 +44,7 @@ const Navbar = () => {
             Thư ngỏ
           </Link>
         </li>
-        <li className="hide-on-mobile">
+        <li>
           <Link to="/humans" className="nav-link" onClick={() => setIsNavOpen(false)}>
             2G Humans
           </Link>
