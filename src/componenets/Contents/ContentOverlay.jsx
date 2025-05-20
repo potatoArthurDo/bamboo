@@ -313,10 +313,8 @@ export const ContentOverlay = () => {
     "assets/humans-images/Emily.jpg",
     "assets/humans-images/Kenzie.jpg",
     "assets/humans-images/Ryan.jpg",
-    "assets/humans-images/Warren.jpg",
     "assets/humans-images/human_11.jpg",
     "assets/humans-images/human_12.jpg",
-    "assets/humans-images/Duy_Hiep.jpg",
   ];
 
   const human_second_images = [
@@ -580,7 +578,7 @@ export const ContentOverlay = () => {
             images={human_first_images}
             width="200px"
             height="266.67px"
-            quantity={10}
+            quantity={8}
           />
           <Slider
             images={human_second_images}
