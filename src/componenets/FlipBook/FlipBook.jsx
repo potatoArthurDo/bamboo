@@ -41,24 +41,12 @@ const FlipBook = () => {
           </div>
         </div>
         <div className="back">
-          <h2>Mục đích của 2G</h2>
-          <p>
-            Ở 2G Group, chúng tôi tin rằng giáo dục là câu chuyện về sự kiên
-            trì, sáng tạo và trách nhiệm – những giá trị cốt lõi để tạo nên một
-            hệ sinh thái bền vững, nơi mỗi cá nhân đều có cơ hội vươn tới phiên
-            bản tốt nhất của chính mình, bước ra thế giới, trở thành một công
-            dân toàn cầu có bản sắc. MÔ HÌNH 3R3C.
-          </p>
+          <img src="/assets/images/intro_1.jpg" alt="" />
         </div>
       </div>
       <div className="page">
         <div className="front">
-          <p>3 câu chuyện biểu tượng</p>
-          <br />
-          <p>3 tinh thần hướng tới: Resilience, Reimagine, Responsibility</p>
-          <br />
-          <p>3 giá trị cốt lõi: Care, Credibility, Contribution</p>
-          <br />
+          <img src="/assets/images/intro_2.jpg" alt="" />
         </div>
         <div
           className="back"
@@ -108,74 +96,21 @@ const FlipBook = () => {
         <div className="front">
           <img src="/assets/images/book_3_2.jpg" alt="" />
         </div>
-        <div
-          className="back"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <h1 style={{ fontSize: "2.5rem" }}>Câu chuyện the dots</h1>
-          <p style={{ fontSize: "1rem" }}>
-            {" "}
-            Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những
-            “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không
-            mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs
-            làm đều chưa có ý nghĩa rõ ràng.{" "}
-          </p>
+        <div className="back">
+          <img src="assets/images/TheDots_1.jpg" alt="" />
         </div>
       </div>
       <div className="page">
         <div className="front">
-          <p style={{ fontSize: "0.9rem" }}>
-            Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò,
-            những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch
-            vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công
-            nghệ.
-          </p>
-          <p style={{ fontSize: "0.9rem" }}>
-            Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi
-            ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân
-            thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng
-            tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành
-            sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó
-            tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ.
-          </p>
+          <img src="assets/images/TheDots_2.jpg" alt="" />
         </div>
-        <div
-          className="back"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
-          <h1 style={{ fontSize: "2.5rem" }}>Câu chuyện connect the “đốt”</h1>
-          <p>Tre cắm rễ, vươn từng đốt.</p>
-          <p>Dấu “dots” nhỏ, ý tưởng lớn.</p>
-          <p>
-            2G Group biến Connect the dots thành Connect the “đốt” với với ý
-            nghĩa mong muốn phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ
-            sinh thái giáo dục toàn diện, gắn thế hệ trẻ với tri thức, vững gốc
-            mà vươn xa.
-          </p>
+        <div className="back">
+          <img src="assets/images/ConnectTheDot_1.jpg" alt="" />
         </div>
       </div>
       <div className="page">
-        <div
-          className="front"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <img
-            src="assets/images/favicon.png"
-            alt=""
-            style={{ height: "auto", width: "17rem" }}
-          />
+        <div className="front">
+          <img src="assets/images/ConnectTheDot_2.jpg" alt="" />
         </div>
         <div
           className="back"
@@ -312,7 +247,7 @@ const FlipBook = () => {
       </div>
 
       <div className="page">
-       <div
+        <div
           className="front"
           style={{
             display: "flex",
@@ -392,12 +327,12 @@ const FlipBook = () => {
         >
           <h1 style={{ fontSize: "13rem" }}>C</h1>
           <h5 style={{ fontSize: "2.8rem" }}>Contribution</h5>
-          <h6 style={{ fontSize: "1.4rem"}}>Sống Cống Hiến</h6>
+          <h6 style={{ fontSize: "1.4rem" }}>Sống Cống Hiến</h6>
         </div>
       </div>
-      
+
       <div className="page">
-          <div className="front">
+        <div className="front">
           <h4>Sống cống hiến (Contribution)</h4>
           <p>
             {" "}
