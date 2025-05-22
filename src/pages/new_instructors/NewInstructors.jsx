@@ -105,7 +105,7 @@ const NewInstructors = () => {
     },
     {
       id: 7,
-      image: "assets/humans-images/TranThiTinh.JPG",
+      image: "assets/humans-images/TranThiTinh.jpg",
       name: "Trần Thị Tịnh",
       position: "Trưởng phòng tuyển sinh chi nhánh Nghệ An",
       profile: [
@@ -119,7 +119,7 @@ const NewInstructors = () => {
     },
     {
       id: 8,
-      image: "assets/humans-images/CaoThiNgoc (2).jpg",
+      image: "assets/humans-images/CaoThiNgoc.jpg",
       name: "Cao Thị Ngọc",
       position: "Giám đốc chi nhánh Hà Tĩnh",
       profile: [
@@ -151,7 +151,7 @@ const NewInstructors = () => {
     },
     {
       id: 10,
-      image: "assets/humans-images/NguyenThiNam.png",
+      image: "assets/humans-images/NguyenThiNam.jpg",
       name: "Nguyễn Thị Nam",
       position: "Trưởng nhóm tuyển sinh Khối IELTS",
       profile: [
@@ -169,7 +169,7 @@ const NewInstructors = () => {
     },
     {
       id: 11,
-      image: "",
+      image: "assets/humans-images/default.jpg",
       name: "Khánh Hà Tĩnh",
       position: "",
       profile: ["", "", "", "", ""],
@@ -275,7 +275,7 @@ const NewInstructors = () => {
 
     {
       id: 18,
-      image: "assets/humans-images/.jpg",
+      image: "assets/humans-images/default.jpg",
       name: "Hoàng Thị Thúy Hằng",
       position: "Marketing & PR Leader",
       profile: [

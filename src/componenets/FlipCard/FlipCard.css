@@ -39,6 +39,7 @@
   width: 525px;
   height: 700px;
   object-fit: cover;
+  border: solid 1px var(--text-background);
 }
 
 .flip-card-back-human {
