@@ -168,6 +168,16 @@
         left: 32%;
       }
 }
+
+@media (max-width: 1280px) {
+    .product-carousel-control.next {
+      right: 650px;
+    }
+    .product-carousel-indicators  {
+        bottom: 0px;
+        left: 35%;
+      }
+}
   
 
 

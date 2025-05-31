@@ -962,6 +962,27 @@
   }
   
   .footer-first-content {
+    
+    margin-bottom: 12rem;
+    padding-left: 10rem;
+  }
+
+  .bubble img {
+    margin-left: 10.6rem;
+  }
+}
+
+@media(max-width:1281px) {
+      
+      .right-intro .main_name {
+        font-size: 3rem;
+        padding-right: 15rem;
+      }
+  .left-intro .company_name {
+    font-size: 4rem;
+  }
+  
+  .footer-first-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -970,9 +991,5 @@
     height: 100%;
     margin-bottom: 12rem;
     padding-left: 10rem;
-  }
-
-  .bubble img {
-    margin-left: 10.6rem;
   }
 }
