@@ -592,7 +592,7 @@ export const ContentOverlay = () => {
             quantity={12}
             reverse={true}
           />
-          <p onClick={() => navigate("/instructors")}>Xem chi tiết</p>
+          <p onClick={() => navigate("/humans")}>Xem chi tiết</p>
         </div>
       </Section>
 
