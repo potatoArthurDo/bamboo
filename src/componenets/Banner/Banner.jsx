@@ -25,7 +25,7 @@ export default function Banner({ progress }) {
       else if (width <= 1472 ) {
         setPages(9.3);
       } else if (width <= 1536) {
-        setPages(10.15);
+        setPages(12.35);
       } else if (width <= 1728) {
         setPages(8.1);
       }else if (width <= 1920) {

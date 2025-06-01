@@ -307,27 +307,32 @@ export const ContentOverlay = () => {
   ];
 
   const human_first_images = [
-    "assets/humans-images/wright.jpg",
-    "assets/humans-images/Alex.jpg",
-    "assets/humans-images/Bao_Ha.jpg",
-    "assets/humans-images/Emily.jpg",
-    "assets/humans-images/Kenzie.jpg",
-    "assets/humans-images/Ryan.jpg",
-    "assets/humans-images/human_11.jpg",
-    "assets/humans-images/human_12.jpg",
+    "assets/humans-images/Peter.png",
+    "assets/humans-images/founder.png",
+    "assets/humans-images/HaDuHocDuc.png",
+    "assets/humans-images/KhanhVan.png",
+    "assets/humans-images/LeNguyen.png",
+    "assets/humans-images/CaoThiNgoc.png",
+    "assets/humans-images/ThuyNgoc.png",
+    "assets/humans-images/TranThiTinh.png",
+    "assets/humans-images/TranLiNa.png",
+    "assets/humans-images/TrinhDinhTuanAnh.png",
+    "assets/humans-images/VoThiThuong.png",
   ];
 
   const human_second_images = [
-    "assets/humans-images/human_1.jpg",
-    "assets/humans-images/human_2.jpg",
-    "assets/humans-images/human_3.jpg",
-    "assets/humans-images/human_4.jpg",
-    "assets/humans-images/human_5.jpg",
-    "assets/humans-images/human_6.jpg",
-    "assets/humans-images/human_7.jpg",
-    "assets/humans-images/human_8.jpg",
-    "assets/humans-images/human_9.jpg",
-    "assets/humans-images/human_10.jpg",
+    "assets/humans-images/NguyenThiNam.png",
+    "assets/humans-images/NguyenThiThuHuong.png",
+    "assets/humans-images/ThuyTien.png",
+    "assets/humans-images/ChuMinhThuy.png",
+    "assets/humans-images/NguyenCongThanh.png",
+    "assets/humans-images/NguyenThaoLy.png",
+    "assets/humans-images/HoangThiThuyHang.png",
+    "assets/humans-images/LuongThiHanh.png",
+    "assets/humans-images/BaoYen.png",
+    "assets/humans-images/CamTu.png",
+    "assets/humans-images/ChiNhan.png",
+    "assets/humans-images/TrangQuyen.png",
   ];
 
   const founder = {
@@ -578,13 +583,13 @@ export const ContentOverlay = () => {
             images={human_first_images}
             width="200px"
             height="266.67px"
-            quantity={8}
+            quantity={11}
           />
           <Slider
             images={human_second_images}
             width="200px"
             height="266.67px"
-            quantity={10}
+            quantity={12}
             reverse={true}
           />
           <p onClick={() => navigate("/instructors")}>Xem chi tiết</p>

@@ -8,7 +8,7 @@ const NewInstructors = () => {
   const cards = [
     {
       id: 1,
-      image: "assets/humans-images/founder.jpg",
+      image: "assets/humans-images/founder.png",
       name: "Lê Văn Hải",
       position: "Founder & CEO",
       profile: [
@@ -21,7 +21,7 @@ const NewInstructors = () => {
     },
     {
       id: 2,
-      image: "assets/humans-images/Peter.jpg",
+      image: "assets/humans-images/Peter.png",
       name: "Peter Wright",
       position: "Cố vấn chuyên môn",
       profile: [
@@ -38,7 +38,7 @@ const NewInstructors = () => {
     },
     {
       id: 3,
-      image: "assets/humans-images/KhanhVan.jpg",
+      image: "assets/humans-images/KhanhVan.png",
       name: "Nguyễn Ngọc Khánh Vân",
       position: "Đồng sáng lập, trưởng BTC trại hè quốc tế EUREKA CAMPS",
       profile: [
@@ -58,7 +58,7 @@ const NewInstructors = () => {
     },
     {
       id: 4,
-      image: "assets/humans-images/LeNguyen.jpg",
+      image: "assets/humans-images/LeNguyen.png",
       name: "Lê Thị Nguyên",
       position: "Quản lý hệ thống nhân sự và vận hành dịch vụ",
       profile: [
@@ -76,7 +76,7 @@ const NewInstructors = () => {
     },
     {
       id: 5,
-      image: "assets/humans-images/VoThiThuong.jpg",
+      image: "assets/humans-images/VoThiThuong.png",
       name: "Võ Thị Thương",
       position: "Trưởng phòng vận hành và dịch vụ CSKH chi nhánh Nghệ An",
       profile: [
@@ -89,7 +89,7 @@ const NewInstructors = () => {
     },
     {
       id: 6,
-      image: "assets/humans-images/ThuyNgoc.jpg",
+      image: "assets/humans-images/ThuyNgoc.png",
       name: "Lương Ngọc Thủy",
       position: "Giám đốc chi nhánh Nghệ An",
       profile: [
@@ -105,7 +105,7 @@ const NewInstructors = () => {
     },
     {
       id: 7,
-      image: "assets/humans-images/TranThiTinh.jpg",
+      image: "assets/humans-images/TranThiTinh.png",
       name: "Trần Thị Tịnh",
       position: "Trưởng phòng tuyển sinh chi nhánh Nghệ An",
       profile: [
@@ -119,7 +119,7 @@ const NewInstructors = () => {
     },
     {
       id: 8,
-      image: "assets/humans-images/CaoThiNgoc.jpg",
+      image: "assets/humans-images/CaoThiNgoc.png",
       name: "Cao Thị Ngọc",
       position: "Giám đốc chi nhánh Hà Tĩnh",
       profile: [
@@ -133,7 +133,7 @@ const NewInstructors = () => {
     },
     {
       id: 9,
-      image: "assets/humans-images/TrinhDinhTuanAnh.jpg",
+      image: "assets/humans-images/TrinhDinhTuanAnh.png",
       name: "Trịnh Đình Tuấn Anh",
       position: "Academic ESL & IELTS Expert",
       profile: [
@@ -151,7 +151,7 @@ const NewInstructors = () => {
     },
     {
       id: 10,
-      image: "assets/humans-images/NguyenThiNam.jpg",
+      image: "assets/humans-images/NguyenThiNam.png",
       name: "Nguyễn Thị Nam",
       position: "Trưởng nhóm tuyển sinh Khối IELTS",
       profile: [
@@ -177,7 +177,7 @@ const NewInstructors = () => {
     },
     {
       id: 12,
-      image: "assets/humans-images/TranLiNa.jpg",
+      image: "assets/humans-images/TranLiNa.png",
       name: "Trần Li Na",
       position: "Trưởng ban tuyển sinh, vận hành trại hè quốc tết Eureka Camps",
       profile: [
@@ -194,7 +194,7 @@ const NewInstructors = () => {
     },
     {
       id: 13,
-      image: "assets/humans-images/NguyenThiThuHuong.jpg",
+      image: "assets/humans-images/NguyenThiThuHuong.png",
       name: "Nguyễn Thị Thu Hường",
       position: "Quản lý vận hành phòng đào tạo",
       profile: [
@@ -208,7 +208,7 @@ const NewInstructors = () => {
     },
     {
       id: 14,
-      image: "assets/humans-images/ThuyTien.jpg",
+      image: "assets/humans-images/ThuyTien.png",
       name: "Phạm Thùy Tiên",
       position: "Chuyên viên phòng đào tạo",
       profile: [
@@ -226,7 +226,7 @@ const NewInstructors = () => {
 
     {
       id: 15,
-      image: "assets/humans-images/ChuMinhThuy.jpg",
+      image: "assets/humans-images/ChuMinhThuy.png",
       name: "Chu Minh Thùy",
       position: "Giáo viên IELTS & Aptis",
       profile: [
@@ -243,7 +243,7 @@ const NewInstructors = () => {
 
     {
       id: 16,
-      image: "assets/humans-images/NguyenCongThanh.jpg",
+      image: "assets/humans-images/NguyenCongThanh.png",
       name: "Nguyễn Công Thành",
       position: "Giáo viên IELTS & Aptis",
       profile: [
@@ -259,7 +259,7 @@ const NewInstructors = () => {
 
     {
       id: 17,
-      image: "assets/humans-images/NguyenThaoLy.jpg",
+      image: "assets/humans-images/NguyenThaoLy.png",
       name: "Nguyễn Thảo Ly",
       position: "Head teacher khối mầm non - tiểu học",
       profile: [
@@ -275,7 +275,7 @@ const NewInstructors = () => {
 
     {
       id: 18,
-      image: "assets/humans-images/default.jpg",
+      image: "assets/humans-images/HoangThiThuyHang.png",
       name: "Hoàng Thị Thúy Hằng",
       position: "Marketing & PR Leader",
       profile: [
@@ -292,7 +292,7 @@ const NewInstructors = () => {
 
     {
       id: 19,
-      image: "assets/humans-images/LuongThiHanh.jpg",
+      image: "assets/humans-images/LuongThiHanh.png",
       name: "Lương Thị Hạnh",
       position: "Giám đốc chi nhánh Sài Gòn",
       profile: [
@@ -308,7 +308,7 @@ const NewInstructors = () => {
 
     {
       id: 20,
-      image: "assets/humans-images/BaoYen.jpg",
+      image: "assets/humans-images/BaoYen.png",
       name: "Nguyễn Thị Bảo Yến",
       position: "Brand & PR Communication Leader",
       profile: [
@@ -325,7 +325,7 @@ const NewInstructors = () => {
 
     {
       id: 21,
-      image: "assets/humans-images/CamTu.jpg",
+      image: "assets/humans-images/CamTu.png",
       name: "Viên Thị Cẩm Tú",
       position: "Trưởng ban MKT trại hè quốc tế Eureka Camps",
       profile: [
@@ -342,7 +342,7 @@ const NewInstructors = () => {
 
     {
       id: 22,
-      image: "assets/humans-images/ChiNhan.jpg",
+      image: "assets/humans-images/ChiNhan.png",
       name: "Nguyễn Thị Nhàn",
       position: "Research and Development",
       profile: [
@@ -360,7 +360,7 @@ const NewInstructors = () => {
 
     {
       id: 23,
-      image: "assets/humans-images/TrangQuyen.jpg",
+      image: "assets/humans-images/TrangQuyen.png",
       name: "Phạm Nữ Thu Trang",
       position: "Chuyên viên Tư vấn và phát triển thị trường Du học Đài Loan",
       profile: [
@@ -375,7 +375,7 @@ const NewInstructors = () => {
 
     {
       id: 24,
-      image: "assets/humans-images/HaDuHocDuc.jpg",
+      image: "assets/humans-images/HaDuHocDuc.png",
       name: "Nguyễn Thị Ngọc Hà",
       position: "Trưởng nhóm tuyển sinh Du học Đức",
       profile: [
