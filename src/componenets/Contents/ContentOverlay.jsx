@@ -71,70 +71,70 @@ export const ContentOverlay = () => {
   const bubbleData = [
     {
       id: "bubble1",
-      image: "assets/images/Nguyen_Manh_Ha.jpg",
+      image: "assets/images/",
       size: "65%",
       content:
-        "Với vai trò là người tham mưu cho lãnh đạo sở GD&ĐT Nghệ An quản lí các trung tâm ngoại ngữ và cũng là phụ huynh đầu tiên của 2G, tôi hoàn toàn tin tưởng vào chất lượng đào tạo cũng như sự tiên phong của 2G trong ứng dụng công nghệ vào giáo dục. Tôi luôn ủng hộ những gì 2G đang làm cho thế hệ trẻ. Chúc 2G tiếp tục phát triển, tiên phong đổi mới để thật nhiều học sinh vươn xa!",
+        "Lúc đầu tôi khá lo lắng vì nghĩ làm visa Mỹ rất rắc rối. Tôi thì không rành thủ tục, lại bận nhiều việc, nhưng 2G khiến tôi bất ngờ vì cách làm việc quá chuyên nghiệp và chỉn chu – từ khâu chuẩn bị giấy tờ, rồi phỏng vấn đến lúc nhận visa, mọi thứ đều nhanh gọn, rõ ràng. Cảm giác như có người nhà dẫn đường nên tôi rất yên tâm và chắc chắn sẽ tiếp tục đồng hành với 2G trong thời gian tới.",
       sender:
-        "Thầy Nguyễn Mạnh Hà, Trưởng phòng GDCN-GDTX Sở Giáo dục và Đào tạo Nghệ An",
+        "Chu Thị Bình - Tổ trưởng tổ Ngoại Ngữ trường THPT Diễn Châu 3",
     },
     {
       id: "bubble2",
-      image: "assets/images/Huyen.png",
+      image: "assets/humans-images/TranLiNa_cut.png",
       size: "50%",
       content:
-        "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",
-      sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV",
+        "Tại 2G, mình có cơ hội để 'Reflect' và 'Refresh'. Reflect giúp mình soi chiếu hành trình bản thân, nhận ra mình là ai trong tập thể và tạo ra giá trị gì cho cộng đồng. Refresh giúp mình liên tục đổi mới, cập nhật giải pháp hiệu quả hơn. Điều đó khiến mỗi ngày làm việc trở nên hạnh phúc hơn với mình.",
+      sender: "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
     },
     {
       id: "bubble3",
-      image: "assets/images/Huyen_2.png",
+      image: "assets/humans-images/LeNguyen_cut.png",
       size: "90%",
       content:
-        "Sự cống hiến của các bạn trong việc đổi mới phương pháp giảng dạy tiếng Anh thực sự truyền cảm hứng. Chúng tôi đặc biệt trân trọng cách 2G Education tích hợp công nghệ vào trải nghiệm học tập, đặc biệt thông qua Cambridge One khi giảng dạy Kid's Box và Think. Cam kết của các bạn trong việc mang đến nền giáo dục  chất lượng cao, hấp dẫn không chỉ giúp học viên học tiếng Anh hiệu quả mà còn khiến hành trình học tập trở nên thú vị hơn.",
+        "Gắn bó với 2G Education từ năm 2019, tôi cảm nhận rõ từng giai đoạn phát triển đều in dấu sự nỗ lực bền bỉ và lựa chọn có phần không dễ dàng của tổ chức. Dù đối mặt với nhiều thay đổi, 2G vẫn kiên trì giữ gìn những giá trị cốt lõi đã định hình từ đầu. Tôi trân trọng tinh thần dám hy sinh lợi ích ngắn hạn để theo đuổi mục tiêu dài hạn – điều không phải tổ chức nào cũng có thể làm được. Chính sự nhất quán đó tạo nên một môi trường mà mỗi người đều có cơ hội lớn lên một cách vững vàng, cùng 2G. Tôi biết ơn vì đã được là một phần trong chặng đường đó.",
       sender:
-        "Mrs Lê Thị Lệ Huyền, Country Head, Cambridge University Press & Assessment",
+        "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
     },
     {
       id: "bubble4",
-      image: "assets/images/Samantha.png",
+      image: "assets/images/",
       size: "110%",
       content:
-        "Hội đồng Anh Việt Nam xin gửi lời chúc mừng nồng nhiệt nhất đến 2G Education – một trong những đối tác Vàng của chúng tôi tại Vinh. Trong suốt 7 năm qua, chúng tôi rất trân trọng sự hợp tác chặt chẽ giữa hai bên trong việc hỗ trợ thí sinh thi IELTS. Chúng tôi đánh giá cao những nỗ lực và đóng góp của 2G Education trong việc mang lại cơ hội giáo dục và phát triển cho học viên.",
-      sender: "Samantha Smith – Giám đốc Khảo thí Quốc gia",
+        "",
+      sender: "Thầy Hà",
     },
     {
       id: "bubble5",
-      image: "assets/images/Lan_Thanh.png",
+      image: "assets/images/",
       size: "80%",
       content:
-        "Thật vui khi thấy nhiều thế hệ cựu học sinh chuyên Phan quy tụ tại 2G – có thể nói đây là doanh nghiệp tại Vinh có số lượng cựu học sinh chuyên Phan đông nhất, từ em Hải (khóa 42) – nhà sáng lập 2G, đến các bạn nhân sự, và cả các em học sinh đang theo học.",
-      sender: "Cô Lan Thanh - Hiệu trưởng trường THPT Chuyên Phan Bội Châu",
+        "",
+      sender: "",
     },
 
     {
       id: "bubble6",
-      image: "assets/images/Dung.png",
+      image: "assets/images/",
       size: "70%",
       content:
-        "chúc 2G luôn giữ vững phong độ, mãi đỉnh, mãi tràn đầy năng lượng của tuổi trẻ, của tinh thần dám nghĩ, dám làm. Chúc đội ngũ 2G luôn cháy hết mình với sứ mệnh lan tỏa tri thức, mang đến những giá trị tuyệt vời cho các em học sinh và phụ huynh.",
-      sender: "Mrs Dung - Trường Đại học Anh Quốc Việt Nam BUV",
+        "",
+      sender: "",
     },
     {
       id: "bubble7",
-      image: "assets/images/Huyen_3.png",
+      image: "assets/images/",
       size: "60%",
       content:
-        "Từ khi 2G Hà Tĩnh đi vào hoạt động cách đây 3 năm, tôi đã dõi theo và đánh giá cao những đóng góp của 2G trong việc kết nối các cuộc thi quốc tế như World Scholar’s Cup, cũng như tạo ra những sân chơi học thuật ý nghĩa như hùng biện Let Your Voice Be Heard, Biên tập viên nhí. Những chương trình này đã giúp học sinh trường THCS Lê Văn Thiêm có cơ hội tranh tài, thể hiện bản lĩnh và đạt nhiều giải thưởng.",
-      sender: "Cô Huyền - Phó hiệu trưởng trường THCS Lê Văn Thiêm",
+        "",
+      sender: "",
     },
     {
       id: "bubble8",
-      image: "assets/images/Ngoc.png",
+      image: "assets/images/",
       size: "60%",
       content:
-        "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.",
-      sender: "Mrs Ngọc - Đại diện Vietnam Airlines",
+        "Có thể nói quá trình học tập tại 2G đã giúp mình xây dựng và trang bị cho bản thân bộ hành trang toàn diện về cả tư duy lẫn kiến thức. Đây được xem là hành trình bản lề để mình hội nhập với môi trường đại học quốc tế BUV sau này. Hành trình trải nghiệm học tập tại 2G không chỉ giúp mình nâng cao trình độ chuyên môn ngoại ngữ, mà còn giúp mình thay đổi tư duy trong việc học tập, từ bị động sang chủ động trong việc tiếp cận vấn đề. Nhờ đó mà mình biết cách vận dụng hiệu quả ngoại ngữ như một công cụ đắc lực để tiếp cận với những cơ hội đầy tiềm năng khác thay vì chỉ sử dụng cho mục đích học thuật, giúp đẩy nhanh quá trình phát triển bản thân từ sớm.",
+      sender: "Cao Đức Quang",
     },
   ];
 
@@ -246,43 +246,6 @@ export const ContentOverlay = () => {
 
   const tabs = [
     {
-      id: "tab1",
-      label: "Văn hoá 2G – The 3R Framework",
-      cards: [
-        {
-          id: "card1",
-          title: "Resilience",
-          description: "Resilience: Sức mạnh của sự bền bỉ và nội lực",
-          details: [
-            "Tập trung xây dựng nền tảng vững chắc trong đào tạo và vận hành.",
-            "Luôn đặt chất lượng trên lợi ích ngắn hạn.",
-            "Kiên trì theo đuổi giá trị cốt lõi, tin vào nội lực bên trong của mỗi người.",
-          ],
-        },
-        {
-          id: "card2",
-          title: "Reimagine",
-          description:
-            "Reimagine: Sáng tạo và linh hoạt, dám thay đổi để bứt phá",
-          details: [
-            "Không ngại thử nghiệm, đổi mới trong các phương pháp đào tạo và mô hình kinh doanh.",
-            "Luôn cập nhật xu hướng giáo dục toàn cầu, ứng dụng công nghệ để tối ưu trải nghiệm học tập.",
-            "Khuyến khích tư duy sáng tạo, chủ động, linh hoạt trong mọi khía cạnh từ giảng dạy đến quản trị.",
-          ],
-        },
-        {
-          id: "card3",
-          title: "Responsibility",
-          description: "Responsibility: Trách nhiệm và sự gắn kết bền chặt",
-          details: [
-            "Cam kết đồng hành cùng học viên, đối tác và đội ngũ nhân sự.",
-            "Xây dựng môi trường làm việc đề cao sự gắn kết và phát triển cá nhân.",
-            "Tạo ra tác động tích cực, không chỉ trong giáo dục mà còn trong cộng đồng.",
-          ],
-        },
-      ],
-    },
-    {
       id: "tab2",
       label: "Development Strategies",
       cards: [
@@ -334,28 +297,6 @@ export const ContentOverlay = () => {
     "assets/humans-images/ChiNhan.png",
     "assets/humans-images/TrangQuyen.png",
   ];
-
-  const founder = {
-    name: "Lê Văn Hải",
-    image: "assets/humans-images/founder.jpg",
-    history: [
-      "Là doanh nhân trẻ tuổi nhất trong lĩnh vực giáo dục tại Việt Nam, sở hữu song tịch thông qua chương trình đầu tư định cư.",
-      "Tốt nghiệp chương trình đào tạo quản lý trường Anh ngữ tại Mỹ do Hiệp hội TESOL cấp bằng.",
-      "Tốt nghiệp chương trình Khởi nghiệp Lean Startup tại Hà Lan.",
-      "Đại diện Việt Nam tham dự hội nghị toàn cầu “World Young Congress” tại Mỹ.",
-      "Là người sáng lập các chương trình trại hè quốc tế tại Singapore, New Zealand và Australia.",
-      "Đã từng tham gia các chương trình Famtrip, gặp gỡ và hợp tác với các trường cũng như đối tác giáo dục tại Mỹ, Châu Âu, Úc, New Zealand, Singapore và Philippines.",
-      "Có hơn 10 năm kinh nghiệm làm việc trong lĩnh vực giáo dục, trong đó hơn 8 năm giữ vai trò Chairman & CEO.",
-      "Cố vấn chuyên môn các cuộc thi: Phó BTC cuộc thi English Challenge do Đài truyền hình NTV và Sở Giáo Dục Nghệ An tổ chức; Trưởng BTC cuộc thi hùng biện tiếng Anh Let Your Voice Be Heard.",
-      "Cử nhân Luật, đạt IELTS 7.5, sở hữu chứng chỉ giảng dạy quốc tế TESOL (Úc).",
-      "Cựu HS Chuyên Anh, trường THPT Chuyên Phan Bội Châu, tỉnh Nghệ An.",
-    ],
-    button: {
-      text: "Thư ngỏ",
-      image: "../../assets/images/bamboo_frame.png",
-      link: "/founder_story",
-    },
-  };
 
   return (
     <Scroll html className="scroll-html-wrapper">
@@ -526,33 +467,6 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      {/* <Section opacity={opacity7} sectionName="founder">
-        <h1>2G Founder Profile</h1>
-        <div className="founder_card">
-          <img src={founder.image} alt={founder.name} />
-
-          <div className="founder_info">
-            <div className="founder_name">
-              <h2>{founder.name}</h2>
-            </div>
-
-            <div className="founder_history">
-              {founder.history.map((item, index) => (
-                <p key={index}>- {item}</p>
-              ))}
-            </div>
-
-            <div
-              className="founder_button"
-              onClick={() => navigate(founder.button.link)}
-            >
-              <img src={founder.button.image} alt={founder.button.text} />
-              <p>{founder.button.text}</p>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-
       <Section sectionName="human">
         <h1>2G Humans</h1>
         <div className="human-intro">
@@ -582,13 +496,13 @@ export const ContentOverlay = () => {
           <Slider
             images={human_first_images}
             width="200px"
-            height="266.67px"
+            height="300px"
             quantity={11}
           />
           <Slider
             images={human_second_images}
             width="200px"
-            height="266.67px"
+            height="300px"
             quantity={12}
             reverse={true}
           />
