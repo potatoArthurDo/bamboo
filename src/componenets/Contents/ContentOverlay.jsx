@@ -47,27 +47,27 @@ export const ContentOverlay = () => {
     setActiveBubble(bubbleId);
   };
 
-  const [opacity1, setOpacitySection1] = useState(1);
-  const [opacity2, setOpacitySection2] = useState(0);
-  const [opacity3, setOpacitySection3] = useState(0);
-  const [opacity4, setOpacitySection4] = useState(0);
-  const [opacity5, setOpacitySection5] = useState(0);
-  const [opacity6, setOpacitySection6] = useState(0);
-  const [opacity7, setOpacitySection7] = useState(0);
-  const [opacity8, setOpacitySection8] = useState(0);
-  //   const [opacity9, setOpacitySection9] = useState(0);
+  // const [opacity1, setOpacitySection1] = useState(1);
+  // const [opacity2, setOpacitySection2] = useState(0);
+  // const [opacity3, setOpacitySection3] = useState(0);
+  // const [opacity4, setOpacitySection4] = useState(0);
+  // const [opacity5, setOpacitySection5] = useState(0);
+  // const [opacity6, setOpacitySection6] = useState(0);
+  // const [opacity7, setOpacitySection7] = useState(0);
+  // const [opacity8, setOpacitySection8] = useState(0);
+  // //   const [opacity9, setOpacitySection9] = useState(0);
 
-  useFrame(() => {
-    setOpacitySection1(1 - scroll.range(0, 1 / 6)); // ~17% for fade out
-    setOpacitySection2(scroll.curve(1 / 8, 2 / 8)); // fade in slower
-    setOpacitySection3(scroll.curve(2 / 8, 2 / 8));
-    setOpacitySection4(scroll.curve(3 / 8, 2 / 8));
-    setOpacitySection5(scroll.curve(4 / 8, 2 / 8));
-    setOpacitySection6(scroll.curve(5 / 8, 2 / 8));
-    setOpacitySection7(scroll.curve(6 / 8, 2 / 8));
-    setOpacitySection8(scroll.curve(7 / 8, 2 / 8));
-    // setOpacitySection9(scroll.range(8 / 9, 1 / 9));
-  });
+  // useFrame(() => {
+  //   setOpacitySection1(1 - scroll.range(0, 1 / 6)); // ~17% for fade out
+  //   setOpacitySection2(scroll.curve(1 / 8, 2 / 8)); // fade in slower
+  //   setOpacitySection3(scroll.curve(2 / 8, 2 / 8));
+  //   setOpacitySection4(scroll.curve(3 / 8, 2 / 8));
+  //   setOpacitySection5(scroll.curve(4 / 8, 2 / 8));
+  //   setOpacitySection6(scroll.curve(5 / 8, 2 / 8));
+  //   setOpacitySection7(scroll.curve(6 / 8, 2 / 8));
+  //   setOpacitySection8(scroll.curve(7 / 8, 2 / 8));
+  //   // setOpacitySection9(scroll.range(8 / 9, 1 / 9));
+  // });
   const bubbleData = [
     {
       id: "bubble1",
@@ -359,7 +359,7 @@ export const ContentOverlay = () => {
 
   return (
     <Scroll html className="scroll-html-wrapper">
-      <Section opacity={opacity1} sectionName="intro">
+      <Section  sectionName="intro">
         <div className="left-intro">
           <div className="company-mean">
             <h3 className="company_name">2G Group</h3>
@@ -390,13 +390,13 @@ export const ContentOverlay = () => {
           <p className="bounce">↓</p>
         </div>
       </Section>
-      <Section opacity={opacity2} sectionName="purpose">
+      <Section  sectionName="purpose">
         <h1>Mục đích của 2G</h1>
         <div className="purpose-container">
           <FlipBook />
         </div>
       </Section>
-      <Section opacity={opacity3} sectionName="feedback">
+      <Section  sectionName="feedback">
         <h1>Họ đang nói gì </h1>
         <h1> về 2G Education ? </h1>
         <div className="bubble-feedback-container">
@@ -462,7 +462,7 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section opacity={opacity4} sectionName="achievement">
+      <Section  sectionName="achievement">
         <h1>Thành tựu </h1>
         <h1> 2G Education</h1>
         <div className="timeline">
@@ -477,13 +477,13 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section opacity={opacity5} sectionName="service">
+      <Section  sectionName="service">
         <h1>Hệ sinh thái </h1>
         <h1> Giáo dục của 2G</h1>
         <ProductCarousel products={products} />
       </Section>
 
-      <Section opacity={opacity6} sectionName="story">
+      <Section sectionName="story">
         <h1>Định hướng </h1>
         <h1>phát triển</h1>
         <div className="tab-container">
@@ -553,7 +553,7 @@ export const ContentOverlay = () => {
         </div>
       </Section> */}
 
-      <Section opacity={opacity7} sectionName="human">
+      <Section sectionName="human">
         <h1>2G Humans</h1>
         <div className="human-intro">
           <h5>ĐỘI NGŨ CỐ VẤN CHUYÊN MÔN ĐẦU NGÀNH TRONG NƯỚC & QUỐC TẾ</h5>
@@ -596,7 +596,7 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section opacity={opacity8} sectionName="banner-footer">
+      <Section  sectionName="banner-footer">
         <div className="footer-first-content">
           <div className="left-intro">
             <div className="company-mean">
