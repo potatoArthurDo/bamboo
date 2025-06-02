@@ -168,14 +168,6 @@ const NewInstructors = () => {
       ],
     },
     {
-      id: 11,
-      image: "assets/humans-images/default.jpg",
-      name: "Khánh Hà Tĩnh",
-      position: "",
-      profile: ["", "", "", "", ""],
-      pov: ["", ""],
-    },
-    {
       id: 12,
       image: "assets/humans-images/TranLiNa.png",
       name: "Trần Li Na",
@@ -275,7 +267,7 @@ const NewInstructors = () => {
 
     {
       id: 18,
-      image: "assets/humans-images/HoangThiThuyHang.png",
+      image: "assets/humans-images/HoangThiThuyHang.jpg",
       name: "Hoàng Thị Thúy Hằng",
       position: "Marketing & PR Leader",
       profile: [

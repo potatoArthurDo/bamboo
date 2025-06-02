@@ -327,7 +327,7 @@ export const ContentOverlay = () => {
     "assets/humans-images/ChuMinhThuy.png",
     "assets/humans-images/NguyenCongThanh.png",
     "assets/humans-images/NguyenThaoLy.png",
-    "assets/humans-images/HoangThiThuyHang.png",
+    "assets/humans-images/HoangThiThuyHang.jpg",
     "assets/humans-images/LuongThiHanh.png",
     "assets/humans-images/BaoYen.png",
     "assets/humans-images/CamTu.png",
