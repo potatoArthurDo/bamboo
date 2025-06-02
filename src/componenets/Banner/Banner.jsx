@@ -17,7 +17,9 @@ export default function Banner({ progress }) {
       setIsMobile(window.innerWidth <= 768);
       const width = window.innerWidth;
       if (width <= 1281) {
-        setPages(15.5);
+        setPages(11);
+      }else if (width <= 1366) {
+        setPages(11.5);
       }
       else if (width <= 1441) {
         setPages(9.75);
@@ -30,7 +32,10 @@ export default function Banner({ progress }) {
         setPages(8.1);
       }else if (width <= 1920) {
         setPages(9.65);
-      }else if (width <= 3840) {
+      }else if (width <= 2305) {
+        setPages(6.2);
+      }
+      else if (width <= 3840) {
         setPages(4.1);
       } else {
         setPages(9.6);

@@ -130,7 +130,7 @@
       }
 }
 @media (max-width: 1536px) {
-
+    
     .product-carousel {
       position: relative;
       width: 100%;
@@ -167,8 +167,13 @@
         bottom: 0px;
         left: 32%;
       }
+      
 }
-
+@media (max-width: 1366px) {
+    .product-carousel-control.next {
+      right: 730px;
+    }
+}
 @media (max-width: 1280px) {
     .product-carousel-control.next {
       right: 650px;

@@ -790,8 +790,8 @@
 }
 
 .banner-footer .right-intro {
-    margin-bottom: 7rem;
-    margin-top: 0rem;
+  margin-bottom: 7rem;
+  margin-top: 0rem;
 }
 
 .footer-first-content {
@@ -814,13 +814,13 @@
 }
 
 @media (max-width: 1536px) {
-    .left-intro {
-        margin-left: 0rem;
-      }
-      
-      .right-intro {
-        margin-right: 3rem;
-      }
+  .left-intro {
+    margin-left: 0rem;
+  }
+
+  .right-intro {
+    margin-right: 3rem;
+  }
   .left-intro .company_name {
     font-size: 5rem;
   }
@@ -924,7 +924,7 @@
     position: relative;
     width: 65rem;
   }
-  
+
   .human-intro {
     width: 60rem;
   }
@@ -933,36 +933,34 @@
     text-shadow: rgba(0, 0, 0, 0.929) 5px 5px 5px;
     color: var(--primary-golden);
   }
-  
+
   .human p {
     font-size: 1.4rem;
     padding-left: 2rem;
     text-shadow: rgba(19, 20, 0, 0.854) 5px 5px 5px;
     color: var(--text-background);
   }
-  
+
   .human ul {
     list-style: none;
     font-size: 1.2rem;
   }
-  
+
   .human li {
     padding-left: 3rem;
   }
-  
+
   .human-slider {
     width: 100%;
     margin-top: 1.5rem;
   }
-  
-  
+
   .human-slider p:hover {
     transform: scaleY(1.05);
     text-shadow: rgba(213, 227, 24, 0.632) 2px 2px 2px;
   }
-  
+
   .footer-first-content {
-    
     margin-bottom: 12rem;
     padding-left: 10rem;
   }
@@ -972,16 +970,17 @@
   }
 }
 
-@media(max-width:1281px) {
-      
-      .right-intro .main_name {
-        font-size: 3rem;
-        padding-right: 15rem;
-      }
+@media (max-width: 1366px) {
+    .right-intro .main_name {
+    font-size: 3.8rem;
+    padding-right: 15rem;
+  }
+}
+@media (max-width: 1281px) {
   .left-intro .company_name {
     font-size: 4rem;
   }
-  
+
   .footer-first-content {
     display: flex;
     flex-direction: row;
