@@ -125,13 +125,14 @@ export default function Banner({ progress }) {
     };
   }, []);
 
-  useEffect(() => {
-    const onResize = () => {
-      console.log("Viewport:", window.innerWidth + "×" + window.innerHeight);
-    };
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
+  //check for viewport
+//   useEffect(() => {
+//     const onResize = () => {
+//       console.log("Viewport:", window.innerWidth + "×" + window.innerHeight);
+//     };
+//     window.addEventListener("resize", onResize);
+//     return () => window.removeEventListener("resize", onResize);
+//   }, []);
 
   return (
     <>
