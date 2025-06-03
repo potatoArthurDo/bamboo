@@ -54,7 +54,14 @@ export default function Banner({ progress }) {
       } else if (height <= 645) {
         // 800
         setPages(14.1);
-      } else if (height <= 744) {
+      } 
+      else if (height <= 708) { //1920 x 1080 125% scale
+        if (window.innerWidth <= 1528) {
+          setPages(13); //1600 x 900
+        } else {
+          setPages(12.4);
+        }
+      }else if (height <= 744) {
         //900
         if (window.innerWidth <= 1592) {
           setPages(12.8); //1600 x 900
