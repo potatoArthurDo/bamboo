@@ -224,7 +224,7 @@
   height: 800px;
   font-size: 3rem;
   font-weight: 600;
-  width: 900px;
+  width: 50vw;
   color: var(--primary-golden);
 }
 
@@ -262,10 +262,10 @@
   left: -35%;
 }
 .bubbles :nth-child(2) {
-  background-size: auto 50%;
+  background-size: auto 70%;
   position: absolute;
-  top: 55%;
-  left: -25%;
+  top: 75%;
+  left: -28%;
 }
 
 .bubbles :nth-child(3) {
@@ -275,10 +275,10 @@
   left: 0%;
 }
 .bubbles :nth-child(4) {
-  background-size: auto 120%;
+  background-size: auto 85%;
   position: absolute;
   top: 43%;
-  left: 5%;
+  right: 85%;
 }
 .bubbles :nth-child(5) {
   background-size: auto 90%;
@@ -295,14 +295,38 @@
 .bubbles :nth-child(7) {
   background-size: auto 60%;
   position: absolute;
-  bottom: 5%;
-  left: 50%;
+  bottom: 30%;
+  left: 20%;
 }
 .bubbles :nth-child(8) {
   background-size: auto 60%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  right: 80%;
+}
+.bubbles :nth-child(9) {
+  background-size: auto 70%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+.bubbles :nth-child(10) {
+  background-size: auto 60%;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+}
+.bubbles :nth-child(11) {
+  background-size: auto 60%;
+  position: absolute;
+  top: 15%;
+  left: -20%;
+}
+.bubbles :nth-child(12) {
+  background-size: auto 60%;
+  position: absolute;
+  top: 40%;
+  right: 125%;
 }
 
 .bubble.active {
@@ -834,45 +858,62 @@
   .bubble-inner {
     width: 30rem;
   }
+
+  .bubble img {
+    padding: 1rem;
+    margin-left: 10.6rem;
+    margin-top: 2.4rem;
+  }
+  .bubbles :nth-child(10) {
+    left: 20%;
+    top: 35%;
+  }
+  .bubbles :nth-child(7) {
+    bottom: 26%;
+  }
+  .bubbles :nth-child(2) {
+    left: -45%;
+  }
+  .bubbles :nth-child(3) {
+    left: -15%;
+  }
   .bubbles :nth-child(1) {
-    background-size: auto 60%;
+    left: -45%;
+  }
+  /* .bubbles :nth-child(1) {
     left: -45%;
   }
   .bubbles :nth-child(2) {
-    background-size: auto 40%;
     left: -45%;
   }
 
   .bubbles :nth-child(3) {
-    background-size: auto 90%;
     left: 25%;
   }
   .bubbles :nth-child(4) {
-    background-size: auto 110%;
     top: 50%;
     left: 15%;
   }
   .bubbles :nth-child(5) {
-    background-size: auto 80%;
     top: 60%;
     left: -22%;
   }
   .bubbles :nth-child(6) {
-    background-size: auto 70%;
     top: 70%;
     left: 5%;
   }
   .bubbles :nth-child(7) {
-    background-size: auto 50%;
     top: 40%;
     left: -15%;
   }
   .bubbles :nth-child(8) {
-    background-size: auto 50%;
-    position: absolute;
     top: 30%;
     left: 30%;
   }
+  .bubbles :nth-child(9) {
+    top: 20%;
+    right: 40%;
+  } */
   .achievement {
     font-size: 2rem;
   }
@@ -965,14 +1006,10 @@
     margin-bottom: 12rem;
     padding-left: 10rem;
   }
-
-  .bubble img {
-    margin-left: 10.6rem;
-  }
 }
 
 @media (max-width: 1366px) {
-    .right-intro .main_name {
+  .right-intro .main_name {
     font-size: 3.8rem;
     padding-right: 15rem;
   }

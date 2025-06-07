@@ -81,7 +81,7 @@ export const ContentOverlay = () => {
     {
       id: "bubble2",
       image: "assets/humans-images/TranLiNa_cut.png",
-      size: "50%",
+      size: "70%",
       content:
         "Tại 2G, mình có cơ hội để 'Reflect' và 'Refresh'. Reflect giúp mình soi chiếu hành trình bản thân, nhận ra mình là ai trong tập thể và tạo ra giá trị gì cho cộng đồng. Refresh giúp mình liên tục đổi mới, cập nhật giải pháp hiệu quả hơn. Điều đó khiến mỗi ngày làm việc trở nên hạnh phúc hơn với mình.",
       sender: "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
@@ -95,46 +95,82 @@ export const ContentOverlay = () => {
       sender:
         "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
     },
-    {
+     {
       id: "bubble4",
-      image: "assets/images/",
-      size: "110%",
+      image: "assets/images/Nguyen_Manh_Ha.jpg",
+      size: "85%",
       content:
-        "",
-      sender: "Thầy Hà",
+        "Với vai trò là người tham mưu cho lãnh đạo sở GD&ĐT Nghệ An quản lí các trung tâm ngoại ngữ và cũng là phụ huynh đầu tiên của 2G, tôi hoàn toàn tin tưởng vào chất lượng đào tạo cũng như sự tiên phong của 2G trong ứng dụng công nghệ vào giáo dục. Tôi luôn ủng hộ những gì 2G đang làm cho thế hệ trẻ. Chúc 2G tiếp tục phát triển, tiên phong đổi mới để thật nhiều học sinh vươn xa!",
+      sender:
+        "Thầy Nguyễn Mạnh Hà, Trưởng phòng GDCN-GDTX Sở Giáo dục và Đào tạo Nghệ An",
     },
+
     {
       id: "bubble5",
-      image: "assets/images/",
+      image: "assets/images/Lan_Thanh.png",
       size: "80%",
       content:
-        "",
-      sender: "",
+        "Thật vui khi thấy nhiều thế hệ cựu học sinh chuyên Phan quy tụ tại 2G – có thể nói đây là doanh nghiệp tại Vinh có số lượng cựu học sinh chuyên Phan đông nhất, từ em Hải (khóa 42) – nhà sáng lập 2G, đến các bạn nhân sự, và cả các em học sinh đang theo học.",
+      sender: "Cô Lan Thanh - Hiệu trưởng trường THPT Chuyên Phan Bội Châu",
     },
 
     {
       id: "bubble6",
-      image: "assets/images/",
-      size: "70%",
+      image: "assets/images/Huyen.png",
+      size: "75%",
       content:
-        "",
-      sender: "",
+        "Thật vui khi được là đối tác đồng hành cùng các bạn trong 3 năm qua. Một đoàn đội trẻ, năng động, chuyên nghiệp, sáng tạo và đầy bản lĩnh, dám đi, dám đến và dám khám phá, đột phá vào những vùng đất, những vùng trời mới",
+      sender: "Mrs.Huyền Phó Giám đốc Đài phát thanh truyền hình Nghệ An NTV",
     },
     {
       id: "bubble7",
-      image: "assets/images/",
+      image: "assets/images/Huyen_2.png",
       size: "60%",
       content:
-        "",
-      sender: "",
+        "Sự cống hiến của các bạn trong việc đổi mới phương pháp giảng dạy tiếng Anh thực sự truyền cảm hứng. Chúng tôi đặc biệt trân trọng cách 2G Education tích hợp công nghệ vào trải nghiệm học tập, đặc biệt thông qua Cambridge One khi giảng dạy Kid's Box và Think. Cam kết của các bạn trong việc mang đến nền giáo dục  chất lượng cao, hấp dẫn không chỉ giúp học viên học tiếng Anh hiệu quả mà còn khiến hành trình học tập trở nên thú vị hơn.",
+      sender:
+        "Mrs Lê Thị Lệ Huyền, Country Head, Cambridge University Press & Assessment",
     },
     {
       id: "bubble8",
       image: "assets/humans-images/quang.jpg",
-      size: "60%",
+      size: "65%",
       content:
         "Có thể nói quá trình học tập tại 2G đã giúp mình xây dựng và trang bị cho bản thân bộ hành trang toàn diện về cả tư duy lẫn kiến thức. Đây được xem là hành trình bản lề để mình hội nhập với môi trường đại học quốc tế BUV sau này. Hành trình trải nghiệm học tập tại 2G không chỉ giúp mình nâng cao trình độ chuyên môn ngoại ngữ, mà còn giúp mình thay đổi tư duy trong việc học tập, từ bị động sang chủ động trong việc tiếp cận vấn đề. Nhờ đó mà mình biết cách vận dụng hiệu quả ngoại ngữ như một công cụ đắc lực để tiếp cận với những cơ hội đầy tiềm năng khác thay vì chỉ sử dụng cho mục đích học thuật, giúp đẩy nhanh quá trình phát triển bản thân từ sớm.",
       sender: "Cao Đức Quang",
+    },
+      {
+      id: "bubble9",
+      image: "assets/images/Samantha.png",
+      size: "70%",
+      content:
+        "Hội đồng Anh Việt Nam xin gửi lời chúc mừng nồng nhiệt nhất đến 2G Education – một trong những đối tác Vàng của chúng tôi tại Vinh. Trong suốt 7 năm qua, chúng tôi rất trân trọng sự hợp tác chặt chẽ giữa hai bên trong việc hỗ trợ thí sinh thi IELTS. Chúng tôi đánh giá cao những nỗ lực và đóng góp của 2G Education trong việc mang lại cơ hội giáo dục và phát triển cho học viên.",
+      sender: "Samantha Smith – Giám đốc Khảo thí Quốc gia",
+    },
+
+    {
+      id: "bubble10",
+      image: "assets/images/Dung.png",
+      size: "70%",
+      content:
+        "chúc 2G luôn giữ vững phong độ, mãi đỉnh, mãi tràn đầy năng lượng của tuổi trẻ, của tinh thần dám nghĩ, dám làm. Chúc đội ngũ 2G luôn cháy hết mình với sứ mệnh lan tỏa tri thức, mang đến những giá trị tuyệt vời cho các em học sinh và phụ huynh.",
+      sender: "Mrs Dung - Trường Đại học Anh Quốc Việt Nam BUV",
+    },
+    {
+      id: "bubble11",
+      image: "assets/images/Huyen_3.png",
+      size: "60%",
+      content:
+        "Từ khi 2G Hà Tĩnh đi vào hoạt động cách đây 3 năm, tôi đã dõi theo và đánh giá cao những đóng góp của 2G trong việc kết nối các cuộc thi quốc tế như World Scholar’s Cup, cũng như tạo ra những sân chơi học thuật ý nghĩa như hùng biện Let Your Voice Be Heard, Biên tập viên nhí. Những chương trình này đã giúp học sinh trường THCS Lê Văn Thiêm có cơ hội tranh tài, thể hiện bản lĩnh và đạt nhiều giải thưởng.",
+      sender: "Cô Huyền - Phó hiệu trưởng trường THCS Lê Văn Thiêm",
+    },
+    {
+      id: "bubble12",
+      image: "assets/images/Ngoc.png",
+      size: "60%",
+      content:
+        "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.",
+      sender: "Mrs Ngọc - Đại diện Vietnam Airlines",
     },
   ];
 
