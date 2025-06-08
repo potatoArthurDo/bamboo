@@ -274,152 +274,7 @@ const MobileOverlay = () => {
     },
   ];
 
-  const adviser = [
-    {
-      image: "assets/humans-images/Warren.jpg",
-      name: "THẦY WARREN ENG",
-      achievements: [
-        "- Chuyên gia giáo dục người Singapore",
-        "- Cựu Hiệu trưởng UEF HCMC",
-        "- Cố vấn chiến lược và phát triển chương trình",
-      ],
-    },
-
-    {
-      image: "assets/humans-images/Duy_Hiep.jpg",
-      name: "THẦY DUY HIỆP",
-      achievements: [
-        "- Giảng viên Đại học tại TP.HCM",
-        "- Chuyên gia tư vấn du học & luật sư di trú New Zealand",
-        "- Cố vấn các chương trình du học",
-      ],
-    },
-  ];
-  const teacher = [
-    {
-      name: "CHU MINH THÙY",
-      image: "assets/humans-images/human_11.jpg",
-      intro: "QUẢN LÝ HỌC VỤ",
-      achivements: [
-        "- Tốt nghiệp cử nhân ngành Kinh tế quốc tế, Học viện Ngoại giao Việt Nam",
-        "- Đạt IELTS 8.0 overall, trong đó speaking 8.0 và Reading 9.0",
-        "- Sở hữu chứng chỉ quốc tế về kỹ năng và phương pháp giảng dạy tiếng Anh TESOL",
-        "- 3 năm kinh nghiệm giảng dạy và quản lý tại các hệ thống trung tâm tiếng Anh lớn",
-      ],
-    },
-    {
-      name: "NGUYỄN CÔNG THÀNH",
-      image: "assets/humans-images/human_1.jpg",
-      intro: "GIÁO VIÊN TRƯỞNG IELTS",
-      achivements: [
-        "- Tốt nghiệp loại giỏi chuyên ngành quản trị kinh doanh tại trường Wisconsin International University in Ukraine",
-        "- IELTS Overall 8.0 ( Listening 8.5, Reading 8.5, Speaking 8.0)",
-        "- Hơn 6 năm kinh nghiệm giảng dạy và luyện thi IELTS 4 kỹ năng",
-        "- 15 năm sinh sống, học tập và làm việc tại các nước châu Âu, Mỹ, Ukraine, Nga, Đức, Canada",
-      ],
-    },
-
-    {
-      name: "KENZIE DUONG",
-      image: "assets/humans-images/Kenzie.jpg",
-      intro: "GIÁO VIÊN IELTS/SAT",
-      achivements: [
-        "- 5 năm kinh nghiệm tư vấn hỗ trợ học sinh xin học bổng các trường ĐH Hoa Kỳ",
-        "- 6 năm kinh nghiệm giảng dạy Tiếng Anh ở nhiều trình độ khác nhau, trong đó có nhiều học sinh đạt điểm TOEFL từ 109-115; các học sinh SAT đạt điểm từ 1300+ và 1400+...",
-        "- Điểm SAT nằm trong top 1% iểm số cao nhất thế giới",
-        "- Điểm IELTS Overall đạt 8.5, không có kỹ năng nào dưới 8.0, có chứng chỉ giảng dạy TESOL quốc tế",
-      ],
-    },
-    {
-      name: "EMILY",
-      image: "assets/humans-images/Emily.jpg",
-      intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
-      achivements: [
-        "- Đạt IELTS 8.0 overall, trong đó Speaking 8.0",
-        "- Chứng chỉ giảng dạy TESOL",
-        "- Từng làm việc tại Lãnh sứ quán Mỹ",
-        "- 7 năm kinh nghiệm giảng dạy IELTS, tiếng Anh thuyết trình, hùng biện ",
-      ],
-    },
-    {
-      name: "THANH LONG",
-      image: "assets/humans-images/human_2.jpg",
-      intro: "GIÁO VIÊN IELTS/ APTIS ESOL",
-      achivements: [
-        "- Tốt nghiệp Đại học Giao Thông Vận Tải",
-        "- Giáo viên với hơn 6 năm kinh nghiệm giảng dạy ESL/IELTS",
-        "- IELTS 8 Overall , không kỹ năng nào dưới 7.0 (Listening 9.0, Reading 8.5, Writing 8.0)",
-        "- TOEIC 860/990 ",
-      ],
-    },
-    {
-      name: "ALEX BOUVIER",
-      image: "assets/humans-images/Alex.jpg",
-      intro: "GIÁO VIÊN IELTS",
-      achivements: [
-        "- Một trong số ít Giảng viên Tiếng Anh đạt trình độ CPE Level C2 (IELTS 8.5) Quốc tế tại Việt Nam",
-        "- Hơn 05 năm kinh nghiệm giảng dạy IELTS từ cơ bản đến nâng cao",
-        "- Tốt nghiệp chứng chỉ Giảng dạy Quốc tế TESOL",
-      ],
-    },
-    {
-      name: "ZSANDRA",
-      image: "assets/humans-images/human_9.jpg",
-      intro: "GIÁO VIÊN TIẾNG ANH - MẦM NON/ TIỂU HỌC",
-      achivements: [
-        "- Cử nhân Nghệ thuật truyền thông +hoàn thành tín chỉ cử nhân ngôn ngữ Anh",
-        "- Sở hữu chứng chỉ TESOL được cấp bởi International Open Academy",
-        "- Chứng chỉ TEYL (Dạy tiếng Anh cho trẻ nhỏ) được cấp bởi Teach International",
-        "- Chứng chỉ EF SET trình độ C1",
-        "- Hơn 4 năm kinh nghiệm giảng dạy",
-      ],
-    },
-    {
-      name: "RYAN",
-      image: "assets/humans-images/Ryan.jpg",
-      intro: "",
-      achivements: [
-        "- Tốt nghiệp cử nhân sư phạm trung học cơ sở, chuyên ngành giảng dạy tiếng Anh",
-        "- Có 7 năm kinh nghiệm giảng dạy, từng là giảng viên của đại học CEBU và trưởng nhóm học vụ tại học viện Anh ngữ SMEAG Philippines",
-        "- Sở hữu chứng chỉ giảng dạy quốc tế TESOL",
-      ],
-    },
-    {
-      name: "TUẤN ANH",
-      image: "assets/humans-images/human_3.jpg",
-      intro: "",
-      achivements: [
-        "- IELTS 8.5 Listening",
-        "- Chứng chỉ giảng dạy quốc tế TESOL",
-        "- 7 năm kinh nghiệm giảng dạy tại các trung tâm anh ngữ lớn",
-        "- Sở hữu kênh tiktok về Speaking IELTS hơn 12k followers",
-      ],
-    },
-    {
-      name: "THANH NHÀN",
-      image: "assets/humans-images/Thanh_Nhan.jpg",
-      intro: "",
-      achivements: [
-        "- Đạt học bổng thạc sĩ TESOL tại đại học Northampton, Vương quốc Anh & Học bổng thạc sĩ Education tại đại học Huddersfield và đại học Leeds Beckett, Vương quốc Anh",
-        "- Chứng chỉ TESOL (Teaching English to Speakers of Other Languages)",
-        "- Học giả học bổng AmCham Scholarship được cấp bởi Phòng Thương mại Hoa Kỳ tại Việt Nam",
-        "- 5 năm kinh nghiệm giảng dạy tiếng Anh, luyện thi IELTS",
-        "- IELTS 7.5",
-      ],
-    },
-
-    {
-      name: "BẢO HÀ",
-      image: "assets/humans-images/Bao_Ha.jpg",
-      intro: "",
-      achivements: [
-        "- Tốt nghiệp loại xuất sắc chuyên ngành sư phạm Anh, trường Đại học Ngoại ngữ Huế.",
-        "- Học bổng thạc sĩ TESOL tại Đại học Huddersfield, Anh",
-        "- IELTS Overall 8.0 trong đó Listening và Reading 8.5, Speaking 8.0",
-        "- 5 năm kinh nghiệm giảng dạy IELTS & tiếng Anh du học, định cư",
-      ],
-    },
-  ];
+  
 
   const bubbleData = [
     {
@@ -473,6 +328,32 @@ const MobileOverlay = () => {
         "Những ấn tượng của tôi đối với 2G trên chặng đường đồng hành 7 năm qua thể hiện ở 1 thông điệp đó là: '2G - The Garden for Genius Germination' Chúc cho 2G tiếp tục vững vàng trên những hành trình cùng các em vươn cao, vươn xa, chinh phục những đỉnh cao mới.",
       sender: "Mrs Ngọc - Đại diện Vietnam Airlines",
     },
+    {
+      id: "bubble9",
+       content:
+        "Tại 2G, mình có cơ hội để 'Reflect' và 'Refresh'. Reflect giúp mình soi chiếu hành trình bản thân, nhận ra mình là ai trong tập thể và tạo ra giá trị gì cho cộng đồng. Refresh giúp mình liên tục đổi mới, cập nhật giải pháp hiệu quả hơn. Điều đó khiến mỗi ngày làm việc trở nên hạnh phúc hơn với mình.",
+      sender: "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
+    },
+    {
+      id: "bubble10",
+      content:
+         "Lúc đầu tôi khá lo lắng vì nghĩ làm visa Mỹ rất rắc rối. Tôi thì không rành thủ tục, lại bận nhiều việc, nhưng 2G khiến tôi bất ngờ vì cách làm việc quá chuyên nghiệp và chỉn chu – từ khâu chuẩn bị giấy tờ, rồi phỏng vấn đến lúc nhận visa, mọi thứ đều nhanh gọn, rõ ràng. Cảm giác như có người nhà dẫn đường nên tôi rất yên tâm và chắc chắn sẽ tiếp tục đồng hành với 2G trong thời gian tới.",
+      sender: "Chu Thị Bình - Tổ trưởng tổ Ngoại Ngữ trường THPT Diễn Châu 3",
+    },
+    {
+      id: "bubble11",
+      content:
+        "Gắn bó với 2G Education từ năm 2019, tôi cảm nhận rõ từng giai đoạn phát triển đều in dấu sự nỗ lực bền bỉ và lựa chọn có phần không dễ dàng của tổ chức. Dù đối mặt với nhiều thay đổi, 2G vẫn kiên trì giữ gìn những giá trị cốt lõi đã định hình từ đầu. Tôi trân trọng tinh thần dám hy sinh lợi ích ngắn hạn để theo đuổi mục tiêu dài hạn – điều không phải tổ chức nào cũng có thể làm được. Chính sự nhất quán đó tạo nên một môi trường mà mỗi người đều có cơ hội lớn lên một cách vững vàng, cùng 2G. Tôi biết ơn vì đã được là một phần trong chặng đường đó.",
+      sender:
+        "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
+    },
+    {
+      id: "bubble12",
+      content:
+        "Có thể nói quá trình học tập tại 2G đã giúp mình xây dựng và trang bị cho bản thân bộ hành trang toàn diện về cả tư duy lẫn kiến thức. Đây được xem là hành trình bản lề để mình hội nhập với môi trường đại học quốc tế BUV sau này. Hành trình trải nghiệm học tập tại 2G không chỉ giúp mình nâng cao trình độ chuyên môn ngoại ngữ, mà còn giúp mình thay đổi tư duy trong việc học tập, từ bị động sang chủ động trong việc tiếp cận vấn đề. Nhờ đó mà mình biết cách vận dụng hiệu quả ngoại ngữ như một công cụ đắc lực để tiếp cận với những cơ hội đầy tiềm năng khác thay vì chỉ sử dụng cho mục đích học thuật, giúp đẩy nhanh quá trình phát triển bản thân từ sớm.",
+      sender: "Cao Đức Quang",
+    }
+
   ];
 
   return (
@@ -783,118 +664,6 @@ const MobileOverlay = () => {
             <Link to="/humans"><h1>2G Humans {'>'}</h1></Link>
         </div>
       </section>
-
-      {/* <section className="mobile_section">
-        <div className="mobile-humans">
-          <h1>2G Humans</h1>
-          <div className="mobile-humans-content">
-            <h3>Đồng hành cùng chuyên gia Quốc tế - Peter Wright</h3>
-            <div className="mobile-human-info">
-              <div className="mobile-human-img">
-                <img src="assets/humans-images/wright.jpg" alt="" />
-                <h2>Peter Wright</h2>
-              </div>
-              <div className="mobile-human-achievement">
-                <div className="mobile-human-intro">
-                  <h3>
-                    Chuyên gia với 25 năm kinh nghiệm, giảng dạy full-time tại
-                    2G Education hơn 4 năm.
-                  </h3>
-                </div>
-                <div className="mobile-human-achievement-content">
-                  <ul>
-                    <li>
-                      - Cựu giám đốc học thuật tại TẬP ĐOÀN SMEAG School,
-                      Philipines
-                    </li>
-                    <li>
-                      - Trên 15 năm kinh nghiệm chấm thi tại Hội Đồng Anh và IDP
-                      Education
-                    </li>
-                    <li>- Cựu trưởng ban Hội đồng chấm thi Cambridge Qatar</li>
-                    <li>
-                      - Nhiều năm kinh nghiệm đào tạo giảng viên tại Tổ chức
-                      giáo dục uy tính thế giới - International House
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mobile-humans-content">
-            <h3>Đội ngũ cố vấn chuyên môn đầu ngành trong nước và Quốc tế</h3>
-            <div className="mobile-human-info">
-              {adviser.map((item, idx) => (
-                <>
-                  <div className="mobile-human-img">
-                    <img src={item.image} alt="" />
-                    <h2>{item.name}</h2>
-                  </div>
-                  <div className="mobile-human-achievement">
-                    <div className="mobile-human-achievement-content">
-                      <ul>
-                        {item.achievements.map((item, idx) => (
-                          <li>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div>
-          </div>
-
-          <div className="mobile-humans-content">
-            <h3>
-              2G Education sở hữu đội ngũ giảng viên chuyên môn cao, với tiêu
-              chuẩn hạng A++, đạt IELTS 8.0+ / C1+, bao gồm:
-            </h3>
-            <ul
-              style={{
-                listStyleType: "none",
-                color: "var(--golden-intro)",
-                fontSize: "1.2rem",
-                lineHeight: "1.4",
-                fontWeight: "500",
-                marginBottom: "0.5rem",
-              }}
-            >
-              <li>
-                - Giảng viên Việt Nam tốt nghiệp từ các trường Đại học hàng đầu:
-                ĐH Sư Phạm, ĐH Ngoại Ngữ
-              </li>
-              <li>- Cựu du học sinh, giảng viên giàu kinh nghiệm giảng dạy</li>
-              <li>
-                - Giáo viên bản ngữ, có chứng chỉ giảng dạy quốc tế, tận tâm và
-                chuyên môn cao
-              </li>
-            </ul>
-            <div className="mobile-human-info">
-              {teacher.map((item, idx) => (
-                <>
-                  <div className="mobile-human-img">
-                    <img src={item.image} alt="" />
-                    <h2>{item.name}</h2>
-                  </div>
-                  <div className="mobile-human-achievement">
-                    <div className="mobile-human-intro">
-                      <h3>{item.intro}</h3>
-                    </div>
-                    <div className="mobile-human-achievement-content">
-                      <ul>
-                        {item.achivements.map((item, idx) => (
-                          <li>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <Footer />
     </>
