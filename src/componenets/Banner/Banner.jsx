@@ -76,7 +76,7 @@ export default function Banner({ progress }) {
         if (window.innerWidth <= 1592) {
           setPages(11.1); //1600 x 1024
         } else {
-          setPages(10.55);
+          setPages(10.6);
         }
       } else if (height <= 894) {
         //1050
@@ -88,21 +88,21 @@ export default function Banner({ progress }) {
       } else if (height <= 924) {
         //1080
         if (window.innerWidth <= 1912) {
-          setPages(10.3); // 1920 x 1080
+          setPages(10.4); // 1920 x 1080
         } else {
           setPages(9.9);
         }
       }
       // MacBook Pro 13" and 14"
       else if (height <= 980) {
-        setPages(9.65); // MacBook Air/Pro 13-14"
+        setPages(9.8); // MacBook Air/Pro 13-14"
       }
 
       //  Pro 16" and similar high-DPI screens
       else if (height <= 1100) {
         setPages(9.4);
       } else if (height <= 1200) {
-        setPages(9.2); // WUXGA or MacBook Pro 16"
+        setPages(9); // WUXGA or MacBook Pro 16"
       } else if (height <= 1440) {
         setPages(6.6); // QHD / 2K displays
       } else if (height <= 1600) {

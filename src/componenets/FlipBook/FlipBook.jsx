@@ -179,7 +179,7 @@ const FlipBook = () => {
         >
           <h1 style={{ fontSize: "13rem" }}>R</h1>
           <h5 style={{ fontSize: "2.8rem" }}>Reimagine</h5>
-          <h6 style={{ fontSize: "1.4rem" }}>Tái tạo</h6>
+          <h6 style={{ fontSize: "1.4rem" }}>Sáng tạo</h6>
         </div>
       </div>
 

@@ -27,7 +27,7 @@ const Footer = forwardRef((props, ref) => {
         <div className="footer-info">
           <p>Locate Us:</p>
           <ul>
-            <li>65 Lê Hồng Phong, thành phố Vinh, tỉnh Nghệ An</li>
+            <li>Tầng 3, Vincom Plaza, 50 Lê Văn Việt, P. Hiệp Phú, TP. Thủ Đức, TP. Hồ Chí Minh</li>
           </ul>
           <p>Phone:</p>
           <ul>

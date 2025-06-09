@@ -244,7 +244,7 @@ export const ContentOverlay = () => {
       title: "2G Eureka Camps",
       subtitle: "Cung cấp các giải pháp về mô hình trại hè",
       image: "/assets/images/camp.png",
-      intro: "TThấu hiểu bản thân từ những bước chân trải nghiệm.",
+      intro: "Thấu hiểu bản thân từ những bước chân trải nghiệm.",
       details: [
         "- Trại hè trao đổi tại Úc, New Zealand, Singapore dành cho trẻ 5-12 tuổi.",
         "- Chương trình kết hợp học tập, kỹ năng mềm & tư duy sáng tạo và phản biện.",
@@ -613,7 +613,7 @@ export const ContentOverlay = () => {
             <div className="footer-info">
               <p>Locate Us:</p>
               <ul>
-                <li>65 Lê Hồng Phong, thành phố Vinh, tỉnh Nghệ An</li>
+                <li>Tầng 3, Vincom Plaza, 50 Lê Văn Việt, P. Hiệp Phú, TP. Thủ Đức, TP. Hồ Chí Minh</li>
               </ul>
               <p>Phone:</p>
               <ul>
