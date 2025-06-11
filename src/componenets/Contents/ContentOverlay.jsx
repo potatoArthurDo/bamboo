@@ -75,8 +75,7 @@ export const ContentOverlay = () => {
       size: "65%",
       content:
         "Lúc đầu tôi khá lo lắng vì nghĩ làm visa Mỹ rất rắc rối. Tôi thì không rành thủ tục, lại bận nhiều việc, nhưng 2G khiến tôi bất ngờ vì cách làm việc quá chuyên nghiệp và chỉn chu – từ khâu chuẩn bị giấy tờ, rồi phỏng vấn đến lúc nhận visa, mọi thứ đều nhanh gọn, rõ ràng. Cảm giác như có người nhà dẫn đường nên tôi rất yên tâm và chắc chắn sẽ tiếp tục đồng hành với 2G trong thời gian tới.",
-      sender:
-        "Chu Thị Bình - Tổ trưởng tổ Ngoại Ngữ trường THPT Diễn Châu 3",
+      sender: "Chu Thị Bình - Tổ trưởng tổ Ngoại Ngữ trường THPT Diễn Châu 3",
     },
     {
       id: "bubble2",
@@ -84,7 +83,8 @@ export const ContentOverlay = () => {
       size: "70%",
       content:
         "Tại 2G, mình có cơ hội để 'Reflect' và 'Refresh'. Reflect giúp mình soi chiếu hành trình bản thân, nhận ra mình là ai trong tập thể và tạo ra giá trị gì cho cộng đồng. Refresh giúp mình liên tục đổi mới, cập nhật giải pháp hiệu quả hơn. Điều đó khiến mỗi ngày làm việc trở nên hạnh phúc hơn với mình.",
-      sender: "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
+      sender:
+        "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
     },
     {
       id: "bubble3",
@@ -92,10 +92,9 @@ export const ContentOverlay = () => {
       size: "90%",
       content:
         "Gắn bó với 2G Education từ năm 2019, tôi cảm nhận rõ từng giai đoạn phát triển đều in dấu sự nỗ lực bền bỉ và lựa chọn có phần không dễ dàng của tổ chức. Dù đối mặt với nhiều thay đổi, 2G vẫn kiên trì giữ gìn những giá trị cốt lõi đã định hình từ đầu. Tôi trân trọng tinh thần dám hy sinh lợi ích ngắn hạn để theo đuổi mục tiêu dài hạn – điều không phải tổ chức nào cũng có thể làm được. Chính sự nhất quán đó tạo nên một môi trường mà mỗi người đều có cơ hội lớn lên một cách vững vàng, cùng 2G. Tôi biết ơn vì đã được là một phần trong chặng đường đó.",
-      sender:
-        "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
+      sender: "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
     },
-     {
+    {
       id: "bubble4",
       image: "assets/images/Nguyen_Manh_Ha.jpg",
       size: "85%",
@@ -139,7 +138,7 @@ export const ContentOverlay = () => {
         "Có thể nói quá trình học tập tại 2G đã giúp mình xây dựng và trang bị cho bản thân bộ hành trang toàn diện về cả tư duy lẫn kiến thức. Đây được xem là hành trình bản lề để mình hội nhập với môi trường đại học quốc tế BUV sau này. Hành trình trải nghiệm học tập tại 2G không chỉ giúp mình nâng cao trình độ chuyên môn ngoại ngữ, mà còn giúp mình thay đổi tư duy trong việc học tập, từ bị động sang chủ động trong việc tiếp cận vấn đề. Nhờ đó mà mình biết cách vận dụng hiệu quả ngoại ngữ như một công cụ đắc lực để tiếp cận với những cơ hội đầy tiềm năng khác thay vì chỉ sử dụng cho mục đích học thuật, giúp đẩy nhanh quá trình phát triển bản thân từ sớm.",
       sender: "Cao Đức Quang",
     },
-      {
+    {
       id: "bubble9",
       image: "assets/images/Samantha.png",
       size: "70%",
@@ -200,7 +199,16 @@ export const ContentOverlay = () => {
       description:
         "World Scholar’s Cup. 100% Đội Tuyển Vượt Qua Vòng Khu Vực Tại Bangkok, Thái Lan",
     },
-    { year: "2024", description: "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF" },
+    {
+      year: "2024",
+      description: [
+        "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF.",
+        "Ra mắt mảng du học gồm:",
+        "2G Pathways: Du học Mỹ, Anh, Úc, New Zealand, Canada, Singapore, Thụy Si",
+        "Hồng Khôi: Du học Đài Loan",
+        "GV ManPower: Du học nghề Đức",
+      ],
+    },
     {
       year: "2023 – 2024",
       description: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+",
@@ -336,7 +344,7 @@ export const ContentOverlay = () => {
 
   return (
     <Scroll html className="scroll-html-wrapper">
-      <Section  sectionName="intro">
+      <Section sectionName="intro">
         <div className="left-intro">
           <div className="company-mean">
             <h3 className="company_name">2G Group</h3>
@@ -367,13 +375,13 @@ export const ContentOverlay = () => {
           <p className="bounce">↓</p>
         </div>
       </Section>
-      <Section  sectionName="purpose">
+      <Section sectionName="purpose">
         <h1>Mục đích của 2G</h1>
         <div className="purpose-container">
           <FlipBook />
         </div>
       </Section>
-      <Section  sectionName="feedback">
+      <Section sectionName="feedback">
         <h1>Họ đang nói gì </h1>
         <h1> về 2G Education ? </h1>
         <div className="bubble-feedback-container">
@@ -439,7 +447,7 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section  sectionName="achievement">
+      <Section sectionName="achievement">
         <h1>Thành tựu </h1>
         <h1> 2G Education</h1>
         <div className="timeline">
@@ -447,14 +455,22 @@ export const ContentOverlay = () => {
             <div className="timeline-item" key={index}>
               <div className="content">
                 <h3>{item.year}</h3>
-                <p>{item.description}</p>
+                {Array.isArray(item.description) ? (
+                  item.description
+                    .filter(
+                      (desc) => typeof desc === "string" && desc.trim() !== ""
+                    )
+                    .map((desc, i) =><ul>  <li key={i}>{desc}</li></ul>)
+                ) : (
+                  <p>{item.description}</p>
+                )}
               </div>
             </div>
           ))}
         </div>
       </Section>
 
-      <Section  sectionName="service">
+      <Section sectionName="service">
         <h1>Hệ sinh thái </h1>
         <h1> Giáo dục của 2G</h1>
         <ProductCarousel products={products} />
@@ -546,7 +562,7 @@ export const ContentOverlay = () => {
         </div>
       </Section>
 
-      <Section  sectionName="banner-footer">
+      <Section sectionName="banner-footer">
         <div className="footer-first-content">
           <div className="left-intro">
             <div className="company-mean">
@@ -613,7 +629,10 @@ export const ContentOverlay = () => {
             <div className="footer-info">
               <p>Locate Us:</p>
               <ul>
-                <li>Tầng 3, Vincom Plaza, 50 Lê Văn Việt, P. Hiệp Phú, TP. Thủ Đức, TP. Hồ Chí Minh</li>
+                <li>
+                  Tầng 3, Vincom Plaza, 50 Lê Văn Việt, P. Hiệp Phú, TP. Thủ
+                  Đức, TP. Hồ Chí Minh
+                </li>
               </ul>
               <p>Phone:</p>
               <ul>

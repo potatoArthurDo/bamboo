@@ -231,7 +231,16 @@ const MobileOverlay = () => {
       description:
         "World Scholar’s Cup. 100% Đội Tuyển Vượt Qua Vòng Khu Vực Tại Bangkok, Thái Lan",
     },
-    { year: "2024", description: "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF" },
+   {
+      year: "2024",
+      description: [
+        "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF.",
+        "Ra mắt mảng du học gồm:",
+        "2G Pathways: Du học Mỹ, Anh, Úc, New Zealand, Canada, Singapore, Thụy Si",
+        "Hồng Khôi: Du học Đài Loan",
+        "GV ManPower: Du học nghề Đức",
+      ],
+    },
     {
       year: "2023 – 2024",
       description: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+",
@@ -475,7 +484,15 @@ const MobileOverlay = () => {
               <div key={index} className="mobile_timeline-item">
                 <div className="mobile_content">
                   <h3>{item.year}</h3>
+                   {Array.isArray(item.description) ? (
+                  item.description
+                    .filter(
+                      (desc) => typeof desc === "string" && desc.trim() !== ""
+                    )
+                    .map((desc, i) => <p key={i}>{desc}</p>)
+                ) : (
                   <p>{item.description}</p>
+                )}
                 </div>
               </div>
             ))}
