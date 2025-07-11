@@ -10,13 +10,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 
 const MobileOverlay = () => {
   const [openTab, setOpenTab] = useState(null);
   const carouselRef = useRef(null);
 
-   const isDesktop = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 768 });
 
   // Step 1: Initialize the array of refs
   const itemsRef = useRef([]);
@@ -206,49 +206,77 @@ const MobileOverlay = () => {
   ];
 
   const achievements = [
-    { year: "2018", description: "Tiên Phong Tổ Chức Trại Hè Quốc Tế" },
-    { year: "2018", description: "Đối Tác Chiến Lược Với AIT TESOL Úc" },
+    {
+      year: "2018",
+      description: [{ text: "Tiên Phong Tổ Chức Trại Hè Quốc Tế" }],
+    },
+    {
+      year: "2018",
+      description: [{ text: "Đối Tác Chiến Lược Với AIT TESOL Úc" }],
+    },
     {
       year: "2019",
-      description:
-        "Đơn Vị Tổ Chức Cuộc Thi Hùng Biện Lớn Nhất Nghệ An & Hà Tĩnh",
-    },
-    {
-      year: "2020",
-      description: "Ứng Dụng Công Nghệ & Hợp Tác Quốc Tế Trong Giảng Dạy",
-    },
-    {
-      year: "2021",
-      description: "Đồng Hành Cùng Chuyên Gia Quốc Tế – Peter Wright",
-    },
-    {
-      year: "2022",
-      description:
-        "Đối Tác Cùng Đài Truyền Hình & Sở Giáo Dục Nghệ An Tổ Chức Cuộc Thi 'English Challenge'",
-    },
-    {
-      year: "2023",
-      description:
-        "World Scholar’s Cup. 100% Đội Tuyển Vượt Qua Vòng Khu Vực Tại Bangkok, Thái Lan",
-    },
-   {
-      year: "2024",
       description: [
-        "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF.",
-        "Ra mắt mảng du học gồm:",
-        "2G Pathways: Du học Mỹ, Anh, Úc, New Zealand, Canada, Singapore, Thụy Si",
-        "Hồng Khôi: Du học Đài Loan",
-        "GV ManPower: Du học nghề Đức",
+        {
+          text: "Đơn Vị Tổ Chức Cuộc Thi Hùng Biện Lớn Nhất Nghệ An & Hà Tĩnh",
+        },
       ],
     },
     {
-      year: "2023 – 2024",
-      description: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+",
+      year: "2020",
+      description: [
+        { text: "Ứng Dụng Công Nghệ & Hợp Tác Quốc Tế Trong Giảng Dạy" },
+      ],
     },
     {
+      year: "2021",
+      description: [
+        { text: "Đồng Hành Cùng Chuyên Gia Quốc Tế – Peter Wright" },
+      ],
+    },
+    {
+      year: "2022",
+      description: [
+        {
+          text: "Đối Tác Cùng Đài Truyền Hình & Sở Giáo Dục Nghệ An Tổ Chức Cuộc Thi “English Challenge”",
+        },
+      ],
+    },
+    {
+      year: "2023",
+      description: [
+        {
+          text: "World Scholar’s Cup. 100% Đội Tuyển Vượt Qua Vòng Khu Vực Tại Bangkok, Thái Lan",
+        },
+      ],
+    },
+
+    {
+      year: "2023 – 2024",
+      description: [
+        { text: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+" },
+      ],
+    },
+    {
+      year: "2024",
+      description: [
+        { text: "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF." },
+        { text: "Ra mắt mảng du học gồm:" },
+        {
+          text: "2G Pathways: Du học Mỹ, Anh Úc, New Zealand, Canada, Singapore, Thụy Sĩ",
+        },
+        { text: "Hồng Khôi: Du học Đài Loan" },
+        { text: "GV Manpower: Du học nghề Đức" },
+      ],
+    },
+
+    {
       year: "2025",
-      description:
-        "Điểm thi IELTS, APTIS chính thức của Hội Đồng Anh do Bộ Giáo Dục Việt Nam cấp phép hoạt động tại Vincom Plaza - Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+      description: [
+        {
+          text: "Điểm thi IELTS, APTIS chính thức của Hội Đồng Anh do Bộ Giáo Dục Việt Nam cấp phép hoạt động tại Vincom Plaza - Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+        },
+      ],
     },
   ];
 
@@ -282,8 +310,6 @@ const MobileOverlay = () => {
       info: "- Cựu HS Chuyên Anh, trường THPT Chuyên Phan Bội Châu, tỉnh Nghệ An.",
     },
   ];
-
-  
 
   const bubbleData = [
     {
@@ -339,30 +365,29 @@ const MobileOverlay = () => {
     },
     {
       id: "bubble9",
-       content:
+      content:
         "Tại 2G, mình có cơ hội để 'Reflect' và 'Refresh'. Reflect giúp mình soi chiếu hành trình bản thân, nhận ra mình là ai trong tập thể và tạo ra giá trị gì cho cộng đồng. Refresh giúp mình liên tục đổi mới, cập nhật giải pháp hiệu quả hơn. Điều đó khiến mỗi ngày làm việc trở nên hạnh phúc hơn với mình.",
-      sender: "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
+      sender:
+        "Cô Li Na - Quản lý tuyển sinh Phòng du học & Trại hè 2G Education",
     },
     {
       id: "bubble10",
       content:
-         "Lúc đầu tôi khá lo lắng vì nghĩ làm visa Mỹ rất rắc rối. Tôi thì không rành thủ tục, lại bận nhiều việc, nhưng 2G khiến tôi bất ngờ vì cách làm việc quá chuyên nghiệp và chỉn chu – từ khâu chuẩn bị giấy tờ, rồi phỏng vấn đến lúc nhận visa, mọi thứ đều nhanh gọn, rõ ràng. Cảm giác như có người nhà dẫn đường nên tôi rất yên tâm và chắc chắn sẽ tiếp tục đồng hành với 2G trong thời gian tới.",
+        "Lúc đầu tôi khá lo lắng vì nghĩ làm visa Mỹ rất rắc rối. Tôi thì không rành thủ tục, lại bận nhiều việc, nhưng 2G khiến tôi bất ngờ vì cách làm việc quá chuyên nghiệp và chỉn chu – từ khâu chuẩn bị giấy tờ, rồi phỏng vấn đến lúc nhận visa, mọi thứ đều nhanh gọn, rõ ràng. Cảm giác như có người nhà dẫn đường nên tôi rất yên tâm và chắc chắn sẽ tiếp tục đồng hành với 2G trong thời gian tới.",
       sender: "Chu Thị Bình - Tổ trưởng tổ Ngoại Ngữ trường THPT Diễn Châu 3",
     },
     {
       id: "bubble11",
       content:
         "Gắn bó với 2G Education từ năm 2019, tôi cảm nhận rõ từng giai đoạn phát triển đều in dấu sự nỗ lực bền bỉ và lựa chọn có phần không dễ dàng của tổ chức. Dù đối mặt với nhiều thay đổi, 2G vẫn kiên trì giữ gìn những giá trị cốt lõi đã định hình từ đầu. Tôi trân trọng tinh thần dám hy sinh lợi ích ngắn hạn để theo đuổi mục tiêu dài hạn – điều không phải tổ chức nào cũng có thể làm được. Chính sự nhất quán đó tạo nên một môi trường mà mỗi người đều có cơ hội lớn lên một cách vững vàng, cùng 2G. Tôi biết ơn vì đã được là một phần trong chặng đường đó.",
-      sender:
-        "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
+      sender: "Cô Nguyên - Quản lý hệ thống nhân sự và vận hành dịch vụ ",
     },
     {
       id: "bubble12",
       content:
         "Có thể nói quá trình học tập tại 2G đã giúp mình xây dựng và trang bị cho bản thân bộ hành trang toàn diện về cả tư duy lẫn kiến thức. Đây được xem là hành trình bản lề để mình hội nhập với môi trường đại học quốc tế BUV sau này. Hành trình trải nghiệm học tập tại 2G không chỉ giúp mình nâng cao trình độ chuyên môn ngoại ngữ, mà còn giúp mình thay đổi tư duy trong việc học tập, từ bị động sang chủ động trong việc tiếp cận vấn đề. Nhờ đó mà mình biết cách vận dụng hiệu quả ngoại ngữ như một công cụ đắc lực để tiếp cận với những cơ hội đầy tiềm năng khác thay vì chỉ sử dụng cho mục đích học thuật, giúp đẩy nhanh quá trình phát triển bản thân từ sớm.",
       sender: "Cao Đức Quang",
-    }
-
+    },
   ];
 
   return (
@@ -441,13 +466,18 @@ const MobileOverlay = () => {
                 isSender={false}
                 sender={"2G Education"}
               />
+              <div className="chat-swipe-indicator">
+                {" "}
+                <p>Vuốt</p>
+                <img src="assets/images/swipe.png" alt="" />
+              </div>
+
               <div className="mobile-carousel-wrapper">
-                <button
+                {/* <button
                   className="mobile-nav-btn mobile-left"
                   onClick={() => scroll("left")}
-                >
-                  ‹
-                </button>
+                > */}
+                ‹{/* </button> */}
                 <div className="mobile-carousel" ref={carouselRef}>
                   {bubbleData.map((item) => (
                     <div
@@ -463,12 +493,12 @@ const MobileOverlay = () => {
                     </div>
                   ))}
                 </div>
-                <button
+                {/* <button
                   className="mobile-nav-btn mobile-right"
                   onClick={() => scroll("right")}
                 >
                   ›
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -484,15 +514,9 @@ const MobileOverlay = () => {
               <div key={index} className="mobile_timeline-item">
                 <div className="mobile_content">
                   <h3>{item.year}</h3>
-                   {Array.isArray(item.description) ? (
-                  item.description
-                    .filter(
-                      (desc) => typeof desc === "string" && desc.trim() !== ""
-                    )
-                    .map((desc, i) => <p key={i}>{desc}</p>)
-                ) : (
-                  <p>{item.description}</p>
-                )}
+                  {item.description.map((desc, idx) => (
+                    <p key={idx}>{desc.text}</p>
+                  ))}
                 </div>
               </div>
             ))}
@@ -512,7 +536,7 @@ const MobileOverlay = () => {
                     alt="product logo"
                     style={{
                       width: "auto",
-                        height: isDesktop ? "200px" : "120px",
+                      height: isDesktop ? "200px" : "120px",
                       background: "rgba(160, 181, 56, 0.662)",
                       marginBottom: "50px",
                     }}
@@ -675,10 +699,14 @@ const MobileOverlay = () => {
 
       <section className="mobile_section">
         <div className="redirect_section">
-            <h3>Lời nhắn từ Founder 2G Education:</h3>
-            <Link to="/founder_story"><h1>Thư ngỏ {'>'}</h1></Link>
-            <h3>Đội ngũ 2G</h3>
-            <Link to="/humans"><h1>2G Humans {'>'}</h1></Link>
+          <h3>Lời nhắn từ Founder 2G Education:</h3>
+          <Link to="/founder_story">
+            <h1>Thư ngỏ {">"}</h1>
+          </Link>
+          <h3>Đội ngũ 2G</h3>
+          <Link to="/humans">
+            <h1>2G Humans {">"}</h1>
+          </Link>
         </div>
       </section>
 

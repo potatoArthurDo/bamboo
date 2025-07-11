@@ -174,49 +174,76 @@ export const ContentOverlay = () => {
   ];
 
   const timelineData = [
-    { year: "2018", description: "Tiên Phong Tổ Chức Trại Hè Quốc Tế" },
-    { year: "2018", description: "Đối Tác Chiến Lược Với AIT TESOL Úc" },
+    {
+      year: "2018",
+      description: [{ text: "Tiên Phong Tổ Chức Trại Hè Quốc Tế" }],
+    },
+    {
+      year: "2018",
+      description: [{ text: "Đối Tác Chiến Lược Với AIT TESOL Úc" }],
+    },
     {
       year: "2019",
-      description:
-        "Đơn Vị Tổ Chức Cuộc Thi Hùng Biện Lớn Nhất Nghệ An & Hà Tĩnh",
+      description: [
+        {
+          text: "Đơn Vị Tổ Chức Cuộc Thi Hùng Biện Lớn Nhất Nghệ An & Hà Tĩnh",
+        },
+      ],
     },
     {
       year: "2020",
-      description: "Ứng Dụng Công Nghệ & Hợp Tác Quốc Tế Trong Giảng Dạy",
+      description: [
+        { text: "Ứng Dụng Công Nghệ & Hợp Tác Quốc Tế Trong Giảng Dạy" },
+      ],
     },
     {
       year: "2021",
-      description: "Đồng Hành Cùng Chuyên Gia Quốc Tế – Peter Wright",
+      description: [
+        { text: "Đồng Hành Cùng Chuyên Gia Quốc Tế – Peter Wright" },
+      ],
     },
     {
       year: "2022",
-      description:
-        "Đối Tác Cùng Đài Truyền Hình & Sở Giáo Dục Nghệ An Tổ Chức Cuộc Thi “English Challenge”",
+      description: [
+        {
+          text: "Đối Tác Cùng Đài Truyền Hình & Sở Giáo Dục Nghệ An Tổ Chức Cuộc Thi “English Challenge”",
+        },
+      ],
     },
     {
       year: "2023",
-      description:
-        "World Scholar’s Cup. 100% Đội Tuyển Vượt Qua Vòng Khu Vực Tại Bangkok, Thái Lan",
-    },
-    {
-      year: "2024",
       description: [
-        "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF.",
-        "Ra mắt mảng du học gồm:",
-        "2G Pathways: Du học Mỹ, Anh, Úc, New Zealand, Canada, Singapore, Thụy Si",
-        "Hồng Khôi: Du học Đài Loan",
-        "GV ManPower: Du học nghề Đức",
+        {
+          text: "World Scholar’s Cup. 100% Đội Tuyển Vượt Qua Vòng Khu Vực Tại Bangkok, Thái Lan",
+        },
       ],
     },
     {
       year: "2023 – 2024",
-      description: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+",
+      description: [
+        { text: "Dẫn Đầu Trong Luyện Thi IELTS – Kỷ Lục Học Sinh Đạt 6.5+" },
+      ],
     },
     {
+      year: "2024",
+      description: [
+        { text: "Đạt Chuẩn Trung Tâm Du Học Quốc Tế ICEF." },
+        { text: "Ra mắt mảng du học gồm:" },
+        {
+          text: "2G Pathways: Du học Mỹ, Anh Úc, New Zealand, Canada, Singapore, Thụy Sĩ",
+        },
+        { text: "Hồng Khôi: Du học Đài Loan" },
+        { text: "GV Manpower: Du học nghề Đức" },
+      ],
+    },
+
+    {
       year: "2025",
-      description:
-        "Điểm thi IELTS, APTIS chính thức của Hội Đồng Anh do Bộ Giáo Dục Việt Nam cấp phép hoạt động tại Vincom Plaza - Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+      description: [
+        {
+          text: "Điểm thi IELTS, APTIS chính thức của Hội Đồng Anh do Bộ Giáo Dục Việt Nam cấp phép hoạt động tại Vincom Plaza - Thành phố Thủ Đức, Thành phố Hồ Chí Minh",
+        },
+      ],
     },
   ];
 
@@ -275,9 +302,9 @@ export const ContentOverlay = () => {
     },
     {
       title: "Du học Hồng Khôi",
-      subtitle: "Cung cấp dịch vụ tư vấn du học nghề tại Đài Loan",
+      subtitle: "Đào tạo tiếng và tư vấn du học Đài Loan",
       image: "/assets/images/taiwan.jpg",
-      intro: "Hành trình du học vươn lên dẫn đầu, đạt thành công rực rỡ",
+      intro: "Du học tại đất nước dẫn đầu về công nghệ, bán dẫn, AI",
       details: [
         "- Luyện thi TOCFL, đạt chuẩn đầu vào.",
         "- Tư vấn du học tại Đài Loan với các ngành dẫn đầu: Bán dẫn, AI, Điều dưỡng…",
@@ -454,16 +481,10 @@ export const ContentOverlay = () => {
           {timelineData.map((item, index) => (
             <div className="timeline-item" key={index}>
               <div className="content">
-                <h3>{item.year}</h3>
-                {Array.isArray(item.description) ? (
-                  item.description
-                    .filter(
-                      (desc) => typeof desc === "string" && desc.trim() !== ""
-                    )
-                    .map((desc, i) =><ul>  <li key={i}>{desc}</li></ul>)
-                ) : (
-                  <p>{item.description}</p>
-                )}
+                <h3 className="content-year">{item.year}</h3>
+                {item.description.map((desc, idx) => (
+                  <p key={idx}>{desc.text}</p>
+                ))}
               </div>
             </div>
           ))}
