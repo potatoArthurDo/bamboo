@@ -103,6 +103,7 @@
   .chat-container {
     width : 40rem;
     max-width: 70rem;
+    align-items: center;
 
 }
   .chat-bubble {
@@ -127,4 +128,8 @@
   .receiver {
     margin-left: 1rem;
   }
+  .chat-container {
+    align-items: center;
+
+}
 }

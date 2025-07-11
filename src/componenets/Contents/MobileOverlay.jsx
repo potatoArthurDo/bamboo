@@ -634,14 +634,14 @@ const MobileOverlay = () => {
             </div>
             <hr style={{ backgroundColor: "var(--recommended-light-green)" }} />
             <div className="mobile-purpose-story">
+                <div className="chat-swipe-indicator">
+                {" "}
+                <p>Vuốt</p>
+                <img src="assets/images/swipe.png" alt="" />
+              </div>
               <h1>3 câu chuyện biểu tượng</h1>
+              
               <div className="mobile-carousel-wrapper">
-                <button
-                  className="mobile-nav-btn mobile-left"
-                  onClick={() => scroll("left")}
-                >
-                  ‹
-                </button>
                 <div className="mobile-carousel" ref={carouselRef}>
                   {purpose_story.map((item) => (
                     <div className="mobile-carousel-item" key={item}>
@@ -652,12 +652,6 @@ const MobileOverlay = () => {
                     </div>
                   ))}
                 </div>
-                <button
-                  className="mobile-nav-btn mobile-right"
-                  onClick={() => scroll("right")}
-                >
-                  ›
-                </button>
               </div>
             </div>
           </div>
