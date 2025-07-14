@@ -182,28 +182,63 @@ const MobileOverlay = () => {
 
   const purpose_story = [
     {
-      title: "Câu chuyện cây tre",
       content: [
-        "- Tre không vội vã. Tre cắm rễ sâu, tích tụ sức mạnh, rồi vươn thẳng lên trời – mạnh mẽ nhưng vô cùng linh hoạt. Đó cũng là lí do 2G Group lấy hình ảnh cây tre làm hình ảnh biểu tượng chủ đạo.",
-        "- Founder của 2G Group - anh Lê Văn Hải đã từng chia sẻ, càng trưởng thành, anh càng cảm nhận sâu sắc gốc rễ – gia đình, cộng đồng, và di sản Việt Nam đã định hình anh. Với anh, cây tre không chỉ là một loại cây, mà là biểu tượng của bản sắc.",
-        "- Sẽ mất hàng năm để rễ tre đan xen cắm chặt dưới lòng sâu trước khi vươn thẳng lên trời, mạnh mẽ và nhanh chóng. Anh học từ đó: muốn vươn cao, phải xây nền móng vững – trong công việc, trong đời sống. Tre phát triển theo từng cụm và lớn lên theo từng đốt, luôn hướng tới mây xanh. Đó cũng là hình ảnh mà anh muốn mọi người liên tưởng tới khi biết đến 2G Group.",
-        "- 2G Group kiên nhẫn xây dựng nền tảng – từ chất lượng đào tạo, chất lượng con người đến sự minh bạch trong vận hành – để tạo nên một hệ thống giáo dục bền vững, nơi mọi cá nhân cùng vươn lên từ gốc rễ mạnh mẽ của chính mình.",
+        "assets/images/intro_1.jpg",
       ],
     },
     {
-      title: "Câu chuyện The Dots",
       content: [
-        "- Lấy cảm hứng từ câu chuyện của Steve Jobs, người từng kể về những “dấu chấm” trong đời mình: bỏ đại học, học thư pháp, làm việc không mục đích rõ ràng, dường như trong thời điểm đó, mọi thứ Steve Jobs làm đều chưa có ý nghĩa rõ ràng.",
-        "- Nhưng khi nhìn lại, anh nhận ra chính những dấu chấm ấy – sự tò mò, những bước đi lệch hướng – đã nối lại để tạo nên những viên gạch vững chắc cho Apple - một thương hiệu đã thay đổi cả thế giới công nghệ.",
-        "- Ở 2G Group, chúng tôi sống với tinh thần ấy. Mỗi ý tưởng mới, mỗi ứng dụng công nghệ, mỗi thay đổi trong cách dạy và học, mỗi cá nhân thành công trong việc bước ra thế giới là một dấu chấm nhỏ. Chúng tôi tin vào việc nối những dấu chấm nhỏ đó, biến sự ngẫu nhiên thành sáng tạo, biến câu chuyện cá nhân thành cảm hứng cộng đồng, từ đó tạo ra một mạng lưới những cá nhân xuất sắc, dám sống và dám mơ.",
+        "assets/images/intro_2.jpg",
       ],
     },
     {
-      title: "Câu chuyện Connect the 'Đốt'",
       content: [
-        "Tre cắm rễ, vươn từng đốt.",
-        "Dấu “dots” nhỏ, ý tưởng lớn.",
-        "2G Group biến Connect the dots thành Connect the “đốt” với tham vọng phá bỏ rào cản giáo dục toàn cầu, xây dựng một hệ sinh thái giáo dục, gắn thế hệ trẻ với tri thức, vững gốc mà vươn xa.",
+        "assets/images/book_1_1.jpg",
+      ],
+    },
+      {
+      content: [
+        "assets/images/book_1_2.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/book_2_1.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/book_2_2.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/book_3_1.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/book_3_2.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/TheDots_1.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/TheDots_2.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/ConnectTheDot_1.jpg",
+      ],
+    },
+    {
+      content: [
+        "assets/images/ConnectTheDot_2.jpg",
       ],
     },
   ];
@@ -653,15 +688,13 @@ const MobileOverlay = () => {
                 <p>Vuốt</p>
                 <img src="assets/images/swipe.png" alt="" />
               </div>
-              <h1>3 câu chuyện biểu tượng</h1>
               
               <div className="mobile-carousel-wrapper">
                 <div className="mobile-carousel" ref={carouselRef}>
                   {purpose_story.map((item) => (
                     <div className="mobile-carousel-item" key={item}>
-                      <h2>{item.title}</h2>
                       {item.content.map((content, index) => (
-                        <p key={index}>{content}</p>
+                        <img className="mobile_story_image" src={content}/>
                       ))}
                     </div>
                   ))}
