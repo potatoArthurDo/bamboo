@@ -286,6 +286,7 @@ export const ContentOverlay = () => {
         "- Môi trường quốc tế giúp trẻ tự tin và phát triển toàn diện.",
       ],
       logo: "assets/images/eureka_logo.png",
+
     },
     {
       title: "GV Manpower",
@@ -299,6 +300,7 @@ export const ContentOverlay = () => {
         "- Tối ưu chi phí, lộ trình hợp pháp, an toàn.",
       ],
       logo: "assets/images/manpower_logo.png",
+      link:"https://gvmanpower.edu.vn/",
     },
     {
       title: "Du học Hồng Khôi",
@@ -312,6 +314,7 @@ export const ContentOverlay = () => {
         "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
       logo: "assets/images/hongkhoi_logo.png",
+      link:"https://duhochongkhoi.com/",
     },
   ];
 

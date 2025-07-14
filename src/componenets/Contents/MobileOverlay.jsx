@@ -70,6 +70,7 @@ const MobileOverlay = () => {
         "- Tiếng Anh giao tiếp & tiếng Anh trẻ em theo phương pháp tư duy phản xạ.",
       ],
       logo: "assets/images/favicon.png",
+      link:""
     },
     {
       title: "2G Pathways",
@@ -109,6 +110,7 @@ const MobileOverlay = () => {
         "- Tối ưu chi phí, lộ trình hợp pháp, an toàn.",
       ],
       logo: "assets/images/manpower_logo.png",
+      link:"https://gvmanpower.edu.vn/",
     },
     {
       title: "Du học Hồng Khôi",
@@ -122,6 +124,7 @@ const MobileOverlay = () => {
         "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
       logo: "assets/images/hongkhoi_logo.png",
+      link:"https://duhochongkhoi.com/",
     },
   ];
 
@@ -548,6 +551,17 @@ const MobileOverlay = () => {
                   {product.details.map((detail, i) => (
                     <p key={i}>{detail}</p>
                   ))}
+                  <div className="product_link">
+                                {product.link && (
+                                  <a
+                                    href={product.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    Xem thêm
+                                  </a>
+                                )}
+                              </div>
                 </div>
               ))}
             </div>

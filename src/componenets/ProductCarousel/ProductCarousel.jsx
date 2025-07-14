@@ -1,21 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './ProductCarousel.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./ProductCarousel.css";
+import { a } from "@react-spring/web";
+import { Link } from "react-router-dom";
 
-const ProductCarousel = ({ products, intervalTime = 3000 }) => {
+const ProductCarousel = ({ products }) => {
   const [active, setActive] = useState(0); // Start with the first product
   const itemsRef = useRef([]);
 
   useEffect(() => {
     loadShow();
   }, [active, products]);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setActive((prevActive) => (prevActive + 1) % products.length);
-//     }, intervalTime);
-
-//     return () => clearInterval(interval); // Cleanup interval on unmount
-//   }, [products, intervalTime]);
 
   const loadShow = () => {
     if (!itemsRef.current || itemsRef.current.length === 0) return;
@@ -26,16 +20,18 @@ const ProductCarousel = ({ products, intervalTime = 3000 }) => {
     if (items[active]) {
       items[active].style.transform = `none`;
       items[active].style.zIndex = 1;
-      items[active].style.filter = 'none';
+      items[active].style.filter = "none";
       items[active].style.opacity = 1;
     }
 
     for (let i = active + 1; i < items.length; i++) {
       stt++;
       if (items[i]) {
-        items[i].style.transform = `translateX(${120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(-1deg)`;
+        items[i].style.transform = `translateX(${120 * stt}px) scale(${
+          1 - 0.2 * stt
+        }) perspective(16px) rotateY(-1deg)`;
         items[i].style.zIndex = -stt;
-        items[i].style.filter = 'blur(5px)';
+        items[i].style.filter = "blur(5px)";
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
       }
     }
@@ -44,20 +40,26 @@ const ProductCarousel = ({ products, intervalTime = 3000 }) => {
     for (let i = active - 1; i >= 0; i--) {
       stt++;
       if (items[i]) {
-        items[i].style.transform = `translateX(${-120 * stt}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(1deg)`;
+        items[i].style.transform = `translateX(${-120 * stt}px) scale(${
+          1 - 0.2 * stt
+        }) perspective(16px) rotateY(1deg)`;
         items[i].style.zIndex = -stt;
-        items[i].style.filter = 'blur(5px)';
+        items[i].style.filter = "blur(5px)";
         items[i].style.opacity = stt > 2 ? 0 : 0.6;
       }
     }
   };
 
   const handleNext = () => {
-    setActive((prevActive) => (prevActive + 1 < products.length ? prevActive + 1 : prevActive));
+    setActive((prevActive) =>
+      prevActive + 1 < products.length ? prevActive + 1 : prevActive
+    );
   };
 
   const handlePrev = () => {
-    setActive((prevActive) => (prevActive - 1 >= 0 ? prevActive - 1 : prevActive));
+    setActive((prevActive) =>
+      prevActive - 1 >= 0 ? prevActive - 1 : prevActive
+    );
   };
 
   return (
@@ -69,10 +71,9 @@ const ProductCarousel = ({ products, intervalTime = 3000 }) => {
             key={index}
             ref={(el) => (itemsRef.current[index] = el)}
           >
-            
-            <div className='add_logo'>
-            <img src={product.logo} alt="product_logo" />
-            <h4>{product.title}</h4>
+            <div className="add_logo">
+              <img src={product.logo} alt="product_logo" />
+              <h4>{product.title}</h4>
             </div>
             <img src={product.image} alt={product.title} />
             <h5>{product.subtitle}</h5>
@@ -80,6 +81,17 @@ const ProductCarousel = ({ products, intervalTime = 3000 }) => {
             {product.details.map((detail, i) => (
               <p key={i}>{detail}</p>
             ))}
+            <div className="product_link">
+              {product.link && (
+                <a
+                  href={product.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Xem thêm
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>
@@ -93,7 +105,7 @@ const ProductCarousel = ({ products, intervalTime = 3000 }) => {
         {products.map((_, index) => (
           <button
             key={index}
-            className={`indicator-item ${index === active ? 'active' : ''}`}
+            className={`indicator-item ${index === active ? "active" : ""}`}
             onClick={() => setActive(index)}
           ></button>
         ))}
