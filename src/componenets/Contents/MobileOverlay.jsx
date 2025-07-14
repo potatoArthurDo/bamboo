@@ -1,59 +1,14 @@
 import ChatBubble from "../ChatBubbles/ChatBubble";
 import Footer from "../Footer/Footer";
-import ProductCarousel from "../ProductCarousel/ProductCarousel";
 import "./mobileOverlay.css";
 import { useState, useRef, useEffect } from "react";
-import { useSpring, animated } from "@react-spring/web";
-import { useDrag } from "@use-gesture/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { useMediaQuery } from "react-responsive";
 
 const MobileOverlay = () => {
   const [openTab, setOpenTab] = useState(null);
-  const carouselRef = useRef(null);
-
   const isDesktop = useMediaQuery({ minWidth: 768 });
-
-  // Step 1: Initialize the array of refs
-  const itemsRef = useRef([]);
-
-  // Register the plugin
-  gsap.registerPlugin(ScrollTrigger);
-  useEffect(() => {
-    // Step 2: Animate each item in the array of refs
-    itemsRef.current.forEach((item, index) => {
-      gsap.to(item, {
-        opacity: 1,
-        y: 0,
-        duration: 0.2,
-        delay: index * 0.1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: item,
-          start: "top bottom", // Start animation when the element hits 80% of the viewport
-          toggleActions: "play reverse play reverse",
-          //   markers: true,
-        },
-      });
-    });
-    ScrollTrigger.refresh();
-  }, []);
-
-  const scroll = (direction) => {
-    const container = carouselRef.current;
-    const itemWidth = container.offsetWidth;
-
-    if (direction === "left") {
-      container.scrollBy({ left: -itemWidth, behavior: "smooth" });
-    } else {
-      container.scrollBy({ left: itemWidth, behavior: "smooth" });
-    }
-  };
-
   const toggleTab = (index) => {
     setOpenTab(openTab === index ? null : index);
   };
@@ -443,20 +398,16 @@ const MobileOverlay = () => {
         <div className="mobile-intro-second-group">
           <div
             className="mobile_english"
-            ref={(el) => (itemsRef.current[0] = el)}
           >
             NGÔN NGỮ
           </div>
-          {/* <div className="mobile_english-second" ref={(el) => (itemsRef.current[1] = el)}>TOÀN DIỆN</div> */}
           <div
             className="mobile_camping"
-            ref={(el) => (itemsRef.current[2] = el)}
           >
             TRẠI HÈ
           </div>
           <div
             className="mobile_aboard"
-            ref={(el) => (itemsRef.current[3] = el)}
           >
             DU HỌC{" "}
           </div>
@@ -465,7 +416,6 @@ const MobileOverlay = () => {
         <div className="explaination">
           <div
             className="company-explain"
-            ref={(el) => (itemsRef.current[4] = el)}
           >
             <p>
               {" "}
@@ -476,7 +426,6 @@ const MobileOverlay = () => {
           </div>
           <div
             className="theme-explain"
-            ref={(el) => (itemsRef.current[5] = el)}
           >
             <p>
               Với thông điệp Connect the “Đốt”, 2G Group mong muốn mở rộng sự
@@ -511,12 +460,7 @@ const MobileOverlay = () => {
               </div>
 
               <div className="mobile-carousel-wrapper">
-                {/* <button
-                  className="mobile-nav-btn mobile-left"
-                  onClick={() => scroll("left")}
-                > */}
-                ‹{/* </button> */}
-                <div className="mobile-carousel" ref={carouselRef}>
+                <div className="mobile-carousel" >
                   {bubbleData.map((item) => (
                     <div
                       className="mobile-carousel-item"
@@ -531,12 +475,6 @@ const MobileOverlay = () => {
                     </div>
                   ))}
                 </div>
-                {/* <button
-                  className="mobile-nav-btn mobile-right"
-                  onClick={() => scroll("right")}
-                >
-                  ›
-                </button> */}
               </div>
             </div>
           </div>
@@ -609,7 +547,6 @@ const MobileOverlay = () => {
           <h1>Mục đích của 2G</h1>
           <div
             className="mobile-purpose-intro"
-            ref={(el) => (itemsRef.current[6] = el)}
           >
             <p>
               Ở 2G Group, chúng tôi tin rằng giáo dục là câu chuyện về sự kiên
@@ -690,11 +627,11 @@ const MobileOverlay = () => {
               </div>
               
               <div className="mobile-carousel-wrapper">
-                <div className="mobile-carousel" ref={carouselRef}>
+                <div className="mobile-carousel">
                   {purpose_story.map((item) => (
                     <div className="mobile-carousel-item" key={item}>
                       {item.content.map((content, index) => (
-                        <img className="mobile_story_image" src={content}/>
+                        <img className="mobile_story_image" src={content} alt="story_image"/>
                       ))}
                     </div>
                   ))}

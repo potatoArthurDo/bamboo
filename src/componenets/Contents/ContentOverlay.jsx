@@ -1,12 +1,9 @@
 import { Scroll, useScroll } from "@react-three/drei";
-import { useState, useEffect, useLayoutEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useState} from "react";
 import { useNavigate } from "react-router-dom";
-import { gsap } from "gsap";
 import "./overlay.css";
 import ChatBubble from "../ChatBubbles/ChatBubble";
 import ProductCarousel from "../ProductCarousel/ProductCarousel";
-import { color } from "three/tsl";
 import Slider from "../Slider/Slider";
 import FlipBook from "../FlipBook/FlipBook";
 const Section = (props) => {
@@ -398,7 +395,6 @@ export const ContentOverlay = () => {
         </div>
 
         <div className="right-intro">
-          {/* <h1 className="main_name english1">ANH NGỮ</h1> */}
           <h1 className="main_name english2">NGÔN NGỮ</h1>
           <h1 className="main_name camping">TRẠI HÈ </h1>
           <h1 className="main_name study">DU HỌC</h1>
@@ -460,7 +456,6 @@ export const ContentOverlay = () => {
                 onMouseEnter={() => handleBubbleHover(bubble.id)}
                 onMouseLeave={() => handleBubbleHover(bubble.id)}
               >
-                {/* {`Bubble ${bubble.id.replace("bubble", "")}`} */}
                 <img
                   src={bubble.image}
                   alt=""
@@ -602,7 +597,6 @@ export const ContentOverlay = () => {
           </div>
 
           <div className="right-intro">
-            {/* <h1 className="main_name english1">ANH NGỮ</h1> */}
             <h1 className="main_name english2">NGÔN NGỮ</h1>
             <h1 className="main_name camping">TRẠI HÈ </h1>
             <h1 className="main_name study">DU HỌC</h1>
