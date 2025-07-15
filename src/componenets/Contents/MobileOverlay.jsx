@@ -25,7 +25,7 @@ const MobileOverlay = () => {
         "- Tiếng Anh giao tiếp & tiếng Anh trẻ em theo phương pháp tư duy phản xạ.",
       ],
       logo: "assets/images/favicon.png",
-      link:""
+      link: "",
     },
     {
       title: "2G Pathways",
@@ -65,7 +65,7 @@ const MobileOverlay = () => {
         "- Tối ưu chi phí, lộ trình hợp pháp, an toàn.",
       ],
       logo: "assets/images/manpower_logo.png",
-      link:"https://gvmanpower.edu.vn/",
+      link: "https://gvmanpower.edu.vn/",
     },
     {
       title: "Du học Hồng Khôi",
@@ -79,7 +79,7 @@ const MobileOverlay = () => {
         "- Hỗ trợ học bổng: Học bổng Chính phủ, Học bổng Trường, Học bổng TAIWAN ICDF",
       ],
       logo: "assets/images/hongkhoi_logo.png",
-      link:"https://duhochongkhoi.com/",
+      link: "https://duhochongkhoi.com/",
     },
   ];
 
@@ -137,64 +137,40 @@ const MobileOverlay = () => {
 
   const purpose_story = [
     {
-      content: [
-        "assets/images/intro_1.jpg",
-      ],
+      content: ["assets/images/intro_1.jpg"],
     },
     {
-      content: [
-        "assets/images/intro_2.jpg",
-      ],
+      content: ["assets/images/intro_2.jpg"],
     },
     {
-      content: [
-        "assets/images/book_1_1.jpg",
-      ],
-    },
-      {
-      content: [
-        "assets/images/book_1_2.jpg",
-      ],
+      content: ["assets/images/book_1_1.jpg"],
     },
     {
-      content: [
-        "assets/images/book_2_1.jpg",
-      ],
+      content: ["assets/images/book_1_2.jpg"],
     },
     {
-      content: [
-        "assets/images/book_2_2.jpg",
-      ],
+      content: ["assets/images/book_2_1.jpg"],
     },
     {
-      content: [
-        "assets/images/book_3_1.jpg",
-      ],
+      content: ["assets/images/book_2_2.jpg"],
     },
     {
-      content: [
-        "assets/images/book_3_2.jpg",
-      ],
+      content: ["assets/images/book_3_1.jpg"],
     },
     {
-      content: [
-        "assets/images/TheDots_1.jpg",
-      ],
+      content: ["assets/images/book_3_2.jpg"],
     },
     {
-      content: [
-        "assets/images/TheDots_2.jpg",
-      ],
+      content: ["assets/images/TheDots_1.jpg"],
     },
     {
-      content: [
-        "assets/images/ConnectTheDot_1.jpg",
-      ],
+      content: ["assets/images/TheDots_2.jpg"],
     },
     {
-      content: [
-        "assets/images/ConnectTheDot_2.jpg",
-      ],
+      content: ["assets/images/ConnectTheDot_1.jpg"],
+    },
+    {
+      content: ["assets/images/ConnectTheDot_2.jpg"],
     },
   ];
 
@@ -396,27 +372,13 @@ const MobileOverlay = () => {
         </div>
 
         <div className="mobile-intro-second-group">
-          <div
-            className="mobile_english"
-          >
-            NGÔN NGỮ
-          </div>
-          <div
-            className="mobile_camping"
-          >
-            TRẠI HÈ
-          </div>
-          <div
-            className="mobile_aboard"
-          >
-            DU HỌC{" "}
-          </div>
+          <div className="mobile_english">NGÔN NGỮ</div>
+          <div className="mobile_camping">TRẠI HÈ</div>
+          <div className="mobile_aboard">DU HỌC </div>
         </div>
 
         <div className="explaination">
-          <div
-            className="company-explain"
-          >
+          <div className="company-explain">
             <p>
               {" "}
               2G Group là một hệ thống <b>giáo dục toàn diện</b>, giúp thế hệ
@@ -424,9 +386,7 @@ const MobileOverlay = () => {
               <b>du học</b>.
             </p>
           </div>
-          <div
-            className="theme-explain"
-          >
+          <div className="theme-explain">
             <p>
               Với thông điệp Connect the “Đốt”, 2G Group mong muốn mở rộng sự
               kết nối, góp phần phát triển một thế hệ giới trẻ mới, dám học, dám
@@ -460,7 +420,7 @@ const MobileOverlay = () => {
               </div>
 
               <div className="mobile-carousel-wrapper">
-                <div className="mobile-carousel" >
+                <div className="mobile-carousel">
                   {bubbleData.map((item) => (
                     <div
                       className="mobile-carousel-item"
@@ -525,16 +485,16 @@ const MobileOverlay = () => {
                     <p key={i}>{detail}</p>
                   ))}
                   <div className="product_link">
-                                {product.link && (
-                                  <a
-                                    href={product.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    Xem thêm
-                                  </a>
-                                )}
-                              </div>
+                    {product.link && (
+                      <a
+                        href={product.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Xem thêm
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
@@ -545,9 +505,7 @@ const MobileOverlay = () => {
       <section className="mobile_section">
         <div className="mobile-purpose">
           <h1>Mục đích của 2G</h1>
-          <div
-            className="mobile-purpose-intro"
-          >
+          <div className="mobile-purpose-intro">
             <p>
               Ở 2G Group, chúng tôi tin rằng giáo dục là câu chuyện về sự kiên
               trì, sáng tạo và trách nhiệm – những giá trị cốt lõi để tạo nên
@@ -620,18 +578,22 @@ const MobileOverlay = () => {
             </div>
             <hr style={{ backgroundColor: "var(--recommended-light-green)" }} />
             <div className="mobile-purpose-story">
-                <div className="chat-swipe-indicator">
+              <div className="chat-swipe-indicator">
                 {" "}
                 <p>Vuốt</p>
                 <img src="assets/images/swipe.png" alt="" />
               </div>
-              
+
               <div className="mobile-carousel-wrapper">
                 <div className="mobile-carousel">
                   {purpose_story.map((item) => (
                     <div className="mobile-carousel-item" key={item}>
                       {item.content.map((content, index) => (
-                        <img className="mobile_story_image" src={content} alt="story_image"/>
+                        <img
+                          className="mobile_story_image"
+                          src={content}
+                          alt="story_image"
+                        />
                       ))}
                     </div>
                   ))}
@@ -678,13 +640,14 @@ const MobileOverlay = () => {
       <section className="mobile_section">
         <div className="redirect_section">
           <h3>Lời nhắn từ Founder 2G Education:</h3>
-          <Link to="/founder_story">
+          <a href="/founder_story">
             <h1>Thư ngỏ {">"}</h1>
-          </Link>
+          </a>
+
           <h3>Đội ngũ 2G</h3>
-          <Link to="/humans">
+          <a href="/humans">
             <h1>2G Humans {">"}</h1>
-          </Link>
+          </a>
         </div>
       </section>
 

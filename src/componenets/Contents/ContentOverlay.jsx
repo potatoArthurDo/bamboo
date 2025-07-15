@@ -690,7 +690,7 @@ export const ContentOverlay = () => {
 
             <div className="footer-social">
               <p>Follow Us:</p>
-              <div class="social-icons">
+              <div className="social-icons">
                 <a
                   href="https://www.facebook.com/2GEducation"
                   target="_blank"

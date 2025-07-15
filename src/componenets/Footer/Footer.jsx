@@ -27,7 +27,10 @@ const Footer = forwardRef((props, ref) => {
         <div className="footer-info">
           <p>Locate Us:</p>
           <ul>
-            <li>Tầng 3, Vincom Plaza, 50 Lê Văn Việt, P. Hiệp Phú, TP. Thủ Đức, TP. Hồ Chí Minh</li>
+            <li>
+              Tầng 3, Vincom Plaza, 50 Lê Văn Việt, P. Hiệp Phú, TP. Thủ Đức,
+              TP. Hồ Chí Minh
+            </li>
           </ul>
           <p>Phone:</p>
           <ul>
@@ -42,19 +45,19 @@ const Footer = forwardRef((props, ref) => {
           <p>Quick Links:</p>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <a href="/">Home</a>
             </li>
             <li>
-              <Link to="/founder_story">Thư ngỏ</Link>
+              <a href="/founder_story">Thư ngỏ</a>
             </li>
             <li>
-              <Link to="/humans">2G Humans</Link>
+              <a href="/humans">2G Humans</a>
             </li>
           </ul>
         </div>
         <div className="footer-social">
           <p>Follow Us:</p>
-          <div class="social-icons">
+          <div className="social-icons">
             <a
               href="https://www.facebook.com/2GEducation"
               target="_blank"
