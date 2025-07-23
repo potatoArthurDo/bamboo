@@ -25,7 +25,7 @@ const MobileOverlay = () => {
         "- Tiếng Anh giao tiếp & tiếng Anh trẻ em theo phương pháp tư duy phản xạ.",
       ],
       logo: "assets/images/favicon.png",
-      link: "",
+      link: "https://2g.edu.vn/",
     },
     {
       title: "2G Pathways",
@@ -40,6 +40,7 @@ const MobileOverlay = () => {
         "-Xây dựng lộ trình cá nhân hoá, hỗ trợ toàn bộ các thủ tục giấy tờ và định hướng ngành học, hướng nghiệp",
       ],
       logo: "assets/images/favicon.png",
+      link:"https://duhoc2g.com/",
     },
     {
       title: "2G Eureka Camps",
@@ -52,6 +53,7 @@ const MobileOverlay = () => {
         "- Môi trường quốc tế giúp trẻ tự tin và phát triển toàn diện.",
       ],
       logo: "assets/images/eureka_logo.png",
+      link: "https://www.eurekacamps.com/",
     },
     {
       title: "GV Manpower",
